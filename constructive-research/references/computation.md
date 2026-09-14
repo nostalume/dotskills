@@ -1,17 +1,43 @@
 # Executable Research Computation
 
-Use this reference when symbolic, numerical, combinatorial, simulation, data, or
-plotting work is substantial because of scale, repetition, dependencies,
-nondeterminism, hardware, or reuse, or when an executable certificate bears
-inferential weight. Ordinary finite deduction follows
+Use this reference only after symbolic, numerical, combinatorial, simulation,
+data, or plotting execution must produce a requested result or bear inferential
+weight because of scale, repetition, dependencies, nondeterminism, hardware, or a
+required executable certificate. Ordinary finite derivation and bounded
+calculation follow
 [research-philosophy.md](research-philosophy.md). Reading this reference does not
-by itself admit a file, directory, notebook, or project.
+by itself admit execution, a file, directory, notebook, or project.
 
-## Admit execution before a project
+## Admit execution
+
+Separate three decisions: whether the research obligation needs execution, which
+smallest substrate can answer it, and whether any executable material must remain.
+
+```text
+research obligation or requested result
+  -> can derivation, proof, theorem contract, admitted source, or admitted
+     observation close it?
+       yes -> return that evidence and do not execute
+       no -> can bounded execution produce the required result, distinguish a
+             live alternative, or establish a required error/cost boundary?
+               no -> leave the obligation open or classify it unavailable
+               yes -> execute transiently by default
+                      -> retain only for a named replay or reuse consumer
+```
+
+Name the missing non-executable capability and the result classes that would
+change the claim before selecting a tool. Do not execute merely because code is
+available, the topic mentions computation, or a runnable artifact looks more
+rigorous. A successful run establishes only the result under its semantic,
+arithmetic, environment, and domain boundary; it does not establish the meaning of
+the model, a general theorem, or applicability outside that boundary.
+
+## Admit durable execution material
 
 A bounded one-off execution may use an available tool without creating a project
 when its typed request, compact result, witness, provenance, and boundary fit an
-existing canonical owner. Keep exploratory commands and raw output transient.
+existing canonical owner. Keep commands, code snippets, and raw output transient;
+do not create a file solely to preserve an otherwise compact result.
 
 Admit a computation project only when execution must be maintained or rerun for a
 named consumer and cannot coherently use an existing compatible project. One

@@ -13,9 +13,11 @@ authoritative fact -> deterministic decision -> effect -> receipt
 - Name one authority for every fact, policy choice, state transition, and effect.
 - Classify state as authoritative, derived, cached, or process-local. Derived
   views never become a second writer.
-- Keep deterministic decisions in a functional core. Put I/O, clocks, randomness,
-  logging, persistence, host mutation, and external capabilities in named effect
-  owners.
+- Give deterministic decisions and I/O, clocks, randomness, logging, persistence,
+  host mutation, or external capabilities explicit owners and testable boundaries.
+  A functional core is one possible project-native topology, not an invariant;
+  co-locate policy and effects when the accepted owner or lifecycle requires it
+  without hiding either responsibility.
 - Classify configuration as declarative source, generated target, mutable state,
   secret, recovery data, or machine fact; give every field one writer and one
   conflict rule.
@@ -32,5 +34,6 @@ authoritative fact -> deterministic decision -> effect -> receipt
 4. Can the new owner replace the old one without parallel authority?
 
 Hard gate: one authority per fact and transition; deterministic decisions are
-directly testable; effects occur only in named owners and preserve failure
-semantics; no migration leaves two authoritative writers.
+directly testable at their boundary; effects occur only in named owners and
+preserve failure semantics; no topology is imposed without project/domain evidence;
+and no migration leaves two authoritative writers.

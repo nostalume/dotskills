@@ -1,83 +1,83 @@
 ---
 name: constructive-research
-description: Discover an unknown research spine or develop a known one as an internally constructed, computationally verifiable, material-backed research state. Use for mathematical or physical inquiries, derivations, papers, plots, data, or technical notes that must expose presumptions, preserve semantics, and separate heavy computation.
+description: Develop, adjudicate, or explain mathematical and physical research through explicit presumptions, inspectable derivation, bounded evidence, and only necessary execution. Use for unknown inquiries, proofs, models, literature claims, plots, papers, data, or technical notes whose research meaning is still active; leave routine business analysis, settled visualization, physical formatting, and product implementation to their owners.
 ---
 
 # Constructive Research
 
-Build research around semantic questions and user-owned material rather than
-inherited chapter order, formal closure, or a sequence of convenient examples.
+Own mathematical or physical research meaning and its evidential boundary. The
+user and canonical sources own intent and supplied material; observations own only
+what their method supports. Artifact formats, product code, and ordinary business
+analysis remain with their respective skills.
 
-## Governing stance
+## Shared kernel
 
-- Treat intuition as provisional formalization. Use mathematics to expose and
-  reconstruct its hidden presumptions, not merely to decorate it with rigor.
-- Construct mathematical objects internally from a capability and a calculated
-  obstruction. If this is impractical, expose an exact theorem contract or ansatz.
-- Make every deduction a semantic computation with typed inputs, an operation, a
-  common target, a witness, and a validity boundary.
-- Prefer invariant, quotient, spectral, variational, diagrammatic, or
-  symmetry-adapted reductions over component expansion. Judge the complete route,
-  including construction and observable recovery cost.
-- Retain a generative operation with admissible inputs, outputs, certificates, and
-  refusals. Proof verifies the constructor; it does not replace it.
-- Treat textbook recovery as regression unless it changes a theorem, observable,
-  prediction, computational route, no-go result, or theory view.
-- Let examples discriminate a frozen candidate; do not amend the framework after
-  every example.
+```text
+research question and authority
+  -> admissible claim, phenomenon, or requested result
+  -> selected derivation, construction, source, observation, or execution
+  -> evidence with exact inferential right and boundary
+  -> bounded disposition or honest open obligation
+  -> optional durable state or reader/artifact projection
+```
 
-## Select references
+Preserve presumptions, typed objects, operations, witnesses, domains, uncertainty,
+conflicts, and refusal conditions. A definition, citation, observation, proof, or
+successful run establishes only its admitted kind of support. Do not claim
+generality, novelty, reconstruction, or computational leverage beyond the tested
+domain and comparison.
 
-Select one primary reference by the unresolved research operation. Add another
-only when its distinct owner becomes active:
+## Select the unresolved operation
 
-- **Construct or deduce:** intuition, presumptions, obstructions, generative tools,
-  compression, semantic deduction, or theory reconstruction:
-  [research-philosophy.md](references/research-philosophy.md).
-- **Discover or decide:** frontier selection, claim adjudication, evidence,
-  literature coverage, dispositions, retention, cursor, or policy revision:
-  [research-loop.md](references/research-loop.md).
-- **Bind or organize:** logical state, owner/edge bindings, artifact admission,
-  layout/naming, compaction, or projections:
-  [research-state.md](references/research-state.md).
-- **Execute:** substantial or inferentially decisive symbolic, numerical,
-  combinatorial, simulation, data, or plotting execution:
-  [computation.md](references/computation.md).
-- **Explain:** write or audit a paper/note for motivation, deductions,
-  interpretation, practical reuse, or a physical-artifact handoff:
-  [research-writing.md](references/research-writing.md).
+Read only the owners needed by the current operation:
 
-The five references are not a mandatory bundle. A result that may change the
-frontier activates the loop; executable work activates computation only at its
-routing boundary. Unknown mathematical/evidential content selects its producing
-owner; accepted content needing reader order selects writing. If only physical
-formatting remains, use the artifact handoff without reopening research owners.
+- **Derive or construct:** finite derivation, theorem contracts, conditional
+  obstruction-driven construction, compression, or theory reconstruction:
+  [research philosophy](references/research-philosophy.md).
+- **Discover:** select a discriminating action, update an inquiry frontier, retain
+  useful material, or stop: [research loop](references/research-loop.md).
+- **Adjudicate:** freeze a claim, admit heterogeneous evidence, resolve conflict or
+  failed reproduction, bound literature coverage, and emit a disposition:
+  [evidence adjudication](references/evidence-adjudication.md), together with the
+  research loop only when the frontier can change.
+- **Persist:** bind durable dependencies, canonical material owners, multiple
+  projections, or retained artifacts: [research state](references/research-state.md).
+- **Execute:** admit and perform substantial symbolic, numerical, combinatorial,
+  simulation, data, or plotting work: [computation](references/computation.md).
+- **Explain:** project already supported content into a paper, note, or figure:
+  [research writing](references/research-writing.md). Add the producing owner only
+  when a derivation, evidence status, or durable binding remains unresolved.
 
-## Operating rule
+These references are not a bundle. A bounded derivation needs no campaign schema;
+accepted one-output exposition needs no state index; a requested plot may be a
+result without becoming a new scientific claim. If only physical representation
+remains, hand the supported semantic projection to `document-artifacts`.
 
-1. Inspect the worktable and enter at the earliest unresolved operation; do not
-   replay settled phases.
-2. Execute the primary owner's transition and reference other owners instead of
-   copying their contracts.
-3. Admit new material once. Only a loop disposition changes the durable frontier;
-   apply its `promote | compact | drop` retention result.
-4. Stop at the declared horizon or produce a semantic writing projection. Request
-   physical form only through the optional artifact handoff.
+## Admit actions and effects
 
-## Hard boundaries
+Use the least effectful adequate operation. A derivation, matched theorem contract,
+admitted source, or already available observation may close an obligation without
+execution. Select computation only after its admission gate.
 
-- Research state owns durable epistemic memory; a loop cursor owns current
-  attention only. State position or status never grants permission or imposes work
-  order.
-- Research material stays in the worktable; editorial, implementation, and
-  migration plans stay in the repository's ignored agent workspace when present.
-- Sources and search results do not replace internal construction or evidence
-  admission. Conflicting evidence remains visible.
-- Do not claim generality, novelty, computational leverage, or reconstruction
-  beyond the exact domain and capability tested.
-- Do not hide work in notation, components, an existence theorem, a solver, or an
-  unnamed inverse. State irreducible dependencies and refusal conditions.
-- Constructive research never owns format syntax, conversion, rendering, or
-  publication; a physical artifact remains a projection of accepted content.
-- Keep conceptual cycles explicit through successive inquiry, disposition, or
-  semantic-contract revisions; do not create a global generation bureaucracy.
+Treat supplied or previously acquired observations as candidate material whose
+identity, method, domain, uncertainty, and permitted consequence still require
+admission. Evidence-admission authority does not authorize a new measurement,
+instrument or human interaction, paid acquisition, credential use, remote data
+disclosure, or other external effect. Resolve that operation's owner, authority,
+bounds, consent/security obligations, and receipt before acting; otherwise return
+the supported partial result and exact unavailable observation.
+
+## Advance and stop
+
+1. Enter at the earliest unresolved operation; do not replay settled work.
+2. Apply its primary owner's transition and import constraints by reference.
+3. Admit new material once. Only an adjudicated disposition changes a frozen
+   claim; only a named durable consumer admits persistent state or an artifact.
+4. Stop when the requested result is supported within scope, a declared horizon
+   is met, further work cannot change the consumer, or the next operation is
+   unavailable or unauthorized. Report the weakest open obligation and its
+   re-entry condition.
+
+Keep research material with its canonical worktable owner. Use confirmed-ignored
+agent space only for transient cursors, audits, or plans; do not reorganize or
+delete user material merely to fit this model.

@@ -11,8 +11,8 @@ mandatory stages in a single workflow.
 
 | Task | Primary skill | Responsibility |
 | --- | --- | --- |
-| Develop a mathematical or physical inquiry | [constructive-research](constructive-research/SKILL.md) | Construction, evidence, computation, and research meaning |
-| Resolve material architecture or refactor decisions | [architecture-planning](architecture-planning/SKILL.md) | Revision-backed decisions and dependency-ordered private plans |
+| Develop, adjudicate, or explain a mathematical or physical inquiry | [constructive-research](constructive-research/SKILL.md) | Derivation, conditional construction, bounded evidence, admitted computation, and research meaning |
+| Resolve material, unsettled architecture or refactor decisions | [architecture-planning](architecture-planning/SKILL.md) | Revision-backed decision settlement and the smallest sufficient private plan before coding |
 | Design, create, refactor, consolidate, or review a skill | [skill-development](skill-development/SKILL.md) | Portable capability boundaries, progressive resources, effect contracts, and behavioral evaluation |
 | Implement, review, or verify a settled software change | [software-development](software-development/SKILL.md) | Code changes and evidence that the actual result satisfies the task |
 | Explain software to users or developers | [software-documentation](software-documentation/SKILL.md) | Accurate explanations, examples, and documentation validation |
