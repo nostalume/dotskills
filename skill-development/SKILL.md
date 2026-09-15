@@ -1,6 +1,6 @@
 ---
 name: skill-development
-description: Design, create, refactor, consolidate, or review Codex skills by turning an intended capability into a portable behavior contract, progressive resources, explicit effect boundaries, and behavioral evaluation. Use when skill instructions or skill ownership are the primary artifact; do not use for ordinary software or artifact work merely performed with a skill.
+description: Design, refactor, consolidate, retire, or semantically review Codex skills when capability boundaries, ownership, portability, effects, or behavioral evaluation are material; also create skills that require those decisions. Leave routine structural scaffolding or UI metadata to the generic skill creator, and ordinary software or artifact work to its domain owner.
 ---
 
 # Skill Development
@@ -12,12 +12,23 @@ accepted local resources. Source owners retain authority over factual content.
 Tools and providers own their observable effects; their availability is not
 permission to use them.
 
+When a generic skill creator is also available, this skill remains primary for
+capability boundaries, ownership, portable policy and behavioral evaluation; use
+the generic creator only for supported structure or validation. Its absence does
+not reduce this skill's semantic behavior.
+
 Establish whether the request is creation, focused revision, consolidation,
 retirement, or review only. Inspection and review do not authorize edits. Before
 changing an existing skill, inspect its entry point, linked resources, live
 callers, repository routing, applicable instructions, validation commands, and
 working-tree state. Do not replace direct user changes or unique behavior merely
 to make the skill resemble a preferred template.
+
+Apply an authoritative, bounded correction directly. Treat an agent-inferred
+lesson, or a change that widens activation, ownership, safety, compatibility,
+effects or material cost, as a candidate until behavioral comparison distinguishes
+it from the incumbent. One successful observation does not establish portable
+policy.
 
 Read [portable capability](references/portable-capability.md) before authoring or
 revising skill policy. It defines the knowledge roles, force, authority, temporal

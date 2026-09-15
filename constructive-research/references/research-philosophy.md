@@ -1,84 +1,121 @@
 # Research Philosophy
 
-Use this reference for mathematical or physical derivation, construction,
-compression, and reconstruction. Obstruction-driven construction is conditional:
-descriptive inquiry, measurement, replication, literature synthesis, and accepted
-result exposition do not need to invent an obstruction.
+Use this reference for mathematical or physical concept development, derivation,
+construction, compression, and reconstruction. Begin in the inquiry's practice,
+not in a presumed universal vocabulary. Formalization, typed structure, and an
+obstruction argument are selected methods; descriptive inquiry, measurement,
+replication, literature synthesis, and accepted exposition need not invent them.
 
-## Expose presumptions through derivation
+## Develop concepts through consequential use
 
-Treat intuition as provisional formalization. Identify the phenomenon, typed
-objects, relations, invariants, approximations, and plausible operations it
-presumes. Derive consequences or failures, then revise only the premises that the
-evidence reaches.
+Start from the requested capability or phenomenon and how the inquiry currently
+proceeds. Locate where a distinction, relation, representation, or rule could
+change a conclusion, construction, question, or refusal. A new view may begin
+from a surprising observation, recurring repair, or unresolved comparison; it
+need not first prove an old language impossible.
 
-For every consequential claim or equation, expose:
+Do not treat `ontology`, `primitive`, `kernel`, `closure`, or similar terms as
+neutral prerequisites. A concept is provisionally stabilized with its relevant
+neighbors through its examples and counterexamples, contrasts, permitted moves,
+consequences, and correction after breakdown. Inspect only relations that can
+affect the inquiry; these are possible observations, not a definition of meaning.
+
+A definition is a proposal or local stipulation before its role is established.
+Within a formal theory, syntax and rules may fix that role exactly for the stated
+purpose. In an active inquiry, treat the concept as fixed only as far as relevant
+new cases preserve the needed moves and contrary cases lead to inspectable local
+revision. Change affected neighbors together; neither assume one word is fixed
+independently nor rebuild the whole language.
+
+Use this trace when it changes the work; do not materialize it by default:
 
 ```text
-typed inputs and domain
-  -> map, composition, quotient, substitution, variation, limit, or algorithm
-  -> common target and explicit evaluation, witness, or certificate
-  -> preserved or changed semantic content
-  -> assumptions and failure boundary
+actual task and current attempt
+  -> consequential divergence, surprise, or recurring repair
+  -> provisional distinction, relation, representation, or rule
+  -> changed move, consequence, question, or refusal
+  -> contrary case and bounded revision
 ```
+
+## Expose formal construction when selected
+
+When a claim depends on formal derivation, state the objects and domain with the
+types needed to make the operation legal. Show the map, composition, quotient,
+substitution, variation, limit, algorithm, or other operation; bring both sides
+to a common target; and expose the evaluation, witness, or certificate together
+with assumptions and the failure boundary.
 
 An equation must arise from its operation rather than appear first and acquire an
 interpretation afterward. A definition does not establish existence, uniqueness,
-equivalence, or invariance. A theorem contract may bridge a step only when its
-exact hypotheses, output, semantic role, and boundary match.
+equivalence, invariance, necessity, or usefulness. A theorem contract may bridge
+a step only when its exact hypotheses, output, role, and boundary match.
 
-Prefer invariant, quotient, symmetry-adapted, normal-form, spectral, or
-variational reasoning when it shortens or strengthens the complete route. Use
-components when they are the observable representation, no structural reduction
-is known, or a small independent check needs them; return the conclusion to its
-invariant meaning.
-
-## Construct from an obstruction when construction is the goal
-
-When the inquiry asks why an object is necessary or seeks a reusable mathematical
-operation, construct it from the capability it must supply:
+When the inquiry asks why an object or operation is necessary, expose the failure
+that forces additional structure:
 
 ```text
 required capability
   -> cheapest typed candidate
-  -> explicit failed equality, ambiguity, residual, or obstruction
+  -> failed equality, ambiguity, residual, or obstruction
   -> additional structure forced by that failure
   -> constructed object and operations
   -> witness, consequence, and refusal boundary
 ```
 
-Do not introduce machinery whose necessity carries the argument without exposing
-that necessity. When a foundation cannot reasonably be derived locally, state an
-exact theorem contract. A finished formula without a generative origin remains an
-ansatz or admitted theorem input, not an internally constructed object.
+When the starting foundation cannot reasonably be derived locally, state an exact
+theorem contract. Without a necessity argument, a structure may still be an
+ansatz, cited input, useful definition, or exploratory proposal; label that role
+instead of calling it forced.
 
-A construction is reusable only when it retains an operation for new admissible
-inputs:
+A reusable construction retains an operation for new admissible inputs. Its input
+must not encode the expected answer. Distinguish regression on known input,
+transfer to a structurally changed admissible input, and downstream use against
+the complete baseline route. Regression alone verifies preservation; transfer
+alone does not establish computational gain.
+
+Prefer invariant, quotient, symmetry-adapted, normal-form, spectral, or
+variational reasoning when it shortens or strengthens the complete route. Use
+components when they are the observable representation, no structural reduction
+is known, or an independent check needs them; return the conclusion to its
+invariant meaning.
+
+## Bound productivity and improvement claims
+
+Do not call a field, theory, or concept simply computable or noncomputable. Name
+the represented task and claim:
+
+- conceptual productivity introduces a distinction, canonical representation,
+  question, or relation that changes subsequent inquiry;
+- deductive productivity derives consequences under stated rules; and
+- effective productivity supplies an algorithm, normalization, decision
+  procedure, or executable construction for a declared encoding and domain.
+
+Evidence for one does not establish the others. A new concept may be provisionally
+useful because an obstruction forces it, because its relations produce a
+consequence or compression not encoded in the motivating case, or because it
+selects a discriminating next inquiry. None requires claiming universal reach.
+
+Claim that an incumbent cannot produce a result only relative to stated language,
+operations, domain, target, and resources, supported by a matched invariant,
+undefinability result, lower bound, indistinguishability argument, or no-go
+theorem. A counterexample may defeat a matching universal claim but does not by
+itself prove inability. Otherwise report the observed comparative limitation, not
+absolute inability.
+
+Distinguish improvement claims:
 
 ```text
-Construct(data, capability, resource budget)
-  -> generated object and reusable operations
-  -> correctness or recovery certificates
-  -> explicit failure or refusal
-```
-
-The interface is semantic and need not be software. Its input must not encode the
-expected answer. Distinguish regression on known input, transfer to a structurally
-new admissible input, and downstream use against the complete baseline route.
-Regression alone verifies; transfer alone does not establish computational gain.
-
-## Distinguish kinds of improvement
-
-```text
-reformulation   same objects and information in another representation
-compression     less information or work for a named observable
-reconstruction  different primitive objects or dynamics with controlled recovery
+reformulation   same relevant information in another representation
+compression     less information or work for a named result
+reconstruction  changed governing distinctions or dynamics with controlled recovery
 ```
 
 An invertible change may improve sparsity, conditioning, locality, or recursion
 without being a new theory. A quotient is useful only relative to distinctions a
-named observable cannot see. Judge construction, solution, and recovery cost
-together.
+named result cannot see. Freeze the required result and quality before claiming a
+cost gain; a faster route that loses a required distinction is not cheaper for
+that result. Use [evidence adjudication](evidence-adjudication.md) for a contested
+complete-route comparison.
 
 A reconstructed theory must recover the earlier successful regime through a
 specified bridge and controlled error, and produce a discriminating consequence
@@ -90,4 +127,5 @@ approximations.
 
 Finite derivation stays adjacent to the argument. Select
 [computation](computation.md) only when execution must produce a required result or
-carry inferential weight; a proof or construction does not imply code.
+carry inferential weight; conceptual or deductive productivity does not imply
+code.

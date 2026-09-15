@@ -72,6 +72,22 @@ when its behavior silently relies on authoring-machine state, modifies the
 installed skill directory, assumes network access, or treats one adapter as the
 capability itself.
 
+Name only the portability surface actually claimed:
+
+- **semantic:** the capability's activation, invariants, decisions and result
+  meanings survive replacement of a local adapter;
+- **package:** the skill and its declared included resources can move as one unit,
+  with external skill dependencies explicit rather than hidden paths;
+- **suite:** discovery and handoffs preserve one owner when the skill participates
+  in an advertised collection; and
+- **runtime/stateless:** a fresh invocation can recover the governing behavior
+  from declared inputs and dependencies without prior conversational memory.
+
+These claims are independent. Provider-neutral prose does not prove an isolated
+package, and a valid package does not prove discovery or fresh-context behavior.
+Use [behavioral evaluation](behavioral-evaluation.md) for the distinguishing
+observations.
+
 The core is **operationally closed** when, without network retrieval, it can:
 
 1. activate or exclude the request correctly;
@@ -82,19 +98,21 @@ The core is **operationally closed** when, without network retrieval, it can:
 
 Operational closure does not mean complete offline execution. A missing compiler,
 remote target or mutable provider policy can prevent the selected adapter from
-completing. The skill must then stop at that boundary with a precise reduced claim,
-not guess, copy a whole external specification, or declare unrelated core behavior
-unavailable.
+completing. Stop at that boundary without guessing, copying a whole external
+specification, or declaring unrelated core behavior unavailable. Distinguish:
 
-When a preferred operation is unavailable, choose among only truthful outcomes:
+- an **equivalent alternative**, which changes the mechanism but preserves the
+  admitted postcondition and evidence obligations;
+- a **bounded partial**, which satisfies a named subset, preserves every governing
+  safety and authority invariant, and reports each missing guarantee;
+- **unavailable**, when no useful declared subset can currently be established;
+  and
+- **refused**, when authority or policy prohibits the operation.
 
-- use a compatible alternative that preserves the admitted contract;
-- return a bounded partial result whose missing guarantees are named;
-- ask for a material missing decision or authority; or
-- report that the requested result cannot currently be established.
-
-Never relabel a degraded result as equivalent, repeatedly attempt unbounded
-setup, or fabricate verification evidence.
+Ask for a material missing decision when it can change these outcomes. Never
+weaken authorization, identity, safety or mutation invariants to obtain a partial
+result, relabel a partial as equivalent, retry setup without a bound, or fabricate
+verification evidence.
 
 ## Add structure progressively
 

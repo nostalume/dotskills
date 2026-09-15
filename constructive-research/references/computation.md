@@ -135,21 +135,24 @@ failure behavior, then remove the replaced adapter when no live consumer remains
 
 ## Test computational leverage
 
-Compare complete routes on one frozen contract:
+Compare complete routes on one frozen result and required quality:
 
 ```text
-(model/dynamics, preparation, observable, accuracy)
+(model/dynamics, preparation, observable, required accuracy and semantics)
   -> baseline route and complete cost
   -> proposed reduction and construction cost
   -> same-observable equality or controlled error
   -> recovery cost and failure boundary
 ```
 
-Include discovery/construction of the reduced object, execution, and recovery of
-the requested observable. Semantic compression may offer no cheaper computation;
-an invertible reformulation may still gain locality, sparsity, conditioning, or
-recursion. Compare transformation depth, time/memory, symbolic growth, conditioning,
-reusable intermediates, assumptions, and recovery cost. Representation constrains
-admissible channels but does not determine dynamics, preparation, or observables.
-State the model class, accuracy, resource scale, and refusal rather than promising
-a universal solver.
+Include decision-sensitive learning, representation, discovery/construction of
+the reduced object, execution, verification, repair, and recovery of the requested
+observable. Semantic compression may offer no cheaper computation; an invertible
+reformulation may still gain locality, sparsity, conditioning, or recursion.
+Compare observed transformation depth, time/memory, symbolic growth, conditioning,
+reusable intermediates, assumptions, and recovery cost without pricing away
+correctness or semantic preservation. Representation constrains admissible
+channels but does not determine dynamics, preparation, or observables. State the
+model class, accuracy, resource scale, and refusal rather than promising a
+universal solver. This comparison establishes effective leverage only; it does
+not decide whether a concept is explanatory or deductively productive.

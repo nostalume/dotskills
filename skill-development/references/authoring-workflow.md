@@ -121,6 +121,22 @@ owner. Preserve its normative force and temporal binding where they matter.
 Distinguish deliberate behavior from obsolete residue using current callers,
 documentation, repository rules and observed results—not personal preference.
 
+Choose the smallest revision reach before editing:
+
+| Reach | Applies when | Revision path |
+| --- | --- | --- |
+| **R0 local** | No activation, handoff, ownership, safety, compatibility or external-effect boundary changes | Apply the authoritative scoped correction directly |
+| **R1 boundary** | Activation, exclusion or one direct handoff changes without broader consequence | Inspect and revise the affected one-hop material neighbors |
+| **R2 consequential** | Multiple owners or skills change, or safety, compatibility, publication, destructive/external effects or material cost can change | Keep the incumbent, evaluate a bounded candidate, and accept only after the consequential comparison |
+
+A precise user-owned policy or authoritative reproducible defect takes the direct
+path unless its reach meets R1 or R2. Provider drift changes its adapter claim,
+not the portable core. One agent observation that suggests a broader heuristic
+remains task evidence unless independent justification or explicit user policy
+supports generalization. Do not create an experience ledger, candidate artifact or
+stage merely to apply an R0 repair. Use [behavioral evaluation](behavioral-evaluation.md)
+to enforce the selected reach and decide when evidence may stop.
+
 Make the smallest coherent change that satisfies the new contract. Preserve
 unrelated wording and resources when they remain authoritative. A rename does not
 authorize broader activation. A style edit does not authorize changing domain

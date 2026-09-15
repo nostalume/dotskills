@@ -10,7 +10,7 @@ user and canonical sources own intent and supplied material; observations own on
 what their method supports. Artifact formats, product code, and ordinary business
 analysis remain with their respective skills.
 
-## Shared kernel
+## Shared responsibility
 
 ```text
 research question and authority
@@ -21,18 +21,22 @@ research question and authority
   -> optional durable state or reader/artifact projection
 ```
 
-Preserve presumptions, typed objects, operations, witnesses, domains, uncertainty,
-conflicts, and refusal conditions. A definition, citation, observation, proof, or
-successful run establishes only its admitted kind of support. Do not claim
-generality, novelty, reconstruction, or computational leverage beyond the tested
-domain and comparison.
+Preserve the distinctions, relations, operations, examples, counterexamples,
+domains, uncertainty, conflicts, and refusal conditions that matter to the
+selected research practice. Use typed objects and invariants when the formal
+operation requires them; do not impose that vocabulary on descriptive or
+conceptual work. A definition, citation, observation, proof, or successful run
+establishes only its admitted kind of support. Do not claim generality, novelty,
+reconstruction, or computational leverage beyond the tested domain and
+comparison.
 
 ## Select the unresolved operation
 
 Read only the owners needed by the current operation:
 
-- **Derive or construct:** finite derivation, theorem contracts, conditional
-  obstruction-driven construction, compression, or theory reconstruction:
+- **Develop, derive, or construct:** practice-grounded concept development,
+  finite derivation, theorem contracts, conditional obstruction-driven
+  construction, compression, or theory reconstruction:
   [research philosophy](references/research-philosophy.md).
 - **Discover:** select a discriminating action, update an inquiry frontier, retain
   useful material, or stop: [research loop](references/research-loop.md).

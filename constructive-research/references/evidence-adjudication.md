@@ -9,15 +9,32 @@ owns the surrounding frontier transition and retention.
 
 Freeze only the fields that can change the verdict: claim and dimensions, domain
 and presumptions, admitted input/output and preserved semantics, falsifiers and
-promotion conditions, evidence modalities or benches, observable/error/cost target,
-synthesis trigger, horizon, and re-entry conditions. A structured contract or
-version label is useful when evidence is contested or replayed, but is not a
-mandatory file or schema.
+promotion conditions, evidence modalities or benches, required result quality and
+cost target, synthesis trigger, horizon, and re-entry conditions. A structured
+contract or version label is useful when evidence is contested or replayed, but
+is not a mandatory file or schema.
 
 Examples do not add candidate rules case by case. A seed can expose a construction
 but cannot establish independent transfer. Choose only bench families needed by
 the claim: regression, structurally different transfer, adversarial/refusal, and
 downstream use or complete-route cost.
+
+## Prevent self-confirming comparisons
+
+For a consequential comparison, freeze the goal-relevant task, success condition,
+candidate claim, and required quality before inspecting favorable results. Select
+the cheapest contrary observation that targets the plausible false positive: a
+withheld case, removal of the candidate concept, substitution of a rival,
+prospective prediction, independent replay, or adversarial/refusal case. These are
+options, not a mandatory suite. Every selected comparison must allow the preferred
+account to lose and have possible outcomes that lead to different dispositions.
+
+Do not call an evaluation set minimal without a declared family of errors. It is
+only irredundant for that family when removing each check would permit a relevant
+bad case to pass. Stop adding checks when the remaining possible outcomes cannot
+change the claim, boundary, consumer, or cost decision. The candidate cannot
+revise the task, success condition, evidence rule, or interpretation after seeing
+the result merely to preserve itself.
 
 ## Give each evidence kind its exact right
 
@@ -30,7 +47,7 @@ downstream use or complete-route cost.
 | theorem contract | implication after exact hypothesis matching | internal generation |
 | regression | preservation of known behavior | transfer or novelty |
 | transfer bench | unchanged use across tested variation | unlimited generality |
-| cost/use bench | leverage for the same output and resource model | semantic correctness |
+| cost/use bench | leverage at the same required result quality and resource model | semantic correctness or a universal ranking |
 | literature protocol | located precedent or bounded coverage | absolute absence or novelty |
 
 Evidence records an observation; it cannot mutate the claim, admission policy, or
@@ -38,6 +55,15 @@ methodology. Preserve target and dimension, domain match or explicit delta,
 operation, source/implementation revision, provenance and independence, witness or
 data, error/uncertainty, tested alternatives, and permitted consequence. Exclude
 invalid or mismatched material explicitly when its reason matters for replay.
+
+Compare complete-route cost only after the required result and quality are fixed.
+Inspect learning, representation, derivation, execution, verification, repair,
+explanation, transfer, recovery, and displaced work only when a dimension can
+change the decision. Use observed measures where available and bounded ordinal
+comparisons otherwise. Do not collapse unlike dimensions into a universal scalar
+or treat lost correctness, semantic preservation, coverage, reproducibility, or
+reader use as a saving. When alternatives trade dimensions, report the frontier
+or apply a user-owned priority rather than manufacturing a winner.
 
 ## Close evidence over domain and time
 
