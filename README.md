@@ -1,8 +1,8 @@
 # dotskill
 
-Reusable Codex skills for research, software work, document artifacts, and host
-operations. Each skill has a `SKILL.md` entry point and focused references loaded
-when the task needs them.
+Reusable Codex skills for research, prompt and software work, document artifacts,
+and host operations. Each skill has a `SKILL.md` entry point and focused references
+loaded when the task needs them.
 
 ## Choose a skill
 
@@ -14,6 +14,7 @@ mandatory stages in a single workflow.
 | Develop, adjudicate, or explain a mathematical or physical inquiry | [constructive-research](constructive-research/SKILL.md) | Derivation, conditional construction, bounded evidence, admitted computation, and research meaning |
 | Resolve material, unsettled architecture or refactor decisions | [architecture-planning](architecture-planning/SKILL.md) | Revision-backed decision settlement and the smallest sufficient private plan before coding |
 | Design, create, refactor, consolidate, or review a skill | [skill-development](skill-development/SKILL.md) | Portable capability boundaries, progressive resources, effect contracts, and behavioral evaluation |
+| Design, compose, refactor, or evaluate reusable prompt instructions | [prompt-development](prompt-development/SKILL.md) | Mental models, directive ownership and force, scoped composition, provider-neutral kernels, and behavioral evaluation |
 | Implement, review, or verify a settled software change | [software-development](software-development/SKILL.md) | Code changes and evidence that the actual result satisfies the task |
 | Explain software to users or developers | [software-documentation](software-documentation/SKILL.md) | Accurate explanations, examples, and documentation validation |
 | Create or review GitHub Actions workflows | [github-actions](github-actions/SKILL.md) | Workflow events, jobs, permissions, dependencies, and run evidence |
@@ -27,8 +28,11 @@ content needing LaTeX compilation uses `document-artifacts`. Editing a PPTX star
 with `document-artifacts`. Installing a missing renderer adds `system-mutation`
 for that operation. A settled bug fix starts with `software-development`; an
 unresolved architectural choice starts with `architecture-planning`. Creating or
-reworking reusable skill instructions starts with `skill-development`; ordinary
-work performed by an existing skill stays with that skill's domain owner.
+reworking reusable skill instructions starts with `skill-development`; creating
+or reworking prompt behavior starts with `prompt-development`. When a skill
+contains or produces a prompt, skill development owns the package and prompt
+development owns only the prompt's material semantics. Ordinary work performed by
+an existing skill stays with that skill's domain owner.
 
 [Presentation resources](document-artifacts/references/presentations.md) provide
 independent native authoring/editing examples, native chart/table treatments,

@@ -25,6 +25,11 @@ Check that:
 - each decision has one owner, settled maturity, and no hidden tradeoff;
 - stages are independently consumed outcomes with acyclic dependencies, while
   tasks inherit rather than restate governing decisions;
+- proposed delivery units are not inferred from stage count: each standalone
+  candidate has one reviewer-verifiable claim, remains useful and revertible if
+  later work stops, and has no hidden predecessor; characterization-only evidence
+  travels with its owning change unless it protects an independently durable
+  contract;
 - every applicable input, output, effect, resource/lifecycle, failure/recovery,
   caller, compatibility surface, cutover, and removal gate needed for execution is
   available from the plan or its named owner;
@@ -50,7 +55,9 @@ the dependent decision, maturity, scope, or evidence changes.
 Review-only work must have left no artifact. A materialized plan must use an
 already safe private location and must not edit ignore policy merely to exist.
 Planning detail cannot stand in for actual-diff conformance, which remains with
-`software-development`.
+`software-development`. Parallel local branches do not by themselves justify a
+public dependent-review chain; repository policy, hosting capability, contributor
+authority, and the final diff own that adapter decision.
 
 ## Reconcile findings
 

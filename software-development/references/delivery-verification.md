@@ -16,6 +16,33 @@ for fresh final evidence.
 - Claims never exceed what was run and observed; blocked, failed, or skipped checks
   remain explicit in the report.
 
+## Shape the reviewable delivery
+
+Let the actual final diff, not a plan's stage count or the existence of parallel
+branches, determine the reviewer-facing change set. Keep one delivery unit only
+when it has one verifiable claim, remains useful if later work stops, can be
+tested and reverted independently, and exposes every predecessor. Split unrelated
+owners; do not split characterization evidence from the first change that consumes
+it unless the evidence protects an independently durable contract.
+
+Local branches and worktrees may parallelize implementation without creating a
+public dependency chain. Use dependent or stacked reviews only when current
+project policy, repository permissions, and the selected hosting adapter support
+them and when that shape makes each layer easier to review. Otherwise keep
+dependent work local, land or settle its predecessor, then rebase the next unit
+onto the project's required target. Avoid changing a reviewed base when doing so
+would invalidate comparison history or comments.
+
+Before proposing publication, inspect the final change for reviewer value: the
+title and description state one outcome, dependency and compatibility claims are
+explicit, tests falsify that outcome rather than private structure, and no
+unrelated cleanup or speculative abstraction increases the review surface. When
+an architecture-only diff merely relocates syntax, adds a relay, or cannot show
+independent maintained value, defer, combine it with its first real consumer, or
+reopen the decision instead of manufacturing a pull request. Publication remains
+a separately authorized effect and must follow current project contribution
+rules.
+
 ## Closure
 
 1. Freeze intended scope and inspect status, final diff, supported platforms,

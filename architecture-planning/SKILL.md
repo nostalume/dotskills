@@ -104,7 +104,11 @@ untrack it without approval.
 Resume a matching readable plan only when goal, authority, revision, and status are
 unambiguous. Use functional domain names. A stage exists only for an independently
 reviewable or separately handed-off outcome; tasks are dependency-ordered
-executable units, not ceremonial phases.
+executable units, not ceremonial phases. Neither implies one branch, commit, or
+pull request. Record only a candidate delivery boundary when the outcome would
+remain useful, falsifiable, and revertible if later work stopped; project policy,
+the eventual actual diff, and implementation evidence decide the final review
+shape.
 
 Record only applicable goal/scope, invariants, premises and maturity, resolution
 or exact unknown, owner and flow changes, compatibility boundary, dependent
