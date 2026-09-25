@@ -25,13 +25,22 @@ tested and reverted independently, and exposes every predecessor. Split unrelate
 owners; do not split characterization evidence from the first change that consumes
 it unless the evidence protects an independently durable contract.
 
-Local branches and worktrees may parallelize implementation without creating a
-public dependency chain. Use dependent or stacked reviews only when current
-project policy, repository permissions, and the selected hosting adapter support
-them and when that shape makes each layer easier to review. Otherwise keep
-dependent work local, land or settle its predecessor, then rebase the next unit
-onto the project's required target. Avoid changing a reviewed base when doing so
-would invalidate comparison history or comments.
+Local branches and worktrees may parallelize implementation without requiring a
+public dependency chain. Keep development, review, and merge gates distinct: a
+real code dependency constrains merge order, but need not delay development or
+opening review. When the user and project permit parallel review, choose the
+least duplicative supported route. Same-repository stacked reviews can show each
+layer directly; where a cross-fork stack is unavailable, a dependent branch may
+still open one review against the required upstream target. Disclose its
+predecessor, merge order, and any ancestor changes temporarily present in the
+default diff; provide a layer-only comparison when useful. After the predecessor
+lands, update the same review branch and verify the narrowed final diff and CI
+rather than assuming old evidence or approvals still apply. Do not substitute a
+fork-local review that requires a second upstream PR when the user's goal is one
+upstream review per delivery. If duplicate ancestor diffs or review-comment churn
+would defeat that goal, explain the tradeoff and keep the dependent work local or
+use another project-supported route; do not claim the dependency forbids early
+review. Recheck current hosting behavior and repository policy before publishing.
 
 Before proposing publication, inspect the final change for reviewer value: the
 title and description state one outcome, dependency and compatibility claims are
