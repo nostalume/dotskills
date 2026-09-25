@@ -1,6 +1,6 @@
 ---
 name: trading-research
-description: Research market phenomena, trading concepts, and bounded offline signals into decision-specific evidence and contracts. Use when a concept, measurement, explanatory relation, decision role, or fixed trading rule's empirical value remains unsettled; leave settled code, software architecture, deployment, live recommendations, and order execution to their respective owners.
+description: Research market phenomena, construct and formalize trading concepts, and test bounded offline signals into decision-specific evidence and contracts. Use when a concept, measurement, explanatory relation, decision role, or fixed trading rule's empirical value remains unsettled; leave settled code, software architecture, deployment, live recommendations, and order execution to their respective owners.
 ---
 
 # Trading Research
@@ -23,8 +23,8 @@ implementation remains, hand off. When meaning is open, identify the smallest
 connected set of relations needed to answer the current decision: phenomenon,
 actors or market mechanism, contextual state, observable traces, candidate
 explanation, and possible decision use. A term such as “leader,” “divergence,” or
-“climax” may depend on a defined group, phase,
-relative position, and observation window. Operationalize those dependencies
+“climax” may depend on a defined group, phase, relative position, and observation
+window. Operationalize those dependencies
 together where changing one changes the meaning; do not isolate the term into a
 single threshold or expand the inquiry into the whole trading system by default.
 If the proposed reference group is itself defined by the term being measured,
@@ -40,17 +40,23 @@ execution veto; these roles are not interchangeable. Human market language is
 candidate structure and practice evidence, not automatically a numeric label or
 ground truth.
 
+When the market concept itself is unsettled, use [concept construction and
+measurement](references/concept-construction.md) before selecting indicators or
+running another local slice. This is a conditional route for constructing
+decision-bearing relations, not a prerequisite for a fixed rule or a merely
+descriptive request.
+
 ## Search for information, not arbitrary indicators
 
-Use explicit but revisable market assumptions. Generate candidate observations
-from competing accounts of *why* the phenomenon could arise: participant
-incentives, liquidity flow, attention, market rules, feedback, and alternative
-selection or measurement effects, as applicable. For each consequential account,
-identify an observable implication and a rival explanation that would lead to a
-different decision. Prefer the smallest comparison capable of separating them
-over enumerating indicators or tuning many thresholds against the same outcome.
-If exploratory data reveal a new category, revise the concept openly rather than
-presenting it as a hypothesis specified in advance.
+Use explicit but revisable market assumptions. Derive observations from
+decision-relevant competing accounts, including opposing effects of the same
+process or a change of role across context and time—not just a list of unrelated
+indicators. For each consequential account, identify an observable implication,
+a rival explanation, and what result would alter the concept or decision. Prefer
+the smallest comparison capable of separating them over enumerating indicators
+or tuning thresholds against the same outcome. If exploratory data reveal a new
+category, revise the concept openly rather than presenting it as a hypothesis
+specified in advance.
 
 For a fixed rule, do not demand a new mechanism story: preserve the rule and test
 its incremental decision claim directly.
@@ -68,10 +74,16 @@ tradable alpha, show a scoped improvement of an attainable decision against its
 comparator; a striking pattern or accurate retrospective label is not enough.
 
 Select a bounded discriminating test before adding another source, feature,
-metric, split, or run. Protect the information set available at the decision
-time; separate exploration from held-out or forward evaluation when the claimed
-generalization requires it. Compare against an action-relevant baseline and
-account for costs and feasible execution only to the level required by the claim.
+metric, split, or run. If different market processes remain observationally
+equivalent under the current representation, or repeated local results cannot
+identify which relation failed, stop slicing and inspect the concept-to-model-to-
+observation map. A more elaborate estimator cannot recover a distinction absent
+from its inputs; a price-only predictor may still be useful, but must not be
+reported as identifying an unobserved mechanism. Protect the information set
+available at the decision time; separate exploration from held-out or forward
+evaluation when the claimed generalization requires it. Compare against an
+action-relevant baseline and account for costs and feasible execution only to the
+level required by the claim.
 Choose metrics for the action and event frequency rather than accuracy alone;
 report the sample, coverage, comparison, and uncertainty that can change the
 conclusion.

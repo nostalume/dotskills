@@ -51,6 +51,15 @@ revise it explicitly. Descriptive work may instead end in a bounded account of a
 observed phenomenon; it need not manufacture formal primitives, an obstruction,
 or a productive construction.
 
+A locally discriminating action may still leave the original capability out of
+reach. When an actual probe or paired admissible cases show that the current
+representation collapses live alternatives, or repeated outcomes change with an
+arbitrary encoding while the decision-bearing relation stays fixed, inspect the
+representation and observation map before selecting another probe. Demonstrate
+the relevant ambiguity or failed operation and what additional distinction could
+change the next move. Do not infer a representation failure merely from a
+negative result, nor impose a universal iteration count.
+
 ## Admit a conceptual detour
 
 When an inquiry would pause its object-level work to redesign its concepts or

@@ -27,6 +27,18 @@ new cases preserve the needed moves and contrary cases lead to inspectable local
 revision. Change affected neighbors together; neither assume one word is fixed
 independently nor rebuild the whole language.
 
+When a developing concept admits competing accounts or opposing effects that
+change the result, construct a consequential opposition rather than only a
+convenient positive example: an admissible rival account may produce the
+same observations yet require a different move, or one relation may support and
+undermine the target under different conditions. Derive the condition or
+transition that separates those cases. Seek alternative mathematical structures
+across disciplines by the operation they preserve, not by verbal resemblance;
+state what maps, what fails to map, and the distinct consequence produced. A
+cross-domain analogy is a proposal, not evidence for the target domain. Do not
+force this search on a settled derivation or a task whose result does not depend
+on the concept's reconstruction.
+
 Use this trace when it changes the work; do not materialize it by default:
 
 ```text
@@ -49,6 +61,13 @@ An equation must arise from its operation rather than appear first and acquire a
 interpretation afterward. A definition does not establish existence, uniqueness,
 equivalence, invariance, necessity, or usefulness. A theorem contract may bridge
 a step only when its exact hypotheses, output, role, and boundary match.
+
+When moving from a practice concept to mathematics, expose which distinctions,
+relations, compositions, or transformations the required operation must retain;
+select the smallest representation that does so before choosing a numerical
+proxy, estimator, or proof technique. If the available observation map identifies
+distinct admissible states as one, record the consequent limit and the minimal
+additional structure or assumption rather than refining the same representation.
 
 When the inquiry asks why an object or operation is necessary, expose the failure
 that forces additional structure:
