@@ -11,6 +11,7 @@ mandatory stages in a single workflow.
 
 | Task | Primary skill | Responsibility |
 | --- | --- | --- |
+| Research market phenomena, trading concepts, or bounded offline signals | [trading-research](trading-research/SKILL.md) | Concept-to-decision roles, conditional alpha evidence, and fixed-rule offline tests; excludes live recommendations and order execution |
 | Develop, adjudicate, or explain a mathematical or physical inquiry | [constructive-research](constructive-research/SKILL.md) | Derivation, conditional construction, bounded evidence, admitted computation, and research meaning |
 | Resolve material, unsettled architecture or refactor decisions | [architecture-planning](architecture-planning/SKILL.md) | Revision-backed decision settlement and the smallest sufficient private plan before coding |
 | Design, create, refactor, consolidate, or review a skill | [skill-development](skill-development/SKILL.md) | Portable capability boundaries, progressive resources, effect contracts, and behavioral evaluation |
