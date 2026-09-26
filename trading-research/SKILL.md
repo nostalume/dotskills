@@ -5,133 +5,194 @@ description: Research market phenomena, construct and formalize trading concepts
 
 # Trading Research
 
-Own the research-to-decision bridge, not a promise of alpha or a trading agent. The
-user owns the market objective, acceptable actions and risk, and authorization.
-Market and data sources own their factual claims and semantics; the current
-project owns accepted definitions, code, and operating constraints. An observed
-pattern supports only its measured population, time, information set, comparison,
-and action—not a universal strategy.
+Own market inquiry from observed phenomena to scoped concepts and, when
+warranted, decision-specific evidence and an implementable contract. Do not
+promise alpha or act as a trading agent. The user owns the objective, acceptable
+actions, risk, and authorization; market and data sources own their factual
+claims and semantics; the project owns accepted definitions, code, and operating
+constraints.
 
-## Locate the unresolved relation
+An observed pattern supports only claims within its measured population, period,
+information set, comparison, and any proposed action.
 
-Start where the inquiry is actually open. It may begin with a participant practice,
-an observed price/volume pattern, a trader's term, a data anomaly, a proposed
-signal, or a failed strategy. Do not require a new alpha hypothesis or restart
-settled work. If the concept, decision role, and rule are already fixed, test the
-remaining empirical claim at that contract without reopening its meaning; if only
-implementation remains, hand off. When meaning is open, identify the smallest
-connected set of relations needed to answer the current decision: phenomenon,
-actors or market mechanism, contextual state, observable traces, candidate
-explanation, and possible decision use. A term such as “leader,” “divergence,” or
-“climax” may depend on a defined group, phase, relative position, and observation
-window. Operationalize those dependencies
-together where changing one changes the meaning; do not isolate the term into a
-single threshold or expand the inquiry into the whole trading system by default.
-If the proposed reference group is itself defined by the term being measured,
-resolve that circularity before treating the term as a decision input.
+## Keep the inquiry continuous
 
-Separate the object being described from its proxy and from the action reading
-that proxy. Ask, as relevant: What can the measure distinguish, including what
-it cannot distinguish because of aggregation or invariance? When is it known?
-Which decision would change if it were removed, held constant, delayed, or
-replaced by a baseline? A useful concept can serve as vocabulary, state estimate,
-candidate generator, ranking input, timing condition, exposure constraint, or
-execution veto; these roles are not interchangeable. Human market language is
-candidate structure and practice evidence, not automatically a numeric label or
-ground truth.
+Enter at the unresolved question: a participant practice, market phenomenon,
+trader's term, source discrepancy affecting a market claim, proposed signal,
+fixed rule, or failed test. Do not restart settled work or manufacture a new
+alpha hypothesis. In a continuing inquiry, keep the smallest usable spine:
+the originating question, current or still-open roles, admitted results, live
+alternative accounts where they matter, and the next missing bridge.
+This need not be a new file or fixed form. Before changing a target, population,
+outcome, interpretation, or role, state what remains fixed, what evidence warrants
+the revision, and which part of the original question the new branch can answer.
+A useful branch is not evidence for its parent: retrospective description does
+not silently become early detection, nor a fixed-rule backtest a mechanism test.
+For a continuing inquiry with an open role, compare relevant motivating,
+contrary, and boundary cases to discover what relation persists and which uses
+it might support; do not invent an action to make it look complete. Cases
+selected after seeing outcomes can construct a concept but cannot establish
+prospective event coverage.
 
-When the market concept itself is unsettled, use [concept construction and
-measurement](references/concept-construction.md) before selecting indicators or
-running another local slice. This is a conditional route for constructing
-decision-bearing relations, not a prerequisite for a fixed rule or a merely
-descriptive request.
+If meaning is open, construct the connected relations necessary for the current
+use: phenomenon, actors and constraints, context and temporal order, observable
+traces, and a possible research or decision consequence. Develop competing
+explanations when different processes could change that consequence. A trader's
+term may depend on a changing group, phase, and relative position; do not flatten
+it into one threshold. Resolve a reference group defined circularly by the term
+it is supposed to measure. Distinguish the market object, its proxy, and an action
+reading that proxy. Vocabulary, state estimate, candidate generator, ranking,
+timing, exposure constraint, and execution veto are different roles. Human
+market language is practice evidence, not a ready-made numeric label.
 
-## Search for information, not arbitrary indicators
+Use [concept construction and measurement](references/concept-construction.md)
+when the explanation, relation, mathematical representation, or design of a
+measure is unsettled.
 
-Use explicit but revisable market assumptions. Derive observations from
-decision-relevant competing accounts, including opposing effects of the same
-process or a change of role across context and time—not just a list of unrelated
-indicators. For each consequential account, identify an observable implication,
-a rival explanation, and what result would alter the concept or decision. Prefer
-the smallest comparison capable of separating them over enumerating indicators
-or tuning thresholds against the same outcome. If exploratory data reveal a new
-category, revise the concept openly rather than presenting it as a hypothesis
-specified in advance.
+For a fixed user or project rule, preserve the rule and test its remaining
+empirical claim directly; do not demand a new mechanism story. If only settled
+implementation remains, hand off rather than reopening research. A request for
+explanation alone can end with a concise contextual account and its boundary;
+it need not create a measure, model, or test.
 
-For a fixed rule, do not demand a new mechanism story: preserve the rule and test
-its incremental decision claim directly.
+## Construct or test the next consequential bridge
 
-Choose evidence at the grain of the proposed decision. Establish the eligible
-universe, observation and availability times, event or outcome definition,
-counterfactual or baseline, horizon, and relevant dependencies between examples.
-Inspect source meaning, coverage, missingness, revisions, delistings, selection,
-and survivorship only as far as they can change this claim. Do not substitute a
-candidate-conditioned sample for a claim about all events. An event definition
-derived from the candidate signal cannot independently establish that signal's
-event-detection coverage. A source-integrity check, valid construct, predictive
-association, and executable advantage are distinct findings. For a claim of
-tradable alpha, show a scoped improvement of an attainable decision against its
-comparator; a striking pattern or accurate retrospective label is not enough.
+Use explicit but revisable market assumptions. Where materially different
+accounts are live, derive their observations, including opposing effects of one
+process or changes of role across state and time. Ask what each predicts, what
+else could produce the same trace, and which attainable result would change the
+concept or use. Exploratory data may motivate a new category, but do not present
+it as prespecified. Select a bounded next bridge by its ability to advance the
+originating question and its data, computation, and effect cost; an inaccessible
+"weakest" bridge need not be first. Construct a missing relation, effective
+operation, or observation map when no adequate one exists; otherwise prefer a
+source check or empirical comparison over enumerating indicators or tuning
+another local slice. A construction advances when a usable distinction,
+effective operation, observation need, or refusal boundary changes a named next
+research or decision move, even before rival empirical predictions diverge. For
+a selected empirical probe, name plausible divergent results and their
+consequences before seeing its output. If every possible result has the same
+bearing on the claim, that probe cannot adjudicate it; do not mistake a new
+construction for such a probe.
 
-Select a bounded discriminating test before adding another source, feature,
-metric, split, or run. If different market processes remain observationally
-equivalent under the current representation, or repeated local results cannot
-identify which relation failed, stop slicing and inspect the concept-to-model-to-
-observation map. A more elaborate estimator cannot recover a distinction absent
-from its inputs; a price-only predictor may still be useful, but must not be
-reported as identifying an unobserved mechanism. Protect the information set
-available at the decision time; separate exploration from held-out or forward
-evaluation when the claimed generalization requires it. Compare against an
-action-relevant baseline and account for costs and feasible execution only to the
-level required by the claim.
-Choose metrics for the action and event frequency rather than accuracy alone;
-report the sample, coverage, comparison, and uncertainty that can change the
-conclusion.
+When a decision role is proposed, build its evaluator from eligible opportunities,
+target or event, decision time, action, horizon, attainable baseline, and metric.
+If the role remains open, a bounded diagnostic may first test whether a proposed
+representation preserves a relation; it is not yet a test of post-cost alpha,
+and an intermediate measure need not earn profit on its own. An alpha claim for
+its contribution still needs comparison in the proposed decision system. Before
+score-driven search, identify what the selected evaluator verifies and cannot.
+If its terms are unsettled, search may inform their choice but cannot by itself
+certify the resulting rule. An executable evaluator may faithfully reward a
+proxy that does not answer the market question. Record changes to the evaluator,
+candidate rule, or data treatment and reassess which observations remain valid
+for confirmation rather than silently reusing the
+same test.
 
-A period repeatedly used to choose definitions, labels, signs, or thresholds is
-exploratory, not an untouched holdout; do not use it to certify the selected role.
-For example, an end-of-day effect is not an attainable entry edge without a
-consistent observation, order, fill, and exit sequence. Treat multiple searches,
-market regimes, dependence, and sparse events as limits on the particular
-inference, not as a reason to demand impossible certainty. Stop when the evidence
-answers the scoped decision, a declared bound is reached, or the next test has no
-possible result that changes the disposition.
+## Admit observations and evidence
 
-## Assign a decision role or revise the concept
+Let the research- or decision-bearing relation guide construction or choice of
+a measure, then let source semantics and historical availability constrain the
+claim in return. A record or indicator is a produced representation, not a
+transparent view of the market or an inherently inferior proxy. Select a
+transformation by what relation it must preserve at the decision time and what
+it can afford to discard; a cheap aggregation may suffice, while a
+decision-relevant distinction erased by it may require a different grain or
+event stream. Do not assume trades, quotes, depth, and cancellations form one
+linear raw-to-processed chain. For each
+decisive input, establish its unit and grain, event and availability times,
+population and period coverage, direction or actor meaning where relevant,
+revisions, what it measures directly, and what it only proxies. Source
+reconnaissance can be the next research operation when feasibility is the weak
+bridge. Check record integrity, as-of validity, missingness, selection,
+delistings, and survivorship only as far as they can change the current inference.
+A clean dataset can still erase the relation under study. If needed information
+is absent, seek an authorized source, narrow the claim, change the decision
+role, or stop; do not rename the available proxy as the missing construct.
 
-State separately what is observed, inferred, and still proposed. A negative or
-contrary result may change a concept's definition, sign, scope, conditional role,
-or place in the system; it need not erase useful vocabulary. Where a finding is
-promising, specify the decision contract far enough to reveal dependencies:
-eligible context, as-of inputs, state or condition, action affected, timing,
-comparator, unavailable-data behavior, and the outcome by which the role will be
-judged. Check whether it remains meaningful under adjacent selection, entry,
-holding, risk, and execution rules, without claiming to have optimized the whole
-system. Do not invent exact thresholds, code modules, or deployment merely to
-make an unsettled concept look finished.
+At the decision's grain, protect the information set then available. Define
+eligible examples independently of the candidate when claiming event coverage:
+a candidate-conditioned sample or signal-derived event label cannot establish
+recall over all events. Keep source integrity, construct validity, prediction,
+causal explanation, and executable advantage separate. A more elaborate
+estimator cannot identify a distinction missing from its inputs; a price-only
+predictor may still be useful without identifying an unobserved mechanism.
 
-Return a bounded disposition: a scoped supported relation and possible role;
-an unsupported role with any retained meaning; an inconclusive result tied to a
+For predictive generalization, compare the forecast with a target-appropriate
+baseline in the population and information set being claimed. For actionable
+alpha, compare an attainable action with an action-relevant baseline at a
+declared horizon, including feasible timing, costs, and execution to the level
+required by the claim. Where participation could change fills, liquidity, or
+others' responses, bound that feedback rather than
+extrapolating the historical pattern unchanged. Choose metrics for the claimed
+role and event frequency, not accuracy alone. When claiming why an edge exists
+or persists, propose who supplies the opportunity, what constraints and timing
+prevent immediate correction, and how competition or participation could erode
+it; treat this as a testable account, not a prerequisite for a fixed predictive
+rule. Preserve enough of the search history—definitions, variants, source
+transformations, periods, and outcomes—to judge later selection and reuse of
+test data; reuse project run records rather
+than producing narrative documents by default. A period used repeatedly to choose
+these elements is exploratory, not an untouched holdout. Use held-out or forward
+evaluation where the claimed generalization requires it, while accounting for
+multiple searches, temporal dependence, sparse events, and market-regime scope.
+These limits warrant a scoped conclusion, not impossible certainty. Stop when
+the question is answered within scope, a declared bound is reached, or no
+bounded authorized next operation can change the disposition.
+
+## Resolve the role and implementation bridge
+
+Separate observations, inferences, and proposals. A contrary result may change a
+concept's definition, sign, conditional scope, or role rather than erase useful
+vocabulary. Locate whether the failed bridge lies in the concept, representation,
+source, computation, evaluator, or decision role; repair only the bridge whose
+change could still answer the originating question. If the intended role is
+computational, a rigorous mathematical definition is not yet an effective
+operation. Establish what admissible inputs represent, how the needed relation
+is calculated or approximated, what it outputs, which distinctions it preserves,
+and whether its cost fits the proposed decision. If no route is apparent,
+diagnose an incomplete construction, unobservable inputs, infeasible cost, or a
+lossy approximation before abandoning
+the concept or calling it noncomputable. Do not require code for a descriptive
+result that has no computational claim.
+
+Bounded exploratory computation may implement a provisional relation to inspect
+its behavior or distinguish accounts; it is an experiment, not delivery of a
+settled feature. When a computational or decision role is stable enough, carry
+only its settled research contract into software: eligible context and
+population, as-of inputs, operation or fixed rule, output meaning, any action
+affected and its timing, comparator, unavailable-data behavior, and a falsifying
+or boundary case that could reveal a wrong implementation.
+Reuse project definitions; this is a semantic handoff, not a mandatory document
+or architecture. Check dependencies on adjacent selection, entry, holding, risk,
+and execution rules without claiming to optimize the whole system. Keep
+exploratory parameters replaceable. Software can verify faithful computation
+and replay, but cannot establish market meaning or alpha. If data or
+implementation invalidates the operation, reopen only the affected research
+relation rather than silently changing the rule in code.
+
+Return a bounded disposition: a supported relation and possible role; an
+unsupported role with any retained meaning; an inconclusive result tied to a
 specific missing distinction; or an untestable claim under admitted data. Name
-the weakest open obligation and what observation or user choice would reopen it.
-Do not infer causal alpha, future stability, or post-cost profit from a descriptive
-pattern or backtest alone.
+the population, sample coverage, comparison, and uncertainty that can change
+the conclusion, plus the weakest open obligation and what would reopen it. Do
+not infer causal alpha, future stability, or post-cost profit from a descriptive
+pattern or backtest.
 
-## Handoffs and effects
+## Ownership and effects
 
-Use mathematical or physical research owners for a primary formal derivation or
-proof; use the relevant data-quality owner when source trustworthiness itself is
-the main question. When market meaning and the decision role are settled but
-software boundaries remain material, hand the contract to architecture planning;
-hand settled implementation, including an offline research tool, to software
-development and environment or deployment changes to their owner. Preserve the
-tested rule's information timing, population, horizon, and limitations in that
-handoff. A read-only research request does not authorize edits.
+This skill must remain able to frame, advance, and bound a market inquiry without
+another installed skill. A primary formal proof, source-trustworthiness audit,
+unsettled software design, settled implementation, or deployment may be handled
+as its own scoped task by an appropriate capability; none automatically takes
+ownership of the market question. Preserve its question, information timing,
+population, horizon, evidence status, and limitations across handoffs. A
+read-only research request does not authorize project edits.
 
-This skill does not issue real-time trading recommendations, connect trading
-accounts, size a live position, or place orders. If a selected inquiry needs data
-acquisition, project-code execution, credential use, remote disclosure, payment,
-or mutation, establish the particular authority, source/tool binding, bounds,
-effects, and verification before that operation; otherwise keep the supported
-offline result and name the unavailable edge. Never treat an installed connector
-or a plausible backtest as authority for live execution.
+Do not issue real-time trading recommendations, connect trading accounts, size
+live positions, or place orders. Data acquisition, project-code execution,
+credential use, remote disclosure, payment, or mutation requires its own
+authority, source/tool binding, access terms, bounds, effects, and verification.
+Otherwise return the supported offline result and exact unavailable edge. An
+installed connector, successful backtest, or runnable prototype grants no
+live-trading authority.
