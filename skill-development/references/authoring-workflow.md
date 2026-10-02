@@ -79,12 +79,14 @@ Choose resources by their consumers:
 | `scripts/` | A named caller needs deterministic, repeatable execution or checking that prose cannot supply safely | Automation might be useful later |
 | `assets/` or templates | A delivered artifact or operation actually consumes reusable source material | An example looked good once |
 
-Prefer one direct link from the entry point to each conditional owner. A reference
-may link to a necessary sibling, but avoid long chains that hide governing rules.
-Do not duplicate another skill's contract; link to it at the operation boundary.
-Every durable resource needs a consumer, and every route should make clear when the
-resource is relevant. A repeated intrinsic decision, operation or validation
-obligation is a real consumer even when no separate caller file names it.
+Prefer one direct link from the entry point to each conditional resource. Use
+cross-skill links only as optional, one-hop handoffs for materially distinct
+ownership; the referring skill must preserve its invariants, finish compatible
+work, or report the missing capability when the other skill is absent. Avoid
+required chains, cycles, hidden dependencies, and duplicated contracts. The README
+may coordinate discovery, but each skill must work or stop honestly on its own.
+Every durable resource needs a consumer and every route a trigger; an intrinsic
+decision, operation, or check is also a consumer.
 
 Write imperative instructions at the user's level of abstraction. Explain
 non-obvious reasoning where it changes a decision; omit generic advice an agent

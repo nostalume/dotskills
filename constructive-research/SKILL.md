@@ -83,5 +83,7 @@ the supported partial result and exact unavailable observation.
    re-entry condition.
 
 Keep research material with its canonical worktable owner. Use confirmed-ignored
-agent space only for transient cursors, audits, or plans; do not reorganize or
-delete user material merely to fit this model.
+agent space only for transient cursors, audits, or plans; ignore status is not
+confidentiality or publication control. Keep those working records distinct from
+reader-facing outputs, and do not reorganize or delete user material merely to fit
+this model.

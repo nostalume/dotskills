@@ -3,13 +3,12 @@
 Use this reference only after the change is settled. It governs how the actual
 implementation preserves accepted meaning, ownership, effects, failure behavior,
 resource lifecycle, compatibility and cost. It does not decide those constraints.
-When any of them can still materially change the design, return to
-[architecture planning](../../architecture-planning/SKILL.md) before coding. An
-obvious local edit whose contract is already clear needs no plan artifact.
-When a settled change adds or alters material conceptual/physical boundaries,
-verify the actual diff against the architecture
-[module-topology](../../architecture-planning/references/module-topology.md)
-decision rather than inventing layout while coding.
+When any of them can still materially change the design, stop and report the
+unsettled decision before coding. An obvious local edit whose contract is already
+clear needs no plan artifact. When a settled change adds or alters material
+conceptual/physical boundaries, verify the actual diff against any accepted,
+project-owned topology decision rather than inventing layout while coding; if no
+such decision exists and topology remains material, stop and report that gap.
 
 ## Optimize local semantic reasoning
 
@@ -18,7 +17,8 @@ result, effects, failures, resource transitions and public behavior without
 tracking parallel interpretations or owners. Count concepts and live obligations,
 not lines, functions, files, indentation, or conformity to a named pattern.
 
-Start from this preservation path:
+For changes that transform domain input or produce effects, use this as a
+preservation model, not a required pipeline shape:
 
 ```text
 settled change and authoritative input
@@ -120,18 +120,19 @@ are not independent acceptance criteria.
 
 ## Preserve settled semantic topology
 
-Inspect every added, removed or moved helper, wrapper, type owner, file, module,
-directory, package/crate, import edge, visibility change, facade and re-export.
-The physical diff must preserve the settled semantic owners, permitted dependency
-direction, internal/public surface, compatibility gates and evidenced change
-locality. A passing test does not prove that topology.
+When the diff materially changes semantic topology, inspect the affected helpers,
+wrappers, type owners, files, modules, packages, import edges, visibility,
+facades, and re-exports. Preserve settled owners, dependency direction,
+internal/public surface, compatibility gates and evidenced change locality. A
+routine file edit does not require a topology audit; a passing test does not prove
+topology when it has changed.
 
-For a boundary introduced only during implementation, run the direct-call,
-inline/merge, collapse/group, move-to-owner or next-variant counterfactual that
-matches it. Remove an obvious private relay locally when no settled semantic or
-project obligation disappears. If the governing owner, edge or surface is absent,
-contradictory or materially selectable, preserve the evidence and reopen
-architecture rather than choosing topology while coding.
+For each material boundary introduced only during implementation, run the
+direct-call, inline/merge, collapse/group, move-to-owner or next-variant
+counterfactual that matches it. Remove an obvious private relay locally when no
+settled semantic or project obligation disappears. If the governing owner, edge
+or surface is absent, contradictory or materially selectable, preserve the
+evidence and stop rather than choosing topology while coding.
 
 ## Falsify the implementation
 

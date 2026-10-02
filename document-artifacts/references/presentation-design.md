@@ -3,11 +3,11 @@
 Use this reference when choosing a structure, adapting a template or interpreting
 visual feedback. Content and evidence stay with their domain owner. The
 [presentation workflow](presentations.md) governs execution and review decisions.
-An accepted representation may come from
-[visualization design](../../visualization-design/SKILL.md) when information
-encoding is materially open. This reference places and adapts that representation
-inside a deck; it does not independently choose a competing chart, diagram, map,
-or uncertainty encoding.
+For materially open information encoding, use the optional visual-design handoff
+from the skill entry point when available; otherwise preserve accepted content and
+report the open choice. This reference places and adapts accepted representations
+in a deck; it does not choose competing charts, diagrams, maps, or uncertainty
+encodings.
 
 ## Place the accepted structure in the deck
 

@@ -1,11 +1,11 @@
 # Module Topology
 
-Use this lens during architecture planning when a proposal materially changes a
-conceptual or physical owner, dependency, visibility, facade, or re-export. It
-owns the design-time projection into helpers, types, modules, files, directories,
-packages, and namespaces. Domain, authority, representation, contracts, resources,
-and cost retain their own decisions. An obvious implementation-local relay cleanup
-belongs to `software-development`.
+Use this reference for **composition and topology** only when a proposal materially
+changes conceptual or physical ownership, dependencies, visibility, a facade, or a
+re-export. It projects accepted responsibilities into helpers, types, modules,
+files, packages, and namespaces; it does not decide the domain, value contracts,
+authority, resource lifecycle, or workload budget. An obvious implementation-local
+relay cleanup belongs to `software-development`.
 
 ## Project the semantic graph
 

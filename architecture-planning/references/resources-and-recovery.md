@@ -1,8 +1,9 @@
 # Resources and recovery
 
-Use this lens only for bounded work and resource lifetime across success, failure,
-cancellation, races, retries, or process death. General decision ownership belongs
-to authority; public failure promises to contracts.
+This reference owns the **runtime and lifecycle** decision: applicable resource
+states, bounds, failure, cancellation, races, retries, and recovery. It does not
+decide which actor has authority or what failure behavior callers are promised;
+those remain separate constraints.
 
 ## Select the applicable lifecycle
 
@@ -21,12 +22,18 @@ value whose lifetime is already closed by its language owner.
   affine, move, borrowing, RAII, or typestate mechanisms when available. Otherwise
   use a guarded explicit state machine; unenforced convention is not lifecycle
   evidence.
-- Separate behavior from geometry and physical representation. Preserve lifecycle
-  invariants across architectures without coercing one ABI into another.
-- A process-local allocator may supply blocks but cannot establish recoverable
-  shared ownership. Isolate non-recoverable heaps.
 - Distinguish transport adoption from application processing; do not silently
   redeliver after ownership transfer.
+
+## Shared-memory and allocator-backed recovery
+
+Use this section only when a design relies on shared memory, allocator state, or
+recovery across process/ABI boundaries.
+
+- Separate logical behavior from geometry and physical representation; preserve
+  lifecycle invariants across architectures without coercing one ABI into another.
+- A process-local allocator may supply blocks but cannot establish recoverable
+  shared ownership. Isolate non-recoverable heaps.
 
 ## Bounded ingestion and publication
 

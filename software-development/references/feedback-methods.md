@@ -49,17 +49,10 @@ edits. Demonstrate that the selected check detects a small representative semant
 fault, then restore the baseline and perform the change. This protects the contract
 without pretending the feature was developed test-first.
 
-For a settled code-shape claim, use
-[implementation normal form](implementation-normal-form.md) and choose the
-smallest counterfactual that can falsify semantic preservation: delete a handler
-or wrapper, replace a helper around its owning method/operation with the direct
-call, merge a small file into its owner, collapse/group a namespace, move a symbol
-beside its authority, inject failure/cancellation, reorder a meaningful stage,
-replace an effect adapter, add/remove the claimed compatibility consumer, or
-perturb the accepted workload. Inspect meaning, owners, dependency direction,
-visibility, cause, cancellation, cleanup, effects, surviving state and output—not
-private helper call counts or raw file counts. If the counterfactual changes only
-unenforced syntax or taste, it is not a semantic failure.
+For a code-shape claim, choose the applicable counterfactual from
+[implementation normal form](implementation-normal-form.md). This supplies
+development feedback; [conformance review](conformance-review.md) separately
+judges the actual final diff.
 
 ## Laws, cost, structure, and effects
 
@@ -69,17 +62,9 @@ unenforced syntax or taste, it is not a semantic failure.
 - For cost claims, name representative and limiting workloads, environment,
   warmup, repetitions, variance, and the acceptance budget. Reject semantic or
   recovery regressions hidden by a faster metric.
-- A structural/style failure is gating only when backed by applicable project
-  configuration, an explicit instruction, or consistent maintained analogues.
-- Code form that hides or changes accepted meaning, authority, effects, failure,
-  lifecycle, compatibility, or an evidenced cost bound is contract conformance,
-  not merely surface style; reopen architecture when the accepted constraint must
-  change.
-- Helper/module layout that fragments a semantic owner, reverses dependency
-  direction, hides visibility/effects, or breaks compatibility is topology
-  conformance even without a style rule. When those semantics are unchanged, exact
-  method/function, prefix, file-size and flat/grouped preferences remain project
-  policy or taste.
+- Run structural/style tools only when relevant project configuration or task
+  requirements select them; final findings and gating status belong to
+  [conformance review](conformance-review.md).
 - For effects, separate deterministic decisions from adapters. Use unique
   disposable scope, bounded timeouts, post-observation, cleanup, and explicit
   approval for real mutation.

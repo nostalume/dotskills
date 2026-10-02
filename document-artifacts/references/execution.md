@@ -18,20 +18,13 @@ uncertainty warrants one. An executable's presence does not prove that it can
 preserve a particular document feature. Keep observed paths and versions with the
 task; do not encode this machine's inventory into reusable skill instructions.
 
-For missing dependencies, follow
-[minimal project environments](../../system-mutation/references/project-environments.md).
-Use direct official package-manager commands, honor user-selected installation
-routes, and prefer local storage for new task dependencies/caches while respecting
-existing project storage. Create an environment only
-when needed. Resume the same artifact request after setup. A simple setup needs
-no custom installer, shared managed root, installation protocol or mandatory
-capability script. Artifact helpers themselves should not install on first use.
-
-Use [external integration](../../system-mutation/references/external-integration.md)
-when actual registration, services or other host changes are needed. Use existing
-authority and ask only for missing permission. Remote APIs additionally require
-authority to transmit the document. Do not substitute another provider if that
-would violate an explicit mechanism, locality or preservation requirement.
+For missing dependencies, use the selected project manager and versions, under
+existing authority; keep new storage task-scoped and create an environment only
+when needed. Resume the artifact request after setup. Do not add installer
+frameworks or first-use installs. If setup requires unauthorized host changes or
+service registration, stop and report the need. Remote APIs also require authority
+to transmit the document. Do not substitute providers against explicit mechanism,
+locality, or preservation requirements.
 
 ## Compose compatible operations
 

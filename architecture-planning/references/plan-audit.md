@@ -11,10 +11,10 @@ Reinspect revision and dirty state, applicable instructions, named current paths
 public contracts, relevant tests/source, enforced tooling, and only matching
 maintained analogues. Audit what the plan says, not what its author intended.
 
-For each material decision, invoke [decision readiness](decision-readiness.md) and
-only the lens that owns the disputed claim. The audit supplies adversarial
-falsification; it does not repeat readiness, topology, domain, effect, lifecycle,
-compatibility, cost, or mathematical protocols.
+For each material decision, invoke [decision settlement](decision-settlement.md) and
+only the category reference that owns the disputed claim. The audit supplies
+adversarial falsification; it does not repeat settlement, topology, domain,
+authority, lifecycle, compatibility, or cost guidance.
 
 ## Falsify the artifact
 
@@ -22,9 +22,15 @@ Check that:
 
 - current observations, entailed consequences, user policy, proposals,
   contradictions, and unknowns retain their authority and revision;
-- each decision has one owner, settled maturity, and no hidden tradeoff;
-- stages are independently consumed outcomes with acyclic dependencies, while
-  tasks inherit rather than restate governing decisions;
+- each decision has one owner, a clear status, and no hidden tradeoff;
+- a goal has one canonical plan by default; stages are distinct outcomes with
+  consumers, and tasks are executable dependency units. Keep them in one file
+  unless a standalone handoff or separate lifecycle needs another file; dependencies
+  are acyclic, and tasks inherit rather than restate governing decisions;
+- interaction mode matches authority: review-only leaves no artifact; planning
+  returns only the requested plan or a clear blocker/report and stops; end-to-end
+  implementation proceeds only when authorized. No plan/stage/task creates
+  authority;
 - proposed delivery units are not inferred from stage count: each standalone
   candidate has one reviewer-verifiable claim, remains useful and revertible if
   later work stops, and has no hidden predecessor; characterization-only evidence
@@ -50,14 +56,22 @@ Ask which relevant single change could expose ambiguity: another implementer's
 interpretation, a failure or cancellation edge, a new caller, an invalidated
 premise, a changed workload or user policy, missing lifecycle/compatibility detail,
 a nondominant alternative, or removal of a plan/stage/task artifact. Confirm only
-the dependent decision, maturity, scope, or evidence changes.
+the dependent decision's status, scope, or evidence changes.
 
-Review-only work must have left no artifact. A materialized plan must use an
-already safe private location and must not edit ignore policy merely to exist.
-Planning detail cannot stand in for actual-diff conformance, which remains with
-`software-development`. Parallel local branches do not by themselves justify a
-public dependent-review chain; repository policy, hosting capability, contributor
-authority, and the final diff own that adapter decision.
+In particular, contrast same-goal stages that share a consumer (one plan file), a
+stage requiring standalone handoff (split only if its consumer needs a separate
+artifact), several commands sharing an owner/check (one task), review-only versus
+planning (no artifact versus requested plan), and planning versus explicitly
+authorized end-to-end work (stop versus handoff). These cases must not vary merely
+because the request says “stage,” “task,” or “loop.”
+
+Review-only work leaves no artifact. A plan needs suitable local placement and
+must stay separate from reader-facing docs; Git ignore is not confidentiality or
+publication control. Do not change ignore policy merely to store it. Planning
+detail cannot stand in for actual-diff conformance, which remains with
+`software-development`. Parallel local branches alone do not justify a public
+dependent-review chain; repository policy, hosting, contributor authority, and the
+final diff govern that choice.
 
 ## Reconcile findings
 

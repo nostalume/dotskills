@@ -1,9 +1,10 @@
 # Representation and flow
 
-Use this lens only to decide what values cross boundaries and how they are
-admitted, transformed, selected, and evidenced. It owns data shape and semantic
-flow, not state/effect authority, public compatibility, resource lifetime,
-computational budget, or implementation syntax.
+This reference owns the **value-boundary** decision: what values cross a semantic
+boundary and how they are admitted, transformed, selected, and evidenced. It does
+not choose authoritative state/effect owners or the physical module topology, and
+it does not set public compatibility, resource lifetime, workload budgets, or
+implementation syntax.
 
 ## Smallest complete representation
 
@@ -35,7 +36,7 @@ values; a short design that hides a dependency is incomplete, not simpler.
   the admitted value.
 - When another owner requires single or at-most-one use, represent that admitted
   cardinality with native ownership/typestate or a contained explicit state. This
-  lens chooses the encoding; [resources and recovery](resources-and-recovery.md)
+  reference chooses the encoding; [resources and recovery](resources-and-recovery.md)
   owns the lifecycle requirement.
 
 ## Semantic flow

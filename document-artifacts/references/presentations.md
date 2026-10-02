@@ -5,10 +5,10 @@ compatible composition, then invoke only the operations needed for this request.
 The [Office contract](office.md) governs native feature preservation; the
 [execution contract](execution.md) governs bindings and effects. When a chart,
 diagram, map, uncertainty treatment, perceptual hierarchy, or other information
-encoding is materially open, [visualization design](../../visualization-design/SKILL.md)
-owns that representation decision and its evaluation. This presentation workflow
-still owns the deck request and carries the accepted decision through native
-composition, rendering, and delivery without asking the user to coordinate skills.
+encoding is materially open, use the optional visual-design handoff described in
+the skill entry point. This workflow owns the deck and carries the accepted choice
+through native composition, rendering, and delivery. Without that capability, do
+not guess; report the open choice and complete any fixed work.
 
 ## Required checkpoints, flexible methods
 
@@ -116,11 +116,11 @@ python -I -B native-python.py brief.json styles.json night deck.pptx
 
 The JS example uses PptxGenJS; the Python example uses python-pptx. Inspect the task
 root and available tools, then follow the project's manager and constraints. If the
-selected dependency is missing and installation is authorized, this presentation
-route supplies the concrete package and entrypoint while
-[minimal project environments](../../system-mutation/references/project-environments.md)
-supplies setup mechanics. Dependency commands edit project manifests/locks and may
-download packages; keep new dependencies and caches in that project.
+selected dependency is missing and installation is authorized, use the project's
+manager for a minimal task-scoped setup. Dependency commands edit project
+manifests/locks and may download packages; keep new dependencies and caches in that
+project. If setup authority or capability is missing, stop and report the exact
+binding needed.
 
 For a uv-managed Python project:
 

@@ -52,10 +52,11 @@ accepted project contract or selected operation makes it necessary.
   must admit those effects but must not pretend to control what it cannot verify.
 - Validators prove only the structures and rules they actually inspect.
 
-Admit untrusted requests and inputs once at a visible boundary. Keep the main
-decision flow linear, make variants and failures explicit, and avoid two resources
-that both claim authority for the same trigger or rule. Cross-link an existing
-owner instead of copying its policy.
+Admit untrusted input once at a visible boundary. Keep decisions linear, make
+variants and failures explicit, and give each trigger or rule one owner. A
+cross-skill reference is an optional, one-hop handoff at a real ownership
+boundary—not a core prerequisite. Without the other skill, complete compatible
+work or state the missing capability and safe result; do not copy its full policy.
 
 ## Keep the core environment-neutral
 
@@ -66,9 +67,10 @@ and its selected tools. Resolve manifests, paths, versions, platforms, credentia
 models, endpoints, and provider-specific limits only for the operation that needs
 them.
 
-A skill is still portable when it has a necessary dependency, provided the
-requirement is explicit and the binding is rediscovered. A skill is not portable
-when its behavior silently relies on authoring-machine state, modifies the
+A skill remains portable with an explicit tool or provider dependency if its
+binding is rediscovered. A cross-skill handoff must state when it applies and what
+happens when unavailable; avoid hidden dependencies, chains, or cycles. A skill is
+not portable when it silently relies on authoring-machine state, modifies the
 installed skill directory, assumes network access, or treats one adapter as the
 capability itself.
 

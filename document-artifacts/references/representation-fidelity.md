@@ -5,9 +5,9 @@ content whose correctness depends on mathematical structure, relations, table
 schema, references, media associations, or placement inside a constrained region.
 It owns the forward projection from accepted meaning into a document carrier.
 [Located extraction](ingestion.md) owns the reverse projection from an artifact;
-the domain owner still owns meaning, and
-[visualization design](../../visualization-design/SKILL.md) owns a materially open
-choice of information encoding.
+the domain owner still owns meaning. For materially open information encoding,
+follow the optional handoff in the skill entry point; if unavailable, preserve the
+accepted input and report the unresolved choice rather than guessing.
 
 This is a conceptual protocol, not a required schema or intermediate file.
 

@@ -98,7 +98,9 @@ their project or worktable, separate from the installed skill instructions.
 ## Maintain
 
 Keep each `SKILL.md` focused on selection, responsibility, and operating rules.
-Put specialized guidance in linked references, and link to another skill's
-contract instead of duplicating it. When changing a responsibility or entry
-point, update this map and affected links, and check that examples still match
-the current instructions.
+Keep each skill's core and required resources in its directory; use this README
+for cross-skill discovery. At material ownership boundaries, a skill may offer a
+direct optional handoff but must remain useful within its scope if the other skill
+is unavailable. Avoid required chains, cycles, and duplicated contracts. When a
+responsibility or entry point changes, update this map and internal links, then
+check examples against current instructions.

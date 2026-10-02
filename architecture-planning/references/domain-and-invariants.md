@@ -1,9 +1,10 @@
 # Domain and invariants
 
-Use this lens only to decide what the software means: its vocabulary, identities,
-values, legal states, transitions, policies, and invariant boundaries. Value
-encoding belongs to representation; decision authority to authority and effects;
-external promises to contracts; implementation feedback does not own domain truth.
+This reference owns the **behavior and meaning** decision: domain vocabulary,
+identity, legal states and transitions, policy, and invariant boundaries. It does
+not own value encoding, decision/effect authority, or externally promised
+behavior; those are separate constraints. Implementation feedback may challenge
+the model but does not define domain truth.
 
 ## Semantic model
 

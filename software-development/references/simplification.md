@@ -5,7 +5,9 @@ compatibility, and architecture are settled. Preserve accepted behavior while
 reducing owners, branches, conversions, wrappers, compatibility residue, and
 maintenance obligations.
 
-Read a specialized guide only when applicable:
+When a reduction includes a migration, use its specialized guide as well. Those
+migration guides can also apply directly to a requested migration outside a
+behavior-preserving reduction:
 
 - Modules, packages, crates, re-exports, CLI/library ownership, features, or public
   topology: [structural migration](structural-migration.md).
@@ -32,8 +34,9 @@ Read neither guide for a local self-contained cleanup.
    versions/consumers with a concrete removal gate.
 7. Move every consumer, then remove obsolete wrappers, aliases, flags, files,
    fixtures, configuration, tests, and docs in the same slice.
-8. Search retired paths and names, inspect the filesystem, compare the accepted
-   contract and measured cost, then return to conformance and final verification.
+8. Search the affected scope for retired paths and names, inspect relevant files,
+   compare the accepted contract and measured cost, then return to conformance and
+   final verification.
 
 ## Hard gates
 
@@ -44,7 +47,9 @@ Read neither guide for a local self-contained cleanup.
   validation, or hidden compatibility.
 - Performance claims retain command, data, environment, repetitions, result, and
   noise limits; metric-worse experiments are reverted.
-- Report before/after conceptual owners and lines separately for production,
-  tests, examples, benchmarks, and docs; line count alone is not the result.
-- Completion requires zero retired paths and names plus fresh focused and
-  project-canonical checks through the main development workflow.
+- When reduced size or structure is itself a claimed result, report before/after
+  conceptual owners and use line counts by artifact category only when they help
+  judge that claim; line count alone is not the result.
+- Completion requires no live references to retired paths or names in the affected
+  scope, plus fresh focused and project-canonical checks through the main
+  development workflow.

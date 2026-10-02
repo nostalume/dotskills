@@ -17,7 +17,9 @@ order. Keep these roles distinct:
 | canonical owner | existing or admitted durable material | research fact/content |
 | projection | view pinned to owner revision and boundary | no independent truth |
 | generated output | transient unless independently admitted | result, not claim owner |
-| cursor or audit | ignored/transient agent space | no durable research authority |
+| cursor or audit | transient agent space; Git ignore does not make it confidential | no durable research authority |
+
+Keep transient agent records distinct from reader-facing outputs.
 
 Inventory only relevant papers, notes, derivations, data, plots, notebooks, and
 programs with location, role, revision, and reliability. Reuse compatible

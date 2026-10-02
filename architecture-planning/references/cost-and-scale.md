@@ -1,8 +1,12 @@
 # Cost and scale
 
-Use this lens only to decide what computational and operational cost is acceptable
-as workload size, concurrency, and deployment scale change. Resource ownership and
-recovery belong to resources; numerical conditioning to mathematics and numerics.
+This reference owns the **operating-envelope** decision for computational and
+operational cost: which workload, concurrency, platform, and budgets the design
+must support. It does not own resource lifecycle or recovery. This reference does
+not define trust, security, deployment, or observability policy; when those
+constraints can change the choice, inspect their authoritative source rather than
+inferring a policy here. Numerical conditioning is a domain or representation
+constraint, not a workload budget.
 
 ## Workload and budget
 

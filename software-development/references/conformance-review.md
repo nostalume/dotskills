@@ -5,49 +5,26 @@ verification. Planned pseudocode and predicted file shape are not evidence. Judg
 the diff against the authorized contract, current architecture, repository rules,
 and the nearest maintained analogues.
 
-Apply the [implementation normal form](implementation-normal-form.md) whenever the
-diff adds a helper/wrapper or changes files, modules, packages, imports, visibility
-or re-exports, even if the author calls the change organizational. Also apply it
-when flow, error handling, effects/resources, abstraction, compatibility or cost
-materially changes. It consumes settled constraints; it does not authorize a new
-architecture.
+Apply the [implementation normal form](implementation-normal-form.md) when the
+diff materially changes semantic flow, ownership, effects, failures, resources,
+abstraction, compatibility, cost, or conceptual/physical topology. A file move or
+routine edit alone is not a trigger. It consumes settled constraints; it does not
+authorize a new architecture.
 
 ## Review map
 
-1. **Domain:** vocabulary, identities, legal states/transitions, invariant owners,
-   and refusal conditions still express the settled meaning.
-2. **Authority and effects:** each fact, policy, mutation, and effect has one owner;
-   deterministic decisions remain separated from I/O, clocks, randomness,
-   persistence, logging, and host capabilities.
-3. **Representation and flow:** untyped input is admitted once; variants and
-   failures are explicit; transformations are shallow and composable; expensive
-   values are not repeatedly interpreted or recomputed; terminal delegation adds
-   no relay work and preserves result, error, cancellation, and resource handoff.
-   A helper around an already-owning method/operation survives only when it adds an
-   admitted semantic obligation.
-4. **Failure ownership:** each handler owns bounded recovery, settled contract
-   translation with cause, compensation, resource cleanup, or necessary consumer
-   context. Otherwise the original failure propagates without duplicate logging,
-   generic wrapping, blind retry, swallowed cancellation, or hidden partial state.
-5. **Contracts and compatibility:** public behavior, errors, schemas, sync/async
-   parity, and named compatibility windows match the task and live consumers.
-6. **Resources and cost:** acquisition, release, recovery, bounds, backpressure,
-   allocations, copies, I/O, concurrency, and caches have explicit owners and meet
-   any stated budget.
-7. **Local code style:** formatter, linter, type/build policy, applicable
-   instructions, and multiple maintained analogues support the chosen structure.
-   Personal preference alone is not a blocker.
-8. **Semantic topology:** actual helpers, files, modules, directories, packages,
-   imports, visibility and re-exports preserve settled semantic owners, dependency
-   direction, public/internal surfaces, compatibility gates and evidenced change
-   locality. Each new boundary survives the applicable direct-call, inline/merge,
-   collapse/group, move-to-owner or next-variant counterfactual.
-9. **Change economy:** no parallel authority, relay-only abstraction, speculative
+Use the domain, authority, flow, failure, compatibility, resource, cost, and
+topology criteria from [implementation normal form](implementation-normal-form.md)
+only for claims the actual diff changes. Then confirm:
+
+1. **Contract:** the authorized scope and settled constraints still hold.
+2. **Project policy:** applicable instructions and maintained analogues support
+   any style or structural rule treated as gating; taste alone is not a blocker.
+3. **Economy:** no parallel authority, relay-only abstraction, speculative
    generality, compatibility residue without a consumer, or unrelated cleanup has
    entered the diff.
-10. **Evidence mapping:** every changed claim has claim-appropriate development
-   feedback and a final verification obligation; docs, automation, and release
-   impact are stated.
+4. **Evidence:** each changed claim maps to feedback and final verification;
+   documentation, automation, and release impact are stated.
 
 ## Findings and feedback
 

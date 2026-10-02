@@ -5,12 +5,12 @@ description: "Create, edit, inspect, extract, convert, or render native Microsof
 
 # Document Artifacts
 
-Own physical document representation and format behavior. The domain owner still
-owns meaning: `constructive-research` owns research claims and
-`software-documentation` owns software explanations, and an applicable analytical
-owner owns business/data conclusions. Extraction consumes source material that may
-be unadjudicated; production consumes accepted content. Return a checked projection
-or artifact with explicit limitations, never an independently accepted research claim.
+Own physical document representation and format behavior. The source or domain
+owner still owns meaning: research claims, software explanations, and business/data
+conclusions must be accepted by their respective content owners. Extraction
+consumes source material that may be unadjudicated; production consumes accepted
+content. Return a checked projection or artifact with explicit limitations, never
+an independently accepted research claim.
 
 For standalone PDF inspection, extraction, creation, transformation, OCR,
 protection, or forms, read [PDF operations](references/pdf.md). A PDF rendered
@@ -82,12 +82,13 @@ platform, template or installer is mandatory.
 
 When a document request has a material open choice of chart, diagram, map,
 uncertainty encoding, perceptual hierarchy, or other information-bearing visual
-representation, use [visualization design](../visualization-design/SKILL.md) to
-resolve and evaluate that choice. Keep `document-artifacts` as the artifact owner:
-it applies the accepted representation through native objects and remains
-responsible for container preservation, rendering, fidelity, and delivery. A
+representation, make an optional one-hop handoff to
+[visualization design](../visualization-design/SKILL.md) when available. If absent,
+preserve accepted content, report the unresolved choice, and do only fixed
+container work. This skill remains artifact owner: it applies the accepted choice
+and handles native objects, preservation, rendering, fidelity, and delivery. A
 precise text correction, fixed conversion, or already-settled representation does
-not load visualization guidance merely because the artifact is visual.
+not need the handoff merely because the artifact is visual.
 
 For Typst creation, editing, compilation, or rendered-output validation, read
 [Typst artifacts](references/typst.md). It defines source, project-root, compiler,
@@ -207,11 +208,13 @@ presenting Markdown as equivalent to the original. Use the current
   embedded-code execution, external-link retrieval, decryption, signature
   invalidation, source overwrite, directory reorganization, or publication.
 - Inspection, extraction, review, or validation does not authorize document edits.
-- Use [minimal project environments](../system-mutation/references/project-environments.md)
-  for local dependency setup and system-mutation for other provider acquisition or
-  registration. Preserve the document
-  postcondition. For remote work, establish transmission, credential, cost, and
-  retention implications. Use existing authorization; ask only for missing authority.
+- For missing local dependencies, preserve the project's selected manager and
+  versions, use the smallest task-scoped setup under existing authority, and retain
+  the document postcondition. Do not register a service or change host state as an
+  implicit setup step; if required setup exceeds this task's authority or available
+  capability, stop and report the exact need. For remote work, establish
+  transmission, credential, cost, and retention implications. Use existing
+  authorization; ask only for missing authority.
 - Do not create `output/`, `bridge/`, logs, manifests, projects, or per-page files
   merely because the request has multiple steps. Create a durable artifact only
   for the requested result, a named downstream consumer, reproducibility, or

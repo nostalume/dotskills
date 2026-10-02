@@ -1,21 +1,20 @@
-# Decision Readiness and Stability
+# Decision settlement
 
-Use this protocol before turning an architecture, system, boundary, or API idea
-into a resolution, ready task, or implementation handoff. It solely owns closure,
-behavioral specificity, comparison, maturity, stability, and replacement. Domain,
-effects, representation, topology, contracts, resources, cost, and mathematics
-remain with their selected lenses.
+Use this protocol when selecting, declaring ready, or replacing a material
+architecture, system, boundary, or API decision. It determines what evidence and
+behavior must be settled, compares material alternatives, and governs decision
+status and replacement—not domain facts or category-specific constraints.
 
 This is a reasoning protocol, not a required scorecard, decision log, schema, or
 claim that the whole repository can be understood exhaustively.
 
-## Close the material decision cone
+## Close the material decision scope
 
-Start from the operation being decided and follow each boundary whose state could
-change the choice. One input-to-output path is initial evidence; add materially
-distinct callers, success/failure and recovery, compatibility, lifecycle,
-concurrency, workload, authority, or effect edges only while they remain decision-
-sensitive. Boundary-sufficient comprehension stops at observably irrelevant edges.
+Start from the operation being decided and follow only the callers and boundaries
+that could change the choice. Trace one input-to-output path first; add materially
+different failure/recovery, compatibility, lifecycle, concurrency, workload,
+authority, or effect cases only when they remain decision-sensitive. Stop at
+boundaries that cannot affect the decision.
 
 Classify a material premise as:
 
@@ -66,20 +65,22 @@ Select an evidence-dominant candidate when one exists. Otherwise expose the one
 material tradeoff to its owner rather than oscillating among equally incomplete
 proposals.
 
-## Assign the smallest honest maturity
+## Mark each decision's status
 
 - **Exploratory:** a material premise is unknown; only bounded inspection or an
   experiment with explicit authority, limits, termination, and discard/reframe
   outcome may be ready.
-- **Candidate:** a projection is specific and falsifiable, but selection or one
+- **Candidate:** a design proposal is specific and falsifiable, but selection or one
   material premise remains open.
-- **Settled:** the material cone and hard constraints are closed, comparison is
-  complete, and evidence or an owner-approved tradeoff selects the resolution.
+- **Settled:** the material decision scope and hard constraints are closed,
+  comparison is complete, and evidence or an owner-approved tradeoff selects the
+  resolution.
 - **Invalidated:** new evidence contradicts a relied-upon premise; dependent
   decisions and ready work reopen.
 
-Maturity belongs to the smallest decision. An unrelated unknown does not demote a
-closed one; a settled subdecision does not settle the whole architecture.
+Assign status to the smallest decision it describes. An unrelated unknown does
+not reopen a closed decision; a settled subdecision does not settle the whole
+architecture.
 Conversational agreement confirms a clearly presented user policy, not project
 facts or an incompletely specified proposal.
 
@@ -95,10 +96,10 @@ A newly mentioned or fluent alternative is not a replacement trigger. When a
 trigger qualifies, expose:
 
 ```text
-previous decision and maturity
+previous decision and status
   -> changed evidence or policy
   -> affected premise and dependent decisions
-  -> new resolution and maturity
+  -> new resolution and status
   -> unchanged invariants
   -> plan delta and renewed evidence
 ```
@@ -107,15 +108,15 @@ Remove stale downstream guidance, while retaining enough replacement rationale t
 prevent silent swing. Report the delta when it changes a previously presented
 recommendation or plan.
 
-## Falsify readiness
+## Test whether the decision is stable
 
 Change one input at a time: add/remove a caller; change one invariant, workload,
 compatibility promise, or user policy; withhold a failure/lifecycle contract;
 strengthen only user enthusiasm; add a nondominant alternative; or contradict one
-premise with implementation evidence. Only dependent maturity, selection, scope,
-or evidence may change.
+premise with implementation evidence. Only the affected decision's status,
+selection, scope, or evidence should change.
 
 Hard gate: no material unknown is hidden by a name or implementation detail; no
-candidate settles without cone closure and material comparison; no recommendation
-changes without a qualifying trigger and explicit delta; and no plan presents
-exploratory architecture as ready production work.
+decision is settled without enough evidence and material comparison; no
+recommendation changes without a qualifying trigger and explicit delta; and no
+plan presents exploratory architecture as ready production work.

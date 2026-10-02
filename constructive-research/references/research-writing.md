@@ -6,6 +6,9 @@ exposition, not discovery, evidence status, execution, or physical format.
 
 ## Admit the semantic source
 
+Identify the reader, purpose, destination, and exposure (public, internal, or
+local-only). Include project details only when needed to interpret or use the
+result; omit repository layout unless the reader needs it.
 Start from the accepted content owner: its exact question or claim, supporting
 derivation/evidence, revision, domain, uncertainty or disposition, and open
 boundaries. Writing may reorder and explain this material but cannot create a

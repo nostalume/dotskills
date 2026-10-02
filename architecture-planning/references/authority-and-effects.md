@@ -1,8 +1,10 @@
 # Authority and effects
 
-Use this lens only to decide who controls truth, policy, mutation, and external
-effects. Value shape belongs to representation; observable promises to contracts;
-resource lifetime to recovery; mathematical truth to numerics.
+This reference owns the **ownership and authority** decision: who controls truth,
+policy, state transitions, mutation, and external effects. It does not define what
+the domain means, how values are represented, what callers are promised, or how a
+resource lifecycle recovers; those constraints belong to their respective
+categories.
 
 ## Model
 
