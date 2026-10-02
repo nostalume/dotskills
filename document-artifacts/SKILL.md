@@ -97,6 +97,11 @@ For LaTeX source authoring, project builds, or derived-output validation, read
 [LaTeX artifacts](references/latex.md). Preserve the project's engine, class,
 packages, and build graph; compilation support depends on an admitted binding.
 
+When MinerU's hosted API is selected or explicitly requested to parse, extract,
+or export document content, read [MinerU API workflow](references/mineru.md).
+Treat it as a remote extraction/conversion adapter, not as an editing or fidelity
+guarantee. Validate any requested destination format under its own format contract.
+
 ## Execute a linear artifact flow
 
 1. Inspect the source read-only and identify encoded structure, external
