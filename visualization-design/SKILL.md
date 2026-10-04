@@ -72,6 +72,55 @@ For animation, timed media, deterministic capture or interactive state, read
 establishing that time or interaction improves the intended meaning. Its maintained
 HTML example is one bounded operation, not the default visual system.
 
+## Route by visual context
+
+Build the smallest context needed to select a route:
+
+```text
+incumbent source/tokens/assets + audience/purpose + requested change
+  -> visual mode -> representation and quality criteria
+  -> selected renderer/capture adapter -> inspected output states
+```
+
+Treat an existing visual system, a surface brief, and the current request as
+different authorities. A missing design-system file does not imply a greenfield
+surface: infer the incumbent only from observable code, tokens, assets, and
+project guidance, and label the result as evidence. Persist a visual brief or
+system description only when a real collaborator, repeated production path, or
+maintenance task will consume it.
+
+| Request evidence | Route | Result boundary |
+|---|---|---|
+| Existing surface, local perceptual defect | **Refinement** | Preserve information, behavior, source identity, and visual world outside scope; repair the smallest defect. |
+| New surface inside an established visual world | **Extension** | Resolve purpose, content, hierarchy, states, and composition; inherit the existing system. |
+| New or explicitly replaced visual world | **Redesign** | Replace the visual treatment while preserving accepted information, purpose, constraints, and source authority. |
+| Critique or audit only | **Evaluation** | Inspect and report; do not edit or render beyond authorized observation. |
+| Render/export/capture only | **Production** | Use the selected renderer and report output fidelity and unverified states; do not redesign. |
+
+If unclear, ask the smallest user-owned question; never infer redesign from a
+missing style guide or refinement from a new visual direction.
+
+Load only the reference and adapter selected by the route. Extract a component,
+token, or pattern only when it recurs with the same intent and the project has a
+suitable system owner; keep one-off visual treatments local rather than
+manufacturing a design system. Keep renderers, browser tools, frameworks, asset
+services, and export commands as replaceable adapters; do not expose a
+provider-specific command for every tool.
+Connected adapters remain unused on planning or review-only paths. If the selected
+route is unavailable, return editable source or a bounded specification with its
+unverified obligations rather than claiming rendered acceptance.
+
+Use a bounded observation loop: inspect all output states required by the claim in
+one pass, batch local repairs, then perform at most one confirmation pass when the
+repairs could alter the claim. Continue only when new evidence changes an upstream
+representation decision; do not spend open-ended passes on cosmetic preference.
+
+When persisting visual direction or review output, identify its reader, purpose,
+destination, authority, and exposure first. Keep private briefs, plans,
+screenshots, runtime state, and scratch critique private unless a real shared
+consumer requires them. Public documentation should contain accepted visual
+decisions, not task reasoning or a gratuitous inventory of project files.
+
 ## Create, revise and evaluate
 
 1. Identify what the audience must understand, compare, decide, do or experience,

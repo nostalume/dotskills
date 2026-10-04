@@ -8,6 +8,23 @@ description: Set up tools and local environments, register integrations, change 
 Carry out the requested host change using existing tools and the smallest useful
 procedure. Ordinary code and document edits stay with their respective skills.
 
+## Route by host effect
+
+Select the requested mutation before choosing a tool or procedure:
+
+| Route | Required boundary | Closure evidence |
+|---|---|---|
+| Inspect/preview | target identity and read-only authority | observed current state; no mutation |
+| Install/register | package or integration target, source, authority, and scope | consumer can use the selected installation or registration |
+| Configure | exact setting owner and reversible change | effective configuration and preserved unrelated settings |
+| Organize/migrate | source/destination, conflict policy, and recovery material | resulting layout plus recovery or rollback evidence |
+| Backup/restore | source, destination, integrity, and retention policy | verified contents and post-state |
+| Verify/reconcile | expected versus actual state | observed difference or confirmed match |
+
+Read only the procedure selected by the route. A tool, hosted service, or
+credential is an adapter for the admitted host effect; it is not permission to
+perform that effect. Review and preview routes must not mutate.
+
 ## Inspect, act and verify
 
 Identify the requested operation, exact targets, relevant existing state and

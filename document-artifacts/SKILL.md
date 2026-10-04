@@ -47,9 +47,25 @@ projection; `edit` requires a source, exact change, preservation set, and output
 policy. Extraction writes a projection only when requested or needed by a named
 consumer. These are conceptual fields, not a requirement to create schema files.
 
-Inspect available sources and project conventions before asking for information
-that the files can answer safely. Preserve existing layout and source formats by
-default. Treat these as distinct source variants:
+## Route by artifact result
+
+Select one operation before loading format, provider, or project guidance:
+
+| Operation | Required context | Closure evidence |
+|---|---|---|
+| Inspect | source identity and requested scope | observed structure or feature with locators |
+| Extract | source identity, projection, and coverage | located projection plus unresolved scope |
+| Create/edit | accepted content, target, preservation set, and output policy | reopened source/output and requested fidelity checks |
+| Convert | source, target, accepted losses, and destination policy | target opens or renders with declared losses |
+| Render/validate | source, claimed fidelity, and selected engine | inspected affected output states |
+
+Load only the references selected by the row. Inspect project sources and
+conventions before choosing an adapter. A renderer, converter, OCR engine,
+remote API, or package setup is an adapter for the route, not a prerequisite of
+the artifact capability. Read-only routes have no write or publication effect.
+
+Preserve existing layout and source formats by default. Treat these as distinct
+source variants:
 
 - native OOXML families: Word documents/templates, PowerPoint presentations/
   templates/shows, and Excel workbooks/templates, including their macro-enabled

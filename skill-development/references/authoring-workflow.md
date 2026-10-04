@@ -88,6 +88,47 @@ may coordinate discovery, but each skill must work or stop honestly on its own.
 Every durable resource needs a consumer and every route a trigger; an intrinsic
 decision, operation, or check is also a consumer.
 
+Keep the operation surface economical. For each command or named mode, write the
+distinct postcondition, evidence obligation, authority/effect boundary, durable
+artifact, or refusal behavior that justifies it. If none differs, collapse the
+variants into one operation with a target or contextual parameter. For each tool
+or provider binding, record the selected operation, the capability it supplies,
+the effect it can cause, the authority required, the verification and cleanup,
+and the unavailable fallback. A provider list, launcher, hook, or bridge is not
+part of the portable core merely because it is convenient.
+
+Define artifact exposure before persistence. Name the reader, purpose, destination,
+source authority, and whether the artifact is private working state, project-local
+shared material, or public documentation. Keep plans and scratch material out of
+public destinations unless the user explicitly accepts that exposure and the
+content is useful to that reader.
+
+## Verify layer conformance
+
+For a skill with project context, multiple operations, adapters, or durable
+artifacts, make a transient layer worksheet before editing. Map each rule,
+reference, script, hook, and artifact to one layer and owner:
+
+```text
+kernel -> project context -> request brief -> selected operation
+       -> selected adapter -> observed evidence
+```
+
+For each operation, write the route as
+`request signal -> guidance -> allowed effects -> completion/refusal evidence`.
+Use the worksheet to move duplicated rules to their owner, keep contextual facts
+out of the kernel, defer adapter loading until the operation is selected, and
+remove artifacts with no reader or maintenance consumer. Do not persist the
+worksheet unless a project already has an audit consumer.
+
+Evaluate the route with [behavioral evaluation](behavioral-evaluation.md): use
+one positive, one neighboring negative, one missing-context or missing-adapter,
+and one review-only case. Record the operation, references loaded,
+tools invoked, files changed, effects observed, and result class. Accept the
+revision only when the trace matches the route and each changed layer has
+evidence; otherwise correct the smallest owning section and rerun the affected
+case.
+
 Write imperative instructions at the user's level of abstraction. Explain
 non-obvious reasoning where it changes a decision; omit generic advice an agent
 already knows. Use examples to clarify a variant, boundary, or failure—not as

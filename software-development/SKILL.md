@@ -43,6 +43,21 @@ identify reader, purpose, exposure, and destination; include only useful detail,
 never copy task plans into public-facing docs. Repository paths and ignore rules
 do not establish access control or publication authority.
 
+## Route by settled change
+
+Select one primary route before loading specialized guidance:
+
+| Condition | Route | Allowed result |
+|---|---|---|
+| user requests findings without edits | **Review** | evidence-backed report; no implementation mutation |
+| contract is settled and code must change | **Implementation** | scoped source change and focused evidence |
+| behavior is preserved while owners or topology change | **Refactor/migration** | compatible diff plus migration evidence |
+| an existing diff or result needs checking | **Verification** | conformance and delivery findings; no unrequested redesign |
+
+Routes can compose implementation followed by verification. An unresolved design,
+stale governing context, or missing authority stops only the affected route; it
+does not authorize an implicit architecture decision or broader tool use.
+
 ## Development loop
 
 Enter at the earliest phase required by the request and available evidence. When

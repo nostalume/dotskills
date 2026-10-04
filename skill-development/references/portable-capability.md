@@ -58,6 +58,36 @@ cross-skill reference is an optional, one-hop handoff at a real ownership
 boundary—not a core prerequisite. Without the other skill, complete compatible
 work or state the missing capability and safe result; do not copy its full policy.
 
+## Keep the operation surface economical
+
+Expose one semantic entry point for a capability. Add a command or named mode
+only when it changes the accepted postcondition, required evidence, authority or
+external effect, durable artifact, or refusal behavior. A different adjective,
+target selector, or output tone is a parameter or heuristic, not another command.
+When several commands share those decisions, route them through one operation and
+load only the selected guidance.
+
+Bind tools after the operation is selected. The entry point should name the
+capability and observable result, not a provider, executable, framework, or
+harness. Prefer one replaceable adapter surface per capability class; do not list
+every compatible tool in the semantic core. An adapter must state its authority,
+inputs, effects, cost, bounds, verification, cleanup, and honest unavailable path.
+Connected or installed tools remain dormant until the selected operation needs
+them and the request grants their effect.
+
+Treat automatic hooks, background watchers, and setup commands as external
+operations, not harmless conveniences. They require an explicit consumer,
+authority, bounded lifecycle, and post-observation. A policy-only or planning path
+must not invoke them.
+
+Persist context only for a real reader and maintenance consumer. Keep plans,
+scratch reasoning, credentials, runtime state, and private evidence in their
+private scope. A tracked or public-facing artifact needs an identified audience,
+purpose, destination, exposure decision, and source-authority check; repository
+paths and ignore rules do not grant publication authority. Never copy a plan or
+unnecessary project inventory into a durable public document merely because a
+tool can write it.
+
 ## Keep the core environment-neutral
 
 Write the semantic core in terms of required capabilities and observable results:

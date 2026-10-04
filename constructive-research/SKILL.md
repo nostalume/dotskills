@@ -57,6 +57,21 @@ accepted one-output exposition needs no state index; a requested plot may be a
 result without becoming a new scientific claim. If only physical representation
 remains, hand the supported semantic projection to `document-artifacts`.
 
+For the selected operation, keep the route explicit:
+
+```text
+question and admitted material
+  -> operation-specific owner and guidance
+  -> least effectful adequate method
+  -> evidence with inferential boundary
+  -> disposition, open obligation, or honest unavailability
+```
+
+Do not load computation, persistence, or writing guidance merely because the
+inquiry might eventually need it. A missing source, tool, or durable consumer
+changes only the affected route; preserve the supported research result instead
+of widening the operation.
+
 ## Admit actions and effects
 
 Use the least effectful adequate operation. A derivation, matched theorem contract,

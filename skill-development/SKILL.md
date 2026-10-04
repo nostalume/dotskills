@@ -52,8 +52,11 @@ change placement, execution or evidence; they are not a required manifest.
    Bind paths, tools, versions, credentials, and providers only when the selected
    operation requires them.
 5. Evaluate realistic behavior, inspect the actual artifacts and diff, and run
-   repository-supported structural checks after the final edit. Report what the
-   evidence establishes and any remaining limitation.
+   repository-supported structural checks after the final edit. When commands,
+   tools, hooks, or durable context changed, use contrast cases for unused-tool
+   avoidance, command distinctness, adapter replacement, effect refusal, and
+   artifact exposure—not keyword or file-count checks. Report what the evidence
+   establishes and any remaining limitation.
 
 For creation, revision, consolidation, resource placement, or retirement, read
 [authoring workflow](references/authoring-workflow.md). When the skill may install

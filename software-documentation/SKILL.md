@@ -44,7 +44,25 @@ short of inventing the rule and report the exact decision and evidence still nee
 If documented behavior and implementation disagree, report the contradiction;
 this documentation task does not authorize product changes.
 
-## Route by audience and artifact
+## Route by claim and reader
+
+After establishing the audience, source authority, version scope, and exposure,
+select one route:
+
+| Route | Primary reader need | Closure evidence |
+|---|---|---|
+| Onboarding/how-to | perform a supported task | clean or declared consumer-path success |
+| Conceptual/troubleshooting | understand behavior or recover from failure | authoritative explanation plus boundary cases |
+| Developer guidance | modify, extend, build, or debug | current source, commands, and project policy |
+| CLI/API/reference | use an interface correctly | help/schema/public behavior comparison |
+| Change/migration note | understand revision or compatibility impact | actual revision range and accepted contract |
+| Review | find drift or unsupported claims | findings only; no edits |
+
+## Load route guidance
+
+Load only guidance and checks for the selected route. Rendering, generation, and
+publication tools are optional evidence adapters; they do not define software
+meaning or grant publication authority.
 
 - For onboarding, how-to, troubleshooting, and conceptual guidance for operators
   or consumers, read [user documentation](references/user-documentation.md).

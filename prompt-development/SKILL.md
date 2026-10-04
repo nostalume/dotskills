@@ -19,6 +19,21 @@ Own only the prompt artifact's material semantics. When it is embedded in a larg
 capability or product, preserve that artifact's owner for discovery, packaging,
 resources, routing, domain behavior, and effects.
 
+## Route by prompt operation
+
+Select the smallest operation that changes the prompt's governed behavior:
+
+| Condition | Route | Closure evidence |
+|---|---|---|
+| no prompt or behavior exists | **Create** | intended contexts, exclusions, authority, and boundary cases are defined |
+| one prompt changes without composition | **Revise** | incumbent behavior is compared with the changed claims |
+| multiple instruction layers interact | **Compose** | precedence, ownership, scope, and override behavior are exercised |
+| behavior or semantics are questioned | **Review** | findings tied to contrasting inputs and runtime evidence |
+
+A provider or deployment binding is selected only after the prompt operation is
+settled. Provider-owned context that is hidden or stale limits the claim; it does
+not justify inventing precedence or silently changing deployment.
+
 ## Develop the prompt
 
 1. Admit the intended contexts, governed behavior, exclusions, reserved choices,
@@ -53,4 +68,3 @@ not a complete runtime contract or a mandatory template for narrower prompts.
   a changed binding, not by removing provider names.
 - Treat deployment, configuration mutation, publication, and external effects as
   separately authorized operations.
-

@@ -38,6 +38,21 @@ specifications retain their own normative scopes. Preserve contradictions: they
 may reveal implementation drift, stale documentation, or an invalid premise rather
 than allowing one source class to overrule all others.
 
+## Route by decision state
+
+Select the smallest route that can change the user's decision:
+
+| Condition | Route | Allowed result |
+|---|---|---|
+| evidence or ownership is unclear | **Review** | findings and bounded unknowns; no plan or source edits |
+| a material design choice is open | **Decision** | settled, bounded, deferred, or blocked decision |
+| decisions are settled and a durable handoff is needed | **Planning** | smallest audited local plan |
+| implementation is requested for settled decisions | **Handoff** | authorized transfer to `software-development` |
+
+Routes may compose in that order, but no later route is implied by an earlier
+one. Stale project context is reported and revalidated at the affected boundary;
+it is not silently repaired during an unrelated decision.
+
 ## Inspect to decision sensitivity
 
 Inspect the dirty state, revision, instructions, manifests, public entry points,

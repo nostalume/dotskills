@@ -23,6 +23,9 @@ could show it is false.
 | External operation | Data, authority, credentials, cost, bounds, commit semantics, verification, fallback, and recovery are resolved where applicable; no effect occurs in a policy-only test |
 | Temporal adapter claim | Project version, compatible local interface, provider-current authority and relied-upon claim are reconciled; changed bindings invalidate only dependent evidence |
 | Portability and absent capability | The claimed semantic, package, suite or runtime surface passes its distinguishing check; missing capability yields an equivalent alternative, bounded partial, unavailable or refused result without weakened invariants |
+| Operation and adapter economy | A simple request stays on the semantic core without unused tools or references; an operation-specific adapter is selected only when needed; replacing that adapter preserves postconditions, evidence and refusal behavior |
+| Command distinctness | Each exposed command changes a postcondition, evidence obligation, authority/effect boundary, durable artifact, or refusal behavior; synonyms converge instead of creating competing routes |
+| Artifact exposure | Private planning stays private; a shared or public artifact is written only when its reader, purpose, destination, authority and exposure are accepted, and it excludes unnecessary plans or project inventory |
 | Structural contract | The repository-supported validator, link inspection, metadata rules, and relevant static checks pass on the final files |
 
 Do not use a large scenario count to compensate for an undefined contract. Do not
@@ -94,6 +97,40 @@ inspect completely. A case should record:
 - expected equivalent, bounded-partial, unavailable or refused result and effect;
   and
 - artifacts and state to inspect after the run.
+
+For a skill that adds commands, tools, hooks, or durable context, include these
+contrast cases:
+
+- the same capability with a simple request that needs no adapter;
+- the same operation with two replaceable adapters, holding the semantic contract
+  fixed;
+- a command synonym or stylistic variation that should route to the existing
+  operation rather than create a new one;
+- a planning or review-only request with every external tool available, confirming
+  that no tool, hook, watcher, or mutation runs;
+- a private-plan request versus an explicitly shared-document request, confirming
+  that only the latter persists accepted content and that project layout or task
+  reasoning is not copied without a reader need; and
+- an unavailable-tool or missing-authority variant, confirming the declared
+  equivalent, bounded partial, unavailable, or refused result.
+
+For a design or visual skill, add a refinement case that preserves the incumbent
+meaning and source, a redesign case that replaces the visual treatment while
+preserving accepted information and purpose, and a bounded observation case that
+stops after the evidence is closed rather than polishing indefinitely.
+
+For each evaluated route, inspect this trace rather than only the final prose:
+
+```text
+request -> admitted scope -> selected mode -> loaded references
+        -> authorized tools/effects -> artifact/state -> evidence -> result class
+```
+
+The route passes only when a simple case does not load or invoke an unused
+adapter, a missing context or capability changes the result honestly, and a
+review-only case leaves no mutation. A route that cannot be observed at runtime
+may be checked statically, but runtime selection and effect restraint remain
+unverified.
 
 Choose cases according to the changed boundary. A broad skill-development
 capability should normally distinguish these families:

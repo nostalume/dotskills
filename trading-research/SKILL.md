@@ -15,6 +15,24 @@ constraints.
 An observed pattern supports only claims within its measured population, period,
 information set, comparison, and any proposed action.
 
+## Route by research state
+
+Select the smallest operation that can change the named market question:
+
+| State of the question | Route | Result boundary |
+|---|---|---|
+| Meaning or relation is unclear | concept/measurement construction | scoped distinction or unresolved definition |
+| A claim needs a discriminating observation | bounded empirical probe | evidence for the admitted population and information set |
+| Evidence conflicts or reproduction fails | adjudication | disposition and weakest open obligation |
+| A decision role is proposed | evaluator construction/test | decision-specific comparison, not automatic alpha |
+| A computational rule is settled | implementation bridge | contract for software, not renewed market meaning |
+| Explanation only | contextual account | explanation with explicit inferential boundary |
+
+Load data, computation, or execution adapters only after the route is selected.
+Read-only inquiry has no project or trading effect. A missing data source or
+credential narrows the result; it does not authorize a new acquisition or live
+action.
+
 ## Keep the inquiry continuous
 
 Enter at the unresolved question: a participant practice, market phenomenon,
