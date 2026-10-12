@@ -1,4 +1,4 @@
-# Concept Construction and Measurement
+# Market Structure, Concept Construction, and Measurement
 
 Use when a trader's term, observed pattern, or proposed alpha depends on an
 unsettled explanation or relation. The aim is a concept that can make a different
@@ -194,3 +194,37 @@ a different role, or stopping. Return the supported concept and any material
 contrary case, the mathematical and observation bridges actually established,
 the research or decision consequence, and the exact unresolved edge. This is a
 semantic result, not an obligation to create a document or research ledger.
+
+
+## A usual first construction
+
+A useful starting product is a connected account of the phenomenon, a concrete
+observation map and the next distinction to establish. For an open-role concept:
+
+1. Choose a motivating case and a materially contrary/boundary case. Fix what was
+   known at each time and who could act; keep outcomes used to construct the
+   concept separate from evidence of prospective coverage.
+2. Write the relevant relation before a score. An inventory account starts with
+   stock, inflow, outflow and constraints; diffusion starts with a defined changing
+   group and temporal propagation. These operations determine the needed records.
+3. Trace one small case through the operation. Try another admissible history with
+   the same summary and a different consequential relation. Keep a cheap summary
+   when no material lost distinction is established; otherwise retain the missing
+   state or request a source.
+4. Construct the least costly discriminating comparison. Bind common causes,
+   outcome timing and eligible opportunities to the claim. If the inquiry only
+   needs explanation, finish with the relation and its boundary.
+5. For a proposed predictor/constraint/action, continue through
+   [target design](decisions-labeling.md), [representation](data-representation.md)
+   and [validation](inference-validation.md). A fixed rule can enter directly at
+   its remaining empirical comparison without this construction detour.
+
+For a replenishment example, displayed depth evolves through submissions,
+cancellations and executions. If observation intervals and definitions align,
+D_next = D_now + additions - cancellations - executed removals is a stock/flow
+balance, with price-level migration treated explicitly. Trade volume alone gives
+only one removal flow. Two histories can have equal executed volume but very
+different replenishment and remaining depth. The next inquiry is whether timely
+book events preserve that distinction, not which volume threshold names it best.
+An unknown actor identity remains unknown even with an exact displayed-depth
+balance. See [representation and concept examples](../examples/state-representation.md).
