@@ -7,18 +7,17 @@ planning relations, not order execution, account state, or empirical validation.
 
 ## From a hypothesis to a candidate
 
-Start with the structure and material alternative supported by the supplied
-evidence. Express the action as a conditional proposition, not an unconditional
-prediction: what observation would support considering which direction, what
-would contradict it, and what currently prevents the idea from being ready for
-human consideration? A countertrend or range-boundary idea is not intrinsically
-forbidden; assess its premises and the user's actual permitted strategy scope.
+Start from the geometry/location reading and its material alternative. Construct
+a conditional action by connecting the premise to an observable trigger, then
+source-bound prices: invalidation tests the premise; a protective stop expresses
+the chosen risk protection; a target follows from opposing structure, explicit
+projection or current user policy. Explain why each component fits that premise
+and what observation would change it, rather than selecting prices for a ratio.
 
-Do not require a complete intake form before explaining compatible evidence.
-Resolve only missing choices/facts that can change the proposed action. Product,
-venue, instrument type, timeframe, price basis, cutoff, allowed direction and
-holding horizon matter when they change which plan the prices can support.
-Missing a price source prevents that precise price, not all structural analysis.
+Resolve only missing choices/facts that change that construction: product/venue,
+instrument, timeframe, price basis, cutoff, permitted strategy/direction and
+horizon. A missing price source leaves that component incomplete while compatible
+structural reasoning continues.
 
 For a useful candidate, make the following relations inspectable where relevant;
 they are not a compulsory report schema or a fixed sequence of model calls:
@@ -70,9 +69,8 @@ Separate **structural invalidation** from a **protective stop**:
 - A stop proposal expresses price/risk protection, not proof that the hypothesis
   is false at every intrabar excursion. Explain any difference from the structural
   condition. A close-based review condition is not a guaranteed intrabar risk cap.
-- If a tick/buffer/order condition is needed, use a supplied or verified product
-  rule and explicitly chosen buffer policy. Do not infer tick size from decimal
-  places or import "one tick", ATR multiples, or bar-height limits as defaults.
+- For a tick/buffer/order condition, use a supplied or verified product rule and
+  an explicitly chosen buffer policy; decimal places do not establish tick size.
 - Evaluate orientation and distance without rewriting supplied prices. A stop at
   entry gives nonpositive risk in gross RR; a stop on the wrong side is not fixed
   silently. Describe the inconsistency and any separately labeled alternative.
@@ -93,20 +91,18 @@ selecting a farther projection solely to improve the reported RR. Source-defined
 A measured move needs selected endpoints, their order, direction and anchor.
 Explain why that geometry is relevant to the hypothesis; the script cannot
 validate a completed leg or choose an appropriate target for the analyst. Keep
-target contact, price penetration, and any later response distinct. There is no
-compulsory TP1/TP2 pair, fixed target priority or automatic partial-exit schedule.
+target contact, penetration and later response distinct. Select objectives and
+any exit policy from the premise and current request, not a mandatory target pair.
 
 Calculate gross distances/RR only for prices whose meaning is clear. Different
 targets can describe different scenarios; do not average their ratios or treat
 the most distant ratio as proof of the nearer objective. If a user requests
 fixed-R targets, label them policy-derived rather than observed structural levels.
 
-A supplied minimum RR or risk constraint is a user policy for that request, not
-a market law. Report whether the unchanged candidate meets it; if not, wait or
-discuss separately justified alternatives within the user's scope. Without such
-a policy, do not install an implicit RR >= 1, confidence cutoff, vote requirement,
-or estimated-win-rate equation. The absence of a gate is not a reason to recommend
-every geometrically valid setup.
+Apply a minimum RR or risk constraint only when the current user supplies it.
+Report whether unchanged prices meet it; if not, wait or discuss independently
+justified alternatives within scope. Geometry alone does not support suitability
+or an edge; those claims need their own premises and evidence.
 
 Fees, spread, slippage, funding/borrow terms and price-grid/order rules can change
 the practical proposition. Use applicable supplied/verified evidence if making a
@@ -117,8 +113,8 @@ complete. Missing those facts need not block a conditional structural discussion
 
 ### Arithmetic-only illustration
 
-The following synthetic user-supplied price plan straddles the old 1R threshold.
-It illustrates unchanged-price arithmetic, not a strategy or recommendation:
+This synthetic supplied-price plan illustrates unchanged-price arithmetic,
+not a strategy, standing threshold or recommendation:
 
 ```json
 {"schema_version":1,"operation":"risk_reward","direction":"long","entry":{"price":100,"label":"supplied entry"},"stop":{"price":98,"label":"supplied stop"},"targets":[{"price":101.8,"label":"supplied nearby target"},{"price":102.2,"label":"supplied alternative target"}]}
@@ -133,18 +129,12 @@ to select the farther target, and binary64 values are approximate.
 
 ## Holding horizon and product applicability
 
-Apply the horizon the current user states. Intraday through a maximum of one week
-is a possible request constraint, not a default for unrelated analyses. Distinguish
-evidence cutoff, entry-opportunity lifetime and intended holding horizon. A day
-bar is not a promise of a same-day exit; a projection has no time-to-target estimate
-unless supported by separate evidence. If a proposed idea depends on a longer
-horizon, expose that mismatch instead of stretching the user's limit.
-
-Use a user-selected deadline, session condition or meaningful structural event
-when defining expiration/reassessment. Do not invent an automatic three-bar
-expiry, flip cooldown, daily holding requirement or target-arrival forecast. If
-an exact deadline matters, establish its timezone/calendar and what starts the
-clock. An expired analytical proposal does not mean a resting order was cancelled.
+Apply the current user's horizon. Distinguish evidence cutoff, opportunity
+lifetime and intended holding period; a day bar does not promise a same-day exit,
+and a projection supplies no time-to-target estimate. Expose a horizon mismatch.
+Derive reassessment from a user deadline, session condition or meaningful
+structural event. For an exact deadline, establish timezone/calendar and the
+clock's start. Analytical expiry does not establish resting-order cancellation.
 
 Market labels are not product capabilities. An equity-related instrument offered
 on a crypto venue may have a different underlying/price basis from the equity;
@@ -195,10 +185,9 @@ actual execution records for account/order-state claims and keep their analysis
 with the execution/account owner. Calling an analytical premise contradicted is
 not an instruction to close, reverse, cancel or replace an order.
 
-No default persistence, refresh task, automatic expiry or account recovery is
-needed. Return the revised reasoning in the current answer. A user-requested
-saved artifact is a separately admitted effect, not permission to modify the
-installed Skill or create an unsolicited experience database.
+Return the revised reasoning in the current answer. Saving requires a separately
+admitted effect and destination; it does not authorize writing into the installed
+Skill or creating an unsolicited experience database.
 
 ## Deliver the useful subset
 
@@ -216,7 +205,6 @@ without asserting trade permission; human confirmation remains necessary.
 Source basis: numbered knowledge files 17 (stop/target reasoning), 22 (sourced
 retest candidates) and 23 (projections), with the plan-invalidation questions in
 `pa_agent/ai/decision_continuity.py` and signed-distance arithmetic in
-`pa_agent/util/trade_metrics.py`. The source's RR caps, stop widening, compulsory
-probability/targets, guessed ticks, CSV/state inference and fixed expiry/cooldown
-are not retained. Revision/license scope is recorded in [README](../README.md);
-the actual calculation grammar is in [measurements](measurements.md).
+`pa_agent/util/trade_metrics.py`. Revision, excluded legacy defaults and license
+are recorded in [README](../README.md); use the selected calculation path in
+[measurements](measurements.md).

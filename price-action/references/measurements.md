@@ -1,9 +1,10 @@
 # Measurement contract
 
-Read before constructing a calculation request or interpreting its result.
-Authority is the bundled `scripts/measure.py` and its offline tests, schema
-version 1. Domain interpretations live in the other references; these measurements
-are not classifiers, order states, or trade permissions.
+For a request/result, read adapter/effects, shared fields, the selected operation
+row/detail and result consumption before a call. Projection/RR also need Explicit
+Points; skip unselected details. Authority is bundled `scripts/measure.py` and its
+offline tests, schema version 1. Other references own interpretations;
+measurements are not classifiers, order states or trade permissions.
 
 ## Select the adapter and admit its effects
 
@@ -97,7 +98,7 @@ supported on the other operations.
   Inclusive inside/outside relations can both be true for equal envelopes.
 - EMA metrics: `close_ema_relation`, `bar_ema_relation`, `close_ema_distance`,
   `ema_gap_count`; each row also has `ema_gap_extent=exact/lower_bound/null`.
-  Count is same-side whole-bar separation, not a universal "20GB" permission.
+  Count is same-side whole-bar separation, not a trade permission.
 - ATR metrics: `range_atr`, `body_atr`. Missing, zero, and negative supplied ATR
   produce respectively unavailable, undefined normalization, and invalid metrics.
 
@@ -186,13 +187,15 @@ cutoff must never borrow that later information.
 Expected for p1: `high_so_far=true`, `confirmation="pending_right"`, and null
 confirmation ID/time. It is not a confirmed pivot despite root `status="partial"`.
 
-### Explicit Points, projection, and gross RR
+### Explicit Points
 
 A Point is either `{"bar_id":"id","field":"open|high|low|close"}` referencing
 an actually supplied field, or `{"price":number,"label":"nonblank source"}`
 with optional `available_at_ms`. Do not mix source forms. Outputs echo source
 fields with `resolved_price`; that field is output-only. A manual label cannot
 verify structure, timing, or event order. Manual sources retain unknown closure.
+
+### Projection
 
 Projection basis is `{type:range,low:Point,high:Point}` with high>=low, or
 `{type:move,start:referencePoint,end:referencePoint}` with chronological start<end,
@@ -207,6 +210,8 @@ valid but flagged `degenerate_projection`; no leg/event/hit probability is prove
 
 Expected: height 10 and target 110, with unknown closure/availability. This is not
 proof of an existing range or approved profit target.
+
+### Gross RR (risk_reward)
 
 For long RR, risk=entry-stop and reward=target-entry; for short, the signs reverse.
 Each explicit target is independent. Ratio requires positive finite risk;

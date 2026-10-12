@@ -18,6 +18,7 @@ could show it is false.
 | Protocol and adapter separation | Replacing a provider or local tool preserves semantic states and completion/refusal rules while changing only the selected binding |
 | Domain invariant or safety rule | Positive, boundary, failure, and adversarial cases preserve the rule and expose its refusal condition |
 | Contextual judgment | Contrasting content or constraints produce appropriately different choices, with criteria tied to the request |
+| Constructive guidance and explanation | The reader can use the method and understand consequential choices from relevant facts, mechanisms, or derivations; material limits govern specific decisions without displacing the useful path |
 | Progressive structure | A simple case stays complete and small; a complex case adds only resources with named consumers and direct routes |
 | Refactor or consolidation | Baseline behavior and callers are characterized; unique rules survive once; stale or competing ownership is removed only after cutover evidence |
 | External operation | Data, authority, credentials, cost, bounds, commit semantics, verification, fallback, and recovery are resolved where applicable; no effect occurs in a policy-only test |
@@ -158,8 +159,8 @@ new conversation or isolated evaluator that did not inherit the authoring turns;
 supply only that bundle through normal discovery, without telling it which skill
 must win. Record selection and handoffs, scope and authority, governing invariants,
 operation, effects, result class, postcondition and limitations. Compare that
-behavioral projection—not wording or reasoning order—with the contract, then
-repeat only for the single mutation under test.
+behavioral projection with the contract rather than matching phrasing or a fixed
+reasoning order, then repeat only for the single mutation under test.
 
 If a non-inheriting context is unavailable, perform static dependency and contract
 checks, mark runtime portability unverified, and retain the runnable bundle only
@@ -215,6 +216,15 @@ Inspect the complete output, not only its summary. Ask whether:
 - unavailable capabilities and partial failures remain accurately distinguished;
 - review or narrow-edit authority was not silently broadened; and
 - the final response claims only what the observed checks establish.
+
+When guidance or explanation quality is material, inspect the connection between
+the requested result, the proposed construction, and the support for its key
+choices. Assess whether examples make the method usable and whether a condition
+changes the relevant decision. Flag repeated or generic caveats that substitute
+for this content. Evaluate correctness, decision value, and reader use rather
+than counting negative words or enforcing a reasoning-to-limitation word ratio;
+a brief direct answer can be complete. Necessary safety and authority boundaries
+retain their force.
 
 Use contrast or mutation sensitivity where judgment might otherwise be cosmetic.
 Change one meaningful input—remove network authority, introduce an existing

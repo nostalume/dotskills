@@ -13,12 +13,13 @@ analysis remain with their respective skills.
 ## Shared responsibility
 
 ```text
-research question and authority
+question, admitted material and authority
   -> admissible claim, phenomenon, or requested result
-  -> selected derivation, construction, source, observation, or execution
+  -> unresolved operation and its owner
+  -> least effectful adequate derivation, construction, source, observation or execution
   -> evidence with exact inferential right and boundary
-  -> bounded disposition or honest open obligation
-  -> optional durable state or reader/artifact projection
+  -> bounded disposition, open obligation or honest unavailability
+  -> durable state or reader/artifact projection only for a named consumer
 ```
 
 Preserve the distinctions, relations, operations, examples, counterexamples,
@@ -56,16 +57,6 @@ These references are not a bundle. A bounded derivation needs no campaign schema
 accepted one-output exposition needs no state index; a requested plot may be a
 result without becoming a new scientific claim. If only physical representation
 remains, hand the supported semantic projection to `document-artifacts`.
-
-For the selected operation, keep the route explicit:
-
-```text
-question and admitted material
-  -> operation-specific owner and guidance
-  -> least effectful adequate method
-  -> evidence with inferential boundary
-  -> disposition, open obligation, or honest unavailability
-```
 
 Do not load computation, persistence, or writing guidance merely because the
 inquiry might eventually need it. A missing source, tool, or durable consumer

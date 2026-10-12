@@ -13,11 +13,9 @@ and human confirmation distinct from order execution or position management.
 
 ## Admit the question and evidence
 
-Use the requested result: explanation, numerical measurement, candidate-plan
-development, or review/update of a supplied interpretation or plan. A request to
-explain a pattern does not require a trade recommendation. For a plan request,
-complete the supported components and name what remains conditional or missing
-rather than inventing prices.
+Select explanation, measurement, candidate development or supplied-plan review/
+update from the request. Finish an explanation without adding a recommendation;
+for a plan, give sourced components and name those still conditional or missing.
 
 Preserve the supplied product, venue, timeframe, price basis, observation order,
 bar identities, and cutoff where they affect the claim. Ask only for a missing
@@ -62,29 +60,32 @@ trade-permission tables.
 | Conditional opening idea, trigger/invalidation/target rationale, or supplied-plan review/update? | [Candidate plans and evidence updates](references/candidate-plans.md) |
 | Exact arithmetic, input conversion, result interpretation, or calculation failure? | [Measurement contract](references/measurements.md) |
 
-## Keep each conclusion with its owner
+## Derive the reading from geometry and location
 
-Separate price facts and reproducible measurements from interpretations and
-possible actions. Cite the relevant bar IDs, supplied levels, or declared
-calculation; identify the selected interval, method, and incomplete components.
-Do not let a pattern name substitute for those premises.
+Relate body, tails, close position, displacement and overlap to a selected prior
+boundary or sequence. Cite bar IDs/levels and the interval; select the reference
+before assessing its crossing. Explain why that relation favors a reading over a
+material alternative, then name a later observation that would distinguish them.
+Missing follow-through leaves that comparison pending. A recent upward leg and a
+broader decline can coexist; explain what each interval changes.
 
-Explain the best-supported reading and a material alternative when ambiguity can
-change the conclusion. State what would support, contradict, or leave them
-unresolved. Several descriptions can coexist: a recent upward move can be a
-pullback inside a broader decline. Neither scale automatically vetoes the other.
+Synthetic illustration, not market evidence: closed O=99, H=103, L=98, C=101
+gives range 5, body 2 and close position 3/5. At a supplied prior upper boundary
+102, H crosses but C ends inside: possible rejection versus a pause before renewed
+crossing. Within supplied, repeatedly tested boundaries 90/110, the same bar is
+interior movement, leaving direction open. Later closed extension beyond 102
+supports continuation; renewed retreat inside supports rejection. For the
+interior case, a boundary test or directional sequence supplies missing context.
+Absent later bars, give those distinguishing conditions, not confirmation/orders.
 
-The references are rewritten repository knowledge, not independently verified
-market laws. Use their relationships as hypotheses with observable premises and
-counterevidence. Do not attach an empirical win rate, default confidence, or
-expected value without applicable evidence. Correlated descriptions of the same
-bars are not independent votes or additional probability.
-
-The caller/user owns holding horizon, permitted strategies/directions, risk
-limits, and trading decisions. Do not import the old app's countertrend bans,
-fixed windows, RR gates, tick guesses, or compulsory two-target policy. Do not
-change supplied prices to satisfy a preferred ratio. A bearish reading does not
-establish that the particular product permits shorting.
+Keep facts/measurements, hypotheses and possible actions distinct. These rewritten
+reference concepts need observable premises and counterevidence; they are not
+verified market laws. Empirical win rates, confidence and expected value require
+applicable evidence. Correlated descriptions of one move are not independent
+votes. The user owns horizon, permitted strategies/directions, risk limits and
+trading decisions. Preserve supplied prices; establish product permissions before
+calling an action feasible. Historical defaults belong in README provenance,
+not the current request's policy.
 
 ## Develop a candidate only within the requested scope
 
@@ -101,24 +102,22 @@ changes which premise; do not read old records or infer account/order state.
 
 ## Use calculations only when the result needs them
 
-The bundled [script](scripts/measure.py) implements `geometry`, `ema`, `atr`,
-`window`, `compare`, `pivots`, `projection`, and `risk_reward`. Read the
-measurement contract before constructing a request. Choose the operation and
-explicit measurement parameters from the question; do not run all operations or
-recalculate supplied indicators by default.
+Choose one operation and explicit parameters from the question using the
+[measurement contract](references/measurements.md): adapter/effects and shared
+inputs, the selected operation's row/detail (Points for projection/RR), then
+result/status/exit semantics before calling the [script](scripts/measure.py).
+Unselected operations stay unread and unrun; recalculate supplied indicators only
+when requested or needed for the claim.
 
-Use an existing compatible local Python runtime only when execution is admitted
-by the current task and host. Locate the script relative to this Skill, not the
-old repository or the author's workstation. A prose-only review needs no tool.
-Without execution, interpret supplied results or show explicitly labeled manual
-arithmetic where feasible; never claim the script ran. Missing Python limits the
-calculation adapter, not all price-action explanation.
+Use an existing compatible local Python only when the task and host admit
+execution; locate the script relative to this Skill. A prose-only review needs no
+tool. Without execution, use supplied results or labeled manual arithmetic where
+feasible; report the unavailable calculation rather than claiming the script ran.
 
-No data fetch, model API, credential access, dependency installation, background
-process, account/order mutation, or persistence is part of this capability.
-Keep such requested work with its separately authorized owner. Do not install a
-runtime or write a report into the installed Skill directory during use. This
-instruction is an effect boundary, not a claim that prose sandboxes tools.
+Data fetching, model APIs, credentials, installation, background processes,
+account/order mutation and persistence require separately authorized owners.
+This capability does none of them and does not write into the installed Skill;
+its instructions do not sandbox the host.
 
 ## Check, revise, and stop
 
@@ -128,21 +127,19 @@ against the hypothesis. Revise only affected claims; retain compatible facts and
 supplied prices. Before returning a candidate, check the user's permitted actions
 and horizon, price sources, and observed vs conditional events or fills.
 
-Obtain another measurement or observation only if it can change the requested
-conclusion. Do not repeat unchanged calculations to manufacture confidence or
-continue until a preferred signal appears. Return the supported answer or a
-bounded partial when further progress needs new evidence or a user-owned choice;
-name that dependency and ask only a material question. Do not poll for future
-bars. A later supplied snapshot is an update under the same identity and cutoff
-rules, not a background loop. This is a reasoning loop, not a fixed call sequence
-or mandatory output schema.
+Choose another measurement only if its possible results change the requested
+conclusion; repeating unchanged arithmetic adds no evidence. When progress needs
+new evidence or a user-owned choice, return the supported subset and name that
+dependency. A later supplied snapshot reopens the affected premise under the same
+identity/cutoff rules; do not poll for future bars. No fixed call sequence or
+report schema is required.
 
 ## Return a bounded answer
 
-Use the format and detail the question needs, not the old Stage1/Stage2 JSON or
-node tree. Make the supported conclusion, source/observation scope, material
-counterevidence, and missing guarantee inspectable. Numerical availability is not
-signal confirmation, market truth, profitability, or permission to trade.
+Use the format and detail the question needs. Make the supported conclusion,
+source/observation scope, material counterevidence and missing guarantee
+inspectable. Numerical availability is not signal confirmation, market truth,
+profitability or permission to trade.
 
 Do not describe an OHLC touch as a real fill, a local pivot as effective support,
 or a projected level as an approved target. If current executable advice depends

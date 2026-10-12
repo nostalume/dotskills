@@ -5,186 +5,136 @@ description: Resolve material, unsettled software architecture or refactor decis
 
 # Architecture Planning
 
-Own decision settlement and implementation handoff, not production code. Use one
-visible control flow:
-
-```text
-goal and authority
-  -> current evidence and material decision scope
-  -> active decision categories and references
-  -> settle, bound exploration, defer, or block
-  -> optional smallest sufficient local plan
-  -> plan audit when materialized
-  -> implementation handoff or stop
-```
+Own unsettled design decisions and implementation handoff, not production code.
+Work from revision-scoped behavior and constraints to a selected or bounded
+decision; materialize and audit a local plan only for a durable consumer.
 
 ## Admit the operation and its authority
 
-Resolve the project root and applicable instructions, then distinguish:
+Resolve project root and instructions, then select the smallest applicable row:
 
-- **review only:** inspect and report; do not write a plan or source;
-- **decision:** inspect and settle or bound the decision; materialize only when a
-  durable consumer needs it;
-- **planning:** create or revise the smallest local handoff after decisions close;
-- **implementation:** route settled work to `software-development`.
+| Operation / condition | Result and authority |
+| --- | --- |
+| Review only, including unclear evidence/ownership | Inspect and report findings/unknowns; no plan, source or other workspace mutation |
+| Decision: a material design choice is open | Inspect; settle, bound exploration, defer or block; materialize only for a durable consumer within granted authority |
+| Planning: decisions are settled and a durable handoff is needed | Create/revise the smallest audited local plan, then return at the requested boundary |
+| Implementation requested for settled decisions | Authorized handoff to `software-development`; not architecture implementation |
 
-Framing an unresolved goal authorizes inspection and bounded reasoning, not a
-target architecture. A plan does not authorize implementation, documentation,
-workflow changes, publication, or external effects.
+An unresolved goal authorizes inspection/reasoning, not a target architecture.
+Rows may compose in order, but one grants no later operation. A plan grants no
+implementation, documentation, workflow, publication or external-effect authority.
+Transient decisions leave the workspace unchanged. Revalidate stale context at
+the affected boundary without unrelated repair.
 
-Current source is authoritative evidence of current implementation at the
-inspected revision. User intent, accepted contracts, project policy, and governing
-specifications retain their own normative scopes. Preserve contradictions: they
-may reveal implementation drift, stale documentation, or an invalid premise rather
-than allowing one source class to overrule all others.
+Cadence is separate from authority. At user-led checkpoints, report evidence,
+decisions, alternatives and user-owned choices, then wait; after input revise only
+affected decisions/sections. In authorized end-to-end work, proceed without
+per-stage approval and pause only for a material user-owned choice, missing
+authority or blocker. Stages/tasks add no authority.
 
-## Route by decision state
+## Derive options from current behavior
 
-Select the smallest route that can change the user's decision:
+Inspect revision/dirty state, instructions, manifests, entry points, callers,
+contracts, tests, authoritative docs and relevant implementation. For style or
+topology inspect enforced tooling and matching maintained analogues; one analogue
+is evidence, not a convention. Every named current path/owner must exist at that
+revision; distinguish it from a proposed owner.
 
-| Condition | Route | Allowed result |
-|---|---|---|
-| evidence or ownership is unclear | **Review** | findings and bounded unknowns; no plan or source edits |
-| a material design choice is open | **Decision** | settled, bounded, deferred, or blocked decision |
-| decisions are settled and a durable handoff is needed | **Planning** | smallest audited local plan |
-| implementation is requested for settled decisions | **Handoff** | authorized transfer to `software-development` |
+1. Trace a real caller through admission, behavior, effects and persistence/output.
+   Identify the values/identities crossing each edge, the owner of each transition,
+   and who retains resources on success, failure or cancellation. Extend only over
+   recovery, compatibility, lifecycle, concurrency, scale or caller edges that can
+   change the choice; stop at observably irrelevant edges.
+2. Extract constraints from that path: which invariant, caller promise, authority,
+   resource lifetime or workload budget must survive? Tie each material constraint
+   to its source and the edge it governs. Current source establishes implementation
+   at the inspected revision; user intent, contracts, policy and specifications
+   retain their own scopes. Preserve contradictions as possible drift or invalid
+   premises, not as permission for one source class to overrule all others.
+3. Before naming/replacing an architecture, system, boundary or API, or declaring
+   production ready, read [decision settlement](references/decision-settlement.md). It owns premise
+   classification, behavioral specificity, comparison, status and reopen rules.
+   Construct alternatives by changing the owner/transition responsible for the
+   mismatch, preserving other obligations. Include the incumbent; compare viable
+   choices on distinguishing constraints, not names or speculative module layouts.
+4. Explain which constraint selects the option, what falsifies it and which changed
+   premise would select another. The [worked comparison](references/decision-settlement.md#worked-comparison-cancellation-and-resource-ownership)
+   derives a resource boundary from a lifetime mismatch.
 
-Routes may compose in that order, but no later route is implied by an earlier
-one. Stale project context is reported and revalidated at the affected boundary;
-it is not silently repaired during an unrelated decision.
-
-## Inspect to decision sensitivity
-
-Inspect the dirty state, revision, instructions, manifests, public entry points,
-callers, contracts, tests, authoritative documentation, and relevant
-implementation. Where style or topology matters, inspect enforced tooling and
-matching maintained analogues; one analogue is evidence, not a convention.
-
-Trace one real path as initial evidence:
-
-```text
-input -> admission -> behavior -> effect -> persistence or output
-```
-
-Extend it only across success, failure/recovery, compatibility, lifecycle,
-concurrency, scale, or caller edges that can change the decision. Stop when an edge
-is observably irrelevant. Label observations, entailed inferences, user policy,
-proposals, contradictions, and unknowns; search results locate evidence but do not
-become its authority.
-
-Before naming or replacing an architecture, boundary, system, or API—or declaring
-production work ready—use [decision settlement](references/decision-settlement.md).
-It determines what evidence and behavior must be settled, compares material
-alternatives, and governs decision status and replacement. Ask the user only for a
-material intent, policy, or tradeoff they own; keep other unresolved choices
-exploratory, deferred, or blocked at the smallest affected boundary.
+Keep observations, entailed inferences, user policy, proposals, contradictions and
+unknowns distinct; search results locate evidence, not authority. Inspect project
+facts rather than asking users to reconstruct them. Ask only for material intent,
+policy or tradeoffs they own; otherwise bound exploration, defer or block only the
+decision an unknown can change.
 
 ## Select decision categories
 
-Select only categories whose decisions could change the architecture. Each
-decision has one primary owner; do not read every reference by default.
+Load only active categories, each with one primary owner:
 
-- **Behavior and promises:** domain meaning, invariants, and externally observable
-  behavior ([domain and invariants](references/domain-and-invariants.md),
-  [observable contract](references/contracts-and-compatibility.md#define-target-behavior)).
-- **Ownership and authority:** authoritative facts, policy, state transitions, and
-  effects ([authority and effects](references/authority-and-effects.md)).
-- **Boundaries and composition:** values crossing boundaries and conceptual or
-  physical ownership/dependency structure
-  ([representation and flow](references/representation-and-flow.md),
-  [module topology](references/module-topology.md) when topology is material).
-- **Runtime and lifecycle:** execution, failure, bounded work, resources, and
-  recovery ([resources and recovery](references/resources-and-recovery.md)).
-- **Operating envelope:** workload and cost constraints that can alter the choice
-  ([cost and scale](references/cost-and-scale.md)); consider deployment, trust,
-  security, or observability only when they can change this design.
-- **Evolution and coexistence:** migration, compatibility, cutover, and retirement
-  when live consumers or an incumbent system matter
-  ([compatibility and migration](references/contracts-and-compatibility.md#evolve-with-live-consumers)).
+- **Behavior/promises:** domain meaning and invariants
+  ([domain](references/domain-and-invariants.md)); observable behavior
+  ([contract](references/contracts-and-compatibility.md#define-target-behavior)).
+- **Ownership/authority:** facts, policy, state transitions and effects
+  ([authority](references/authority-and-effects.md)).
+- **Boundaries/composition:** crossing values
+  ([representation](references/representation-and-flow.md)); material conceptual/
+  physical owners, dependencies, visibility, facades or re-exports
+  ([topology](references/module-topology.md)). Obvious local relay cleanup remains
+  `software-development` work.
+- **Runtime/lifecycle:** failures, bounded work, resources and recovery
+  ([resources](references/resources-and-recovery.md)).
+- **Operating envelope:** decision-sensitive workload/cost
+  ([cost](references/cost-and-scale.md)); security, trust, deployment and
+  observability policy come from authoritative project/environment sources, not
+  that cost reference.
+- **Evolution/coexistence:** live consumers, compatibility, migration, cutover and
+  retirement ([compatibility](references/contracts-and-compatibility.md#evolve-with-live-consumers)).
 
-Mathematical or numerical claims are not a separate architecture category. Treat
-them as behavior, representation, or operating constraints when they can change
-the decision; keep unsupported claims unknown rather than supplying conventional
-algorithms, tolerances, or validity assumptions. A proposal that materially
-changes conceptual/physical owners, dependencies, visibility, facades, or
-re-exports activates module topology. An obvious implementation-local relay
-cleanup remains `software-development` work.
-
-The operating-envelope reference covers workload and cost, not security or
-deployment policy. When those constraints can change a decision, inspect their
-authoritative project or environment source; do not infer policy from this skill.
-
-Use decision settlement across active categories; do not copy its closure or
-comparison protocol into their references. Use plan audit only after creating or
-materially revising a plan.
+Mathematical/numerical claims enter the applicable behavior, representation or
+operating constraint; keep unsupported algorithms, tolerances and validity
+assumptions unknown. Categories supply constraints; settlement owns closure and
+comparison. Plan audit starts only after a plan is created or materially revised.
 
 ## Materialize only for a consumer
 
-Use an existing ignored project-root `.agents/plan/` only when a durable handoff,
-continuity, review, or implementation consumer needs a plan; otherwise keep the
-answer transient. Use one canonical plan file per goal, following project format
-(Markdown if none exists); it owns goal, decisions, status, and dependencies. Keep
-stages as headings and tasks as checklists by default. A stage is a distinct
-outcome with a consumer that merits separate review or handoff; a task is an
-executable dependency unit, not a phase or individual command. Group steps with
-the same owner, dependencies, and completion evidence. Split a unit into another
-file only when a downstream consumer needs a standalone artifact or separate
-lifecycle; link it from the canonical plan without copying governing decisions.
-These boundaries do not imply branches, commits, or approval gates. Git ignore
-rules affect untracked-file handling, not confidentiality or
-publication: keep plans separate from reader docs and include only context needed
-to decide or execute the plan. Do not change tracked ignore policy merely to store
-a plan. If no suitable local location exists, answer in chat or request authority;
-report tracked plans and never untrack them without approval.
+For durable handoff, continuity, review or implementation, use an existing ignored
+project-root `.agents/plan/`; otherwise answer transiently. Keep one canonical
+plan per goal in project format (Markdown by default), owning goal, decisions,
+status and dependencies. Stages are distinct outcomes with review/handoff
+consumers; tasks are executable dependency units, not phases or single commands.
+Group steps sharing owner, dependencies and completion evidence; use headings/
+checklists by default. Split only for a standalone consumer or separate lifecycle,
+linking back without duplicating governing decisions. These units imply no branch,
+commit or approval gate.
 
-Resume a matching readable plan only when goal, authority, revision, and status are
-unambiguous. Use functional domain names. Record only a candidate delivery
-boundary when the outcome would remain useful, falsifiable, and revertible if
-later work stopped; project policy,
-the eventual actual diff, and implementation evidence decide the final review
-shape.
+Git ignore controls untracked files, not confidentiality/publication. Keep plans
+separate from reader docs and include only decision/execution context. Do not
+change tracked ignore policy to store a plan. Without suitable placement, answer
+in chat or request authority; report tracked plans and never untrack without
+approval. Tracked proposals remain proposals, not implemented facts.
 
-Record only applicable goal/scope, invariants, premises and status, resolution
-or exact unknown, owner and flow changes, compatibility boundary, dependent
-outcomes, first executable work, falsification/completion evidence, and rollback
-or reopen conditions. A task adds local constraints only where they vary; it does
-not silently choose architecture. Classify documentation, automation, release,
-and system-effect impact once, without treating classification as authority.
+Resume a readable matching plan only when goal, authority, revision and status are
+unambiguous. Use domain names. A candidate delivery boundary must remain useful,
+falsifiable and revertible if later work stops; project policy, actual diff and
+implementation evidence determine final review shape.
+
+Record applicable goal/scope, invariants, premises/status, resolution/exact unknown,
+owner/flow changes, compatibility, dependent outcomes, first executable work,
+falsification/completion evidence and rollback/reopen conditions. Tasks add only
+varying local constraints, never an implicit architecture. Classify documentation,
+automation, release and system effects once; classification grants no authority.
 
 ## Audit and hand off
 
-After creating or materially revising a plan, read [plan audit](references/plan-audit.md)
-and falsify the artifact against fresh repository evidence. Correct findings at
-their smallest owner. Stop revising when no blocker remains and name the first
-ready task. Return the report or plan at the requested boundary; hand off to
-`software-development` only when implementation is authorized.
+After plan creation/material revision, [audit](references/plan-audit.md) against
+fresh repository evidence. Correct findings at their smallest owner within current
+authority; stop when no blocker remains and name the first ready task. Unknowns,
+input/effect/dependency/compatibility obligations and material tradeoffs must remain
+visible; enthusiasm or detailed tasks cannot settle them.
 
-Hand `software-development` settled conceptual constraints, accepted tradeoffs,
-and falsification obligations—not mandatory pseudocode or a predicted file
-manifest. Planning evidence cannot certify the eventual diff. Reopen only the
-smallest decision invalidated by new source, contract, user policy,
-implementation, integration, or cost evidence, and expose the resulting delta.
-
-Choose interaction cadence separately from request authority. In a user-led
-examination loop, report evidence, decisions, alternatives, and any user-owned
-choice at requested checkpoints; wait for input before proceeding past one. After
-input, revise only the affected decision or plan section. In an explicitly
-authorized end-to-end loop, proceed without per-stage approval and pause only for a
-material user-owned choice, missing authority, or blocker. Hand off settled
-implementation and re-enter planning only when new evidence invalidates a premise.
-Stage and task boundaries grant no authority; follow the user's explicit scope.
-
-## Hard gates
-
-- Review-only work and transient decisions leave no workspace mutation.
-- Plans use a location suitable for their intended audience; Git ignore is not
-  confidentiality. Tracked proposals never pose as implemented facts.
-- Every named current path and owner exists at the inspected revision.
-- No material unknown is hidden by a system/API name, detailed task, or user
-  enthusiasm, and no production task is ready while its governing decision or
-  audit has a blocker.
-- Surface style requires project evidence. A semantic topology decision instead
-  requires an effect on ownership, dependency, visibility, compatibility,
-  lifecycle, or evidenced change locality.
-- No stage or task hides an input, authority, effect, dependency, compatibility
-  obligation, or material tradeoff.
+Return the requested report/plan; hand off only when implementation is authorized.
+Give `software-development` settled conceptual constraints, accepted tradeoffs and
+falsifiers, not mandatory pseudocode or predicted files. Planning cannot certify
+the eventual diff. New source, contract, user policy, implementation, integration
+or cost evidence reopens only the smallest invalidated decision and its dependents,
+following settlement's replacement rules; expose the delta.

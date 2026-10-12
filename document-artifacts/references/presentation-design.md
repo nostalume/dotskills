@@ -38,6 +38,31 @@ master, placeholders or native charts that must survive; inspect those before
 rebuilding anything. Use accepted brand resources as inputs, not decorative
 examples from another organization's template.
 
+## Worked construction: one source, two native objects
+
+Synthetic, unexecuted example: accepted `R1` has rows `(north, North, 5)` and
+`(south, South, 8)`, measure `shipments`, unit `thousand items`. The table and
+horizontal bar chart, category order and zero baseline are already accepted.
+
+1. Use one row sequence for native table cells and chart categories/series. Table
+   headers are `Region` and `Shipments (thousand items)`; bind chart title/unit and
+   source caption to the same measure/unit/`R1`. Retain stable row identities and
+   an editable chart with native data; an image needs separate acceptance.
+2. Inspect the slide/master safe area; allocate title, source and two content
+   regions. Measure cell text, axis labels and plot bounds separately. If labels
+   overflow, wrap/rebalance, then split into linked chart/table slides with units
+   and source repeated, preserving values and encoding.
+3. Reopen and check native types, order, unit/source and `north/5`, `south/8` in
+   both objects. Chart series `south/6` versus table `8` is a binding defect:
+   repair the shared projection, even if the preview looks clean. Render that
+   revision in the selected engine; a label crossing the source caption is instead
+   a capacity defect: repair placement and rerender. Check reading order, headers
+   and alternatives independently.
+4. `R1`→`R2` updates both projections and invalidates dependent checks. A caption
+   typo changes only its authorized object/checks, preserving intervening edits.
+   Without a renderer, native evidence remains useful but requested visual
+   acceptance stays unmet.
+
 ## Capacity and typography
 
 Measure representative real content in the intended renderer early: the longest

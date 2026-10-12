@@ -8,18 +8,20 @@ compatibility nor authorization.
 
 ## Map the result to required capability
 
-Name what must be produced and observed before selecting an operation. These are
-independent capabilities rather than mandatory maturity levels:
+Name the accepted result, then select its capability below. These are independent
+operations, not maturity levels. Use [quality evaluation](quality-evaluation.md)
+**Match evidence to the claim** for the quality evidence each operation must make
+observable; this reference owns tool admission, effects and recovery.
 
-| Accepted result or claim | Required capability | Distinguishing evidence |
-| --- | --- | --- |
-| Representation decision or executable intent | Inspect authoritative inputs and express encoding, structure, quality criteria and unresolved obligations | Decision trace, source mapping and an implementable specification; no rendered claim |
-| Editable source | Author and parse/inspect the selected native or textual representation | Exact source identity, required objects/content and preservation checks; appearance may remain unverified |
-| Rendered static artifact | Render the exact current source with the delivery engine or a bounded declared substitute | Inspected output at target dimensions/scale, including fonts, glyphs, clipping, geometry, color and image/vector fidelity |
-| Temporal or encoded media | Deterministically evaluate time/state, render or capture it, and encode/probe the requested carrier | Start/transitions/holds/end inspection, duration/dimensions/rate/audio evidence and exact source/export correspondence |
-| Interactive visualization | Run the actual interaction model and exercise relevant input/state paths | Initial, changed, loading, empty, error and reduced-capability behavior as applicable, including keyboard/non-visual paths |
-| Native container result | Use an admitted producer/editor/renderer that preserves the requested native structure | Native-object/source inspection plus rendered evidence where appearance is claimed |
-| External generation, data or rendering | Use an authorized bounded provider adapter and validate returned content as untrusted | Target/request identity, disclosed payload, provider/version, outcome, local artifact checks, cost/effect and recovery evidence |
+| Accepted result | Required capability |
+| --- | --- |
+| Representation decision or executable intent | Inspect authoritative inputs; express encoding, structure, quality criteria and unresolved obligations. |
+| Editable source | Author and parse/inspect the selected native or textual representation. |
+| Rendered static artifact | Render the exact revision with the delivery engine or a bounded declared substitute; inspect at target dimensions/scale. |
+| Temporal or encoded media | Deterministically evaluate time/state, render/capture, and encode/probe the requested carrier, including timing/dimensions/rate/audio when applicable. |
+| Interactive visualization | Run the actual model and exercise relevant input/state paths, including keyboard/non-visual access and fallbacks. |
+| Native container result | Use the container owner's admitted producer/editor/renderer to preserve native structure; supply representation/perceptual review within this skill's scope. |
+| External generation, data or rendering | Use an authorized bounded provider adapter; bind request/target/revision and validate returned content as untrusted under the external-operation contract below. |
 
 Do not weaken the quality contract to fit available tools. When a capability is
 missing, keep purpose, source truth and quality obligations stable while changing
@@ -68,13 +70,12 @@ Before executing, resolve the fields that affect this selected edge:
 - bounds on size, duration, frames, memory, concurrency, timeouts and attempts;
 - cancellation, partial-output, retry/idempotency, cleanup and recovery behavior;
   and
-- semantic, structural, visual, temporal, interactive and operational observations
-  needed after execution.
+- the quality reference's selected evidence obligations and operational
+  post-observation needed after execution.
 
-Keep authoring, rendering, interaction, capture, encoding and inspection
-independently selectable. A caption edit should not reinstall a renderer; an MP4
-request does not choose the authoring language; a captured still does not prove
-animation; an encoder does not own the visual source.
+Select authoring, rendering, interaction, capture, encoding and inspection
+independently. A caption edit does not require reinstalling a renderer; an MP4
+request does not choose a language or make the encoder the source owner.
 
 Execute trusted project code only within its admitted authority. Treat parsed
 files, remote responses, generated media, archives, redirects and provider

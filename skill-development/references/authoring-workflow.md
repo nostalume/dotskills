@@ -129,12 +129,40 @@ revision only when the trace matches the route and each changed layer has
 evidence; otherwise correct the smallest owning section and rerun the affected
 case.
 
-Write imperative instructions at the user's level of abstraction. Explain
-non-obvious reasoning where it changes a decision; omit generic advice an agent
-already knows. Use examples to clarify a variant, boundary, or failure—not as
-phrases that outputs must imitate. Avoid mandatory intake forms, fixed phase
-counts, fixed file counts, or state artifacts unless the domain contract truly
-requires them.
+## Author the constructive path
+
+Make the positive method the center of the skill: the relevant objects and
+relations, how admitted inputs become the requested result, why consequential
+choices fit the problem, and what establishes success. Give the agent enough
+domain-grounded guidance to construct a useful result and adapt the method when
+its controlling conditions change.
+
+Ground consequential choices in relevant facts, explicit assumptions, causal
+mechanisms, or inspectable derivations. Connect the support to the operation it
+justifies, including the criterion for choosing or changing a method. Explain
+non-obvious reasoning where it changes a decision; ordinary settled steps can
+remain concise. An example should make the construction usable, expose a
+meaningful variant, or show how the criterion transfers to another input.
+
+Organize instructions along the reader's usable path through the capability.
+For example, preserving source meaning can be made operational through source
+positions, an explicit grouping identity, stable merging, and retained conflict
+provenance; explain how those operations preserve the content. Choose the path
+from the capability rather than imposing this sequence on unrelated work.
+
+Attach conditions, limits, and failure behavior to the choice, action, or claim
+they change. State a material boundary clearly at its owning location, before an
+affected action when necessary, and continue compatible work. This gives limits
+a concrete decision role while keeping the useful construction and its reasons
+as the main content. Consolidate repeated caveats and omit generic disclaimers
+that add no relevant information.
+
+Write imperative instructions at the user's level of abstraction and use the
+shortest complete explanation. Omit generic advice an agent already knows.
+Examples clarify behavior rather than prescribe phrases to imitate. Judge the
+content by its usefulness and support, not a word ratio or banned vocabulary.
+Let the domain contract determine any mandatory intake form, fixed phase/file
+count, or state artifact.
 
 ## Create a new skill
 

@@ -93,11 +93,11 @@ owns Python host configuration; this script is not a runtime sandbox.
 
 ## Choose a calculation
 
-Read the [measurement contract](references/measurements.md) for accepted fields,
-formulas, source Points, confirmation/provenance semantics, result locations, and
-failure handling. It is the canonical interface reference for the bundled script.
-The [Skill entry](SKILL.md) routes interpretation to the relevant knowledge;
-there is no need to read all references or execute all calculations for one question.
+Use the [measurement contract](references/measurements.md) by section: shared
+adapter/budgets and input fields, the selected operation row/detail (Explicit
+Points for projection/RR), then result/status/exit handling before execution.
+It is the canonical interface reference; unselected operations need not be read
+or run. The [Skill entry](SKILL.md) routes qualitative interpretation separately.
 
 ## Recalculate a supplied plan without changing prices
 
@@ -139,7 +139,7 @@ application and its supporting material have been removed from this tree:
   and projection material; prior references, strict neighborhoods, confirmation
   timing, and explicit anchors rewritten, not automatic trend/leg/breakout labels.
 - `pa_agent/util/trade_metrics.py`: signed risk/reward distances; explicit
-  direction replaces inference, and RR gates/stop widening are not retained.
+  direction replaces inference.
 
 Knowledge references are rewritten from the same revision's `prompt_engineering/`
 material: market diagnosis, bar-by-bar analysis, bull/bear channels and spikes,
@@ -147,18 +147,32 @@ ranges, second attempts and bar signals, H/L counting, breakout tests/failures,
 EMA terminology, overlap, retest candidates, wedges, final flags, major reversals,
 triangles, double structures, and measured moves. Numbered source topics are
 identified at the end of each reference. The original glossary supplies term
-expansions, not mandatory enums or routing. The old binary decision tree, risk/
-order protocol, local external-knowledge paths, and source instructions are not
-runtime dependencies. Planning also draws from stop/target and continuity
-questions, rewritten without account state, default timers or hidden repricing.
+expansions, not mandatory enums or routing. Planning also draws from stop/target
+and continuity questions, rewritten as source-bound conditional reasoning.
+
+### Legacy migration, not current defaults
+
+Historical Stage1/Stage2 JSON, the binary/node decision tree, risk/order protocol,
+local external-knowledge paths and source instructions are not runtime contracts.
+Countertrend/MTR or shape bans, fixed classification/body/wick and retreat bins,
+windows/retry limits, confidence/vote/win-rate gates, RR caps/floors (including
+implicit 1R), stop widening/repricing, compulsory probabilities or TP1/TP2,
+target priorities/partial-exit schedules, guessed ticks/ATR buffers/bar-height
+limits and cross-product tick/session templates were not retained. Nor were
+CSV/account-state inference, persistence/refresh/account recovery, fixed
+three-bar expiry/flip cooldown, daily holding or intraday-to-one-week defaults.
+The source term 20GB describes a measured stretch, not a permission threshold.
+
+The current request owns policy and format; supplied observations and declared
+calculations own prices. The entry and planning methods enforce that ownership
+without requiring this migration history for ordinary analysis. The unchanged
+reference source notes identify additional excluded conventions by topic.
 
 These files preserve selected concepts, not evidence that the source's empirical
 claims are true or that every source sentence was migrated. Original-author
-attributions have not been independently authenticated. Unsupported probabilities,
-universal direction/shape bans, hidden stop changes, and cross-product tick/session
-templates are excluded rather than disguised as configuration.
+attributions have not been independently authenticated. Excluded conventions
+above are not hidden configuration or current trade permissions.
 
-Old classification thresholds, trade permissions, stop widening, and guessed
-ticks are excluded. The original **AGPL-3.0-or-later** declaration is retained;
+The original **AGPL-3.0-or-later** declaration is retained;
 see [LICENSE](LICENSE). This preserves provenance and licensing rather than
 granting a new license, making a legal determination, or authorizing publication.

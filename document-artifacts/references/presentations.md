@@ -10,6 +10,24 @@ the skill entry point. This workflow owns the deck and carries the accepted choi
 through native composition, rendering, and delivery. Without that capability, do
 not guess; report the open choice and complete any fixed work.
 
+## Load the selected PPTX path
+
+Before a native PPTX operation, read Office's shared admission/preservation,
+**PPTX** and **Match validation to the claim** sections as routed by the entry;
+apply its forward-representation requirement before an Office API/provider.
+Read execution before tools/effects and the [applicable checkpoints](#required-checkpoints-flexible-methods).
+Then read only the selected row's guidance, using section/range reads when supported:
+
+| Operation | Guidance |
+| --- | --- |
+| Create | [Composition](#compose-at-explicit-boundaries) and relevant presentation-design placement/capacity/example; [tool choice](#choose-the-operation) if unsettled |
+| Use an author example | [Selected resource rows and author command](#maintained-starting-resources); missing dependencies trigger [setup](#project-setup) and only the current manager branch |
+| Precise edit | [Native edit recipes](#useful-edit-recipes) for current object/revision and preservation; check/render affected scope as required |
+| Revise composition | [Composition](#compose-at-explicit-boundaries) and affected presentation-design placement/capacity/revision; retain accepted direction |
+| Render/validate | [Common render requirements](#render-the-selected-native-deck) and selected renderer subsection; PDF operations for a PDF projection |
+| Acquire/reuse resources | [Resource selection](#select-acquire-and-keep-resources-useful) when needed |
+| Maintain examples | [Maintenance checks](#maintain-the-examples) only for implementation maintenance |
+
 ## Required checkpoints, flexible methods
 
 Satisfy each applicable checkpoint before its dependent action. Existing project
@@ -61,9 +79,9 @@ output across rendering engines or fonts.
 
 For deck narrative assembly, placement of an accepted representation,
 multilingual typography, contrasting evidence treatments and repair recipes, read
-[presentation design](presentation-design.md). Route a materially open information
-encoding through visualization design first; do not create a second chart or
-diagram decision here.
+[presentation design](presentation-design.md), selecting its affected sections.
+Route a materially open information encoding through visualization design first;
+do not create a second chart or diagram decision here.
 
 - Content supplies accepted wording, values and assets; a template contributes no
   factual authority. Keep a project's content and styling independently editable
@@ -103,6 +121,8 @@ data and supporting notes. Inspect wrapping and clipping after changes.
 The examples create native objects and refuse an existing output path.
 They neither install tools nor render, publish, or claim visual completion.
 
+### Run the selected author
+
 In a destination project with the chosen dependency already admitted, copy the
 selected author source, brief and styles, then run **one** author:
 
@@ -114,6 +134,12 @@ node native-js.mjs brief.json styles.json paper deck.pptx
 python -I -B native-python.py brief.json styles.json night deck.pptx
 ```
 
+Node resolves imports from the project containing the copied source. Run the
+selected author and inspect its result; no installer bundle or generic probe is
+required. Rendering remains an independent operation.
+
+### Project setup
+
 The JS example uses PptxGenJS; the Python example uses python-pptx. Inspect the task
 root and available tools, then follow the project's manager and constraints. If the
 selected dependency is missing and installation is authorized, use the project's
@@ -122,12 +148,16 @@ manifests/locks and may download packages; keep new dependencies and caches in t
 project. If setup authority or capability is missing, stop and report the exact
 binding needed.
 
+#### uv-managed Python
+
 For a uv-managed Python project:
 
 ```sh
 uv add python-pptx
 uv run python -I -B native-python.py brief.json styles.json night deck.pptx
 ```
+
+#### Node and npm
 
 For an existing Node/npm project:
 
@@ -136,16 +166,14 @@ npm install pptxgenjs
 node native-js.mjs brief.json styles.json paper deck.pptx
 ```
 
+#### Other selected managers
+
 For a user-selected compatible Deno project, `deno add npm:pptxgenjs` records the
 dependency; derive the smallest file/environment permissions from the copied source
 and current Deno interface before invoking it. The maintained JS comparison runs
 under Node, so an unexecuted Deno route is not compatibility evidence. Follow the
 corresponding native workflow for Bun or another selected manager instead of
 migrating it to these examples.
-
-Node resolves imports from the project containing the copied source. Run the
-selected author and inspect its result; no installer bundle or generic probe is
-required. Rendering remains an independent operation.
 
 ## Resource reuse and rendering
 
@@ -175,7 +203,22 @@ template. Warm offline work reuses local resources/dependencies; cold offline
 acquisition is not promised. Upstream changes never overwrite project copies:
 compare an explicitly selected new version against local edits before updating.
 
-### Render the selected native deck
+## Render the selected native deck
+
+Render the exact source revision with its required fonts and linked inputs.
+Reopen the actual result; report the selected engine, checked scope and missing
+fidelity. Use execution's bounds and owned lifecycle, preserving user sessions.
+
+### Desktop Office renderer
+
+For desktop Office, preserve user sessions and use the admitted integration's
+process/document lifetime rules. A generic process-kill helper does not establish
+ownership of a COM application. Do not install or start Office merely to author.
+
+A PowerPoint fidelity claim requires the admitted native PowerPoint engine;
+platform-specific integration is selected anew, not inferred from another host.
+
+### LibreOffice renderer
 
 For a LibreOffice route, bind its executable and prepare a task-owned profile and
 output directory. A typical selected export is:
@@ -215,10 +258,6 @@ executable/package locations on the host; the skill has no fixed Office/browser
 path. Linux/macOS descriptions are not native execution evidence. Windows Office
 COM automation is a separate conditional integration; it does not describe the
 macOS automation interface.
-
-For desktop Office, preserve user sessions and use the admitted integration's
-process/document lifetime rules. A generic process-kill helper does not establish
-ownership of a COM application. Do not install or start Office merely to author.
 
 ## Useful edit recipes
 

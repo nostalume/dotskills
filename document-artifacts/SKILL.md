@@ -5,240 +5,125 @@ description: "Create, edit, inspect, extract, convert, or render native Microsof
 
 # Document Artifacts
 
-Own physical document representation and format behavior. The source or domain
-owner still owns meaning: research claims, software explanations, and business/data
-conclusions must be accepted by their respective content owners. Extraction
-consumes source material that may be unadjudicated; production consumes accepted
-content. Return a checked projection or artifact with explicit limitations, never
-an independently accepted research claim.
+Own physical representation and format behavior, not domain conclusions.
+Extraction consumes possibly unadjudicated sources; production consumes content
+accepted by its research, software or business/data owner. Return a checked
+projection or artifact with its limitations.
 
-For standalone PDF inspection, extraction, creation, transformation, OCR,
-protection, or forms, read [PDF operations](references/pdf.md). A PDF rendered
-from Typst or LaTeX remains a derived output of its source-language operation;
-use that source reference for compilation and the PDF reference for independent
-PDF edits.
+## Select the result and its route
 
-## Admit one request
+Inspect project sources and conventions; preserve source format/layout by default.
+Select operation and source variant once, before tools: OOXML documents/templates/shows
+and macro-enabled variants, Markdown/Typst/LaTeX sources, analysis projections and
+fixed-layout PDF have distinct preservation needs.
 
-Establish only fields that can change correctness:
+| Operation | Establish before action | Closure evidence |
+| --- | --- | --- |
+| Inspect | Source and requested information/page/region/feature scope | Located observations; no invented destination |
+| Extract | Source, projection and coverage | Located content and unresolved scope; write only for a request or named consumer |
+| Create | Accepted content and target format | Reopened output and requested fidelity checks |
+| Edit | Current source, exact change, preservation set and output policy | Reopened source/output, changed scope and preserved features |
+| Convert | Source, target, accepted losses and destination policy | Target opens/renders with declared losses; Markdown is not native editing |
+| Render/validate | Source, target when rendering, fidelity and engine | Affected output states checked against the source revision |
 
-```text
-ArtifactRequest(
-  source or accepted-content references and kind
-    -> observed identity/revision/digest,
-  operation = inspect | extract | create | edit | convert | render,
-  requested postcondition and relevant page/region/feature scope,
-  target format when the operation requires one,
-  required_fidelity = nonempty subset of
-    {semantic, structural, visual, accessibility},
-  preservation-critical features and accepted losses,
-  destination and overwrite policy when writing,
-  authority = local | explicitly approved remote,
-  trust classification,
-  page/byte/pixel/time/concurrency resource bounds
-)
-```
+Bind source/content references to observed identities, revisions or digests. Set
+the postcondition, preservation-critical features and accepted losses, trust and
+page/byte/pixel/time/
+concurrency bounds; require a nonempty fidelity subset of semantic, structural,
+visual and accessibility. Writing needs destination/overwrite policy; remote work
+needs explicit authority. These are conceptual requirements, not schema files.
 
-Treat operation-specific requirements as variants rather than making every field
-implicitly optional. `create` requires accepted content and a target; `convert` and
-`render` require a source and target; read-only inspection does not invent a
-destination. `inspect` and `extract` require a source and requested information or
-projection; `edit` requires a source, exact change, preservation set, and output
-policy. Extraction writes a projection only when requested or needed by a named
-consumer. These are conceptual fields, not a requirement to create schema files.
+Read common obligations and only the selected branches:
 
-## Route by artifact result
+| Selected work | Read before its dependent action |
+| --- | --- |
+| Producer depends on math, relations, table schema, references, media associations or nested layout | [Forward representation](references/representation-fidelity.md), before syntax/provider selection |
+| Extract | [Located extraction](references/ingestion.md), before provider choice; the domain owner admits its evidence |
+| Standalone PDF inspect/extract/create/transform/OCR/protection/forms | [PDF operations](references/pdf.md) |
+| OOXML or legacy `.doc/.ppt/.xls` recognition/conversion | [Office](references/office.md): introduction and shared sections through **Apply format-specific requirements**, selected DOCX/PPTX/XLSX subsection, then **Match validation to the claim**; official references as needed |
+| PPTX composition/revision/render/validation or tool selection | [PPTX selector](references/presentations.md#load-the-selected-pptx-path) |
+| Markdown format work | [Markdown boundary](references/markdown.md) |
+| Typst source/build/output | [Typst](references/typst.md): bind source, project-root, compiler, fonts, inputs, packages and outputs anew |
+| LaTeX source/build/output | [LaTeX](references/latex.md): preserve project engine, class, packages and build graph; admit its compiler binding |
+| Selected/requested MinerU hosted extraction/export | [MinerU](references/mineru.md): remote adapter, not editing/fidelity proof; check the destination format |
 
-Select one operation before loading format, provider, or project guidance:
+Typst/LaTeX-derived PDFs remain source-language builds; independent PDF edits use
+PDF operations. Adapters/OCR/renderers/setup are conditional, not prerequisites.
 
-| Operation | Required context | Closure evidence |
-|---|---|---|
-| Inspect | source identity and requested scope | observed structure or feature with locators |
-| Extract | source identity, projection, and coverage | located projection plus unresolved scope |
-| Create/edit | accepted content, target, preservation set, and output policy | reopened source/output and requested fidelity checks |
-| Convert | source, target, accepted losses, and destination policy | target opens or renders with declared losses |
-| Render/validate | source, claimed fidelity, and selected engine | inspected affected output states |
+For materially open chart, diagram, map, uncertainty or perceptual-hierarchy
+choices, use an optional one-hop [visualization design](../visualization-design/SKILL.md)
+handoff. If absent, preserve accepted content, report the open choice and do only
+fixed container work. This skill retains native objects, preservation, rendering,
+fidelity and delivery. Precise corrections, fixed conversions and settled
+representations retain the accepted choice.
 
-Load only the references selected by the row. Inspect project sources and
-conventions before choosing an adapter. A renderer, converter, OCR engine,
-remote API, or package setup is an adapter for the route, not a prerequisite of
-the artifact capability. Read-only routes have no write or publication effect.
+## Construct and check the artifact
 
-Preserve existing layout and source formats by default. Treat these as distinct
-source variants:
+1. Inspect the source read-only: structure, external dependencies and unsupported
+   features determine the route to the requested result.
+2. Construct the producer's meaning-bearing representation and containing regions
+   before syntax. Bind headers, units, series and sources to shared accepted
+   content; encode relations natively or declare losses. The fixed-chart PPTX
+   [worked construction](references/presentation-design.md#worked-construction-one-source-two-native-objects)
+   demonstrates object binding and defect diagnosis.
+3. Resolve version-sensitive behavior from the specification/compiler/official
+   documentation, not skill patterns. Choose the smallest producer/check graph
+   that meets the postcondition in the current project's environment.
+4. Before external libraries, CLI, MCP/API, multi-tool work, fallback or setup,
+   read [execution](references/execution.md) for binding, effects, bounded retry
+   and recovery. Already-proven tools retain authority/result obligations.
+5. Give each effect one owner; use a distinct output unless in-place mutation is
+   explicitly authorized. Reopen/compile/render the exact revision, report it and
+   clean owned transient work.
 
-- native OOXML families: Word documents/templates, PowerPoint presentations/
-  templates/shows, and Excel workbooks/templates, including their macro-enabled
-  package variants; editability still depends on the exact feature and binding;
-- text/source languages covered here: Markdown, Typst, and LaTeX;
-- analysis projections: derived Markdown, JSON, text, images, or tables;
-- fixed-layout PDF: page content, geometry, text layers, and interactive features.
+| Fidelity | Evidence |
+| --- | --- |
+| Semantic | Meaning-bearing content matches the source: wording, values, formulas, citations and reading order |
+| Structural | Native-aware reopening/parsing/compilation checks container, relationships, references, schema or structure |
+| Visual | Declared-engine render checks affected pages/slides/sheets for overflow, fonts, geometry and images; not proof of meaning/structure |
+| Accessibility | Check required reading order, native headers, alternatives, link purpose and redundant/nonvisual access; not inferred from appearance/export |
 
-Select the variant and operation once. Do not repeatedly reinterpret extensions or
-dispatch again through whichever tool happens to be installed.
+Use every applicable class. Skip unrelated costly visual work for semantic/
+structural-only claims; missing tools/checks leave requested fidelity unmet.
 
-For creation, editing, conversion, or rendering whose correctness depends on
-mathematics, relations, table schema, references, media associations, or nested
-layout, read [forward representation fidelity](references/representation-fidelity.md)
-before choosing format syntax or a provider. It constructs the shared semantic
-projection, routes materially open visual choices, and separates native encoding
-from declared loss. Format references remain authoritative for their local syntax
-and objects.
+## Admit effects before action
 
-For Word, PowerPoint, or Excel OOXML-family work—including macro-enabled and
-template variants—or legacy `.doc/.ppt/.xls` recognition and conversion, read
-[native Office artifacts](references/office.md) before choosing a mechanism or
-claiming preservation. Its matrix defines portable requirements; tool availability
-is admitted anew for the current request.
+Selection grants no installation, upload, macro/embedded-code execution,
+external-link retrieval, decryption, signature invalidation, overwrite,
+reorganization or publication authority. Inspect/extract/review/validate grants no
+editing. Use existing authorization; ask only for missing authority. Office's
+admission/preservation checks precede parsing/mutation, including bounds, inactive
+content and signatures.
 
-For presentation composition, visual revisions, or choosing authoring and rendering
-tools, read [presentation choices and resources](references/presentations.md).
-It offers independently usable operations and compatible examples; no language,
-platform, template or installer is mandatory.
+Setup preserves project manager/versions and uses minimal authorized task-scoped
+official commands; no implicit service/host change. If authority/capability is
+missing, report the exact need. Before remote transmission establish credentials,
+cost and retention as well as upload authority. Execution owns command bounds,
+lifecycle and recovery.
 
-When a document request has a material open choice of chart, diagram, map,
-uncertainty encoding, perceptual hierarchy, or other information-bearing visual
-representation, make an optional one-hop handoff to
-[visualization design](../visualization-design/SKILL.md) when available. If absent,
-preserve accepted content, report the unresolved choice, and do only fixed
-container work. This skill remains artifact owner: it applies the accepted choice
-and handles native objects, preservation, rendering, fidelity, and delivery. A
-precise text correction, fixed conversion, or already-settled representation does
-not need the handoff merely because the artifact is visual.
+Durable outputs/logs/manifests/projects/per-page material need a requested result,
+named consumer, reproducibility or recovery. Reuse expensive work for unchanged
+admitted inputs; corrected sources receive new identities and dependent checks. Remove
+task-scoped scratch after verification unless requested or an observed regression
+supplies a durable test consumer.
 
-For Typst creation, editing, compilation, or rendered-output validation, read
-[Typst artifacts](references/typst.md). It defines source, project-root, compiler,
-font, input, package, and output boundaries; resolve every live binding anew.
+## Return the observed result
 
-For LaTeX source authoring, project builds, or derived-output validation, read
-[LaTeX artifacts](references/latex.md). Preserve the project's engine, class,
-packages, and build graph; compilation support depends on an admitted binding.
+Return exact source/output identities/references, available source maps/stable locators,
+checks performed/failed/skipped, losses/unresolved regions, tool/provider identity
+and version, effects and preserved source/recovery. Nonempty extraction, file
+existence or successful opening alone proves neither completeness nor fidelity.
 
-When MinerU's hosted API is selected or explicitly requested to parse, extract,
-or export document content, read [MinerU API workflow](references/mineru.md).
-Treat it as a remote extraction/conversion adapter, not as an editing or fidelity
-guarantee. Validate any requested destination format under its own format contract.
+| Status | Meaning |
+| --- | --- |
+| `complete` | Every requested obligation passed |
+| `partial` | Usable scope; identify each unmet obligation |
+| `unavailable` | A required capability cannot currently execute |
+| `refused` | Authority or policy disallows the operation |
+| `cancelled` | Preserve cancellation and recovery state |
+| `failed` | The request could not produce its result |
 
-## Execute a linear artifact flow
-
-1. Inspect the source read-only and identify encoded structure, external
-   dependencies, unsupported features, and the requested postcondition.
-2. For a producer operation, construct the required forward representation, name
-   accepted loss and the effective containing region, and route a materially open
-   visual choice before selecting a mechanism.
-3. Resolve version-sensitive syntax and behavior from the applicable specification,
-   compiler, or official tool documentation. Skill repositories are pattern
-   evidence, not format authority.
-4. Plan the smallest conditional producer-and-validation graph that satisfies the
-   fixed postcondition; inspection selects its relevant branches. Conversion to
-   Markdown is analysis-oriented and never a native-editing substitute.
-5. Inspect the task root and available tools. Use the existing project environment;
-   acquire missing dependencies through direct official commands under existing
-   authority, following the execution reference. The actual operation can prove
-   readiness; do not require a separate probe or setup wrapper.
-6. Perform effects in one named owner and write a distinct output unless the user
-   explicitly authorized in-place mutation.
-7. Reopen, compile, or render the result and validate only the fidelity claims made.
-8. Return one result and clean transient work.
-
-For any external library, CLI, MCP/API provider, multiple-tool operation, fallback,
-or package-availability question, read
-[bounded tool execution](references/execution.md) before invoking tools. A direct,
-already proven single tool still follows the same result and authority boundaries.
-
-```text
-ArtifactResult(
-  status = complete | partial | unavailable | refused | cancelled | failed,
-  reason category,
-  source and output identities/references,
-  source map or stable locators where available,
-  required checks performed, failed, or skipped,
-  losses and unresolved regions,
-  tool/provider identity and version,
-  effects performed,
-  recovery or preserved source
-)
-```
-
-`complete` means every requested obligation passed. `partial` identifies usable
-scope and unmet obligations; `unavailable` means a required capability cannot
-currently execute; `refused` means authority or policy disallows the operation;
-`cancelled` preserves cancellation; `failed` means the request could not produce
-its result. Preserve reason categories: malformed input, unsupported request,
-provider limitation, missing binding, unauthorized effect, resource exhaustion,
-or execution failure. Per-scope outcomes supplement the aggregate when needed;
-never hide refusal/cancellation inside partial success. Retry/branch behavior is
-owned by the execution reference.
-
-For `extract`, read [located extraction](references/ingestion.md) for the shared
-projection and coverage contract before choosing a provider. Return usable content
-with its source locations and unresolved scope. The semantic owner admits the
-projection as evidence; neither a nonempty extraction nor native text proves
-complete or correct content.
-
-## Match evidence to fidelity
-
-- Semantic: check requested content, values, formulas, citations, reading order, or
-  other meaning-bearing elements against the source or accepted content.
-- Structural: reopen with a native-aware reader, parser, or compiler and check the
-  container, relationships, references, schema, or generated structure at issue.
-- Visual: render with a declared engine and inspect the affected pages, slides,
-  sheets, overflow, fonts, geometry, and images. Visual appearance does not prove
-  semantic or structural correctness.
-- Accessibility: inspect required reading order, native headers, alternatives,
-  link purpose, redundant encoding, or other nonvisual access. Painted appearance
-  and successful export do not prove these properties.
-
-Use every applicable class, but do not run a costly visual pipeline for a claim
-that structural or semantic evidence already settles. Record missing tools and
-skipped checks; report unmet obligations instead of silently lowering the requested
-fidelity or inferring success.
-
-## Markdown boundary
-
-Preserve the repository's existing Markdown dialect and conventions. For new
-standalone text, name CommonMark, GFM, or another required consumer dialect when
-the distinction changes behavior. Tables and task items are GFM extensions;
-footnotes and dollar-delimited math need a separately named extension or consumer
-contract. Apply the shared forward-representation protocol before selecting math,
-diagram, table, raw-HTML, or image syntax. Raw text, ASCII art, pipe tables,
-embedded HTML, and consumer extensions carry different semantic, structural,
-editability, and accessibility guarantees; use one only when it preserves the
-admitted contract or declare the exact loss. Preserve code spans/blocks and apply
-escapes in the context defined by the selected dialect. Treat raw HTML as
-consumer-controlled active content because
-renderers may pass, filter, sanitize, or reject it differently. Validate links and
-rendering only when claimed or required by that consumer. Select a parser/renderer
-configured for that consumer before asserting extension support; a library's
-"Markdown" or "GFM" label does not establish its enabled extensions. Check relative
-links from the document's destination, and preserve literal code rather than
-interpreting embedded math or escapes. A conversion records its
-source and lost layout, comments, formulas, metadata, or embedded media rather than
-presenting Markdown as equivalent to the original. Use the current
-[CommonMark specification](https://spec.commonmark.org/) or
-[GFM specification](https://github.github.com/gfm/) as applicable.
-
-## Authority and retention gates
-
-- Selection does not authorize dependency installation, remote upload, macro or
-  embedded-code execution, external-link retrieval, decryption, signature
-  invalidation, source overwrite, directory reorganization, or publication.
-- Inspection, extraction, review, or validation does not authorize document edits.
-- For missing local dependencies, preserve the project's selected manager and
-  versions, use the smallest task-scoped setup under existing authority, and retain
-  the document postcondition. Do not register a service or change host state as an
-  implicit setup step; if required setup exceeds this task's authority or available
-  capability, stop and report the exact need. For remote work, establish
-  transmission, credential, cost, and retention implications. Use existing
-  authorization; ask only for missing authority.
-- Do not create `output/`, `bridge/`, logs, manifests, projects, or per-page files
-  merely because the request has multiple steps. Create a durable artifact only
-  for the requested result, a named downstream consumer, reproducibility, or
-  recovery.
-- Reuse expensive results for unchanged admitted inputs. Corrected source has a
-  new identity and may be compiled or parsed again. Keep scratch task-scoped and
-  remove it after verification unless the user requested it or an observed
-  regression gives it a durable test consumer.
-- Report exact outputs, checks, losses, unresolved regions, skipped evidence, and
-  recovery. Do not claim completion from file existence or successful opening
-  alone.
+Distinguish malformed input, unsupported request, provider limitation, missing
+binding, unauthorized effect, resource exhaustion and execution failure. Add
+per-scope outcomes as needed without hiding refusal/cancellation in partial
+success. Execution owns retry/branch behavior.

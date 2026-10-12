@@ -7,6 +7,10 @@ that has not been written.
 
 ## Establish the current baseline
 
+Read the entry's [operation/authority](../SKILL.md#admit-the-operation-and-its-authority)
+and [plan placement/units](../SKILL.md#materialize-only-for-a-consumer) rules;
+audit their application rather than restating them.
+
 Reinspect revision and dirty state, applicable instructions, named current paths,
 public contracts, relevant tests/source, enforced tooling, and only matching
 maintained analogues. Audit what the plan says, not what its author intended.
@@ -23,14 +27,10 @@ Check that:
 - current observations, entailed consequences, user policy, proposals,
   contradictions, and unknowns retain their authority and revision;
 - each decision has one owner, a clear status, and no hidden tradeoff;
-- a goal has one canonical plan by default; stages are distinct outcomes with
-  consumers, and tasks are executable dependency units. Keep them in one file
-  unless a standalone handoff or separate lifecycle needs another file; dependencies
-  are acyclic, and tasks inherit rather than restate governing decisions;
-- interaction mode matches authority: review-only leaves no artifact; planning
-  returns only the requested plan or a clear blocker/report and stops; end-to-end
-  implementation proceeds only when authorized. No plan/stage/task creates
-  authority;
+- plan units follow the entry's consumer/dependency rules; dependencies are acyclic
+  and tasks inherit governing decisions;
+- operation, cadence, placement and exposure follow the entry's authority and
+  materialization rules; no task or plan expands granted scope;
 - proposed delivery units are not inferred from stage count: each standalone
   candidate has one reviewer-verifiable claim, remains useful and revertible if
   later work stops, and has no hidden predecessor; characterization-only evidence
@@ -65,13 +65,9 @@ planning (no artifact versus requested plan), and planning versus explicitly
 authorized end-to-end work (stop versus handoff). These cases must not vary merely
 because the request says “stage,” “task,” or “loop.”
 
-Review-only work leaves no artifact. A plan needs suitable local placement and
-must stay separate from reader-facing docs; Git ignore is not confidentiality or
-publication control. Do not change ignore policy merely to store it. Planning
-detail cannot stand in for actual-diff conformance, which remains with
-`software-development`. Parallel local branches alone do not justify a public
-dependent-review chain; repository policy, hosting, contributor authority, and the
-final diff govern that choice.
+Actual-diff conformance remains with `software-development`, not planning detail.
+Parallel local branches alone do not justify a public dependent-review chain;
+repository policy, hosting, contributor authority and final diff govern it.
 
 ## Reconcile findings
 

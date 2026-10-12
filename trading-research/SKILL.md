@@ -46,27 +46,23 @@ not a mandatory sequence of documents or an instruction to repeat settled work.
 
 ### Locate the decision and consult its knowledge
 
-Identify the next choice or missing relation whose resolution could change the
-answer. Use the [knowledge index](references/knowledge/index.md) to find its
-category and necessary prerequisites. Read the applicable reasoning and usual
-practice path **before making a new financial design choice**. This applies to
-target/label design, representation, learner/loss/capacity, optimization/search,
-confirmation and the selected applied consumer. Previously admitted reasoning can
-satisfy this dependency while its premises and source binding remain valid.
-
-For an unsettled term or relation, consult
+Identify the choice or missing relation that could change the answer. Consult the
+[knowledge index](references/knowledge/index.md) by question: foundations for a
+design choice, applied categories for its object or consumer. Read their reasoning,
+prerequisites and usual method before that choice; valid admitted reasoning can
+satisfy the dependency. An unsettled term or relation starts at
 [market concepts and measurement](references/knowledge/market-concepts.md).
-For a new quantitative design, follow the index's relevant complete path far enough
-to connect the proposed target and state to their eventual consumer. For a fixed
-rule or brief explanation, consult the guidance needed by that question. Avoid
-loading the whole library or unrelated adapters.
 
-Use the [independent example index](references/examples/index.md) when a worked
-calculation, initial experiment or attributed practice account helps bind the
-method. Select the example through its general principle. Inspect what its settings
-control and replace inputs that differ from the inquiry. A numerical preset or
-institutional episode is an illustration with its own scope, not a project rule
-or evidence that this candidate earns money.
+For a new quantitative design, use the index's
+[complete practice paths](references/knowledge/index.md#usual-complete-practice-paths)
+to connect target, state and eventual consumer. A fixed rule or brief explanation
+needs only its relevant guidance, not the full chain or unrelated adapters.
+
+Select the [independent examples](references/examples/index.md) by principle when
+a worked calculation, initial experiment or attributed practice helps. Inspect
+what the settings control and replace differing inquiry inputs. Presets and
+institutional episodes retain their illustrative scope, not a project rule or
+evidence that this candidate earns money.
 
 ### Bind a concrete construction
 
@@ -133,13 +129,11 @@ question. A contrary result may change a sign, scope or role while retaining a
 useful relation. A computational claim needs an effective operation with feasible
 cost; a descriptive claim need not produce code.
 
-Reconsult the relevant category when a changed premise changes its deduction.
-Changes to payout, timing, eligibility, information, consumer, source version or
-evaluator invalidate their dependent conclusions and confirmation; retain unrelated
-valid work. Bind reused observations to their owner, identity, applicability and
-selected period/version. Verify mutable, consequence-bearing instrument/provider
-facts for the actual study or operation. Reopening one fact does not require
-refetching the entire library.
+Reconsult only reasoning affected by changed payout, timing, eligibility,
+information, consumer, source version or evaluator; reopen dependent conclusions
+and confirmation, retaining unrelated valid work. Bind reused observations to
+owner, identity, applicability and period/version. Verify consequence-bearing
+mutable instrument/provider facts for the actual study or operation.
 
 Continue when another bounded, authorized operation could change the disposition.
 Finish when the question is answered in scope, a declared bound is reached, or no

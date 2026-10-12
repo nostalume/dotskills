@@ -5,17 +5,14 @@ verification. Planned pseudocode and predicted file shape are not evidence. Judg
 the diff against the authorized contract, current architecture, repository rules,
 and the nearest maintained analogues.
 
-Apply the [implementation normal form](implementation-normal-form.md) when the
-diff materially changes semantic flow, ownership, effects, failures, resources,
-abstraction, compatibility, cost, or conceptual/physical topology. A file move or
-routine edit alone is not a trigger. It consumes settled constraints; it does not
-authorize a new architecture.
+Use the [entry's development-loop trigger](../SKILL.md#development-loop) to select
+[implementation normal form](implementation-normal-form.md); review does not
+create architecture or authorize implementation edits.
 
 ## Review map
 
-Use the domain, authority, flow, failure, compatibility, resource, cost, and
-topology criteria from [implementation normal form](implementation-normal-form.md)
-only for claims the actual diff changes. Then confirm:
+Apply the selected normal-form criteria only to claims the actual diff changes.
+Then confirm:
 
 1. **Contract:** the authorized scope and settled constraints still hold.
 2. **Project policy:** applicable instructions and maintained analogues support
@@ -39,10 +36,10 @@ Classify each finding:
   violate an accepted claim; accept explicitly or correct it.
 - **Note:** non-gating observation or follow-up outside the authorized scope.
 
-Fix a local implementation defect and repeat the affected feedback. Reopen the
-smallest architecture decision when the diff contradicts governing meaning,
-ownership, topology, compatibility, lifecycle, or cost. Stop for user direction
-when the only resolution materially changes the requested scope or policy.
+For an authorized fix, repair the local defect and repeat affected feedback;
+otherwise report it. For a governing contradiction, use entry Admission to reopen
+the smallest decision. A resolution changing requested scope or policy needs user
+direction, not an implicit implementation choice.
 
 The review is complete only when no blocker remains, warnings are resolved or
 explicitly accepted, and every later edit has caused the affected review slice to

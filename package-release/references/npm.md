@@ -6,14 +6,13 @@ the project's build command and registry/access/channel policy. Use its manager
 for dependencies; npm registry publication does not require migrating a Bun, Deno
 or other project to npm dependency management.
 
-Treat the official links in this route as discovery for provider-current behavior.
-Before relying on a command, flag or hosted feature, reconcile the project-selected
-npm and Node versions, selected package manager policy, local npm help or a bounded
-probe, the chosen registry's current authoritative policy, and the exact claim.
-Latest documentation does not silently upgrade a pinned client, and npmjs.com
-policy does not automatically govern another npm-compatible registry. Report a
-version- or target-bound claim unavailable when those interfaces cannot be
-reconciled.
+Apply the entry's [adapter binding](../SKILL.md#bind-the-selected-adapter) before
+relying on a command, flag or hosted feature. Here the bindings are project-selected
+npm/Node versions and manager policy, local npm help or a bounded probe, and the
+chosen registry's authoritative policy; official links below locate current facts.
+Latest docs do not upgrade a pinned client, and npmjs.com policy does not
+automatically govern another compatible registry. The entry owns reuse, freshness
+and unresolved-claim handling.
 
 ## Prepare and test the packed payload
 

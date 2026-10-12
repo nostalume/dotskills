@@ -1,11 +1,9 @@
 # Quantitative Research Knowledge
 
-Enter through the financial question and its current object. This index locates
-principles, reconstructible deductions, practical methods and usual initial paths.
-Consult foundations before the decision they govern; valid prior work can satisfy
-the dependency. A changed payout, information set, policy or consumer reopens its
-affected reasoning. A brief explanation or fixed rule needs only the relevant
-guidance, not a tour of every category.
+Select reasoning, prerequisites and a usual first construction by question.
+Read prerequisites before the choice they govern; valid prior work can satisfy
+them. Brief explanations and fixed rules need only applicable categories.
+Changed premises reopen affected work through the research loop.
 
 ## Foundation: make consequential design choices
 
@@ -33,13 +31,16 @@ guidance, not a tour of every category.
 | Numerical oracle, price/Greek surrogate or hedge policy | [Numerical pricing/hedging](numerical-pricing-hedging.md) | Fixed valuation/ledger/law → error budget and reference → derivative/shape/fallback and complete-cost gates |
 | A-share styles, crypto stress or stock/future-linked tokens | [Market/instruments](market-instruments.md) | Historical rights, eligibility and clocks → conditional process accounts → attainable target and joint cash path; verify product-specific terms |
 
-Professional sources remain at the entries they support. Mutable instrument and
-implementation facts are verified for the actual version and study period.
-Illustrations and numerical teaching settings live in the
-[independent example index](../examples/index.md); they do not determine a
-universal policy or constitute performance evidence.
+Sources remain with their reasoning; verify mutable instrument/implementation
+facts for the actual version and study period. Worked illustrations live in the
+[independent example index](../examples/index.md), not as policy or performance
+evidence.
 
 ## Usual complete practice paths
+
+For a new quantitative design, follow the applicable path far enough to connect
+target and state to their consumer. The relation selects the path; these are not
+extra stages for a fixed-rule test or brief explanation.
 
 **Trend:** executable policy → direction/first-passage probabilities → as-of small
 economic panel → restrained proper-loss model → honest factor/route confirmation →
@@ -68,6 +69,5 @@ sampling/discretization/value/Greek budgets → checked representation and fallb
 amortized computation or same-ledger friction-policy comparison. Accurate computation
 of an admitted pricing map is separate from forecasting market returns.
 
-The original question stays intact through these paths. Source or realization
-limits may change its role or attainable claim; preserve supported results and
-reopen only the dependency that the new evidence affects.
+Retain the original question and supported results when source or realization
+limits change the attainable role; reopen only affected dependencies.

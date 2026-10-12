@@ -116,6 +116,8 @@ the absence of a maintained recipe and any unverified behavior. Do not infer tha
 an operation or state supported by one provider exists on another, or that a
 compatible protocol gives every server the same lifecycle policy.
 
+## Bind the selected adapter
+
 For the selected adapter, relate the project-selected representation and tool
 version, compatible local interface or bounded probe, current authoritative
 provider policy, and exact claim required by the operation. Each source proves

@@ -49,9 +49,7 @@ Treat this as revisable reasoning, not a required form or state file. Inspect an
 existing project, source and current output before asking for information they
 already supply. Ask only when a missing decision is material, belongs to the user
 or source owner, and would change the result. Otherwise state a reversible
-hypothesis where it matters and proceed. Persist project-specific visual direction
-only when collaboration, repeated production or maintenance has an actual need for
-it; it remains project-owned and may evolve.
+hypothesis where it matters and proceed.
 
 When the visual form, encoding or hierarchy is open, use
 [representation selection](references/representation-selection.md) to construct
@@ -74,20 +72,10 @@ HTML example is one bounded operation, not the default visual system.
 
 ## Route by visual context
 
-Build the smallest context needed to select a route:
-
-```text
-incumbent source/tokens/assets + audience/purpose + requested change
-  -> visual mode -> representation and quality criteria
-  -> selected renderer/capture adapter -> inspected output states
-```
-
-Treat an existing visual system, a surface brief, and the current request as
-different authorities. A missing design-system file does not imply a greenfield
-surface: infer the incumbent only from observable code, tokens, assets, and
-project guidance, and label the result as evidence. Persist a visual brief or
-system description only when a real collaborator, repeated production path, or
-maintenance task will consume it.
+Select the mode from incumbent source/tokens/assets, audience/purpose and the
+requested change. Project visual system, surface brief and current request have
+different authority. Infer an undocumented incumbent from observable code,
+tokens, assets and guidance; missing documentation does not make it greenfield.
 
 | Request evidence | Route | Result boundary |
 |---|---|---|
@@ -106,20 +94,20 @@ suitable system owner; keep one-off visual treatments local rather than
 manufacturing a design system. Keep renderers, browser tools, frameworks, asset
 services, and export commands as replaceable adapters; do not expose a
 provider-specific command for every tool.
-Connected adapters remain unused on planning or review-only paths. If the selected
-route is unavailable, return editable source or a bounded specification with its
-unverified obligations rather than claiming rendered acceptance.
+Connected adapters remain unused on planning or review-only paths. For a missing
+capability, use the execution reference's degradation/recovery path; the quality
+reference determines which completion claims the remaining evidence supports.
 
 Use a bounded observation loop: inspect all output states required by the claim in
 one pass, batch local repairs, then perform at most one confirmation pass when the
 repairs could alter the claim. Continue only when new evidence changes an upstream
 representation decision; do not spend open-ended passes on cosmetic preference.
 
-When persisting visual direction or review output, identify its reader, purpose,
-destination, authority, and exposure first. Keep private briefs, plans,
-screenshots, runtime state, and scratch critique private unless a real shared
-consumer requires them. Public documentation should contain accepted visual
-decisions, not task reasoning or a gratuitous inventory of project files.
+Persist project-owned direction or review output only for a real collaborator,
+repeated production or maintenance consumer. Establish reader, purpose,
+destination, authority and exposure first. Keep briefs, plans, screenshots,
+runtime state and scratch private unless sharing is needed; public docs contain
+accepted decisions, not task reasoning or gratuitous project inventories.
 
 ## Create, revise and evaluate
 
@@ -140,16 +128,11 @@ decisions, not task reasoning or a gratuitous inventory of project files.
    Repair local defects; when evidence contradicts the representation or purpose,
    revise that upstream decision instead of polishing the symptom.
 
-User agreement defines intent and acceptance policy; it does not prove that the
-artifact satisfies them. Semantic or structural checks cannot prove appearance.
-A still cannot prove motion or interaction. A successful render cannot prove data
-truth. Claim only the quality supported by evidence from the current revision.
-
-When required execution or observation is unavailable, use a compatible
-alternative, return an executable specification or editable source with its
-unverified obligations, request missing material authority, or report precise
-unavailability. A strong handoff is complete only when the accepted result is a
-handoff; do not relabel it as a verified final artifact.
+Close against the quality reference's evidence-to-claim mapping for the exact
+revision, not user agreement or tool success alone. Use the execution reference
+for missing capabilities and recovery; report unverified obligations. Source or
+specification is complete only for an accepted handoff, not a substitute for
+requested rendered, temporal or interactive verification.
 
 ## Hard gates
 
@@ -161,7 +144,7 @@ handoff; do not relabel it as a verified final artifact.
   without a real consumer.
 - Do not upload content, install dependencies, generate paid media, publish, or
   mutate an external destination merely because a capability is connected.
-- Keep unavailable, partial, structurally checked, rendered, temporally inspected,
-  interactively exercised and accepted results distinct.
+- Keep result classes and evidence obligations distinct as defined by quality
+  evaluation and execution/recovery.
 - Return editable source and requested outputs, checks performed, unverified
   obligations and material limitations. Close only owned disposable resources.

@@ -1,14 +1,9 @@
 # Implementation normal form
 
-Use this reference only after the change is settled. It governs how the actual
-implementation preserves accepted meaning, ownership, effects, failure behavior,
-resource lifecycle, compatibility and cost. It does not decide those constraints.
-When any of them can still materially change the design, stop and report the
-unsettled decision before coding. An obvious local edit whose contract is already
-clear needs no plan artifact. When a settled change adds or alters material
-conceptual/physical boundaries, verify the actual diff against any accepted,
-project-owned topology decision rather than inventing layout while coding; if no
-such decision exists and topology remains material, stop and report that gap.
+Use for settled changes under the [entry's development-loop trigger](../SKILL.md#development-loop).
+This reference owns implementation criteria, not missing architecture. Check
+material boundaries against accepted project-owned decisions; an absent or
+contradictory governing decision returns to entry Admission, before coding.
 
 ## Optimize local semantic reasoning
 
@@ -103,6 +98,26 @@ release/recover lifecycle using native ownership, scopes or explicit states.
 Children may not outlive their structured owner unless a named service adopts and
 supervises them. Bound queues, concurrency, retries and caches at the owner able to
 refuse or defer work.
+
+## Worked ownership: export with cleanup
+
+Synthetic, unexecuted example. The settled export contract gives this request a
+writer to close before completion, with no retry or ownership transfer. Trace raw
+input → Records → pure formatting → acquire writer → append → finish/receipt →
+release. Parse once; formatting preserves meaning, while the writer owns I/O.
+
+Remove a helper that only relays the writer's identical input/result/failure.
+Keep the export scope's await/guard when release remains owed after the call:
+deletion would lose an obligation. A real public error translation also stays,
+preserving the writer fault's cause and output identity.
+
+Before finish, an append fault or cancellation skips later finish/publication;
+release the acquired writer. Preserve the primary fault or cancellation and
+expose cleanup failure as secondary under the accepted contract. Failure before
+acquisition owes no release. Inspect transitions and surviving output. If the
+accepted contract instead transfers the writer to a service, transfer/supervision
+receipts replace request cleanup; an unsettled lifetime choice returns to
+architecture, not a wrapper invented while coding.
 
 ## Make every abstraction pay rent
 

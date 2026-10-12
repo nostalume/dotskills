@@ -23,12 +23,11 @@ governing decision.
 2. Freeze only the requested outcome, authority, behavior, owners, compatibility,
    effects, resource/cost constraints, and completion evidence that can affect this
    change. Do not turn irrelevant dimensions into an intake checklist.
-3. Stop before implementation when domain meaning, ownership, semantic module
-   topology, public boundaries, effects, compatibility, lifecycle, or material cost
-   can still change the design. Report the unsettled decision, live alternatives,
-   constraints, and evidence needed to settle it; do not choose a design implicitly.
-   For an obvious local edit with a settled contract, keep this admission record
-   compact.
+3. Settle material design choices before implementation: meaning, ownership,
+   topology/public boundaries, effects, compatibility, lifecycle and cost. If still
+   open, report the smallest unsettled decision, alternatives, constraints and
+   needed evidence; do not choose implicitly. Reopen that same boundary if the
+   diff later contradicts it. An obvious settled local edit needs no plan artifact.
 
 Workflow selection grants no additional authority for host mutation, external
 integration, destructive operations, workflow execution, or publication.
@@ -74,15 +73,13 @@ history.
    [mathematics and numerics](references/mathematics-and-numerics.md). Do not settle
    its domain, tolerance, solver policy, or accuracy guarantee during
    implementation.
-3. Implement the smallest coherent domain capability. For transformations, use
-   this as a reasoning model, not a required pipeline shape: admit input once,
-   select an explicit variant, transform through domain-bearing values, invoke
-   named effect/resource owners, observe the promised result, then return or
-   terminally delegate. Read
+3. Implement the smallest coherent domain capability. Read
    [implementation normal form](references/implementation-normal-form.md) when the
    change materially affects semantic flow, ownership, effects, failures,
-   resources, abstraction, compatibility, cost, or conceptual/physical topology;
-   a file move or routine edit alone is not a trigger.
+   resources, abstraction, compatibility, cost or conceptual/physical topology;
+   a file move or routine edit alone is not a trigger. It owns transformation,
+   delegation, handler and lifecycle criteria; its resource example connects the
+   accepted input to effects and completion without imposing a pipeline syntax.
 4. Apply linear or affine machinery only to genuinely single-use capabilities or
    resources. Local mutation is acceptable inside one visible owner when it
    preserves the external value contract and improves clarity or measured cost.
@@ -100,20 +97,10 @@ history.
 7. After the last relevant edit, close the change with
    [delivery verification](references/delivery-verification.md).
 
-The implementation normal form preserves settled architecture; it does not supply
-missing architecture. An error boundary must own bounded recovery, contract
-translation, compensation, cleanup, or necessary consumer context. Otherwise
-preserve the original failure, cancellation, and resource handoff through direct
-propagation or terminal delegation. If making the code locally coherent would
-change domain meaning, authority, a public contract, lifecycle, compatibility or a
-material cost decision, stop and report that smallest unresolved decision instead
-of redesigning it inside the diff.
-
-Audit every new conceptual or physical boundary even when the task describes it as
-organization or cleanup. Remove an obvious local relay without demanding a plan;
-when the owner, dependency direction, visibility, compatibility or change locality
-can materially vary, use an existing accepted project decision or stop and report
-what must be settled before implementation.
+Judge new conceptual or physical boundaries by the normal form even when called
+organization or cleanup. Remove an obvious private relay locally when no owned
+obligation disappears; material boundary choices must satisfy Admission rather
+than acquire an implicit architecture inside the diff.
 
 Do not use this code workflow to install or register tools, change host
 configuration, reorganize user files, or migrate backups. If one of those effects

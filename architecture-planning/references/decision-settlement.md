@@ -65,6 +65,35 @@ Select an evidence-dominant candidate when one exists. Otherwise expose the one
 material tradeoff to its owner rather than oscillating among equally incomplete
 proposals.
 
+## Worked comparison: cancellation and resource ownership
+
+Synthetic, unexecuted example. Suppose revision-scoped inspection finds:
+CLI handler admits request → acquires lease/scratch → dispatches existing worker
+→ commits → releases. The worker runtime outlives the handler. New policy permits
+continuation after caller disconnect; explicit cancel accepted before commit must
+prevent publication. Preserve CLI output/exit promises and worker admission bounds;
+restart survival is outside this request.
+
+Handler cleanup can invalidate resources still used by the worker. Derive options
+from that lifetime mismatch:
+
+| Alternative | Constraint and consequence |
+| --- | --- |
+| Incumbent request-scoped resources | Fails disconnect survival; reject |
+| Job owns acquisition, cancel/commit and release | Covers worker lifetime with one arbiter/cleanup owner; old CLI waits/translates outcomes |
+| Handler acquires and transfers to job | Viable with adoption/receipt, bounded reconciliation of uncertain transfer and one release owner; adds handoff/recovery states |
+
+Prefer job ownership if no live caller needs acquisition failure before job
+admission: equal promises, fewer transfer/recovery states, not measured speed.
+Check disconnect around acquisition, cancel/commit races, worker/cleanup failure,
+primary and cleanup errors, and source/job identity. Missing caller or cancel/
+commit evidence leaves this subdecision exploratory.
+
+An early-acquisition promise reopens selection; transfer fits only if its protocol
+closes that promise. Restart survival reopens recovery/compatibility/workload,
+not an automatic queue choice. An irrelevant caller or fashionable service name
+changes neither selection. Settle this resource boundary, not the whole design.
+
 ## Mark each decision's status
 
 - **Exploratory:** a material premise is unknown; only bounded inspection or an

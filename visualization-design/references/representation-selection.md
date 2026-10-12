@@ -58,6 +58,24 @@ This hypothesis is revisable. A rendered or exercised result may reveal that the
 chosen density, hierarchy, carrier or even information structure is wrong. Return
 to the earliest contradicted decision instead of treating every defect as styling.
 
+## Worked choice: lookup or magnitude comparison
+
+Synthetic, unexecuted example: accepted same-week request counts are A=12, B=18,
+C=9 with common units and coverage. Exact lookup favors a labeled table: entity
+rows and explicit numbers make retrieval direct. Magnitude comparison favors
+aligned horizontal bars, ordered B/A/C, with a shared zero baseline and count
+labels. Common position/length makes differences visible; a table requires more
+scanning. Sorting preserves entity/value/week binding, not just the numbers.
+
+Area or color-only encoding makes these differences harder to compare. Bars can
+slow lookup, so add a table only if both tasks matter. Mark missing observations
+as missing, not zero; unequal coverage returns to the source owner before claiming
+comparison. Preserve units, period, labels and non-visual access to values.
+
+Check mapping and baseline, then inspect at delivery size: can the reader find
+B's 18 and compare it with A's 12? This illustration performs no rendering.
+Changing the reader task changes the view, not facts or a universal chart rule.
+
 ## Preserve structure-specific invariants
 
 ### Quantitative
