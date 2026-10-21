@@ -31,6 +31,11 @@ establishes only its admitted kind of support. Do not claim generality, novelty,
 reconstruction, or computational leverage beyond the tested domain and
 comparison.
 
+Keep the originating question or direction distinct from the result currently
+supported. A narrower theorem, easier case, or changed question does not discharge
+the original obligation. Make its contribution and remaining gap explicit; carry
+that gap through continuation, synthesis, and stopping.
+
 ## Select the unresolved operation
 
 Read only the owners needed by the current operation:
@@ -39,8 +44,9 @@ Read only the owners needed by the current operation:
   finite derivation, theorem contracts, conditional obstruction-driven
   construction, compression, or theory reconstruction:
   [research philosophy](references/research-philosophy.md).
-- **Discover:** select a discriminating action, update an inquiry frontier, retain
-  useful material, or stop: [research loop](references/research-loop.md).
+- **Discover:** develop and pursue a provisional research construction within an
+  open direction, revise it through derivation and failure, allocate effort, or
+  stop: [research loop](references/research-loop.md).
 - **Adjudicate:** freeze a claim, admit heterogeneous evidence, resolve conflict or
   failed reproduction, bound literature coverage, and emit a disposition:
   [evidence adjudication](references/evidence-adjudication.md), together with the
@@ -79,14 +85,17 @@ the supported partial result and exact unavailable observation.
 
 ## Advance and stop
 
-1. Enter at the earliest unresolved operation; do not replay settled work.
+1. For an open direction, recover the user's question and constraints, then
+   develop and pursue a research bet before repairing an inherited route; use the
+   research loop. For a fixed task, enter at its unresolved operation. Do not
+   replay settled work.
 2. Apply its primary owner's transition and import constraints by reference.
 3. Admit new material once. Only an adjudicated disposition changes a frozen
    claim; only a named durable consumer admits persistent state or an artifact.
-4. Stop when the requested result is supported within scope, a declared horizon
-   is met, further work cannot change the consumer, or the next operation is
-   unavailable or unauthorized. Report the weakest open obligation and its
-   re-entry condition.
+4. Stop on scoped completion, a declared horizon, no worthwhile continuation, or
+   unavailable or unauthorized remaining routes. Report the supported result
+   against the originating target, weakest open obligation, and re-entry
+   condition.
 
 Keep research material with its canonical worktable owner. Use confirmed-ignored
 agent space only for transient cursors, audits, or plans; ignore status is not

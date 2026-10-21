@@ -11,9 +11,9 @@ mandatory stages in a single workflow.
 
 | Task | Primary skill | Responsibility |
 | --- | --- | --- |
-| Research market phenomena, trading concepts, or bounded offline signals | [trading-research](trading-research/SKILL.md) | Concept-to-decision roles, conditional alpha evidence, and fixed-rule offline tests; excludes live recommendations and order execution |
+| Research market phenomena, learn/build trading frameworks, or test bounded offline signals | [trading-research](trading-research/SKILL.md) | Source-to-judgment frameworks, concept-to-decision roles, conditional alpha evidence, and fixed-rule offline tests; excludes live recommendations and order execution |
 | Develop, adjudicate, or explain a mathematical or physical inquiry | [constructive-research](constructive-research/SKILL.md) | Derivation, conditional construction, bounded evidence, admitted computation, and research meaning |
-| Resolve material, unsettled architecture or refactor decisions | [architecture-planning](architecture-planning/SKILL.md) | Revision-backed decision settlement and the smallest sufficient private plan before coding |
+| Discover and resolve scoped architecture or refactor problems | [architecture-planning](architecture-planning/SKILL.md) | Evidence-led simplification, material decision settlement and the smallest private plan when needed; settled implementation stays with software-development |
 | Design, create, refactor, consolidate, or review a skill | [skill-development](skill-development/SKILL.md) | Portable capability boundaries, progressive resources, effect contracts, and behavioral evaluation |
 | Design, compose, refactor, or evaluate reusable prompt instructions | [prompt-development](prompt-development/SKILL.md) | Mental models, directive ownership and force, scoped composition, provider-neutral kernels, and behavioral evaluation |
 | Implement, review, or verify a settled software change | [software-development](software-development/SKILL.md) | Code changes and evidence that the actual result satisfies the task |

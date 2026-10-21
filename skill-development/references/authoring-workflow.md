@@ -99,9 +99,13 @@ part of the portable core merely because it is convenient.
 
 Define artifact exposure before persistence. Name the reader, purpose, destination,
 source authority, and whether the artifact is private working state, project-local
-shared material, or public documentation. Keep plans and scratch material out of
-public destinations unless the user explicitly accepts that exposure and the
-content is useful to that reader.
+shared material, or public documentation. For instructions to state or record
+context, distinguish agent working inputs, task evidence and delivered content,
+and name the destination when ambiguity could change the result. Admit context
+into code or documents by the target contract or reader need, not merely because
+it was available during execution. Keep plans and scratch in their working scope
+unless the requested artifact itself needs that material and its exposure is
+authorized.
 
 ## Verify layer conformance
 

@@ -5,6 +5,11 @@ It tests whether a new implementer can act from the artifact and current reposit
 without hidden conversation. It does not re-decide settled owners or certify code
 that has not been written.
 
+Audit actual promises and applicable failure models. A concern needs an affected
+obligation before it demands a correction; an existing owner or language guarantee
+may already satisfy it. Do not turn audit evidence into another production audit,
+validation or permission mechanism without an independent runtime responsibility.
+
 ## Establish the current baseline
 
 Read the entry's [operation/authority](../SKILL.md#admit-the-operation-and-its-authority)

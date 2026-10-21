@@ -16,20 +16,25 @@ Changed premises reopen affected work through the research loop.
 | How should the rate or search be designed? | [Optimization/search](optimization-search.md), after objective/units | Use curvature, noise and budget for numerical steps; bounded typed GP for symbolic discovery; distinguish gradient, boosting and expert rates |
 | Why trust a selected candidate? | [Inference/validation](inference-validation.md) | Freeze and confirm the whole selected consumer route on separated mature evidence, with selection and dependence accounted for |
 
-## Applied categories
+## Financial operations
 
-| Current object/decision | Entry | Prerequisites and initial construction |
+Select by the transformation needed, then read the linked reasoning. These are
+starting constructions, not a menu of strategies or evidence of advantage.
+
+| Admitted material / unresolved relation | Operation and usable result | Reasoning owner |
 |---|---|---|
-| Participant practice, market term or open-role relation | [Market concepts/measurement](market-concepts.md) | Motivating/contrary cases → consequential relation → finite operation and observation map; no invented trade required |
-| Trust among comparable forecasts | [Online aggregation](online-aggregation.md) | Confirmed outcomes/probabilities, mature losses → equal mixture → cumulative Hedge → deliberate memory comparison |
-| Score/probability to feasible holdings | [Portfolio/risk](portfolio-risk.md) | Payout and risk units → capped volatility size, constrained active weights or stabilized risk budgets; check economic exposures and residuals |
-| Orders, fills, cash, collateral and capacity | [Execution/funding](execution-funding.md) | Actual instrument/policy/clock → event ledger and fixtures → trade bands, leg failures and funding/size stress |
-| Revision, decay, recovery or workload scaling | [Lifecycle/computation](lifecycle-computation.md) | Full-route identities/evidence → three-layer diagnosis → paired shadow comparison and affected revalidation; profile before scaling |
-| Equal cash flows, residual convergence, events or carry | [Arbitrage/events](arbitrage-events.md) | Rights/units/PIT → executable replication, dynamic residual, calibrated event payment or basis/funding ledger according to the relation |
-| Model valuation and a tradable hedge span | [Pricing/replication](pricing-replication.md) | Contract cash flows and admitted trades → finite replication → model law/PDE or explicit unspanned valuation obligation |
-| Variance, nonlinear exposure or order/path dependence | [Volatility/path state](volatility-paths.md) | Required target/hedge exposures → persistence and sufficient-state controls → justified model/order extension |
-| Numerical oracle, price/Greek surrogate or hedge policy | [Numerical pricing/hedging](numerical-pricing-hedging.md) | Fixed valuation/ledger/law → error budget and reference → derivative/shape/fallback and complete-cost gates |
-| A-share styles, crypto stress or stock/future-linked tokens | [Market/instruments](market-instruments.md) | Historical rights, eligibility and clocks → conditional process accounts → attainable target and joint cash path; verify product-specific terms |
+| Source teachings / partial framework | Recover and apply premise → observation → judgment relations; compose by role and test on new/contrary cases | [Framework development](../framework-development.md) |
+| Participant practice, market term or open-role relation | Motivating/contrary cases → consequential relation → finite operation and observation map | [Market concepts/measurement](market-concepts.md) |
+| Comparable forecasts and mature outcomes | Equal mixture → cumulative Hedge → deliberate memory comparison, with proper losses | [Online aggregation](online-aggregation.md) |
+| Scores/probabilities, payouts and risk units | Capped volatility size, constrained active weights or stabilized risk budgets; inspect economic exposures and residuals | [Portfolio/risk](portfolio-risk.md) |
+| Orders, fills, cash, collateral and capacity | Actual instrument/policy/clock → event ledger and fixtures → trade bands, leg failures and funding/size stress | [Execution/funding](execution-funding.md) |
+| Realized decisions/outcomes or changing evidence | Reconstruct attainable alternatives and compare relation roles; revise affected dependencies, diagnose decay/recovery and profile scaling | [Lifecycle/computation](lifecycle-computation.md) |
+| Cash-flow rights, executable sides, residuals or event states | Match dated legs/units; derive replication, residual dynamics, conditional event-payment bounds or basis/funding cash path as appropriate | [Arbitrage/events](arbitrage-events.md) |
+| Shared price moves / a claimed informational increment | Construct a matched no-input/shared-context comparison with common clocks, population and attainable consumer; locate the remaining increment | [Prediction/information](prediction-information.md), [Inference/validation](inference-validation.md) |
+| Contract cash flows and admitted hedge trades | Finite replication → model law/PDE or explicit unspanned valuation obligation | [Pricing/replication](pricing-replication.md) |
+| Variance, nonlinear exposure or path dependence | Required target/hedge exposures → persistence and sufficient-state controls → justified model/order extension | [Volatility/path state](volatility-paths.md) |
+| Numerical oracle, price/Greek surrogate or hedge policy | Fixed valuation/ledger/law → error budget and reference → derivative/shape/fallback and complete-cost checks | [Numerical pricing/hedging](numerical-pricing-hedging.md) |
+| A-share styles, crypto stress or stock/future-linked tokens | Historical rights/eligibility/clocks → conditional process accounts → attainable target and joint cash path; verify product terms | [Market/instruments](market-instruments.md) |
 
 Sources remain with their reasoning; verify mutable instrument/implementation
 facts for the actual version and study period. Worked illustrations live in the

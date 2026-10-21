@@ -1,40 +1,36 @@
 # Implementation normal form
 
 Use for settled changes under the [entry's development-loop trigger](../SKILL.md#development-loop).
-This reference owns implementation criteria, not missing architecture. Check
-material boundaries against accepted project-owned decisions; an absent or
-contradictory governing decision returns to entry Admission, before coding.
+This reference guides construction within the accepted constraints; the entry's
+Admission owns unresolved governing choices.
 
-## Optimize local semantic reasoning
+## Construct for local reasoning and change
 
-Prefer the smallest code organization from which a reader can derive the domain
-result, effects, failures, resource transitions and public behavior without
-tracking parallel interpretations or owners. Count concepts and live obligations,
-not lines, functions, files, indentation, or conformity to a named pattern.
+Where consequential uncertainty or construction resistance warrants investigation,
+try a relation that lets several obligations follow from established facts and
+keeps the change-sensitive decision with one owner. Connect its predicted consumer
+result to actual dependency behavior, alongside the coordination it removes and
+the change it makes local. Use these expectations to choose the expression.
 
-For changes that transform domain input or produce effects, use this as a
-preservation model, not a required pipeline shape:
+Choose how to carry the relation by what must remain independent. Native values,
+calculations and scopes may express it directly; a type or boundary can carry
+independent state, policy, authority, lifecycle or meaningful variation. One
+private consumer can justify such work. Favor an expression that lets consumers
+forget implementation decisions while preserving their promised behavior.
+Duplication may be cheaper than sharing distinct policy;
+extra types may clarify real variants. Names and line count do not settle this
+tradeoff.
 
-```text
-settled change and authoritative input
-  -> admit raw input once into domain-bearing values
-  -> select an explicit operation or variant once
-  -> perform shallow meaning-preserving transformations
-  -> invoke the named effect and resource owners
-  -> observe the promised postcondition
-  -> return or terminally delegate
-```
+Choose implementation guarantees together with their failure, waiting and recovery
+costs under the accepted contract. Reusing a general mechanism imports its
+guarantees and obligations; weigh stronger semantics by the consumer benefit or
+consequential failure that repays their cost. Preserve required guarantees; a
+change to a governing promise, owner or budget returns to Admission.
 
-Give each transformation an admitted input and explicit output or failure. A stage
-exists only when it changes data, evidence, capability or an owned effect state.
-Compute an expensive intermediate once; do not repeatedly parse, validate,
-normalize, query, copy or project it through multiple interpretations.
-
-Use project-native statements, expressions, pipelines, exceptions, result types,
-iteration, recursion, actors or tasks. The syntax is conditional; the preserved
-semantic path is the invariant. Local mutation is appropriate inside one visible
-owner when it preserves the external value contract and improves clarity or
-measured cost.
+Trace admitted input to the promised result: select its operation, transform
+meaning-preserving values, invoke effect/resource owners, then return or delegate
+after owed work. Give transformations explicit results or failures, compute costly
+intermediates once, and retain genuine trust boundaries and variants.
 
 ## Preserve terminal handoff
 
@@ -99,81 +95,36 @@ Children may not outlive their structured owner unless a named service adopts an
 supervises them. Bound queues, concurrency, retries and caches at the owner able to
 refuse or defer work.
 
-## Worked ownership: export with cleanup
+## Worked relationships: a cached FTP Link
 
-Synthetic, unexecuted example. The settled export contract gives this request a
-writer to close before completion, with no retry or ownership transfer. Trace raw
-input → Records → pure formatting → acquire writer → append → finish/receipt →
-release. Parse once; formatting preserves meaning, while the writer owns I/O.
+Suppose callers borrow a cached Link across requests. The instance owns the Link
+lifetime, and a read belongs to both that borrowed lifetime and its own request.
+Use the project's existing reference ownership to revoke the Link on final
+release, and the read scope to revoke only its acquired IO. This relation can
+generate admission, cancellation and cleanup together, without a second reference
+counter or separate per-method revocation policy. A waiting caller owns no shared
+connection yet: cancellation ends its wait; transport interruption belongs only
+to the operation that acquired the connection.
 
-Remove a helper that only relays the writer's identical input/result/failure.
-Keep the export scope's await/guard when release remains owed after the call:
-deletion would lose an obligation. A real public error translation also stays,
-preserving the writer fault's cause and output identity.
+Counterexample: equal request contexts do not establish shared IO ownership, and
+releasing one borrower does not establish final release. Initializing, disconnected
+and revoked instances are different states even when all lack a connection.
+Keep those distinctions; deducing every state from `conn == nil` erases behavior.
 
-Before finish, an append fault or cancellation skips later finish/publication;
-release the acquired writer. Preserve the primary fault or cancellation and
-expose cleanup failure as secondary under the accepted contract. Failure before
-acquisition owes no release. Inspect transitions and surviving output. If the
-accepted contract instead transfers the writer to a service, transfer/supervision
-receipts replace request cleanup; an unsettled lifetime choice returns to
-architecture, not a wrapper invented while coding.
+Revocation, socket interruption and observed errors also have different timing.
+A socket-close callback may run before a merged request context is canceled. The
+captured owner supplies the revocation fact; transport closure performs the IO
+effect. Stopping/joining the operation callback before handing off a reusable
+connection prevents that old operation from interrupting its successor.
 
-## Make every abstraction pay rent
+These examples illustrate derivation, not a prescribed class layout or universal
+cancellation policy. Inspect actual borrower and release contracts; preserve
+protocol completion, cleanup faults and cancellation identity where they matter.
 
-Keep a boundary only when it owns independent policy, lifecycle, authority, public
-compatibility, a reusable pure algorithm, or real variation used by coherent
-consumers. Prefer deletion, a standard/project mechanism, a direct expression or
-call, then the smallest custom owner. Do not add relay services, one-use
-interfaces, factories without construction policy, speculative configuration, or
-compatibility bridges without a named live consumer and removal trigger.
+## Preserve settled boundaries
 
-Some duplication is cheaper and clearer than a false shared abstraction. Some
-extra types or lines are necessary to preserve variants, evidence, failure or
-recovery. “Short,” DRY, immutable, functional, object-oriented and pattern-shaped
-are not independent acceptance criteria.
-
-## Preserve settled semantic topology
-
-When the diff materially changes semantic topology, inspect the affected helpers,
-wrappers, type owners, files, modules, packages, import edges, visibility,
-facades, and re-exports. Preserve settled owners, dependency direction,
-internal/public surface, compatibility gates and evidenced change locality. A
-routine file edit does not require a topology audit; a passing test does not prove
-topology when it has changed.
-
-For each material boundary introduced only during implementation, run the
-direct-call, inline/merge, collapse/group, move-to-owner or next-variant
-counterfactual that matches it. Remove an obvious private relay locally when no
-settled semantic or project obligation disappears. If the governing owner, edge
-or surface is absent, contradictory or materially selectable, preserve the
-evidence and stop rather than choosing topology while coding.
-
-## Falsify the implementation
-
-Inspect the actual diff and use the smallest applicable counterfactual:
-
-- change one input variant and confirm only the selected path changes;
-- inject failure or cancellation at each affected edge and inspect propagation,
-  cleanup, compensation, downstream non-execution and surviving state;
-- delete a handler—if no owned decision or obligation disappears, keep it deleted;
-- replace a helper around an owning method/operation with the direct call;
-- inline/delete a wrapper—if no policy, lifecycle, compatibility, reusable
-  algorithm or real variation disappears, move callers to the surviving owner;
-- merge a small file into its proposed owner, collapse/group its namespace, move a
-  symbol beside its authority, and add the next admitted variant as applicable;
-- replace an effect adapter while holding the settled decision fixed;
-- reorder two stages when order matters and confirm evidence detects the fault;
-- identify every compatibility path's live consumer and removal gate; and
-- perturb representative scale/concurrency or measure a claimed optimization
-  against its accepted budget.
-
-A semantic-flow or topology defect is a blocker when it changes or hides accepted
-meaning, authority, dependency direction, visibility, effects,
-failure/cancellation, lifecycle, public compatibility, evidenced change locality,
-or a required cost bound—even without a style rule. Exact syntax, naming, prefix,
-file-size, helper placement or flat/grouped preference is gating only when current
-project policy or matching maintained analogues establish it and those semantics
-are unchanged. When the diff reveals that the settled contract itself is wrong or
-incomplete, preserve the evidence and reopen its architecture owner rather than
-patching around it.
+For a material topology change, follow affected callers and value/resource
+dependencies through owners, visibility, compatibility and project-native module
+edges. Preserve the settled graph and examine whether the relevant change stays
+local. Obvious private relay removal remains local when no obligation disappears;
+a new governing owner, dependency direction or public surface returns to Admission.

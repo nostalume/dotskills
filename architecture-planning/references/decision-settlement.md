@@ -42,11 +42,30 @@ effects; resource lifetime, cleanup, and recovery; promised concurrency behavior
 compatibility/migration/removal; limiting workload and budget; and falsifying
 observations.
 
+Applicability comes from real callers, contracts, environments and selected fault
+models. Existing language/project guarantees can close an obligation; naming a
+dimension does not require a new type, checker, log, layer or recovery protocol.
+
 Do not use a method signature, service, manager, facade, store, queue, protocol, or
 detailed module sketch to conceal missing semantics. Conversely, do not decide
 implementation details that cannot affect an architectural contract.
 
 ## Compare only material alternatives
+
+Prefer constructions that reduce what a reader or caller must know and coordinate
+while preserving the required capability. Investigate whether an admitted value,
+one authoritative owner, a narrower interface or a native resource scope can make
+repeated checks, translations, handoffs or recovery states unnecessary. Derive the
+reduction from the contract; moving the same complexity into helpers or generic
+machinery does not establish it. Preserve checks at new trust/state boundaries and
+handling for real failures. A useful abstraction can add code while removing
+independent obligations; some duplication is cheaper than a false shared owner.
+
+Compare the representative change or failure before and after: which facts must
+still be coordinated, which decisions become local, and what new burden appears?
+Prefer deletion or an existing mechanism when it closes the same obligations.
+Reject neither a necessary mechanism for its size nor the incumbent for failing
+to look redesigned. Speculative variants do not earn infrastructure by themselves.
 
 Freeze hard constraints, contextual objectives, and acceptance evidence first.
 Include the incumbent when changing an existing system, then add only materially

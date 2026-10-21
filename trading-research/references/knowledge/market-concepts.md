@@ -6,6 +6,31 @@ research or trading decision, not a mandatory ontology, model family, or report
 template. Preserve fixed user or project rules; do not manufacture a mechanism
 story merely to use this route.
 
+## Research preferences
+
+Favor questions with a credible route from available information to attainable
+net value under the user's participation constraints. Compensated risks,
+participant constraints, information processing and trading demands can explain
+why an opportunity persists or disappears. Evidence-led patterns also merit
+investigation; an economic story is a hypothesis, not a compulsory mechanism proof.
+
+Prefer learning that improves an adopted judgment: distinguish live explanations,
+handle new cases or remove a consequential dependency. Compare that change,
+attainable evidence and cost against other live directions. Clear sources, an
+easy report, novelty or difficulty alone earn no priority. A cheap prerequisite
+can decide whether deeper work is useful. Neither perfect identification nor
+immediate profit is required; uncertainty can support a provisional account,
+range or sensitivity check. Repeated work on an adequate link needs a reason,
+and a mere reading-queue change may leave the parent purpose untouched.
+
+Seek small states and reusable relations that preserve needed timing, exposures
+and actions. Complexity/precision should earn acquisition, estimation and execution
+costs over a relevant simple or existing route. Latency, liquidity, funding,
+capacity and adverse outcomes matter when they change that choice. These are
+investment preferences, not gates for every result or numerical progress scores.
+Baselines, negative results, fixed-rule tests and bounded teaching retain their
+roles. Local construction does not complete the original profitability objective.
+
 ## Develop consequential relations and opposition
 
 Begin with the practice or phenomenon and the research question or possible

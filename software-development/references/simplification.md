@@ -16,33 +16,27 @@ behavior-preserving reduction:
 
 Read neither guide for a local self-contained cleanup.
 
-## Reduction loop
+## Select the reduction
 
-1. Freeze status, public behavior, errors, schemas, effects, compatibility,
-   representative performance, callers, and canonical commands.
-2. Establish characterization/regression evidence and mutation sensitivity for an
-   unprotected existing contract.
-3. Classify each candidate as a real boundary, transformation, orchestration,
-   compatibility mechanism, or relay. Keep a boundary only for independent
-   lifecycle, authority, release policy, a reusable pure algorithm, or real
-   variation.
-4. Try, in order: deletion/no change; standard or platform mechanism; installed
-   dependency; direct expression/call; smallest custom owner.
-5. Choose one surviving owner and trace definitions, imports, re-exports,
-   constructors, serializers, tests, docs, configuration, and effects.
-6. Migrate one connected vertical path. Add a bridge only for two named live
-   versions/consumers with a concrete removal gate.
-7. Move every consumer, then remove obsolete wrappers, aliases, flags, files,
-   fixtures, configuration, tests, and docs in the same slice.
-8. Search the affected scope for retired paths and names, inspect relevant files,
-   compare the accepted contract and measured cost, then return to conformance and
-   final verification.
+Locate the repeated reasoning or coordination to remove and the accepted behavior
+that must survive. Trace only consumers, effects and compatibility that can change
+this reduction. Reuse adequate regression evidence; add characterization or a
+focused fault probe where the consequential contract is not credibly protected.
+
+Use [normal-form construction criteria](implementation-normal-form.md#construct-for-local-reasoning-and-change)
+to choose the expression. Availability alone gives a dependency no priority. A
+local relay removal needs no migration protocol; broader migrations use the guide
+above.
+
+The selected migration guide owns consumer cutover and retirement. Check affected
+references and behavior through the main workflow's feedback and single completion
+decision; this guide adds no review cycle or step sequence.
 
 ## Hard gates
 
 - The accepted contract is unchanged unless the authorized task names its delta.
-- Every removed boundary has one surviving owner and zero consumers.
-- A new abstraction has multiple coherent consumers or owns a hard boundary.
+- A removed boundary's obligations survive at their proper owners or are shown
+  unnecessary; retired entries have no live consumers.
 - Fewer lines do not justify erased semantics, clever metaprogramming, repeated
   validation, or hidden compatibility.
 - Performance claims retain command, data, environment, repetitions, result, and
@@ -50,6 +44,5 @@ Read neither guide for a local self-contained cleanup.
 - When reduced size or structure is itself a claimed result, report before/after
   conceptual owners and use line counts by artifact category only when they help
   judge that claim; line count alone is not the result.
-- Completion requires no live references to retired paths or names in the affected
-  scope, plus fresh focused and project-canonical checks through the main
-  development workflow.
+- Retired paths or names have no live references in the affected scope; use the
+  main workflow's delivery verification for completion evidence.

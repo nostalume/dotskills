@@ -51,6 +51,32 @@ Do not turn a temporary crowded unwind automatically into model decay, or a
 possible reversal into a reason to ignore liquidity limits. Preserve the dormant
 version and its record for comparison rather than retroactively rewriting results.
 
+## Review realized decisions and relation roles
+
+For research review of supplied records, start from consequential mismatches or
+accumulated opportunities, including wins. Reconstruct the as-of judgment,
+intended policy, actual decisions and attainable route, retaining relevant rejected,
+missed and unfilled opportunities within known coverage. Reconcile outcomes and
+costs before attributing value. Reuse existing records; a missing observation
+bounds its inference. Reviewing records grants no account or live-action authority.
+
+Ask what observable difference an adopted relation implied, whether it appeared,
+and whether a feasible simpler account does the work. Compare choices and results
+at compatible clocks, exposures, capital and costs. Distinguish useful information
+from decision increment and realizable net value. Timing, common exposure or
+funding may deserve more attention than a polished explanation. Paired replay
+and attribution depend on their assumptions, not unique causal identification.
+Removing a relation calls for reconsidering its downstream selection, holdings
+and actions; freezing those can test only a narrower effect.
+
+Let evidence preserve, demote, reassign or replace a relation and redirect effort
+toward the consequential unresolved dependency. Study winners as critically as
+losers; an admitted loss scenario alone need not defeat a probabilistic method.
+A proposed factor earns adoption by a distinguishing consequence or useful
+increment, not by rescuing one outcome. Retain uncertainty when rivals cannot be
+separated. These judgments guide research investment, without per-trade reports,
+automatic rule changes or a mandatory review sequence.
+
 ## Shadow changes before replacing the comparison
 
 Run old and proposed versions on the same as-of opportunities with withheld

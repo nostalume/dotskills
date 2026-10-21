@@ -109,9 +109,14 @@ supplies a durable test consumer.
 
 ## Return the observed result
 
-Return exact source/output identities/references, available source maps/stable locators,
-checks performed/failed/skipped, losses/unresolved regions, tool/provider identity
-and version, effects and preserved source/recovery. Nonempty extraction, file
+In the delivery report, return exact source/output identities/references,
+available source maps/stable locators, checks performed/failed/skipped,
+losses/unresolved regions, tool/provider identity and version, effects and
+preserved source/recovery. Keep this execution record separate from the accepted
+artifact content unless its reader contract requires it. Inspect authored or
+changed body content, properties, comments, links and embedded resources for
+incidental plan or workstation details; preserve required provenance and existing
+content under the selected operation's preservation policy. Nonempty extraction, file
 existence or successful opening alone proves neither completeness nor fidelity.
 
 | Status | Meaning |

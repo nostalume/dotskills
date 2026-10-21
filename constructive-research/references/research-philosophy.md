@@ -6,13 +6,58 @@ not in a presumed universal vocabulary. Formalization, typed structure, and an
 obstruction argument are selected methods; descriptive inquiry, measurement,
 replication, literature synthesis, and accepted exposition need not invent them.
 
+## Research preferences
+
+Favor expressions in which fewer independent data and explicit relations generate
+useful consequences, making repeated expansions or repairs unnecessary. These are
+preferences for selecting questions, methods, and further investment, not gates
+every result or turn must pass. Let the user's question and priorities govern;
+baseline work, descriptive results, and promising incomplete ideas retain value.
+
+When effective use matters, investigate how the needed evaluation, transformation,
+normalization, or decision can actually be obtained; a contract alone supplies no
+procedure, and a paper-and-pencil procedure need not become code.
+
+For semantic reduction, select a scientifically consequential family of questions
+or operations and investigate which independent information it needs. Construct
+an expression that preserves those uses while forgetting irrelevant distinctions;
+test it against cases that the proposed expression merges. A quotient label or
+short formula is insufficient when the original work is hidden in its evaluation,
+equivalence test, or recovery. The family need not recover the entire theory, but
+must not shrink merely to make the proposed reduction succeed.
+
+Prefer invariant, quotient, symmetry-adapted, normal-form, spectral, or
+variational reasoning when it shortens or strengthens the complete route. Let
+relations and operations carry the derivation, with needed component expressions
+recoverable. Use components when they are the observable representation, no
+structural reduction is known, or an independent check needs them; return the
+conclusion to its invariant meaning. Fewer indices alone do not establish a gain.
+
 ## Develop concepts through consequential use
 
-Start from the requested capability or phenomenon and how the inquiry currently
-proceeds. Locate where a distinction, relation, representation, or rule could
-change a conclusion, construction, question, or refusal. A new view may begin
-from a surprising observation, recurring repair, or unresolved comparison; it
-need not first prove an old language impossible.
+Use domain knowledge to understand the requested capability and current attempt:
+known constructions, theorem hypotheses, examples and permitted operations supply
+structural footholds. Expand a failed equality, unresolved composition or recurring
+repair; isolate the dependence that causes it. Compare cases the attempt merges
+but the required operation separates. A surprising successful relation can supply
+the same starting point; failure is not a prerequisite.
+
+Let the user's research preferences shape what to construct from that mechanism.
+Seek a relation that preserves successful uses while generating repeated repairs
+from shared data, making calculations or distinctions unnecessary, or exposing
+genuinely independent data. A research bet connects this candidate, a consequence
+still to be derived, and the scientific work it could replace or enable. Its
+plausibility comes from the domain structure; its value comes from that scientific
+use. A factorization,
+symmetry or transferred method earns attention through what it lets one derive.
+
+Attempt the consequence using the domain's operations: solve an unsettled
+cancellation or compatibility equation where possible, then carry the candidate
+into a further composition, order or admissible input. Identify which relations
+are forced and which choices remain free. Keep unproved premises conjectural;
+the desired equality cannot supply its own proof. New assumptions remain research
+debt until derived or admitted, and restoring all discarded inputs changes the
+bet. These are construction moves, not a fixed sequence or proposal template.
 
 Do not treat `ontology`, `primitive`, `kernel`, `closure`, or similar terms as
 neutral prerequisites. A concept is provisionally stabilized with its relevant
@@ -38,16 +83,6 @@ state what maps, what fails to map, and the distinct consequence produced. A
 cross-domain analogy is a proposal, not evidence for the target domain. Do not
 force this search on a settled derivation or a task whose result does not depend
 on the concept's reconstruction.
-
-Use this trace when it changes the work; do not materialize it by default:
-
-```text
-actual task and current attempt
-  -> consequential divergence, surprise, or recurring repair
-  -> provisional distinction, relation, representation, or rule
-  -> changed move, consequence, question, or refusal
-  -> contrary case and bounded revision
-```
 
 ## Expose formal construction when selected
 
@@ -91,12 +126,6 @@ must not encode the expected answer. Distinguish regression on known input,
 transfer to a structurally changed admissible input, and downstream use against
 the complete baseline route. Regression alone verifies preservation; transfer
 alone does not establish computational gain.
-
-Prefer invariant, quotient, symmetry-adapted, normal-form, spectral, or
-variational reasoning when it shortens or strengthens the complete route. Use
-components when they are the observable representation, no structural reduction
-is known, or an independent check needs them; return the conclusion to its
-invariant meaning.
 
 ## Bound productivity and improvement claims
 

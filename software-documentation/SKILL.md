@@ -11,7 +11,8 @@ software, not as late prose copied from implementation shape.
 
 ## Documentation contract
 
-Before writing, state:
+Before writing, establish the following as authoring inputs, not a required
+section template:
 
 - the audience, its immediate question, and the decision or successful action the
   document must enable;
@@ -25,9 +26,13 @@ Before writing, state:
   result trustworthy.
 
 Do not infer privacy, publication intent, or agent visibility from paths, worktree
-presence, or ignore rules: Git ignores do not provide confidentiality. Keep plans
-and scratch separate from durable docs; copy plan details into public docs only
-when authorized and useful to the named reader.
+presence, or ignore rules: Git ignores do not provide confidentiality. Select
+content by the reader's task and the document's contract; source authority alone
+does not make a detail useful to publish. Keep plans and authoring state in task
+records. Include environment or layout details only when they affect reader
+action or interpretation, using supported requirements and reader-usable paths
+rather than incidental workstation bindings. A requested local diagnostic or
+reproduction record may need exact bindings; preserve that document's scope.
 
 Inspect current source, public interfaces, help/schema output, tests, existing
 docs, examples, and release history as applicable. Prefer domain vocabulary and
@@ -96,8 +101,10 @@ Select checks from the claims actually made:
 - compare release or migration claims with the actual revision range and accepted
   compatibility contract.
 
-Record commands, environment, observed outcomes, skipped checks, and limits. Mark
-generated sections and their source; do not hand-edit generated truth. State an
+Report validation commands, environment, observed outcomes, skipped checks and
+limits in the task result or existing verification record; put them in the
+document only when its reader contract needs them. Mark generated sections and
+their source; do not hand-edit generated truth. State an
 owner or trigger for version-sensitive claims and reopen the document when its
 authority, behavior, audience, or supported version changes.
 

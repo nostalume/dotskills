@@ -1,24 +1,29 @@
 # Feedback methods
 
-Choose the cheapest evidence that can falsify the claim being implemented. A
-method guides development; final delivery verification still evaluates the actual
-final diff after the last relevant edit.
+Choose feedback that could change a consequential construction choice. Connect
+the requested result to actual consumers and dependencies; a stand-in cannot
+establish behavior it assumes. Use native input anchors and observations when
+available, honoring later user steering. Let findings change the construction or
+next investment; reopen governing contradictions through Admission. Stop when
+further evidence would not change the decision, and reuse checks for delivery.
 
 ## Selection
 
-| Claim | Development feedback | Required distinguishing evidence |
+| Claim | Development feedback | Distinguishing evidence |
 | --- | --- | --- |
 | Settled observable behavior at a stable seam | RED-GREEN-refactor | Intended RED, focused GREEN, refactor confirmation |
-| Existing behavior under refactor | Characterization plus mutation sensitivity | Baseline behavior and proof the check detects a representative fault |
+| Existing behavior under refactor | Reuse regression evidence; characterize uncovered behavior | Accepted baseline and focused evidence for changed obligations; probe a representative fault when sensitivity is uncertain |
 | Domain or mathematical law | Law/property tests, derivation, or proof obligation | Positive, negative, boundary, and adversarial cases as applicable |
-| Settled implementation flow, failure, ownership or topology | Counterfactual and mutation-sensitive conformance | Handler/wrapper deletion, direct-owner call, failure/cancellation injection, stage reordering, adapter replacement, file/module merge or another fault that changes the owned semantic obligation |
+| Settled implementation flow, failure, ownership or topology | Applicable counterfactual inspection and focused probes | Inspect the changed obligation; inject a relevant fault when propagation, cleanup or sensitivity needs evidence, rather than exercising unrelated mutations |
 | Cost or scale | Benchmark, profile, or counters against a budget | Reproducible baseline, workload, repetitions, result, and noise limits |
 | Structural or style policy | Formatter, linter, type, dependency, or architecture tool | Applicable configuration/instruction and fresh tool result |
 | External effect | Approved disposable integration with post-observation | Exact target, pre/post state, receipt, cleanup, and residue check |
 | Uncertain domain or API | Bounded exploration | Discard or reframe the exploration, then settle or reopen the design before production implementation |
 
 Combine methods only when the change makes different kinds of claims. Do not use a
-large test matrix to compensate for an undefined contract.
+large test matrix to compensate for an undefined contract. Reuse project-native
+commands and fixtures; add a small helper only for observed execution friction,
+kept with its project or task consumer.
 
 ## RED-GREEN-refactor
 
@@ -44,15 +49,16 @@ a test-first history for existing behavior.
 
 ## Characterization and mutation sensitivity
 
-For behavior-preserving work, record the accepted baseline before production
-edits. Demonstrate that the selected check detects a small representative semantic
-fault, then restore the baseline and perform the change. This protects the contract
-without pretending the feature was developed test-first.
+For behavior-preserving work, establish the relevant accepted baseline before
+edits when it is needed to interpret the result; existing adequate evidence may
+supply it. Add a representative semantic fault probe when a consequential behavior
+is unprotected or the selected check's sensitivity is uncertain, then restore the
+baseline. A protected local cleanup need not add tests or mutation machinery solely
+for ceremony. Do not pretend existing behavior was developed test-first.
 
 For a code-shape claim, choose the applicable counterfactual from
-[implementation normal form](implementation-normal-form.md). This supplies
-development feedback; [conformance review](conformance-review.md) separately
-judges the actual final diff.
+[implementation normal form](implementation-normal-form.md). Use
+[conformance review](conformance-review.md) on the actual diff within that feedback.
 
 ## Laws, cost, structure, and effects
 

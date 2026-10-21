@@ -26,7 +26,7 @@ could show it is false.
 | Portability and absent capability | The claimed semantic, package, suite or runtime surface passes its distinguishing check; missing capability yields an equivalent alternative, bounded partial, unavailable or refused result without weakened invariants |
 | Operation and adapter economy | A simple request stays on the semantic core without unused tools or references; an operation-specific adapter is selected only when needed; replacing that adapter preserves postconditions, evidence and refusal behavior |
 | Command distinctness | Each exposed command changes a postcondition, evidence obligation, authority/effect boundary, durable artifact, or refusal behavior; synonyms converge instead of creating competing routes |
-| Artifact exposure | Private planning stays private; a shared or public artifact is written only when its reader, purpose, destination, authority and exposure are accepted, and it excludes unnecessary plans or project inventory |
+| Artifact exposure | The artifact has an accepted reader, purpose, destination, authority and exposure; inspect its contents and metadata for context admitted without a target-contract or reader need, while preserving required domain terms, compatibility names and reproduction evidence |
 | Structural contract | The repository-supported validator, link inspection, metadata rules, and relevant static checks pass on the final files |
 
 Do not use a large scenario count to compensate for an undefined contract. Do not
@@ -178,6 +178,13 @@ temporal mutations:
 - change provider target or policy after an otherwise reusable observation; and
 - remove network access while distinguishing offline-capable preparation from an
   operation requiring fresh remote policy.
+
+When changing context-to-artifact rules, relabel only a plan stage or relocate
+only the authoring workspace while holding the target contract fixed; compare
+actual code and document artifacts for unchanged domain meaning and reader use.
+Contrast with genuine domain stages, compatibility names and requested
+environment/layout or diagnostic documentation, which should retain the needed
+details. A review-only variant must still leave the reviewed source unchanged.
 
 Change one semantic, temporal or availability input at a time. A useful case makes
 only the corresponding decision, evidence requirement or bounded failure change.

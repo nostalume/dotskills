@@ -1,26 +1,17 @@
 # Research Loop
 
-Use this reference while an inquiry frontier can still change. It owns action
-selection, frontier transitions, retention, and stopping. For a frozen or
-contested claim, add [evidence adjudication](evidence-adjudication.md); do not load
+Use this reference while an inquiry frontier can still change. It owns agenda
+formation, investment and action selection, frontier transitions, retention, and
+stopping. For a frozen or contested claim, add
+[evidence adjudication](evidence-adjudication.md); do not load
 that protocol for a self-contained derivation or accepted exposition.
 
-## Keep one visible transition
+## Work from the research frontier
 
-```text
-read the frontier
-  -> select one discriminating action
-  -> derive, inspect an admitted source/observation, or admit execution
-  -> admit a bounded result, uninformative result, or classified failure
-  -> decide the smallest frontier change or no change
-  -> retain, compact, or drop newly produced material
-  -> choose the next obligation or stop
-```
-
-The frontier needs only the active question or frozen claim, weakest consequential
-obligation, live alternatives, horizon, and stop/re-entry condition. Elaborate
-record schemes or symbolic summaries are optional aids for contested or persistent
-campaigns; they are not mandatory state for every inquiry.
+The frontier needs only the originating direction and active question or frozen
+claim, consequential open gap, live alternatives, horizon, and stop/re-entry
+condition. Elaborate record schemes or symbolic summaries are optional aids for
+contested or persistent campaigns; they are not mandatory state for every inquiry.
 
 An action qualifies when its possible outcomes distinguish live alternatives,
 construct a missing object or operation, establish a boundary, or change a named
@@ -29,27 +20,65 @@ probe. Choose the least effectful adequate mode. A new measurement or acquisitio
 requires its own authority and effect boundary; execution must pass
 [computation admission](computation.md).
 
-## Find the next consequential move
+## Develop and pursue a research bet
 
-Begin with the requested capability or phenomenon, the current way of proceeding,
-available material, live alternatives, weakest missing bridge, and horizon. Do
-not invent a claim, mismatch, or obstruction merely to populate a workflow.
+For an open direction, recover the user's question and bounds, then develop the
+bet through [concept development](research-philosophy.md#develop-concepts-through-consequential-use).
+Inherited plans and dependency graphs remain revisable route choices unless the
+user fixed them; their recorded results retain their evidential force. A fixed
+problem or accepted explanation needs no competing agenda.
 
-1. Name the requested result and the current move that matters.
-2. State alternatives, observations, or relations whose outcomes lead to
-   different conclusions, constructions, questions, or refusals.
-3. Select the least effectful operation that can expose that difference.
-4. Advance only when the result eliminates or merges an alternative, changes a
-   relevant concept or presumption, constructs an operation, or establishes a
-   boundary.
-5. Retain a candidate account only from supported relations, consequences,
-   falsifiers, and remaining bridges; the vocabulary used to describe them is
-   revisable.
+Use the [research preferences](research-philosophy.md#research-preferences) to
+compare the scientific consequence, structural support and remaining work of
+plausible bets. A feasible next step alone supplies no reason for investment.
+Begin a bounded attempt before the full construction or end-to-end justification
+is available; its conjectural premises retain that status. Replication, baseline
+work and enabling repairs count by their contribution to the inquiry.
+
+On continuation, carry the working relation and what the derivation changed in
+its mechanism or scientific use. Pursue a newly enabled inference, a consequential
+unknown, or a consequence not used to form the candidate. A failed prediction
+may call for revising the generator, retaining independent data, or abandoning
+the route; use concept development to understand which. Appending conditions
+alone does not develop the relation, and a motivating success does not validate
+its whole intended reach.
+
+Let these changes govern confidence and investment. Sustain a difficult,
+unfinished construction while its structural foothold and expected consequence
+remain promising. At a consequential boundary, compare the actual gain and next
+move with the original gap and strongest relevant alternative. Repair a failed
+realization when the scientific use warrants its remaining dependencies; its
+failure closes dependent routes, not automatically the question. A matched
+same-class obstruction can answer a question; further sharpening needs another
+use. Redirect, park or stop when the bet loses its reason for investment. Keep
+this judgment brief, without per-turn reports, scores, success or novelty quotas.
+
+## Make the next move serve the bet
+
+Choose a missing bridge inside the selected question, rather than every unresolved
+ancestor. Try the operation that would generate the promised consequence or
+replace independent work, using the least effectful adequate derivation, source,
+observation, or execution. A particular result can be useful without serving the
+open research horizon; ease of proof alone does not set priority.
+
+Keep the conjecture, derived consequences, contrary cases and remaining bridges
+distinct. If no worthwhile authorized route remains, state the exact missing
+input or conflict rather than fill the gap with peripheral work. Do not invent
+an obstruction or require compression from every kind of inquiry.
 
 If the inquiry was framed in a way that makes the needed operation invalid,
 revise it explicitly. Descriptive work may instead end in a bounded account of an
 observed phenomenon; it need not manufacture formal primitives, an obstruction,
 or a productive construction.
+
+When narrowing or changing a question, preserve the originating target, the
+reason for the change, the part answered or rejected, and the remaining gap.
+State any bridge from a special case or replacement back to the original target;
+without one it remains a partial result or a separate question. A refutation
+answers its matched claim without establishing a replacement. Agent-proposed
+questions may evolve within the user's direction, but do not silently replace a
+user-fixed target, domain, or success condition. A known reformulation can advance
+this inquiry without establishing novelty in the field.
 
 A locally discriminating action may still leave the original capability out of
 reach. When an actual probe or paired admissible cases show that the current
@@ -111,11 +140,14 @@ durable dependency, canonical owner binding, or multiple projection consumes it.
 
 ## Stop or re-enter
 
-Stop and synthesize when the requested result is supported within scope, a bridge
-is supported or rejected, further detail cannot change a consumer, the declared
-horizon or resource plateau is met, or the next discriminating action is unavailable
-or unauthorized. Report the supported spine, weakest open bridge, and parked
-alternatives with exact re-entry conditions.
+Stop and synthesize when the requested result is supported within scope, further
+worthwhile work cannot advance the inquiry or change a consumer, the declared
+horizon or resource plateau is met, or no worthwhile authorized route is available.
+Closing one bridge can finish a local task; in open research, reconsider the live
+agenda within the remaining bounds. Report the supported spine, original target's
+unresolved gap,
+and parked alternatives with exact re-entry conditions. A bounded stop does not
+establish that a narrower result solved the original question.
 
 Revise a candidate only when admitted evidence changes its use, relevant
 relations, domain, consequence, refusal, or boundary. An unwanted result, a newly

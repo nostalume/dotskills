@@ -1,6 +1,6 @@
 ---
 name: architecture-planning
-description: Resolve material, unsettled software architecture or refactor decisions from revision-scoped evidence and prepare the smallest dependency-ordered local plan before coding. Use when domain meaning, ownership, boundaries, compatibility, lifecycle, topology, or cost can still change the design; leave settled local implementation to software-development.
+description: Discover worthwhile architecture or refactor problems, resolve material design decisions from revision-scoped evidence, and prepare the smallest local plan when needed. Use for scoped architecture improvement or when domain meaning, ownership, boundaries, compatibility, lifecycle, topology, or cost can still change the design; leave settled local implementation to software-development.
 ---
 
 # Architecture Planning
@@ -39,6 +39,16 @@ contracts, tests, authoritative docs and relevant implementation. For style or
 topology inspect enforced tooling and matching maintained analogues; one analogue
 is evidence, not a convention. Every named current path/owner must exist at that
 revision; distinguish it from a proposed owner.
+
+For open improvement, discover problems through real behavior, representative
+changes, recurring failures and maintenance friction. Repeated interpretation,
+coordinated edits, scattered state ownership and compensating mechanisms suggest
+hypotheses, not automatic refactors. Choose work by the burden it could remove
+relative to evidence, migration risk and effort; investigate the responsible
+relation before polishing an easy symptom. Leave adequate structure alone.
+A tidier layout that leaves the selected burden untouched does not complete an
+improvement. No recurring audit, problem quota or repository-wide cleanup follows
+from this preference; the admitted scope and operation still govern authority.
 
 1. Trace a real caller through admission, behavior, effects and persistence/output.
    Identify the values/identities crossing each edge, the owner of each transition,
@@ -134,7 +144,12 @@ visible; enthusiasm or detailed tasks cannot settle them.
 
 Return the requested report/plan; hand off only when implementation is authorized.
 Give `software-development` settled conceptual constraints, accepted tradeoffs and
-falsifiers, not mandatory pseudocode or predicted files. Planning cannot certify
+falsifiers, not mandatory pseudocode or predicted files. Distinguish coordination
+labels from domain or interface names: stage headings and task IDs locate plan
+work; they become implementation vocabulary only when an accepted target contract
+requires it. For simplification, carry
+the coordination or interpretation to remove and a representative change that
+should become easier. Planning cannot certify
 the eventual diff. New source, contract, user policy, implementation, integration
 or cost evidence reopens only the smallest invalidated decision and its dependents,
 following settlement's replacement rules; expose the delta.
