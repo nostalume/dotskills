@@ -26,12 +26,11 @@ fixed-layout PDF have distinct preservation needs.
 | Convert | Source, target, accepted losses and destination policy | Target opens/renders with declared losses; Markdown is not native editing |
 | Render/validate | Source, target when rendering, fidelity and engine | Affected output states checked against the source revision |
 
-Bind source/content references to observed identities, revisions or digests. Set
-the postcondition, preservation-critical features and accepted losses, trust and
-page/byte/pixel/time/
-concurrency bounds; require a nonempty fidelity subset of semantic, structural,
-visual and accessibility. Writing needs destination/overwrite policy; remote work
-needs explicit authority. These are conceptual requirements, not schema files.
+Bind source/content to observed identities, revisions or digests. Establish the
+postcondition, preservation set, accepted losses, trust and resource bounds
+(pages/bytes/pixels/time/concurrency), and a nonempty subset of the fidelity classes
+below. Writing needs a destination/overwrite policy; remote work needs explicit
+authority. These are conceptual requirements, not schemas.
 
 Read common obligations and only the selected branches:
 
@@ -116,8 +115,8 @@ preserved source/recovery. Keep this execution record separate from the accepted
 artifact content unless its reader contract requires it. Inspect authored or
 changed body content, properties, comments, links and embedded resources for
 incidental plan or workstation details; preserve required provenance and existing
-content under the selected operation's preservation policy. Nonempty extraction, file
-existence or successful opening alone proves neither completeness nor fidelity.
+content under the selected operation's preservation policy. Extraction, file
+existence or opening alone proves neither completeness nor fidelity.
 
 | Status | Meaning |
 | --- | --- |

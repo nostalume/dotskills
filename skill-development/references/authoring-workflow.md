@@ -1,9 +1,7 @@
 # Authoring Workflow
 
-Use this workflow for both new skills and changes to existing skills. Scale the
-work to the capability: a precise one-file skill does not need ceremony, while a
-skill coordinating distinct operations needs explicit routing and effect
-contracts.
+Use for creation and revision; scale routing and effect contracts to the
+capability. A precise one-file skill needs no ceremony.
 
 ## Establish the contract
 
@@ -32,13 +30,10 @@ the boundary discriminating.
 
 ## Close and place the knowledge
 
-Translate the contract using the orthogonal decisions in
-[portable capability](portable-capability.md). Preserve the smallest semantic and
-operational kernel that can activate, construct the relevant state, choose or
-refuse, perform every claimed provider-independent protocol, and name an
-unavailable adapter fact without network retrieval. This operational-closure test
-does not promise offline execution of an intrinsically remote operation or require
-copying the external specification that owns an adapter.
+Apply [portable capability](portable-capability.md) to preserve an operationally
+closed kernel: activate, construct state, choose/refuse, perform claimed portable
+protocols and identify missing adapter facts without retrieval. This does not
+promise offline remote execution or require copying external specifications.
 
 Place knowledge by owner, temporal binding, consequence, availability and actual
 consumer:
@@ -88,14 +83,11 @@ may coordinate discovery, but each skill must work or stop honestly on its own.
 Every durable resource needs a consumer and every route a trigger; an intrinsic
 decision, operation, or check is also a consumer.
 
-Keep the operation surface economical. For each command or named mode, write the
-distinct postcondition, evidence obligation, authority/effect boundary, durable
-artifact, or refusal behavior that justifies it. If none differs, collapse the
-variants into one operation with a target or contextual parameter. For each tool
-or provider binding, record the selected operation, the capability it supplies,
-the effect it can cause, the authority required, the verification and cleanup,
-and the unavailable fallback. A provider list, launcher, hook, or bridge is not
-part of the portable core merely because it is convenient.
+A command or mode needs a distinct postcondition, evidence, authority/effect,
+durable artifact or refusal behavior; otherwise use a parameter. For each binding,
+identify its operation, capability, effects, authority, verification, cleanup and
+unavailable fallback. Convenience does not make a provider, launcher, hook or
+bridge part of the core.
 
 Define artifact exposure before persistence. Name the reader, purpose, destination,
 source authority, and whether the artifact is private working state, project-local
@@ -135,18 +127,12 @@ case.
 
 ## Author the constructive path
 
-Make the positive method the center of the skill: the relevant objects and
-relations, how admitted inputs become the requested result, why consequential
-choices fit the problem, and what establishes success. Give the agent enough
-domain-grounded guidance to construct a useful result and adapt the method when
-its controlling conditions change.
-
-Ground consequential choices in relevant facts, explicit assumptions, causal
-mechanisms, or inspectable derivations. Connect the support to the operation it
-justifies, including the criterion for choosing or changing a method. Explain
-non-obvious reasoning where it changes a decision; ordinary settled steps can
-remain concise. An example should make the construction usable, expose a
-meaningful variant, or show how the criterion transfers to another input.
+Center the positive construction: relevant objects/relations, how admitted inputs
+become results, why consequential choices fit, and what establishes success. Ground
+those choices in facts, explicit assumptions, mechanisms or inspectable derivation,
+with criteria for choosing or changing the method. Explain non-obvious reasoning
+that affects decisions; use examples to make the method usable, distinguish a
+variant or demonstrate transfer.
 
 Organize instructions along the reader's usable path through the capability.
 For example, preserving source meaning can be made operational through source
@@ -170,18 +156,10 @@ count, or state artifact.
 
 ## Create a new skill
 
-1. Confirm that no current skill already owns the capability or should receive a
-   focused extension.
-2. Define activation, exclusions, owners, invariants, variable choices, effect
-   boundaries, failure states, and completion evidence.
-3. Draft the entry point first. Add only resources selected by a real conditional
-   path, repeated executable need, or delivered-asset consumer.
-4. Check each link and selected resource in context. Keep environment-specific
-   observations out of portable requirements.
-5. Run the repository-supported validator and behavioral cases. Inspect generated
-   artifacts and the actual diff rather than accepting command success alone.
-6. Add or change repository discovery only after the capability is ready to own
-   its boundary.
+First check whether an existing owner should receive a focused extension. Apply
+the contract, knowledge and structure guidance above, drafting the entry point
+first. Validate links, selected resources, artifacts and behavior before changing
+discovery; keep environment observations out of portable requirements.
 
 Do not create a project, install dependencies, or call an external service just to
 author prose. If a selected operation actually needs an effect, follow
@@ -246,12 +224,8 @@ replacement.
 
 ## Complete the work
 
-Use [behavioral evaluation](behavioral-evaluation.md) to map each changed claim to
-fresh evidence. Review the actual result for activation, domain meaning, authority,
-representation, compatibility, resources, effects, and change economy. Correct
-local defects; reopen a governing decision when satisfying the checks would
-materially change capability or ownership.
-
-Report the files and behavior changed, exact checks observed, skipped or blocked
-evidence, and remaining limitations. Do not publish, install, commit, or modify
-unrelated routing unless the request grants that authority.
+Close through [behavioral evaluation](behavioral-evaluation.md) on the actual
+artifacts and changed claims. Correct local defects; reopen decisions when a fix
+changes capability or ownership. Report changed files/behavior, observed checks,
+skips, blockers and limits. Publication, installation, commits and unrelated
+routing changes require their own request authority.

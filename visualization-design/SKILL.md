@@ -19,15 +19,12 @@ not select this skill. Use the native container owner for document mechanics, th
 analysis/research owner for new conclusions, and the software owner for generic
 application behavior.
 
-For an information-bearing visual inside a native document container, this skill
-owns only the material representation choice and its perceptual evaluation. Return
-the accepted representation and its rationale to the container owner, which remains
-responsible for the artifact request, native objects and relationships,
-preservation, rendering, fidelity evidence, and delivery. Do not make the user
-relay state between owners. A typo fix, settled template-preserving layout repair,
-or format-only document conversion stays with the container owner; a materially
-open chart, diagram, map, uncertainty encoding, or perceptual hierarchy activates
-this skill even when its carrier is a document.
+Inside a native document, own open representation/perception choices and return
+the accepted representation/rationale directly to the container owner. That owner
+retains the request, native objects/relationships, preservation, rendering,
+fidelity evidence and delivery. Typos, settled layout repairs and format-only
+conversion stay there; open chart, diagram, map, uncertainty or hierarchy choices
+activate this skill regardless of carrier.
 
 ## Maintain the whole
 
@@ -88,15 +85,12 @@ tokens, assets and guidance; missing documentation does not make it greenfield.
 If unclear, ask the smallest user-owned question; never infer redesign from a
 missing style guide or refinement from a new visual direction.
 
-Load only the reference and adapter selected by the route. Extract a component,
-token, or pattern only when it recurs with the same intent and the project has a
-suitable system owner; keep one-off visual treatments local rather than
-manufacturing a design system. Keep renderers, browser tools, frameworks, asset
-services, and export commands as replaceable adapters; do not expose a
-provider-specific command for every tool.
-Connected adapters remain unused on planning or review-only paths. For a missing
-capability, use the execution reference's degradation/recovery path; the quality
-reference determines which completion claims the remaining evidence supports.
+Load only selected references/adapters. Extract a component, token or pattern for
+recurring intent with a project system owner; keep one-off treatments local.
+Renderers, browsers, frameworks, asset services and exports remain replaceable
+adapters, unused on planning/review-only paths. Do not expose a provider-specific
+command for every tool. Execution guidance owns missing capabilities and recovery;
+quality guidance owns the remaining completion claims.
 
 Use a bounded observation loop: inspect all output states required by the claim in
 one pass, batch local repairs, then perform at most one confirmation pass when the
@@ -128,11 +122,10 @@ accepted decisions, not task reasoning or gratuitous project inventories.
    Repair local defects; when evidence contradicts the representation or purpose,
    revise that upstream decision instead of polishing the symptom.
 
-Close against the quality reference's evidence-to-claim mapping for the exact
-revision, not user agreement or tool success alone. Use the execution reference
-for missing capabilities and recovery; report unverified obligations. Source or
-specification is complete only for an accepted handoff, not a substitute for
-requested rendered, temporal or interactive verification.
+Close against the quality reference for the exact revision, reporting unverified
+obligations. User agreement or tool success is insufficient; source/specification
+completes only an accepted handoff, not requested rendered, temporal or interactive
+verification.
 
 ## Hard gates
 

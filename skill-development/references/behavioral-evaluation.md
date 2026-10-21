@@ -70,21 +70,16 @@ Use the reach chosen by the authoring workflow:
 | **R1** | R0 plus one discriminating case for every demonstrated one-hop material neighbor |
 | **R2** | R1 plus incumbent/candidate comparison for each motivating failure, previously passing behavior tied to each changed invariant, and every affected effect/refusal boundary |
 
-Before adding a check beyond that minimum, name the changed claim or unresolved
-conflict, the observable result the check could produce, and the acceptance,
-scope, owner or failure decision that result would change. Without a distinct
-decision delta, do not run it. Reclassify only the affected change when a new
-observed contradiction, neighbor or consequence justifies broader evidence.
-Missing required evidence is a blocker; unjustified expansion is a warning and
-must stop before more execution.
+Beyond that minimum, add a check only for a named changed claim or conflict whose
+possible observations change acceptance, scope, owner or failure disposition.
+Reclassify only the affected change when fresh evidence warrants broader reach.
+Missing required evidence is a blocker; stop unjustified expansion as a warning.
 
-Stop expanding when every changed claim has a distinguishing observation or named
-unavailable check; every material overlap or changed handoff has one owner; every
-decision-sensitive contradiction or unknown is resolved, locally bounded or
-blocking only its affected claim; and no proposed next check has a distinct
-decision delta. Passing tests alone do not establish this. For persistent conflict,
-run at most the next bounded check whose possible results lead to different
-decisions, then resolve, narrow, defer or block.
+Stop when changed claims have distinguishing evidence or named unavailable checks,
+material overlaps/handoffs have one owner, contradictions are resolved or locally
+bounded, and no next check changes a decision. For persistent conflict, run only
+the next discriminating bounded check, then resolve, narrow, defer or block.
+Passing tests alone does not close these obligations.
 
 ## Design forward cases
 
@@ -193,18 +188,9 @@ changed operational or temporal claim.
 
 ## Inspect decisions and artifacts
 
-For each case, trace:
-
-```text
-request and current authority
-  -> activation and admitted scope
-  -> role, normative force, authority and temporal-binding decisions where material
-  -> semantic or operational kernel and selected adapter
-  -> structure and resource selection
-  -> any effect admission or refusal
-  -> produced artifact and validation
-  -> reported result and limitations
-```
+Use the route trace above. Include role, force, authority and temporal-binding
+decisions where material, and inspect the complete artifact plus its validation
+and reported limitations.
 
 Inspect the complete output, not only its summary. Ask whether:
 
@@ -233,12 +219,9 @@ than counting negative words or enforcing a reasoning-to-limitation word ratio;
 a brief direct answer can be complete. Necessary safety and authority boundaries
 retain their force.
 
-Use contrast or mutation sensitivity where judgment might otherwise be cosmetic.
-Change one meaningful input—remove network authority, introduce an existing
-project convention, switch from private generation to public publication, add a
-live legacy caller, or replace a skill request with ordinary code work—and confirm
-that the decisions change at the corresponding boundary. Wording need not remain
-stable; ownership, effects, and observable guarantees must.
+Apply the contrast cases above where judgment could be cosmetic. Wording may
+vary; ownership, effects and observable guarantees must respond to the changed
+boundary.
 
 Classify a finding as:
 
@@ -256,10 +239,9 @@ compatibility, or effect policy.
 
 ## Close on the actual result
 
-After behavior is satisfactory, inspect the final working tree including untracked
-files and map every changed artifact to fresh evidence. Run focused cases first,
-then repository-supported validation and static checks. Inspect links, resources,
-generated artifacts, and any observable state rather than relying on exit status.
+Inspect the final tree, including untracked files, and map changed artifacts to
+fresh evidence. Run focused cases before repository-supported structural checks;
+inspect links, resources, outputs and observable state, not exit status alone.
 
 For a real external integration, record the exact target, pre-state, bounded
 operation, stable identifier or receipt, post-state, cleanup, and residue. Skip

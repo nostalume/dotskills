@@ -21,15 +21,13 @@ Select the requested mutation before choosing a tool or procedure:
 | Backup/restore | source, destination, integrity, and retention policy | verified contents and post-state |
 | Verify/reconcile | expected versus actual state | observed difference or confirmed match |
 
-Read only the procedure selected by the route. A tool, hosted service, or
-credential is an adapter for the admitted host effect; it is not permission to
-perform that effect. Review and preview routes must not mutate.
+Read only the selected procedure. Tools, services and credentials grant no
+mutation authority.
 
 ## Inspect, act and verify
 
-Identify the requested operation, exact targets, relevant existing state and
-conflicts. Inspect only what can affect the decision. Preview and verification
-requests do not authorize installation, repair, deletion or other unrequested work.
+Inspect the exact targets, relevant state and conflicts. Preview/verification
+authorizes observation, not installation, repair, deletion or other mutation.
 
 Keep an authorized direct local operation concise. When the selected route
 downloads code or data, registers a provider, transmits task content, calls a
@@ -39,10 +37,9 @@ external-edge concerns material to that operation. Local installation or
 registration authority does not silently authorize disclosure, billing, remote
 mutation, retention or publication.
 
-Use authority already supplied by the user and session. Ask only for genuinely
-missing permission or information. For an authorized direct operation, its command
-and observed result can be the entire plan and record; no typed request, receipt
-schema or custom runner is required.
+Reuse session authority; ask only for missing permission or information. A direct
+operation's command and observed result may suffice as its plan and record,
+without a request schema or custom runner.
 
 Use the selected tool's official interface. Before a destructive operation, resolve
 the actual target and preserve the recovery material the task requires. Refresh

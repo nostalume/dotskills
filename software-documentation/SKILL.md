@@ -34,20 +34,15 @@ action or interpretation, using supported requirements and reader-usable paths
 rather than incidental workstation bindings. A requested local diagnostic or
 reproduction record may need exact bindings; preserve that document's scope.
 
-Inspect current source, public interfaces, help/schema output, tests, existing
-docs, examples, and release history as applicable. Prefer domain vocabulary and
-observable operations over internal call inventory. Write the shortest complete
-path first, then add detail only for a real reader decision, failure, or boundary.
-Include project layout only to answer a reader's navigation or architecture
-question when a concise link will not suffice; do not duplicate discoverable
-structure by default.
+Inspect relevant source, interfaces, help/schemas, tests, docs, examples and release
+history. Write the shortest complete reader path in domain vocabulary. Add layout
+only for a navigation/architecture question that a concise link cannot answer;
+environment and other detail must satisfy the reader contract above.
 
-Documentation work grants no authority to change product behavior or publish an
-artifact. A review-only request does not authorize documentation edits. If writing
-exposes an unresolved domain, ownership, compatibility, or failure decision, stop
-short of inventing the rule and report the exact decision and evidence still needed.
-If documented behavior and implementation disagree, report the contradiction;
-this documentation task does not authorize product changes.
+Review grants no edits; documentation grants no product change or publication.
+Report source/behavior contradictions and unresolved domain, ownership,
+compatibility or failure decisions with the exact missing evidence; do not invent
+the rule.
 
 ## Route by claim and reader
 

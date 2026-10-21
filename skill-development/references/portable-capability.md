@@ -8,10 +8,8 @@ the capability permits, and absent from the semantic core.
 
 ## Classify knowledge without flattening it
 
-Classify a directive only as far as the distinction changes where it belongs, how
-it is executed, or what evidence it needs. These dimensions are orthogonal; they
-are a reasoning aid, not a required table, manifest, annotation or per-directive
-schema.
+Use these orthogonal dimensions only when they change placement, execution or
+evidence; they are reasoning aids, not a required manifest or directive schema.
 
 | Dimension | Representative values | Governing question |
 | --- | --- | --- |
@@ -157,10 +155,9 @@ or inspection obligation. The consumer may be an intrinsic conditional operation
 for example, every restricted audit consuming its burden-of-proof protocol—not
 only a separate caller file.
 
-Keep activation and governing invariants close to the entry point. Put specialized
-recipes and large domain detail behind links from the precise branch that selects
-them. Avoid deep reference chains and orphan resources. Examples should expose a
-decision or boundary, not establish a mandatory scaffold.
+Keep activation/invariants at the entry and specialized detail behind its selecting
+branch. Avoid deep chains and orphan resources; examples illustrate decisions,
+not mandatory scaffolds.
 
 Before accepting a directive, ask:
 

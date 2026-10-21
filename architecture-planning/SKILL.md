@@ -26,11 +26,10 @@ implementation, documentation, workflow, publication or external-effect authorit
 Transient decisions leave the workspace unchanged. Revalidate stale context at
 the affected boundary without unrelated repair.
 
-Cadence is separate from authority. At user-led checkpoints, report evidence,
-decisions, alternatives and user-owned choices, then wait; after input revise only
-affected decisions/sections. In authorized end-to-end work, proceed without
-per-stage approval and pause only for a material user-owned choice, missing
-authority or blocker. Stages/tasks add no authority.
+At user-led checkpoints, report evidence, decisions, alternatives and user-owned
+choices, then wait and revise affected decisions. In authorized end-to-end work,
+proceed until a material user choice, missing authority or blocker; stages/tasks
+add no approval gates or authority.
 
 ## Derive options from current behavior
 
@@ -40,15 +39,13 @@ topology inspect enforced tooling and matching maintained analogues; one analogu
 is evidence, not a convention. Every named current path/owner must exist at that
 revision; distinguish it from a proposed owner.
 
-For open improvement, discover problems through real behavior, representative
-changes, recurring failures and maintenance friction. Repeated interpretation,
-coordinated edits, scattered state ownership and compensating mechanisms suggest
-hypotheses, not automatic refactors. Choose work by the burden it could remove
-relative to evidence, migration risk and effort; investigate the responsible
-relation before polishing an easy symptom. Leave adequate structure alone.
-A tidier layout that leaves the selected burden untouched does not complete an
-improvement. No recurring audit, problem quota or repository-wide cleanup follows
-from this preference; the admitted scope and operation still govern authority.
+For open improvement, inspect real behavior, representative changes, recurring
+failures and maintenance friction. Repeated interpretation, coordinated edits,
+scattered ownership and compensation are hypotheses, not automatic refactors.
+Choose the burden worth removing against evidence, migration risk and effort;
+trace its responsible relation. Cosmetic layout changes do not resolve that
+burden. Leave adequate structure alone; this preference adds no audits, quotas
+or broader cleanup authority.
 
 1. Trace a real caller through admission, behavior, effects and persistence/output.
    Identify the values/identities crossing each edge, the owner of each transition,
@@ -147,9 +144,8 @@ Give `software-development` settled conceptual constraints, accepted tradeoffs a
 falsifiers, not mandatory pseudocode or predicted files. Distinguish coordination
 labels from domain or interface names: stage headings and task IDs locate plan
 work; they become implementation vocabulary only when an accepted target contract
-requires it. For simplification, carry
-the coordination or interpretation to remove and a representative change that
-should become easier. Planning cannot certify
+requires it. For simplification, carry the coordination/interpretation to remove
+and a representative change that should become easier. Planning cannot certify
 the eventual diff. New source, contract, user policy, implementation, integration
 or cost evidence reopens only the smallest invalidated decision and its dependents,
 following settlement's replacement rules; expose the delta.

@@ -194,4 +194,4 @@ its own temporal comparison. Heavy regularization likewise can erase thin signal
 
 ## Worked applications
 
-[State Representation](../examples/state-representation.md). Numerical settings are illustrative experiment bindings; the principles and change criteria above govern their use.
+[State Representation](../examples/state-representation.md). Settings illustrate bindings; apply the principles and change criteria above.

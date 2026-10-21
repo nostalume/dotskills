@@ -240,4 +240,4 @@ event history requires a different repair.
 
 ## Worked applications
 
-[Model Pilots](../examples/model-pilots.md). Numerical settings are illustrative experiment bindings; the principles and change criteria above govern their use.
+[Model Pilots](../examples/model-pilots.md). Settings illustrate bindings; apply the principles and change criteria above.

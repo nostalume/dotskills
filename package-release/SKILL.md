@@ -54,11 +54,9 @@ Select the distribution topology before choosing an adapter:
 - standalone assets distribute an explicit platform/architecture set with any
   required checksums, signatures, notarization or update-channel metadata.
 
-This vocabulary maps shared reasoning; it does not assert that an ecosystem
-supports every operation or state. Preserve its native coordinate, build owner,
-acceptance transitions, selector rules and consumer interface. A missing maintained
-recipe requires current official project-native guidance and an explicit limit on
-what was not behaviorally verified.
+Preserve each ecosystem's native coordinate, build owner, acceptance transitions,
+selectors and consumer interface; this topology does not grant unsupported states
+or operations.
 
 Resolve the publication trust edge separately from provenance. The project and
 user authorize the release unit and operation; a registry account plus its

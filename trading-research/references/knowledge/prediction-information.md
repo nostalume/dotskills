@@ -250,4 +250,4 @@ turn a zero or unconfirmed increment into an edge.
 
 ## Worked applications
 
-[Information Targets](../examples/information-targets.md). Numerical settings are illustrative experiment bindings; the principles and change criteria above govern their use.
+[Information Targets](../examples/information-targets.md). Settings illustrate bindings; apply the principles and change criteria above.

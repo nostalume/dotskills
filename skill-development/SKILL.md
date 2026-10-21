@@ -5,17 +5,13 @@ description: Design, refactor, consolidate, retire, or semantically review Codex
 
 # Skill Development
 
-Own the boundary and behavior of a skill, not the domain facts, project policy, or
-external services it uses. Preserve the user's intent and reserved decisions. An
-existing project owns its instructions, conventions, manifests, lockfiles, and
-accepted local resources. Source owners retain authority over factual content.
-Tools and providers own their observable effects; their availability is not
-permission to use them.
+Own skill boundaries and behavior. Preserve user intent and reserved decisions,
+source authority over facts, and project instructions, conventions, dependencies
+and accepted resources. Tools/providers own their effects; availability grants
+no authority.
 
-When a generic skill creator is also available, this skill remains primary for
-capability boundaries, ownership, portable policy and behavioral evaluation; use
-the generic creator only for supported structure or validation. Its absence does
-not reduce this skill's semantic behavior.
+A generic skill creator may supply structure or validation; this skill retains
+boundaries, ownership, portable policy and behavioral evaluation independently.
 
 Establish whether the request is creation, focused revision, consolidation,
 retirement, or review only. Inspection and review do not authorize edits. Before
@@ -30,11 +26,10 @@ effects or material cost, as a candidate until behavioral comparison distinguish
 it from the incumbent. One successful observation does not establish portable
 policy.
 
-Read [portable capability](references/portable-capability.md) before authoring or
-revising skill policy. It defines the knowledge roles, force, authority, temporal
-binding, consequence and availability decisions, plus the portability and
-ownership rules that govern every skill. Apply those dimensions only when they
-change placement, execution or evidence; they are not a required manifest.
+Before authoring or revising policy, read
+[portable capability](references/portable-capability.md). Apply its knowledge,
+ownership and portability dimensions where they change placement, execution or
+evidence; they are not a manifest.
 
 ## Develop the capability
 
@@ -51,12 +46,10 @@ change placement, execution or evidence; they are not a required manifest.
 4. Author within the target skill and preserve the current project's authority.
    Bind paths, tools, versions, credentials, and providers only when the selected
    operation requires them.
-5. Evaluate realistic behavior, inspect the actual artifacts and diff, and run
-   repository-supported structural checks after the final edit. When commands,
-   tools, hooks, or durable context changed, use contrast cases for unused-tool
-   avoidance, command distinctness, adapter replacement, effect refusal, and
-   artifact exposure—not keyword or file-count checks. Report what the evidence
-   establishes and any remaining limitation.
+5. After the final edit, evaluate realistic behavior, actual artifacts/diff and
+   repository-supported structural checks. For changed commands, tools, hooks or
+   durable context, contrast unused tools, command distinctness, adapter
+   replacement, effect refusal and artifact exposure. Report evidence and limits.
 
 For creation, revision, consolidation, resource placement, or retirement, read
 [authoring workflow](references/authoring-workflow.md). When the skill may install
@@ -81,9 +74,8 @@ effects rather than wording or template resemblance.
   become universal policy without independent justification.
 - Connected or installed does not mean authorized. Keep credentials out of skill
   files and disclose external effects before they occur.
-- Review the actual result against intended activation, domain meaning, authority,
-  compatibility, resource ownership, and evidence. Structural validation alone
-  does not prove behavioral quality.
+- Structural validation does not prove activation, domain meaning, authority,
+  compatibility, resource ownership or behavioral quality.
 - Modify repository routing only when the capability is ready to become its named
   owner. Publication, installation, and unrelated cleanup require their own
   authority.

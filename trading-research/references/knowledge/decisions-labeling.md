@@ -215,4 +215,4 @@ durations; tune them as policy choices, with their search history retained.
 
 ## Worked applications
 
-[Payouts Barriers](../examples/payouts-barriers.md), [First Experiments](../examples/first-experiments.md). Numerical settings are illustrative experiment bindings; the principles and change criteria above govern their use.
+[Payouts Barriers](../examples/payouts-barriers.md), [First Experiments](../examples/first-experiments.md). Settings illustrate bindings; apply the principles and change criteria above.

@@ -59,15 +59,11 @@ Read only the owners needed by the current operation:
   [research writing](references/research-writing.md). Add the producing owner only
   when a derivation, evidence status, or durable binding remains unresolved.
 
-These references are not a bundle. A bounded derivation needs no campaign schema;
-accepted one-output exposition needs no state index; a requested plot may be a
-result without becoming a new scientific claim. If only physical representation
-remains, hand the supported semantic projection to `document-artifacts`.
-
-Do not load computation, persistence, or writing guidance merely because the
-inquiry might eventually need it. A missing source, tool, or durable consumer
-changes only the affected route; preserve the supported research result instead
-of widening the operation.
+Load only the current operation's guidance: bounded derivation needs no campaign
+schema, one-output exposition no state index, and a requested plot no new
+scientific claim. Missing sources, tools or consumers affect only their route.
+Preserve supported results; when only physical representation remains, hand the
+semantic projection to `document-artifacts`.
 
 ## Admit actions and effects
 

@@ -237,4 +237,4 @@ units and update rule whenever discussing a rate.
 
 ## Worked applications
 
-[Optimization Search](../examples/optimization-search.md). Numerical settings are illustrative experiment bindings; the principles and change criteria above govern their use.
+[Optimization Search](../examples/optimization-search.md). Settings illustrate bindings; apply the principles and change criteria above.

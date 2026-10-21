@@ -5,10 +5,10 @@ description: Design, refactor, compose, or semantically review base, layered, an
 
 # Prompt Development
 
-Own prompts as instruction programs: their consequential distinctions, governed
-behavior, directive composition, and falsifying observations. Construct those
-semantics from relations, authority, normative force, scope, consequence, and
-revision conditions rather than a persona, trait list, or stylistic identity.
+Own prompts as instruction programs: consequential distinctions, governed
+behavior, composition and falsifying observations. Derive semantics from
+relations, authority, force, scope, consequence and revision conditions; a persona
+or trait list supplies none of these contracts.
 
 Establish whether the request is creation, focused revision, composition, or
 review only. Review does not authorize edits or deployment. Inspect the available
@@ -30,9 +30,8 @@ Select the smallest operation that changes the prompt's governed behavior:
 | multiple instruction layers interact | **Compose** | precedence, ownership, scope, and override behavior are exercised |
 | behavior or semantics are questioned | **Review** | findings tied to contrasting inputs and runtime evidence |
 
-A provider or deployment binding is selected only after the prompt operation is
-settled. Provider-owned context that is hidden or stale limits the claim; it does
-not justify inventing precedence or silently changing deployment.
+Select provider/deployment bindings after the operation. Hidden or stale context
+limits the claim; it grants no invented precedence or deployment change.
 
 ## Develop the prompt
 
