@@ -95,6 +95,11 @@ reduction, [structural migration](references/structural-migration.md) for module
 API moves, and [analytical migration](references/analytical-migration.md) for
 dataframe/ML or reactive-notebook migration only when that work is in scope.
 
+For user-facing interface changes, use
+[interface content and layout](references/interface-content-and-layout.md) to
+carry the accepted task flow, vocabulary and visual system into labels, grouping
+and responsive reading order.
+
 Inspect the actual diff using [conformance review](references/conformance-review.md)
 within this feedback, then make the single completion decision through
 [delivery verification](references/delivery-verification.md), reusing applicable

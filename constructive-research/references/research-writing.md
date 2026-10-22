@@ -22,10 +22,15 @@ only when a missing derivation must actually be supplied.
 
 ## Build a reconstructible reader path
 
-Choose the path that matches the accepted content. A construction may use:
+Start from the reader's question, prior knowledge and the claim this projection
+will establish. A brief result and route can orient the reader before the body.
+Order the body by the dependencies needed to understand and justify that result;
+introduce unfamiliar concepts where their role becomes clear, using stable terms
+and explained aliases. Each section resolves a subquestion and carries its result
+into the next. A construction may use:
 
 ```text
-capability -> typed starting objects -> motivating failure or obstruction
+question and organizing idea -> needed objects and motivating need
   -> construction -> decisive derivation, observation, or admitted execution
   -> interpreted result -> reusable interface and boundary
 ```
@@ -39,8 +44,10 @@ claim or invent an obstruction for content that has none.
 For mathematics, state typed inputs, operation, and question before a display;
 show the meaning-preserving steps needed to reach a common target; then explain
 what was forced or ruled out, what meaning survived, its consumer, and its
-boundary. A definition is not motivation or proof. Do not let “directly,”
-“similarly,” or “one finds” conceal a missing operation.
+boundary. For a consequential transition, show the intermediate relation and
+identify the definition, assumption, substitution or theorem that licenses it.
+Supply the bridge needed by this audience; routine expert steps can stay compact.
+A definition supplies meaning, while motivation and proof need their own support.
 
 For substantial execution, consume the compact result from
 [computation](computation.md). Expose its typed request, decisive reduction or
@@ -76,9 +83,11 @@ the projection. Formatting success cannot change research status.
 
 ## Audit the projection
 
+- The reader can recover the organizing question and each section's contribution.
+- New concepts have a needed role, stable terminology and available prerequisites.
 - Every nonstandard construction has its relevant capability and motivating need.
 - Every consequential equation has an adjacent derivation or exact theorem
-  contract.
+  contract; the reader can reconstruct the step from established premises.
 - Observations and executable results expose their method, uncertainty, and domain.
 - Presumptions, approximations, conflicts, and open boundaries remain visible.
 - Retained constructions have reader-usable inputs, operations, certificates, and

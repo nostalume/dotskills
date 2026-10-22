@@ -5,6 +5,13 @@ tree. Choose the form from the question: a tutorial teaches through one guided
 success, a how-to solves one task, a concept explains a model, and troubleshooting
 maps symptoms to diagnosis and recovery. Do not combine all four by default.
 
+For a conceptual explanation, establish the practical question and a small
+organizing model before its details. Introduce a concept where it resolves a
+reader-visible need; connect its meaning to a concrete case, then its consequence
+and limits. Each paragraph should build on what the reader now knows. Tutorials
+interleave this explanation with actions at the point of use; the task sequence
+below remains applicable to how-to work rather than a mandatory article outline.
+
 ## Minimum successful path
 
 Present, in this order when applicable:
@@ -27,6 +34,9 @@ prerequisite paragraph.
 
 Run the path as the documented reader from the declared starting state. Prefer a
 clean install or packaged artifact when users do not consume the source tree.
-Confirm copy/paste behavior, output, errors, links, and recovery. Test unsupported
+Confirm copy/paste behavior, output, errors, links, and recovery. For explanations,
+trace whether the reader can identify why each new concept is needed and how the
+next conclusion follows; repair a missing bridge rather than merely add headings.
+Test unsupported
 or dangerous variants when the document promises their refusal. Remove internal
 details that neither change a user decision nor explain an observable failure.

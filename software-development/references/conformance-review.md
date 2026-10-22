@@ -12,7 +12,9 @@ normal-form criteria. For added names, comments, tests, logs, configuration and
 docs, check that contextual details serve the target behavior or reader rather
 than merely echoing a plan or authoring environment. Judge their meaning and
 compatibility, not the presence of words such as "phase" or a path. Style gates
-need current project authority; taste alone is not a blocker.
+need current project authority; taste alone is not a blocker. For changed user
+interfaces, inspect terminology, task grouping and reading order against the
+accepted flow and visual system, using rendered/runtime evidence for those claims.
 
 ## Findings and feedback
 

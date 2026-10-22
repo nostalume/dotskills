@@ -56,8 +56,9 @@ Inspect the exact artifact at its intended size, carrier and use context. Select
 only useful probes; these are critique operators, not a mandatory checklist:
 
 - trace a key value, relationship or statement from source to visible encoding;
-- attempt the audience's primary comparison, path or decision without relying on
-  author knowledge;
+- attempt the audience's primary comparison, path or decision without author
+  knowledge: identify the first focus, recover task/relation groups and follow
+  stable labels to the next step; check that compact views retain those relations;
 - inspect extremes, missing/empty values, longest labels, dense regions and
   representative real content;
 - reduce color, motion or annotation mentally or experimentally to see whether

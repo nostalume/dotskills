@@ -212,8 +212,13 @@ Inspect the complete output, not only its summary. Ask whether:
 
 When guidance or explanation quality is material, inspect the connection between
 the requested result, the proposed construction, and the support for its key
-choices. Assess whether examples make the method usable and whether a condition
-changes the relevant decision. Flag repeated or generic caveats that substitute
+choices. For explanations, vary reader prerequisites or remove a conceptual
+bridge: check term continuity, why each concept appears and whether the result
+remains reconstructible. For interfaces, vary the primary task or viewport: check
+labels, task grouping and focus in the actual artifact. Preserve necessary
+contrasts, domain distinctions and compact expert/reference routes. Assess whether
+examples make the method usable and whether a condition changes the relevant
+decision. Flag repeated or generic caveats that substitute
 for this content. Evaluate correctness, decision value, and reader use rather
 than counting negative words or enforcing a reasoning-to-limitation word ratio;
 a brief direct answer can be complete. Necessary safety and authority boundaries

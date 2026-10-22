@@ -45,9 +45,12 @@ than flattening everything into one universal model.
    distinctions. Position and aligned length often support precise comparison;
    area, angle, color and motion can support other goals but need context and
    should not imply unsupported precision.
-3. Choose grouping, order, annotation and views so the intended path is easy while
-   alternative readings remain honest. Reduce competing signals before adding
-   decoration.
+3. Choose grouping, order, annotation and views around the primary audience
+   operation. Keep elements of one task or relation together, distinguish separate
+   groups, and use alignment, proximity and emphasis to guide the next observation.
+   Preserve stable terms across labels, legends and annotations. Allocate focus
+   to the intended path; equal emphasis may serve parallel comparisons. Reduce
+   competing signals before adding decoration.
 4. Choose static, temporal or interactive behavior only when it preserves or
    reveals meaning better than a simpler carrier under the actual use conditions.
 5. Name material loss: what becomes harder to see, what is aggregated, omitted or

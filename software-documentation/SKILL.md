@@ -35,9 +35,12 @@ rather than incidental workstation bindings. A requested local diagnostic or
 reproduction record may need exact bindings; preserve that document's scope.
 
 Inspect relevant source, interfaces, help/schemas, tests, docs, examples and release
-history. Write the shortest complete reader path in domain vocabulary. Add layout
-only for a navigation/architecture question that a concise link cannot answer;
-environment and other detail must satisfy the reader contract above.
+history. Use stable domain terms for the same concepts, defining unfamiliar terms
+and necessary aliases before relying on them. Organize around the reader's question
+and prerequisites; each section advances that question using already established
+ideas. Keep reference lookup and expert summaries compact where their audience
+permits it. Add layout only for a navigation/architecture question that a concise
+link cannot answer; environment and other detail must satisfy the reader contract.
 
 Review grants no edits; documentation grants no product change or publication.
 Report source/behavior contradictions and unresolved domain, ownership,
