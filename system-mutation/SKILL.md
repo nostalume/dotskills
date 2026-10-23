@@ -1,12 +1,14 @@
 ---
 name: system-mutation
-description: Set up tools and local environments, register integrations, change host configuration, organize files with recovery, or migrate backups. Use for deliberate host or environment changes, not ordinary source edits, artifact creation, or tests merely writing files.
+description: Set up tools and local environments, maintain selected tool caches, register integrations, change host configuration, organize files with recovery, or migrate backups. Use for deliberate host or environment changes, not ordinary source edits, artifact creation, or tests merely writing files.
 ---
 
 # System Mutation
 
 Carry out the requested host change using existing tools and the smallest useful
 procedure. Ordinary code and document edits stay with their respective skills.
+Those consumers retain their owned temporary resources; shared-cache maintenance
+is a separately selected host operation, not a required stage of their work.
 
 ## Route by host effect
 
@@ -17,6 +19,7 @@ Select the requested mutation before choosing a tool or procedure:
 | Inspect/preview | target identity and read-only authority | observed current state; no mutation |
 | Install/register | package or integration target, source, authority, and scope | consumer can use the selected installation or registration |
 | Configure | exact setting owner and reversible change | effective configuration and preserved unrelated settings |
+| Maintain caches | selected cache identities, cleanup authority, and retention/resource policy | measured outcome, retained exclusions, and any deferred or failed cleanup |
 | Organize/migrate | source/destination, conflict policy, and recovery material | resulting layout plus recovery or rollback evidence |
 | Backup/restore | source, destination, integrity, and retention policy | verified contents and post-state |
 | Verify/reconcile | expected versus actual state | observed difference or confirmed match |
@@ -57,12 +60,15 @@ After interruption, inspect what actually changed before retrying. Preserve usef
 partial output and later user edits. Undo only recorded, still-identifiable effects;
 do not infer ownership from a path name or old PID. Stop the affected operation if
 identity or authority is uncertain. Describe irreversible effects honestly rather
-than requiring a fictional rollback. Clean only owned disposable work.
+than requiring a fictional rollback. Clean owned disposable work; shared caches
+require the selected, authorized cache-maintenance route.
 
 ## Read the relevant procedure
 
-- Missing dependencies or a new task environment:
+- A proven missing capability or required dependency isolation:
   [minimal project environments](references/project-environments.md).
+- Selected tool-cache inspection, cleanup or maintenance policy:
+  [cache maintenance](references/cache-maintenance.md).
 - Installing or registering a CLI, local service, MCP server, API or hosted
   integration:
   [external integration](references/external-integration.md).

@@ -142,11 +142,10 @@ required. Rendering remains an independent operation.
 
 The JS example uses PptxGenJS; the Python example uses python-pptx. Inspect the task
 root and available tools, then follow the project's manager and constraints. If the
-selected dependency is missing and installation is authorized, use the project's
-manager for a minimal task-scoped setup. Dependency commands edit project
-manifests/locks and may download packages; keep new dependencies and caches in that
-project. If setup authority or capability is missing, stop and report the exact
-binding needed.
+selected dependency is missing and installation is authorized, follow
+[execution's setup boundary](execution.md#inspect-select-and-set-up). Dependency
+commands edit project manifests/locks and may download packages. If setup authority
+or capability is missing, stop and report the exact binding needed.
 
 #### uv-managed Python
 

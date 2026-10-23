@@ -47,9 +47,11 @@ review, source-only work or a direct operation needs no new scaffold.
 For new durable work, place source, manifests, locks, dependencies and outputs in
 a named task project beside their intended consumer. Use an owned disposable area
 for temporary render/capture work. Never write task outputs into the installed
-skill directory. Preserve an existing manager and user-selected shared storage;
-prefer project-local storage for new task-owned dependencies and caches where the
-tool supports it.
+skill directory. For required setup, optionally use the host owner's
+[project environments](../../system-mutation/references/project-environments.md).
+If absent, preserve the selected manager, constraints and storage settings; acquire
+only the authorized missing capability or report its unavailability. Visual
+decisions do not require that sibling skill.
 
 Acquire only a proven missing requirement under existing authority. Avoid global
 installs, profile or `PATH` changes, hidden downloaders, environment registries and
@@ -146,6 +148,9 @@ After interruption, inspect actual local and remote state before retrying. Prese
 useful partial output and evidence when safe. Clean only owned disposable work
 whose identity remains certain; close owned processes. Report irreversible data
 disclosure, charges, remote mutations, retention and uncertain commits plainly.
+Release disposable capture/render environments once their evidence is complete;
+retain maintained project environments. Shared-cache maintenance is a separate
+host operation.
 
 Return the exact source/output, selected operation, observed evidence, effects and
 remaining limitations. Successful execution supports only the claims it actually

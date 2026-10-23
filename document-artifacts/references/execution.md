@@ -19,9 +19,12 @@ preserve a particular document feature. Keep observed paths and versions with th
 task; do not encode this machine's inventory into reusable skill instructions.
 
 For missing dependencies, use the selected project manager and versions, under
-existing authority; keep new storage task-scoped and create an environment only
-when needed. Resume the artifact request after setup. Do not add installer
-frameworks or first-use installs. If setup requires unauthorized host changes or
+existing authority; optionally use the host owner's
+[project environments](../../system-mutation/references/project-environments.md)
+for setup. If absent, preserve project constraints and storage settings, acquire
+only the authorized missing dependency, or report the unavailable capability.
+Resume the artifact request after setup. Do not add installer frameworks or
+first-use installs. If setup requires unauthorized host changes or
 service registration, stop and report the need. Remote APIs also require authority
 to transmit the document. Do not substitute providers against explicit mechanism,
 locality, or preservation requirements.
@@ -68,4 +71,6 @@ a claim that a structural or content check settles.
 Return the requested outputs with relevant checks, limitations and recovery state.
 A brief result is sufficient for ordinary work. Create separate logs, manifests
 or evidence files only when a real consumer or reproducibility need justifies them.
-Preserve the local project environment for revisions and clean disposable scratch.
+Preserve maintained project environments for revisions; release owned disposable
+verification environments and render scratch when their evidence is complete.
+Shared-cache maintenance remains a separate host operation.

@@ -31,8 +31,10 @@ If a required capability is missing, prefer in order:
 4. an honest partial or unavailable result when setup is unauthorized, unsafe,
    offline, or cannot preserve the contract.
 
-Acquire only the proven gap. Keep new task-owned dependencies and caches local
-when the selected tool supports it, while preserving user-selected shared storage.
+Acquire only the proven gap. Keep dependency compatibility, reusable cache storage
+and temporary-resource lifetime distinct; the selected project's environment owner
+supplies concrete setup policy. Shared-cache maintenance is a separate authorized
+host operation, not an implicit effect of setup or task completion.
 Avoid global installs, profile or `PATH` changes, hidden downloaders, wrapper
 frameworks, and full-machine inventories. A package launcher, manager shim,
 browser, model, font, or renderer may download on first use; count that as setup

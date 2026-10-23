@@ -22,7 +22,7 @@ mandatory stages in a single workflow.
 | Prepare, publish, verify, promote, or withdraw an installable/resolvable release | [package-release](package-release/SKILL.md) | Release identity, variants, reviewed artifacts or build inputs, repository/catalog states, selectors, and consumer evidence across maintained language, system-package, catalog, OCI, and standalone-asset routes |
 | Inspect, extract, create, edit, convert, or render documents | [document-artifacts](document-artifacts/SKILL.md) | DOCX, PPTX, XLSX, Markdown, Typst, LaTeX, and PDF format behavior and fidelity |
 | Design, create, revise, or evaluate a visualization | [visualization-design](visualization-design/SKILL.md) | Honest charts, diagrams, maps, infographics, and explanatory static, temporal, or interactive representations |
-| Install or register tools, configure a host, or organize files | [system-mutation](system-mutation/SKILL.md) | Bounded changes, existing authority, observed outcomes, and recovery |
+| Install or register tools, maintain selected tool caches, configure a host, or organize files | [system-mutation](system-mutation/SKILL.md) | Bounded changes, existing authority, observed outcomes, and recovery |
 
 For example, a research paper starts with `constructive-research`; accepted
 content needing LaTeX compilation uses `document-artifacts`. Editing a PPTX starts
@@ -57,9 +57,11 @@ preservation, rendering, fidelity, and delivery work.
 - **Tool use and environment changes are separate operations.** Artifact work
   inspects the task root and available tools. Follow the user's manager; otherwise
   use direct official commands and [local isolated environments](system-mutation/references/project-environments.md).
-  Prefer task-local storage for new dependencies and caches; preserve existing
-  project environments and user-selected shared storage. Explain installation scripts
-  before use; routine setup needs no custom installer framework.
+  Preserve compatible project environments and tool-native/configured cache reuse.
+  Dependency isolation and shared-cache maintenance have separate lifecycles;
+  `system-mutation` owns selected host maintenance, while consumers release their
+  owned temporary work. Explain installation scripts before use; routine setup
+  needs no custom installer framework or automatic maintenance hook.
 - **Validation follows the claim.** Check the requested meaning, structure,
   appearance, behavior, or host effect. File existence and a successful command
   alone do not prove the requested result.

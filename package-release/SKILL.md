@@ -167,3 +167,10 @@ input paths and digests, destination and visibility, selector, provider state or
 receipt, and observed checks. Keep the reviewed unit for eligible reconciliation.
 No separate receipt schema is required. An isolated build is not proof of byte
 reproducibility; claim that only after a suitable repeated-build comparison.
+
+After consumer checks and required evidence are complete, release owned temporary
+consumer environments and private verification caches through their supported
+cleanup path. Preserve the reviewed unit, useful failure/recovery evidence and
+maintained project environments. Shared-cache maintenance is a separate host
+operation; release verification never purges the user's shared caches to prove
+freshness.

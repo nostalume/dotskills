@@ -4,8 +4,9 @@ Inspect pyproject.toml, the declared build backend, package/import names, releas
 artifact policy and supported Python versions. Use the project's build command;
 uv build is suitable in a uv project. The following alternative uses the official
 [build frontend](https://build.pypa.io/en/stable/) and
-[Twine](https://twine.readthedocs.io/en/stable/), installed in a local tool environment.
-Keep build caches/temp files inside the task root using the tools' native settings.
+[Twine](https://twine.readthedocs.io/en/stable/), using a compatible existing tool
+environment or the admitted minimal setup. Keep disposable build work task-owned;
+use private caches only when the release's isolation/freshness claim requires them.
 
 Bind the project-selected backend, build frontend and Twine versions to their local
 interfaces before relying on a command or option. Bind upload authentication,

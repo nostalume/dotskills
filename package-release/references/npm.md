@@ -39,7 +39,7 @@ does not establish absence of effects. Use --ignore-scripts only when required
 generated output is already present and suppressing hooks preserves the intended
 package. Do not silently skip a required build.
 
-In a separate empty consumer directory, set npm's cache under the task root and:
+In a separate owned empty consumer directory:
 
 ```sh
 npm init -y
@@ -51,6 +51,9 @@ Use the actual package name and import/export mode. Check resolution is inside
 the consumer and exercise a meaningful export or public CLI. This installs the
 tarball, not a link to the source directory. Inspect required installation scripts
 and native dependencies instead of assuming every package installs without effects.
+Use an owned private cache scoped to the command when cache isolation is required
+to establish fresh acquisition or another release boundary; an empty consumer alone
+does not require duplicating the shared cache.
 
 ## Publish or verify
 
