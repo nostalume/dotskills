@@ -1,13 +1,23 @@
 # Host-specific invocation
 
-Use a direct official command or API unless a demonstrated interface gap requires
-an adapter. Inspect command identity, resolution precedence and manager shims before
-probing; even a version command can trigger acquisition. Distinguish missing tools,
-denied access, ambiguous identity and failed execution in ordinary task output.
+Select a direct official command/API for the requested effect, reusing compatible
+installed resources. Bind platform differences only where invocation, acquisition
+or service semantics differ; a demonstrated interface gap can justify an adapter.
+Use project compatibility policy for reuse and selected version/digest for
+acquisition. Inspect identity, resolution precedence and manager shims before
+probing; even a version command can trigger acquisition.
 
-Use native paths and quoting for the selected shell. Resolve links and filesystem
-boundaries before destructive changes. Prefer stable structured output or exit
-semantics to parsing localized diagnostic text. Verify the relevant resulting state.
+Distinguish a known incompatible path, a missing mechanism and an unverified
+property. Use a bounded observation or authorized staged operation to resolve an
+uncertain prerequisite when useful; keep compatible work and report the remaining
+limit. A necessary unresolved identity, authority or irreversible-effect condition
+stops its affected action. Preview remains read-only; known failure and unknown
+readiness retain different meanings.
+
+Use native paths/quoting and stable structured output or exit semantics. Resolve
+links and filesystem boundaries before destructive changes. Verify the requested
+result, distinguishing missing tools, denied access, ambiguous identity and failed
+execution rather than inferring them from a platform label.
 
 ## When implementing a PowerShell command or provider
 

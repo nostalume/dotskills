@@ -140,8 +140,12 @@ input/effect/dependency/compatibility obligations and material tradeoffs must re
 visible; enthusiasm or detailed tasks cannot settle them.
 
 Return the requested report/plan; hand off only when implementation is authorized.
-Give `software-development` settled conceptual constraints, accepted tradeoffs and
-falsifiers, not mandatory pseudocode or predicted files. Distinguish coordination
+Give `software-development` required behavior/policy, the selected mechanism and
+observed validation coverage as distinct inputs, with their sources and scope.
+Carry settled constraints, tradeoffs and falsifiers; a validated example informs
+coverage, while a runtime, interface or explicit deployment policy can restrict
+admission. Keep mechanism choices replaceable within those constraints, leaving
+syntax and file choices to implementation. Distinguish coordination
 labels from domain or interface names: stage headings and task IDs locate plan
 work; they become implementation vocabulary only when an accepted target contract
 requires it. For simplification, carry the coordination/interpretation to remove

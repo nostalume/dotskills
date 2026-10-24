@@ -49,12 +49,19 @@ a test-first history for existing behavior.
 
 ## Characterization and mutation sensitivity
 
-For behavior-preserving work, establish the relevant accepted baseline before
-edits when it is needed to interpret the result; existing adequate evidence may
-supply it. Add a representative semantic fault probe when a consequential behavior
-is unprotected or the selected check's sensitivity is uncertain, then restore the
-baseline. A protected local cleanup need not add tests or mutation machinery solely
-for ceremony. Do not pretend existing behavior was developed test-first.
+For behavior-preserving work, reuse or establish the relevant accepted baseline
+when needed to interpret the change. Derive expected behavior from the governing
+contract; an existing implementation or rejection test may itself encode drift.
+For an applicability claim, vary incidental environment facts while holding
+required capabilities, policy and trust conditions fixed: execute the program and
+confirm the permitted operation still completes. Separately remove a necessary
+condition and check refusal at the affected boundary with preserved state. Compare
+false rejection and unsafe acceptance separately, retaining explicit platform
+policies. These are claim-selected probes, not a universal platform matrix.
+
+Add a representative semantic fault when a consequential behavior is unprotected
+or check sensitivity is uncertain, then restore the baseline. Protected local
+cleanup needs no ceremonial mutation machinery or invented test-first history.
 
 For a code-shape claim, choose the applicable counterfactual from
 [implementation normal form](implementation-normal-form.md). Use

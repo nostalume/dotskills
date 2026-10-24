@@ -28,8 +28,13 @@ consequential failure that repays their cost. Preserve required guarantees; a
 change to a governing promise, owner or budget returns to Admission.
 
 Trace admitted input to the promised result: select its operation, transform
-meaning-preserving values, invoke effect/resource owners, then return or delegate
-after owed work. Give transformations explicit results or failures, compute costly
+meaning-preserving values and reuse compatible resources. Derive prerequisites
+from that path's operations and governing contracts; environment observations help
+select a mechanism and bound coverage. Establish guarantees through owned scopes,
+conditional creation or staged publication where applicable, validating uncertain
+prerequisites at the boundary whose effect depends on them. Probe only what can
+change that path. Invoke effect/resource owners, then return or delegate after
+owed work. Give transformations explicit results/failures, compute costly
 intermediates once, and retain genuine trust boundaries and variants.
 
 ## Preserve terminal handoff
