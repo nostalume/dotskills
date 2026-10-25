@@ -15,6 +15,7 @@ further evidence would not change the decision, and reuse checks for delivery.
 | Existing behavior under refactor | Reuse regression evidence; characterize uncovered behavior | Accepted baseline and focused evidence for changed obligations; probe a representative fault when sensitivity is uncertain |
 | Domain or mathematical law | Law/property tests, derivation, or proof obligation | Positive, negative, boundary, and adversarial cases as applicable |
 | Settled implementation flow, failure, ownership or topology | Applicable counterfactual inspection and focused probes | Inspect the changed obligation; inject a relevant fault when propagation, cleanup or sensitivity needs evidence, rather than exercising unrelated mutations |
+| User-facing layout or interaction | Render representative content, then trace the user task | Locate the object, decision evidence and next action in the rendered view; operate it and observe feedback, including relevant content/state/viewport changes |
 | Cost or scale | Benchmark, profile, or counters against a budget | Reproducible baseline, workload, repetitions, result, and noise limits |
 | Structural or style policy | Formatter, linter, type, dependency, or architecture tool | Applicable configuration/instruction and fresh tool result |
 | External effect | Approved disposable integration with post-observation | Exact target, pre/post state, receipt, cleanup, and residue check |
@@ -24,6 +25,16 @@ Combine methods only when the change makes different kinds of claims. Do not use
 large test matrix to compensate for an undefined contract. Reuse project-native
 commands and fixtures; add a small helper only for observed execution friction,
 kept with its project or task consumer.
+
+When layout is uncertain, render the coarse arrangement with representative
+content before polishing detail. Give a reviewer the task and rendered view
+without the component explanation: locate its entry, decision evidence and next
+action, then exercise the interaction and inspect the resulting state. Vary one
+relevant input, such as content length, empty/error state or viewport, and check
+that task relationships survive reflow. Compare with meaningful DOM and keyboard
+order. Use the result to revise the smallest failing region; retain sound
+structure. Screenshot inspection supports visual findings, operation supports
+interaction claims, and neither establishes actual user gaze or success rates.
 
 ## RED-GREEN-refactor
 
