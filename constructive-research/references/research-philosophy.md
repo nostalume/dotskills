@@ -35,12 +35,14 @@ conclusion to its invariant meaning. Fewer indices alone do not establish a gain
 
 ## Develop concepts through consequential use
 
-Use domain knowledge to understand the requested capability and current attempt:
-known constructions, theorem hypotheses, examples and permitted operations supply
-structural footholds. Expand a failed equality, unresolved composition or recurring
-repair; isolate the dependence that causes it. Compare cases the attempt merges
-but the required operation separates. A surprising successful relation can supply
-the same starting point; failure is not a prerequisite.
+Start from domain constructions, theorem hypotheses, observations and permitted
+operations. Reconstruct material into the relation producing the phenomenon,
+including contrary cases and conditions under which it changes. Where one process
+supports and undermines a capability, derive how these tendencies arise together
+and why the present form reproduces their opposition. Expand a failed equality,
+unresolved composition or recurring repair; compare cases the attempt merges but
+the required operation separates. A productive relation already visible in
+successful work can also start a construction; failure is not a prerequisite.
 
 Let the user's research preferences shape what to construct from that mechanism.
 Seek a relation that preserves successful uses while generating repeated repairs
@@ -50,6 +52,17 @@ still to be derived, and the scientific work it could replace or enable. Its
 plausibility comes from the domain structure; its value comes from that scientific
 use. A factorization,
 symmetry or transferred method earns attention through what it lets one derive.
+
+To reconstruct a concept, distinguish content required by the question from
+conditions imposed by its current expression. Make the specific negation carry
+construction content: which determination fails, which relation survives, and
+what operation can reorganize them? Construct the resulting object and operations;
+show how earlier valid content and successful uses survive as cases, approximations
+or components, what is rejected, and which consequential use becomes possible.
+An altered object distinction or judgment criterion needs a bridge to the
+originating question.
+This transformation must be carried by the derivation or construction, not merely
+by naming a new concept.
 
 Attempt the consequence using the domain's operations: solve an unsettled
 cancellation or compatibility equation where possible, then carry the candidate
@@ -165,13 +178,12 @@ cost gain; a faster route that loses a required distinction is not cheaper for
 that result. Use [evidence adjudication](evidence-adjudication.md) for a contested
 complete-route comparison.
 
-A reconstructed theory must recover the earlier successful regime through a
-specified bridge and controlled error, and produce a discriminating consequence
-outside it. Failed approximations, proliferating repairs, singular behavior, or
-collective structure can motivate reconstruction; none proves it. Separate
-kinematics from dynamics, classification from realization, convention from
-invariant, symmetry from selected dynamics, and exact statements from
-approximations.
+For a theory-reconstruction claim, make that recovery bridge, any approximation
+error, and the new discriminating consequence explicit. Failed approximations,
+proliferating repairs, singular behavior, or collective structure can motivate
+reconstruction; none proves it. Separate kinematics from dynamics, classification
+from realization, convention from invariant, symmetry from selected dynamics, and
+exact statements from approximations.
 
 Finite derivation stays adjacent to the argument. Select
 [computation](computation.md) only when execution must produce a required result or

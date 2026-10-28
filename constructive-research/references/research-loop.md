@@ -81,32 +81,29 @@ user-fixed target, domain, or success condition. A known reformulation can advan
 this inquiry without establishing novelty in the field.
 
 A locally discriminating action may still leave the original capability out of
-reach. When an actual probe or paired admissible cases show that the current
-representation collapses live alternatives, or repeated outcomes change with an
-arbitrary encoding while the decision-bearing relation stays fixed, inspect the
-representation and observation map before selecting another probe. Demonstrate
-the relevant ambiguity or failed operation and what additional distinction could
-change the next move. Do not infer a representation failure merely from a
-negative result, nor impose a universal iteration count.
+reach. A supplied result, derivation, probe or paired cases may show that the
+representation collapses live alternatives, an operation depends on arbitrary
+encoding, or the modeled process defeats its own assumed conditions. Explain
+which limit follows and whether more material or precision can address it. Use
+[concept development](research-philosophy.md#develop-concepts-through-consequential-use)
+to construct the needed change, then select the operation and evaluation that
+its consequences require. A negative result alone establishes no representation
+failure, and iteration count supplies no transition rule.
 
 ## Admit a conceptual detour
 
-When an inquiry would pause its object-level work to redesign its concepts or
-method, require an observed reason rather than dissatisfaction or lack of
-elegance:
+Conceptual construction needed by the question is object-level research. It may
+begin from a known productive relation or justified limit before another
+experiment. For additional reflection on method, identify the unresolved move
+and how examining its concepts could change a construction, conclusion or action;
+dissatisfaction or elegance alone supplies no reason.
 
-1. an actual attempt contains a concrete unresolved or failing move;
-2. plausible interpretations lead to different next actions, conclusions, or
-   refusals; and
-3. inspecting or revising the conceptual relation can distinguish them.
-
-This gate applies to a method-level detour, not to conceptual development that is
-itself the requested research result. Select the least costly conceptual change
-and contrary comparison whose possible results lead to different object-level
-moves, then return the result to the inquiry. Continue only when it changes a
-move, eliminates an alternative, establishes a boundary, or exposes another
-decision-bearing relation. Otherwise park or drop the detour. Do not impose a
-universal iteration count or treat time already spent as evidence of value.
+Return the reconstruction to the inquiry through a changed operation, resolved
+alternative, established boundary or newly usable relation. Preserve the original
+question and show which earlier content survives under changed conditions. If
+the proposed change yields none of these, park it rather than repeat reflection.
+Continue supported refinement when it can resolve the actual uncertainty; time
+already spent supplies no evidence of value.
 
 ## Admit a result before changing the frontier
 

@@ -14,13 +14,18 @@ analysis remain with their respective skills.
 
 ```text
 question, admitted material and authority
-  -> admissible claim, phenomenon, or requested result
+  -> phenomenon, working construction, claim, or requested result
   -> unresolved operation and its owner
   -> least effectful adequate derivation, construction, source, observation or execution
   -> evidence with exact inferential right and boundary
   -> bounded disposition, open obligation or honest unavailability
   -> durable state or reader/artifact projection only for a named consumer
 ```
+
+Develop research meaning by reconstructing material into a governing relation,
+constructing its consequences, and letting those consequences revise the inquiry.
+For concept or theory reconstruction, use research philosophy; let the resulting
+construction govern the next research move.
 
 Preserve the distinctions, relations, operations, examples, counterexamples,
 domains, uncertainty, conflicts, and refusal conditions that matter to the

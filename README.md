@@ -97,6 +97,14 @@ and credentials required by a particular task are resolved separately; there is
 no repository-wide runtime installation step. Keep task sources and outputs in
 their project or worktable, separate from the installed skill instructions.
 
+The optional shared orientation is versioned in
+[global/.agents/AGENTS.md](global/.agents/AGENTS.md), with its companion alongside
+it. The global tree mirrors paths relative to the user's home. Merge or copy those
+two files into the corresponding home paths when installing that orientation.
+With the default Codex home, the global AGENTS.md can link to
+../.agents/AGENTS.md; preserve existing instructions when setting it up.
+Updating the checkout alone does not synchronize installed copies.
+
 ## Maintain
 
 Keep each `SKILL.md` focused on selection, responsibility, and operating rules.
