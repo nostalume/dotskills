@@ -1,10 +1,12 @@
 # Portable Capability
 
-A portable skill carries the durable reasoning needed to produce the intended
-behavior while discovering environment-specific means at the edge. Portability
-does not mean ignoring the environment, avoiding every dependency, or supporting
-every possible tool. It means that local bindings are explicit, replaceable where
-the capability permits, and absent from the semantic core.
+A portable skill preserves the knowledge and operations needed for its declared
+work while binding context-dependent means where used. Start from concrete
+constructions: identify which distinctions and operations produce the result, and
+what survives a relevant change of context. A shared abstraction earns reuse by
+preserving those uses; its limits can require changing the abstraction itself.
+Portability concerns the surface actually promised, not identical organization
+across domains or support for every tool.
 
 ## Classify knowledge without flattening it
 
@@ -20,23 +22,22 @@ evidence; they are reasoning aids, not a required manifest or directive schema.
 | Consequence | explanation, correctness, safety, compatibility, mutation or external effect | What happens if it is absent, wrong or stale? |
 | Availability | embedded, project-local, probeable, fetchable, unavailable | Where can the selected operation establish it? |
 
-A semantic model carries the identities, values, relations and legal states needed
-to reason about the capability. A decision policy selects among valid alternatives
-from explicit context. An **operational protocol** is a durable grammar, decision
-procedure, state machine or proof/checking sequence whose legal order, refusal,
-termination or completion semantics are part of correctness. An adapter binds that
-protocol to one project representation, tool or provider. Evidence is an observed
-claim with scope and limits; it does not become the authority that owns the fact.
-An unverified inference or speculation is neither authority nor evidence: label
-its premises and uncertainty, record how it could be tested, and do not use it to
-justify a consequential decision before validation.
+A semantic model supplies the domain objects, relations and legal operations.
+A policy chooses among alternatives; an operational protocol supplies a grammar,
+algorithm or checking sequence whose order and completion matter. An adapter
+binds it to a project, tool or provider. Evidence supports only what its method and
+scope establish. A proposal remains provisional until adequate grounds support
+its consequential use.
 
-Force remains independent of role. State an invariant with its precondition,
-owner, required outcome and refusal or failure behavior. State a heuristic with
-its controlling context and override conditions. A protocol or adapter can contain
-both. Do not turn a house style, one successful example or a currently installed
-tool into an invariant. A fixed value is justified only when the domain, interface,
-accepted project contract or selected operation makes it necessary.
+Keep domain constructions, derivations, grammar and failure semantics when they
+are needed to perform the capability. For example, a self-contained language skill
+needs enough syntax and grouping rules to produce valid source; replacing them
+with generic advice to consult an adapter leaves the method incomplete.
+
+State a rule with its actual applicability and force. Domain or interface
+requirements govern where they hold; a useful house convention or local success
+can remain contextual. When new cases defeat an abstraction, recover what its
+successful uses depended on and reconstruct that relation before adding branches.
 
 ## Preserve owners and boundaries
 
@@ -50,28 +51,25 @@ accepted project contract or selected operation makes it necessary.
   must admit those effects but must not pretend to control what it cannot verify.
 - Validators prove only the structures and rules they actually inspect.
 
-Admit untrusted input once at a visible boundary. Keep decisions linear, make
-variants and failures explicit, and give each trigger or rule one owner. A
+Admit untrusted input at its boundary. Make decision triggers, variants and
+failures explicit, with one accountable owner for each rule or effect. A
 cross-skill reference is an optional, one-hop handoff at a real ownership
 boundary—not a core prerequisite. Without the other skill, complete compatible
 work or state the missing capability and safe result; do not copy its full policy.
 
 ## Keep the operation surface economical
 
-Expose one semantic entry point for a capability. Add a command or named mode
-only when it changes the accepted postcondition, required evidence, authority or
-external effect, durable artifact, or refusal behavior. A different adjective,
-target selector, or output tone is a parameter or heuristic, not another command.
-When several commands share those decisions, route them through one operation and
-load only the selected guidance.
+Define operations by their result, evidence and authority/effect boundaries.
+Reuse shared decisions across synonymous requests; introduce a distinct operation
+when those boundaries differ. Native commands or entry points can retain their
+interfaces while consuming a common method. Tone, selector or naming differences
+alone need no new mode.
 
-Bind tools after the operation is selected. The entry point should name the
-capability and observable result, not a provider, executable, framework, or
-harness. Prefer one replaceable adapter surface per capability class; do not list
-every compatible tool in the semantic core. An adapter must state its authority,
-inputs, effects, cost, bounds, verification, cleanup, and honest unavailable path.
-Connected or installed tools remain dormant until the selected operation needs
-them and the request grants their effect.
+Select tools for the operation and declared scope. A provider-specific capability
+may retain its provider knowledge; an authoring-machine path is contextual.
+Bind an adapter's inputs, effects, authority, bounds, verification, recovery and
+unavailability before its use. Connected tools remain dormant until needed and
+authorized.
 
 Treat automatic hooks, background watchers, and setup commands as external
 operations, not harmless conveniences. They require an explicit consumer,
@@ -95,12 +93,12 @@ and its selected tools. Resolve manifests, paths, versions, platforms, credentia
 models, endpoints, and provider-specific limits only for the operation that needs
 them.
 
-A skill remains portable with an explicit tool or provider dependency if its
-binding is rediscovered. A cross-skill handoff must state when it applies and what
-happens when unavailable; avoid hidden dependencies, chains, or cycles. A skill is
-not portable when it silently relies on authoring-machine state, modifies the
-installed skill directory, assumes network access, or treats one adapter as the
-capability itself.
+A tool or provider dependency can belong to the declared capability; rediscover
+its installation, credentials and target bindings where needed. A cross-skill
+handoff states its trigger and unavailable path without hidden chains or cycles.
+Portable behavior cannot silently rely on the authoring machine or mutate the
+installed skill during use. Bind network-dependent operations explicitly and keep
+adapter-specific guarantees within their actual scope.
 
 Name only the portability surface actually claimed:
 
@@ -118,56 +116,29 @@ package, and a valid package does not prove discovery or fresh-context behavior.
 Use [behavioral evaluation](behavioral-evaluation.md) for the distinguishing
 observations.
 
-The core is **operationally closed** when, without network retrieval, it can:
+For a claimed provider-independent core, offline inspection must still support
+activation, the necessary domain construction, choice/refusal and the portable
+protocol it promises. Name the exact unavailable adapter fact. A compiler or
+remote service can remain necessary for the dependent operation; preserve work
+whose claim does not need it.
 
-1. activate or exclude the request correctly;
-2. construct enough domain state to choose an operation;
-3. preserve its invariants while selecting, deferring or refusing;
-4. perform every provider-independent protocol it claims; and
-5. identify the exact version-, project- or provider-bound fact that is unavailable.
-
-Operational closure does not mean complete offline execution. A missing compiler,
-remote target or mutable provider policy can prevent the selected adapter from
-completing. Stop at that boundary without guessing, copying a whole external
-specification, or declaring unrelated core behavior unavailable. Distinguish:
-
-- an **equivalent alternative**, which changes the mechanism but preserves the
-  admitted postcondition and evidence obligations;
-- a **bounded partial**, which satisfies a named subset, preserves every governing
-  safety and authority invariant, and reports each missing guarantee;
-- **unavailable**, when no useful declared subset can currently be established;
-  and
-- **refused**, when authority or policy prohibits the operation.
-
-Ask for a material missing decision when it can change these outcomes. Never
-weaken authorization, identity, safety or mutation invariants to obtain a partial
-result, relabel a partial as equivalent, retry setup without a bound, or fabricate
-verification evidence.
+An alternative is equivalent only if it preserves the postcondition and evidence.
+A bounded partial names each unmet guarantee; unavailable means no useful declared
+subset can be established; refused means authority or policy prohibits it. Resolve
+material missing decisions without weakening authorization, identity, safety or
+mutation boundaries. Missing evidence cannot be replaced by fabricated success.
 
 ## Add structure progressively
 
-The smallest complete skill may be a single `SKILL.md`. Add a reference when a
-conditional branch would otherwise obscure the entry point. Add a script when a
-real consumer needs deterministic or repeatedly executed behavior that prose does
-not supply safely. Add an asset or template when the delivered work actually
-reuses it. Each resource needs a consumer, an authority boundary, and a validation
-or inspection obligation. The consumer may be an intrinsic conditional operation—
-for example, every restricted audit consuming its burden-of-proof protocol—not
-only a separate caller file.
+Keep a self-contained skill in one file when its method fits. Add a reference for
+a conditional method that would obscure the entry, a script for actual repeatable
+execution/checking, or an asset for delivered work that consumes it. An intrinsic
+selected operation can be the consumer; a hypothetical future use is insufficient.
+Each resource retains an owner and an applicable verification obligation. Keep
+direct routes to conditional guidance and remove orphaned or duplicated ownership
+when its replacement is established. Examples explain choices, not file layouts.
 
-Keep activation/invariants at the entry and specialized detail behind its selecting
-branch. Avoid deep chains and orphan resources; examples illustrate decisions,
-not mandatory scaffolds.
-
-Before accepting a directive, ask:
-
-1. What claim would this rule protect, and when does it apply?
-2. Who owns the underlying decision, fact, or effect?
-3. Is its role semantic model, decision policy, operational protocol, adapter or
-   evidence, and what force does it carry?
-4. Who owns it, what binds its lifetime, and what is the consequence if it is
-   absent, wrong or stale?
-5. Where can the selected operation establish it, and what observable case could
-   show it is wrong or incomplete?
-6. Can the same capability still operate honestly when this local binding is
-   absent?
+Before promoting guidance, establish what it protects, where it applies, who
+owns it, what can invalidate it and what observation could defeat it. Keep a useful
+local method local when wider support is absent. These questions resolve actual
+decisions; they need no classification worksheet or extra record.

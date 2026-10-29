@@ -45,24 +45,27 @@ orientation, region coverage and text-layer duplication.
 
 ## Create PDF pages
 
-Start from accepted content, page dimensions, assets and font requirements.
-For Typst, LaTeX or Office source, use its format reference to produce PDF.
-For direct page construction, PyMuPDF's document new-page and page text/image
-insertion methods provide a basic path: create pages, place content within their
-boxes, save a distinct candidate, then reopen and render it. Select a layout
-engine when wrapping, pagination or complex scripts exceed simple placement.
+Start from accepted content, page geometry and assets. Establish required glyph
+coverage through selected fonts, shaping and supported fallback, separately from
+text input encoding. Use the source language's producer for Typst, LaTeX or Office
+builds. For direct PDF creation,
+choose the layout unit from the task: fixed labels or overlays can use page
+coordinates; prose whose length changes needs paragraph flow through regions and
+pages. A longer paragraph can then move later content and page breaks instead of
+colliding with fixed positions. Preserve heading/body/caption associations in that
+flow and check continuation and content coverage.
 
-Verify requested text and page structure as well as clipping, fonts, images and
-layout. A PDF export does not establish equivalent editable source.
+Use a compatible flow engine when wrapping, pagination or complex scripts require
+it; direct text/image insertion remains useful for fixed placement. Produce a
+distinct candidate, reopen it and inspect text, page structure, fonts, clipping
+and affected rendered pages against accepted content.
 
-For mathematical, relational, tabular, reference, or media content, apply
-[forward representation fidelity](representation-fidelity.md) before direct PDF
-creation or conversion. Painted glyphs, arrows, grid lines, and captions preserve
-appearance only; when the contract requires logical semantics, also preserve and
-inspect the applicable Formula, Figure, Table/header, link, reading-order, and
-alternative-representation structure through a compatible tagged-PDF mechanism.
-If the selected producer cannot express a required structure, return the exact
-loss or unavailable capability rather than inferring it from the render.
+Apply [forward representation fidelity](representation-fidelity.md) for structured
+content. Required logical semantics need a compatible tagged-PDF mechanism for
+Formula, Figure, Table/header, links, reading order and alternatives. Painted
+glyphs or grid lines alone do not establish those structures. Report unsupported
+requirements as losses or unavailable capability; PDF export also does not
+establish equivalent editable source.
 
 ## Transform existing pages
 

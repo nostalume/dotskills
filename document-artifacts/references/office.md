@@ -122,45 +122,36 @@ a prior valid artifact merely because the producer exited successfully.
 
 ## Apply format-specific requirements
 
-Apply [forward representation fidelity](representation-fidelity.md) before
-selecting an Office API or provider. Preserve accepted mathematical structure in
-a compatible native equation object when native semantics/editability are
-required; plain text or a rendered equation image is a declared-loss alternative,
-not an equivalent. Preserve relational entities and typed edges with connected
-native shapes or another accepted representation; visually adjacent shapes and
-free lines do not establish their relationships.
-
-For tables and charts, keep header/series/category identity, units, formulas,
-source ranges, captions, labels, and missingness bound to their owners. In Excel,
-formula source, cached value, and freshly calculated result remain distinct. In
-Word and PowerPoint, preserve reference/field/relationship targets rather than
-hard-coding their current visible text or number.
-
-Name the effective page, section, column, text frame, slide safe area, placeholder,
-cell, sheet view, or print region for capacity and placement. Keep whole-object
-placement distinct from equation, text, table-cell, or chart-internal alignment.
-Repair density, wrapping, grouping, orientation, region allocation, or slide/sheet
-continuation before shrinking, cropping, overlapping, or rasterizing accepted
-content. When required, preserve reading order, native headers, alternatives, and
-object associations independently of visual appearance.
+Apply [forward representation fidelity](representation-fidelity.md) to bind
+equations, relations, tables, charts and references to accepted content and their
+effective regions. Use compatible native objects for required semantics and
+editability; declare losses for substitutes. Preserve field/reference targets,
+chart source bindings, reading order, headers and alternatives when required.
+The shared reference owns capacity repair and evidence classes.
 
 ### DOCX
 
-Inventory document stories and relationships, including body content, sections,
-styles/themes, headers/footers, tables, comments/revisions, fields/hyperlinks,
-footnotes/endnotes, text boxes, drawings/media, custom XML, signatures, and active
-content as relevant to the request.
+Locate the affected story and its paragraph, table or section context, including
+headers/footers, notes, revisions, text boxes and relationships when relevant.
+Construct paragraphs by their roles in the maintained style hierarchy; compose
+text, emphasis, links, fields and equations as inline objects. Resolve pagination
+through section geometry and paragraph flow (spacing, keep-with-next, breaks),
+then inspect the affected pages.
 
-For basic creation or editing, reopen and compare requested paragraphs, runs,
-tables, sections, styles, and header/footer content. Run boundaries matter only
-when formatting, fields, revisions, or source mapping depends on them.
+For a phrase edit, map its character span across existing inline objects before
+changing text. For example, replacing a name split across two styled runs means
+distributing replacement text under the accepted formatting policy while keeping
+surrounding runs and link/field targets. An ambiguous match or styling policy
+needs resolution at that span. Whole-paragraph replacement is suitable only when
+its inline structure is expendable under the request.
 
-If `python-docx` is a candidate, account for its documented view: document-level
-paragraph and table collections omit content inside revision marks, and the
-document-level table collection excludes nested tables. Do not use those
-collections alone for complete extraction or preservation claims. Require another
-proven mechanism or report a provider limitation and unmet preservation obligations
-for unsupported fields, drawings, text boxes, revisions, or other critical parts.
+With `python-docx`, assigning `Paragraph.text` removes run-level formatting;
+`iter_inner_content()` distinguishes runs and hyperlinks. Its document paragraph
+and table collections omit revision content, and the latter excludes nested tables.
+Use a compatible mechanism for affected features outside that view, or report the
+exact limitation. Reopen to compare the changed span, style inheritance and
+preserved inline objects/relationships; compilation or rendering cannot replace
+those checks.
 
 ### PPTX
 
@@ -182,34 +173,36 @@ own shape collection. Extracting text does not prove its intended reading order.
 
 ### XLSX
 
-Inventory workbook and sheet identity/order, cells and types, formulas and cached
-values, number formats/styles, merged ranges, defined names, tables, validations,
-hidden state, calculation settings, external links, drawings/charts, pivot data,
-signatures, and active content as applicable.
+Locate affected cells by row/column meaning, stored type, format and source
+binding. Preserve workbook/sheet identity, merges, hidden state, names, tables,
+validations, charts, pivots and active/external content as applicable. Keep text
+identifiers such as leading-zero codes distinct from numbers. Interpret date
+serials with the workbook's 1900/1904 system and cell format; required time zones
+need an explicit convention.
 
-Formula text, cached values, and calculated results are distinct. If `openpyxl` is
-a candidate, `data_only=False` observes formula text while `data_only=True`
-observes the last cached value written by a calculating application; the library
-does not calculate formulas. A new formula can therefore have no cached value.
-Report these states separately and never present a cache as fresh calculation.
+For structural changes, construct the source-to-destination mapping and update
+affected dependents, including incoming references. For example, inserting an
+observation before a total can move the total, expand its formula, table and chart
+ranges, and change a defined name or another sheet's reference. Decide each from
+its intended data role: an expanding series and a fixed cohort need different
+ranges. An unrelated constant or sheet remains unchanged. Reopen to inspect these
+bindings, not merely the moved values.
 
-If fresh values are required, use a compatible calculating application, record
-the inputs and calculation behavior, then verify saved results and formula errors.
-Do not treat calculation settings as executed work or refresh external sources
-without authority. A noncalculating library remains usable for formula-preserving
-edits; it cannot satisfy a fresh-result postcondition by itself.
+With `openpyxl`, row/column insertion does not manage formula, table or chart
+dependencies. `move_range(..., translate=True)` translates formulas inside the
+moved range, not incoming references or defined names; explicitly repair the
+affected bindings or choose a mechanism that preserves them.
 
-Keep stored types, number formats, displayed values and locale interpretation
-distinct. Preserve identifiers such as text with leading zeros; do not coerce them
-to numbers. For dates/times inspect the workbook's 1900/1904 date system and the
-cell format; serial numbers alone do not establish meaning. Excel date/time values
-do not encode time zones; any required zone interpretation must be explicit.
+Formula source, cache and freshly calculated result are separate. `data_only=False`
+reads formulas; `data_only=True` reads stored caches. `openpyxl` does not calculate.
+For required fresh results, use a compatible calculation engine and verify saved
+values/errors against admitted inputs; a recalculate-on-open flag is insufficient.
+A noncalculating edit can preserve formulas but leaves fresh results unverified.
 
-Preservation flags for VBA or external links do not validate their contents and do
-not authorize execution or retrieval. Existing drawings and other unsupported
-features can be lost during a load/save cycle; refuse a preservation-critical edit
-unless the exact feature round trip is proven. Worksheet/workbook protection is an
-editing deterrent, not encryption or an integrity guarantee.
+Prove the affected feature round trip before a preservation-critical save;
+unsupported drawings or other parts may be lost. VBA/link preservation flags
+prove neither retention nor execution authority. Keep macros and external refresh
+inactive. Worksheet/workbook protection deters editing; it is not encryption.
 
 ## Match validation to the claim
 
@@ -226,11 +219,6 @@ in the shared `ArtifactResult`. Malformed input or an unsupported request is
 terminal. A provider-specific limitation may select an admitted compatible branch
 under the shared execution rules; it does not justify an unrelated library cascade.
 
-For semantic-structure work, compare native equations, connectors, headers,
-formula/source bindings, reference targets, captions, reading order, alternatives,
-and the named containing region as applicable. A visually similar grid, line,
-glyph string, cache, or image cannot satisfy these checks by appearance alone.
-
 ## Authoritative references
 
 Resolve version-sensitive rules from current primary sources at use time:
@@ -239,10 +227,12 @@ Resolve version-sensitive rules from current primary sources at use time:
 - [Microsoft Open XML SDK documentation](https://learn.microsoft.com/en-us/office/open-xml/open-xml-sdk)
 - [Microsoft 365 Math](https://learn.microsoft.com/en-us/office/math/)
 - [Microsoft Office XML extension reference](https://learn.microsoft.com/en-us/office/compatibility/xml-file-name-extension-reference-for-office)
+- [python-docx text API](https://python-docx.readthedocs.io/en/latest/api/text.html)
 - [python-docx document API](https://python-docx.readthedocs.io/en/latest/api/document.html)
 - [python-pptx documentation](https://python-pptx.readthedocs.io/en/stable/)
 - [python-pptx notes behavior](https://python-pptx.readthedocs.io/en/latest/user/notes.html)
 - [openpyxl workbook reader](https://openpyxl.readthedocs.io/en/stable/_modules/openpyxl/reader/excel.html)
+- [openpyxl structural edits](https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html)
 - [openpyxl formulas](https://openpyxl.readthedocs.io/en/stable/simple_formulae.html)
 - [openpyxl dates and times](https://openpyxl.readthedocs.io/en/stable/datetime.html)
 - [Office encrypted packages](https://learn.microsoft.com/en-us/openspecs/office_file_formats/ms-offcrypto/b60c8b35-2db2-4409-8710-59d88a793f83)

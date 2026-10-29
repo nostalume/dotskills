@@ -9,7 +9,8 @@ the domain owner still owns meaning. For materially open information encoding,
 follow the optional handoff in the skill entry point; if unavailable, preserve the
 accepted input and report the unresolved choice rather than guessing.
 
-This is a conceptual protocol, not a required schema or intermediate file.
+Reconstruct only relations affected by the operation; no universal document model
+or intermediate file is required.
 
 ## Admit structures before mechanisms
 
@@ -26,7 +27,9 @@ renderer.
 | References | Stable target identity for citations, labels, captions, links, fields, footnotes, and generated numbering |
 | Media | Source identity, crop/aspect intent, caption association, placement role, and required alternative representation |
 
-Preserve bindings between structures. A correct-looking symbol attached to the
+For an edit, locate the affected objects, which dependents must change with them,
+and what remains invariant. Use the operation's mapping to update those dependents
+and identify invalidated checks. A correct-looking symbol attached to the
 wrong base, a caption separated from its figure, a chart cache detached from its
 source, or a visible number replacing a live reference is a semantic defect. Keep
 inline/display, text/math/code, source/cache/result, native/image, and
@@ -81,39 +84,26 @@ caption; changing those internals does not establish the object's placement.
 Centering is a contextual composition choice or project rule, never a universal
 normalization.
 
-When content does not fit, repair the earliest contradicted layer:
-
-1. remove irrelevant visual density without deleting accepted meaning;
-2. wrap labels or rebalance grouping and spacing;
-3. reorient or reflow the accepted representation;
-4. split separable views or add an explicit continuation;
-5. use a wider region when the project and request permit it; and
-6. scale only while every required element remains legible.
-
-Do not crop, overlap, rasterize, abbreviate, or indiscriminately shrink content to
-hide a capacity defect. If no allowed repair satisfies the postcondition, report
-the affected region and unmet obligation.
+When content does not fit, locate the cause in the expression, grouping or
+containing region. Remove irrelevant density, wrap/rebalance, reflow, split with
+continuation, or widen the region as the accepted structure and project permit.
+Scale only while required elements remain legible. Cropping, overlap, rasterizing,
+abbreviation or indiscriminate shrinking cannot substitute for preserving accepted
+meaning. Report the affected region and unmet obligation when no allowed repair
+satisfies the postcondition.
 
 ## Match evidence to each claim
 
-Inspect the exact current source and resulting artifact. Apply only evidence
-classes required by the request, but keep their conclusions separate:
+Use the entry point's fidelity classes on the exact source and output. For this
+projection, compare accepted expression trees, relation paths, schema, values,
+targets and associations; inspect their native bindings and effective regions.
+Rendering at delivery size checks clipping, fit and glyph behavior. Required
+reading order, headers, alternatives and link purpose need independent inspection.
 
-- **Semantic:** compare expression trees, relations, table schema, values, labels,
-  target bindings, captions, and media associations with accepted content.
-- **Structural:** parse or reopen native objects, relationships, references, tags,
-  formulas, source ranges, and container structure at issue.
-- **Visual:** render with the admitted engine and inspect the affected region at
-  delivery size for clipping, overflow, legibility, placement, and glyph behavior.
-- **Accessibility:** inspect required reading order, header roles, alternatives,
-  redundant encoding, link purpose, and other nonvisual access independently of
-  painted appearance.
-
-Successful parsing, compilation, reopening, export, or visual similarity cannot
-prove the other classes. Test bindings with focused mutations: change one grouping,
-edge, header/unit, target, source/cache state, container, editability requirement,
-or accessibility requirement and confirm that only its representation, evidence,
-loss, or refusal changes.
+Parsing, compiling, reopening or visual similarity alone proves only its own
+scope. A focused change to grouping, source range, target or containing region
+should alter the corresponding output and invalidate its dependent evidence,
+while leaving unrelated content intact.
 
 Keep stable structure and checking rules here. Resolve grammar, compiler, package,
 consumer dialect, Office provider, renderer, and PDF conformance behavior against

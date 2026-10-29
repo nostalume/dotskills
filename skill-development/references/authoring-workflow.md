@@ -17,8 +17,8 @@ directory template. Record only decisions that affect the artifact:
 - evidence that can distinguish success from plausible-looking failure.
 
 Inspect applicable repository instructions and routing before choosing the name.
-For an existing capability, inspect its full entry point, linked references,
-scripts, assets, callers, docs, validators, and relevant history or diff. Treat
+For an existing capability, inspect its entry point and the resources, callers,
+validators and history relevant to the proposed change. Treat
 current source and direct user edits as evidence that can contradict an earlier
 plan or example.
 
@@ -99,31 +99,18 @@ it was available during execution. Keep plans and scratch in their working scope
 unless the requested artifact itself needs that material and its exposure is
 authorized.
 
-## Verify layer conformance
+## Trace the affected decisions
 
-For a skill with project context, multiple operations, adapters, or durable
-artifacts, make a transient layer worksheet before editing. Map each rule,
-reference, script, hook, and artifact to one layer and owner:
+When a change makes ownership or dependencies unclear, trace the concrete request
+through the affected guidance, project facts, tools/effects and result. Locate the
+source of the ambiguity and correct its owning section. A layer sketch can help
+resolve that question; it is not a prerequisite for every revision or a document
+to maintain independently.
 
-```text
-kernel -> project context -> request brief -> selected operation
-       -> selected adapter -> observed evidence
-```
-
-For each operation, write the route as
-`request signal -> guidance -> allowed effects -> completion/refusal evidence`.
-Use the worksheet to move duplicated rules to their owner, keep contextual facts
-out of the kernel, defer adapter loading until the operation is selected, and
-remove artifacts with no reader or maintenance consumer. Do not persist the
-worksheet unless a project already has an audit consumer.
-
-Evaluate the route with [behavioral evaluation](behavioral-evaluation.md): use
-one positive, one neighboring negative, one missing-context or missing-adapter,
-and one review-only case. Record the operation, references loaded,
-tools invoked, files changed, effects observed, and result class. Accept the
-revision only when the trace matches the route and each changed layer has
-evidence; otherwise correct the smallest owning section and rerun the affected
-case.
+Select checks through [behavioral evaluation](behavioral-evaluation.md). A local
+wording correction can be checked against its authoritative meaning and diff;
+changing a decision needs a case that distinguishes its outcomes. Expand the
+trace only where the change can alter a caller, effect or claimed guarantee.
 
 ## Author the constructive path
 
@@ -167,28 +154,23 @@ author prose. If a selected operation actually needs an effect, follow
 
 ## Revise without losing behavior
 
-Freeze the requested change and characterize relevant current behavior before
-editing. Map each existing semantic model, decision policy, operational protocol,
-adapter, evidence item, resource, caller and unique limitation to one intended
-owner. Preserve its normative force and temporal binding where they matter.
-Distinguish deliberate behavior from obsolete residue using current callers,
-documentation, repository rules and observed results—not personal preference.
+Locate the requested change and characterize the affected current behavior,
+including direct user edits and unique limitations. Preserve the force, owner and
+context of still-valid content; establish obsolescence from actual use and evidence.
 
-Choose the smallest revision reach before editing:
+Apply an authoritative local correction directly when activation, ownership,
+compatibility, safety and effects remain unchanged. If a boundary changes, inspect
+its demonstrated callers or handoffs. If the proposal generalizes an inferred
+lesson or changes consequential guarantees, retain the incumbent and compare a
+bounded candidate on the motivating failures and affected invariants before
+acceptance. The change's consequences determine this reach, not its file count or
+a mandatory revision taxonomy.
 
-| Reach | Applies when | Revision path |
-| --- | --- | --- |
-| **R0 local** | No activation, handoff, ownership, safety, compatibility or external-effect boundary changes | Apply the authoritative scoped correction directly |
-| **R1 boundary** | Activation, exclusion or one direct handoff changes without broader consequence | Inspect and revise the affected one-hop material neighbors |
-| **R2 consequential** | Multiple owners or skills change, or safety, compatibility, publication, destructive/external effects or material cost can change | Keep the incumbent, evaluate a bounded candidate, and accept only after the consequential comparison |
-
-A precise user-owned policy or authoritative reproducible defect takes the direct
-path unless its reach meets R1 or R2. Provider drift changes its adapter claim,
-not the portable core. One agent observation that suggests a broader heuristic
-remains task evidence unless independent justification or explicit user policy
-supports generalization. Do not create an experience ledger, candidate artifact or
-stage merely to apply an R0 repair. Use [behavioral evaluation](behavioral-evaluation.md)
-to enforce the selected reach and decide when evidence may stop.
+Provider drift normally changes the affected binding, not the whole method. A
+local observation remains scoped evidence until independent grounds or explicit
+user policy warrants wider guidance. Use [behavioral evaluation](behavioral-evaluation.md)
+for the checks and stopping condition; a routine correction needs no candidate
+archive, experience ledger or staged workflow.
 
 Make the smallest coherent change that satisfies the new contract. Preserve
 unrelated wording and resources when they remain authoritative. A rename does not

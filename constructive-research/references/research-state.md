@@ -1,114 +1,74 @@
 # Research State
 
-Use this reference only when research dependencies or material ownership must
-survive the current response, or when multiple outputs consume one supported
-source. A transient derivation, one-output explanation, or informal frontier does
-not require a state artifact.
+Use this reference when dependencies or material ownership must survive the
+response, or multiple outputs consume a supported source. A transient derivation
+or one-output explanation can remain in its existing argument.
 
 ## Bind logical state to canonical material
 
-The logical state is a bounded dependency view, not a mandatory directory tree.
-An edge names the exact value consumed downstream; it grants no authority or work
-order. Keep these roles distinct:
+Recover the question, supporting path, result and open obligation from the current
+papers, notes, data and programs. Identify only the locations, revisions and
+reliability that affect their use. A logical node or edge is a view of this work:
+it can point to a paragraph, section or several cooperating records. It neither
+determines a file boundary nor grants authority or a work order.
 
-| Role | Default representation | Authority |
-| --- | --- | --- |
-| logical record or edge | entry/reference in an existing owner | dependency only |
-| canonical owner | existing or admitted durable material | research fact/content |
-| projection | view pinned to owner revision and boundary | no independent truth |
-| generated output | transient unless independently admitted | result, not claim owner |
-| cursor or audit | transient agent space; Git ignore does not make it confidential | no durable research authority |
+| Role | Representation and authority |
+| --- | --- |
+| claim, construction or observation | its canonical material owns the research content and boundary |
+| dependency | a reference to the exact result and conditions consumed downstream |
+| projection | a reader/format view bound to its source revision; no independent truth |
+| generated output | a result, retained when its bytes or replay matter; not a second claim owner |
+| cursor or audit | transient agent work, distinct from reader outputs; Git ignore is not confidentiality |
 
-Keep transient agent records distinct from reader-facing outputs.
+Keep purpose, method, evidence, interpretation and limits beside the material they
+explain. A compact index locates that material and states the dependency or open
+bridge; copying its narrative into the index creates competing update locations.
+Retain enough context to interpret and resume work without the conversation.
+Failed attempts merit a compact reason when it prevents repeated work, changes
+interpretation or affects re-entry. Version control preserves superseded tracked
+wording; revise affected references when the construction changes.
 
-Inventory only relevant papers, notes, derivations, data, plots, notebooks, and
-programs with location, role, revision, and reliability. Reuse compatible
-canonical owners, but do not treat an established layout as evidence that its
-records are clear or usable. If a layout obscures ownership, scope, evidence, or
-re-entry, identify the smallest useful repair. Reorganization of user material
-still needs separate authority and a recoverable migration. Without that
-authority, report the limitation and propose a repair; make in-place content or
-navigation changes only when the task itself authorizes them. Preserving a layout
-is not endorsing its quality.
+## Choose material boundaries from use
 
-A compact state entry carries only stable identity, canonical owner and revision,
-exact exported value, consumer and purpose, applicable boundary or disposition,
-and open obligation. This is a navigation and dependency record, not a second
-narrative owner. Keep motivation, method, evidence, and interpretation with the
-canonical claim, derivation, observation, computation, or exposition they
-describe; link to them rather than copying them into an index. Where future
-interpretation, review, or action depends on context, that canonical record must
-make its purpose, relevant scope, decision-bearing process or evidence, supported
-consequence, and limits recoverable without relying on the conversation. Preserve
-a failed or abandoned step only when its reason changes interpretation, prevents
-repeated work, or affects re-entry; do not turn this into a complete activity
-diary. These are adequacy questions, not mandatory fields: omit what cannot
-change interpretation, review, or future action. Claim contracts, evidence
-records, computations, and prose stay with their own owners. Successive
-conceptual revisions replace back edges; version control, not a parallel archive,
-preserves obsolete tracked wording.
+Keep related claims together when a reader can distinguish their assumptions,
+support and status. A lemma can live beside its theorem; an existing note may
+contain several logical nodes. A source revision feeding a paper and a figure may
+need only links from their existing entries. Separate material when independent
+reading, review, execution, authority, format or maintenance would otherwise be
+conflated. A requested dataset or independently replayed certificate can therefore
+deserve its own file even when the argument is short.
 
-Choose record boundaries by coherent question, scope, evidence/status, and
-reader or revision need—not by graph node, edge, or possible path. Keep distinct
-claims or attempts together when they share a clear purpose and can be reviewed
-without ambiguity; separate them when different scope, authority, evidence
-status, consumer, or lifecycle would otherwise be conflated. A single large file
-is not preferable merely because it minimizes file count, and a directory or file
-per logical graph element is not preferable merely because it mirrors a DAG.
-Represent dependencies with concise references or an index instead of copying
-whole source material into a master record. Before adding files, test whether a
-reader can locate the purpose, boundary, supporting path, disposition, and open
-obligation; repair unclear ownership, headings, links, or record boundaries
-before expanding the collection. Apply the physical admission rules below only
-after the information is intelligible.
+First repair unclear headings, source ownership or navigation where the material
+already lives. Add an index when readers need a durable view across owners; keep
+it navigational. A named consumer explains a need, but does not by itself justify
+another copy, file or project. Choose a directory for an actual build/tool,
+authority/security or resource boundary, or a requested output collection—not to
+mirror logical types or statuses. Neither minimal file count nor a file per node
+establishes a usable organization.
 
-## Admit durable material
+Preserve adequate naming and placement. When organization obscures scope,
+evidence or re-entry, identify the smallest useful repair. Make content/navigation
+changes within the task's authority; moving, renaming, splitting, merging or
+deleting existing user material requires separate authority and recovery. Without
+it, explain the limitation and proposed repair. Name new material by stable domain
+purpose or artifact role, with shallow placement and no empty scaffolding.
 
-Prefer, in order:
+## Retain and project the supported result
 
-1. update a compatible canonical owner;
-2. add a compact binding or dependency edge to an existing entry point; or
-3. create a tracked artifact only when durable content has a named consumer and an
-   independent format, review, execution, authority, resource, or output lifecycle.
+Update a compatible content owner, or add a concise dependency reference to an
+existing entry. Create durable material when its content and reading, review,
+execution or output lifecycle need separate maintenance. Keep generated material
+transient unless exact bytes are requested, consumed as evidence or output, or
+materially costly/unsafe to regenerate. Retained outputs identify their generator,
+inputs, revision and validity boundary. A planned computation exports no result.
 
-A logical type, status, version, large note, or desire for self-containment does
-not admit a file. A new directory additionally needs a shared build/tool boundary,
-distinct authority/security or resource lifecycle, or requested output collection.
-Generated material remains transient unless exact bytes are requested, consumed,
-evidential, or materially unsafe/costly to regenerate. Record its generator,
-inputs, revision, and boundary without making it a second claim owner.
+Bind each projection to the supported construction, claim or disposition it uses.
+When that source changes, recheck affected consumers; unrelated results retain
+their evidence. Use [research loop](research-loop.md) for promoting, compacting or
+dropping newly produced material. Before pruning a durable entry, move its exports
+to a surviving owner or make the missing boundary explicit. Retention decisions
+grant no deletion authority over pre-existing user material.
 
-When the existing layout is adequate, preserve its established naming and
-placement. When it is not, prefer a minimal, reversible improvement that preserves
-canonical ownership and makes navigation and boundaries clearer; do not move,
-rename, split, merge, or delete existing user material without separate authority
-and a recovery plan. Otherwise name by stable domain capability or artifact role,
-not workflow status or vague sequence. Use the shallowest placement that leaves
-ownership clear; do not create empty directories or one file per logical record.
-
-## Build and project the smallest durable view
-
-Identify the capability, phenomenon, theorem, observable, prediction, or algorithm
-that matters. Bind its live claims/inquiries, presumptions, contradictions,
-constructions, canonical owners, exact dependency values, consumers, and open
-bridges. A prospective method or unperformed computation remains an obligation and
-cannot export a result.
-
-Multiple outputs pin projections of one semantic owner:
-
-```text
-supported construction, claim, or disposition
-  -> paper A projection
-  -> paper B projection
-  -> plot or dataset projection
-```
-
-Only explicit consumers become stale when the owner changes. Promote, compact, or
-drop newly produced material according to the [research loop](research-loop.md),
-but never interpret `drop` as permission to remove pre-existing user material.
-Before pruning a durable entry, move every exported value to a surviving owner or
-preserve its missing boundary explicitly.
-
-Execution material follows [computation](computation.md); reader exposition follows
-[research writing](research-writing.md). Neither output becomes a second owner of
-the underlying research meaning.
+Execution material follows [computation](computation.md); exposition follows
+[research writing](research-writing.md). A projection does not independently
+strengthen the research claim.

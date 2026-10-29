@@ -8,17 +8,17 @@ admitted compiler's `help` output. Newer documentation does not authorize an upg
 
 ## Preserve or establish the source boundary
 
-For existing work, identify the entry file, project root, imports/includes, assets,
-fonts, package imports, external inputs, compiler constraint, output convention,
-and maintained style before editing. Preserve this graph unless the requested
-postcondition requires a change. Do not flatten a project into one file or create
-a project, template, module, asset directory, or build wrapper merely because the
-format supports it.
+For existing work or a new document in an existing project, locate the current
+editing source, language companions, maintained template/public entry, imports,
+assets, fonts, inputs, package/compiler constraints and output convention. Read
+the owning project instructions and template interface before selecting defaults.
+Preserve this graph unless the requested result calls for a change. When Typst
+projects another accepted source, keep that direction and the meaning-bearing
+correspondence; a parallel source or old output does not silently become current.
 
-For new work, start with one source file and only the assets needed by accepted
-content. Add a module when it has an actual reuse or ownership boundary. The source
-remains canonical; PDF, PNG, SVG, HTML, or any other compiler-supported target is
-a separate derived artifact.
+For independent new work, start with one source and its necessary assets. Add a
+module for actual reuse or ownership, and reuse an applicable project producer.
+PDF, PNG, SVG, HTML and other compiler targets remain derived artifacts.
 
 Typst has distinct markup, math, and code modes. Determine the active mode before
 escaping or changing syntax. In particular, do not translate a LaTeX command or a
@@ -37,7 +37,7 @@ official section for uncommon constructs instead of guessing from another langua
 | Markup versus code | `#` enters a code expression from markup; do not repeat it inside an existing code expression. Content blocks return to markup, where embedded expressions need it again. See [syntax](https://typst.app/docs/reference/syntax/). |
 | Content versus strings | `[markup]` creates content; `"text"` is a string. Displaying a string does not parse its characters as markup. Choose the value type required by the function; do not use evaluation to make user text executable. See [scripting](https://typst.app/docs/reference/scripting/). |
 | Escapes and literals | Escape for the active mode. Raw code is literal, not an evaluated expression. Do not apply one global replacement rule to code, strings, markup, and math. |
-| Styling | `set` configures supported element parameters; `show` selects elements for styling or transformation. Preserve scope and existing rules rather than adding a universal style/template. See [styling](https://typst.app/docs/reference/styling/). |
+| Styling | `set` configures supported element parameters; `show` selects elements for styling or transformation. Use the maintained template interface for document-wide choices and scoped rules for local variation; inspect their effective scope before adding overrides. See [styling](https://typst.app/docs/reference/styling/). |
 | Contextual values | Effective styles, locations, counters, and queries can depend on where content is placed. Use `context` when the API requires it; it produces contextual content, not an eagerly available global value. See [context](https://typst.app/docs/reference/context/). |
 | Mathematics | Use Typst math syntax and symbol/function names, not LaTeX commands. Inline/block form and multi-letter identifiers have language-specific meaning. Inspect rendered symbols and grouping. See [math](https://typst.app/docs/reference/math/). |
 | References and citations | Attach labels to the intended elements and enable numbering when the referenced element requires it. Resolve bibliography keys from the admitted bibliography file; do not invent keys or treat a successful compile as citation correctness. See [references](https://typst.app/docs/reference/model/ref/) and [bibliography](https://typst.app/docs/reference/model/bibliography/). |
@@ -50,24 +50,43 @@ boundaries, not a document template or required typography.
 
 ## Project semantic structures into Typst
 
-Apply [forward representation fidelity](representation-fidelity.md) before
-choosing Typst syntax or a package. Construct mathematics as an expression tree,
-not as a visually plausible token string. Deliberately choose inline `$x$` versus
-block `$ x $` form using the project-compatible equation grammar. Group a compound
-fraction side explicitly: for example, `(partial B_z)/(partial t)` preserves a
-different numerator/denominator tree from the ungrouped neighboring expression.
-Treat this as contrast evidence, not a derivative template.
+Apply [forward representation fidelity](representation-fidelity.md) to compose
+paragraphs from prose, mathematical relations and references. Construct each
+mathematical span from its operands, operations and attachments before spelling
+Typst tokens. Preserve complete relations: `$J_(B) D$` has a following factor,
+whereas `$J_(B D)$` puts both letters in the subscript. Group compound fractions
+and attachments by that meaning, including inside running prose.
 
-Attach `_` and `^` to the intended base and group compound attachments. Preserve
-whether an attachment is mathematical or textual, and separate identifiers and
-operations according to the accepted tree. When a following expression is not
-part of the attachment, use the mode-appropriate whitespace or group boundary so
-it cannot be absorbed into the attachment or identifier; spacing that merely
-looks acceptable is not binding evidence. Consult the compatible
-[equation](https://typst.app/docs/reference/math/equation/),
-[fraction](https://typst.app/docs/reference/math/frac/), and
-[attachment](https://typst.app/docs/reference/math/attach/) references when the
-construct is unfamiliar or version-sensitive.
+Choose math spans by their role in the sentence: variables and expressions use
+math content; ordinary names, quotations and literal source retain their own
+roles. A string such as `#text("Let $x_i$ vary.")` does not evaluate its embedded
+notation. Compose markup or content arguments instead:
+
+```typst
+Let $kappa = 2 n + d - 2$ and $t = kappa - 2$.
+Apply $S$ to $m_0$, $Y m_1$, and $U m_2$.
+```
+
+These sentences illustrate content boundaries, not required wording. Do not infer
+math spans by globally replacing letters, Unicode glyphs or underscores. Resolve
+variables, named operators, descriptive text and literal code from the accepted
+meaning; Unicode symbols can be valid math input, while a text subscript glyph
+does not establish a native mathematical attachment. Use compatible symbol,
+operator and function names; group an attachment without absorbing the next
+factor. Consult [math](https://typst.app/docs/reference/math/),
+[fractions](https://typst.app/docs/reference/math/frac/) and
+[attachments](https://typst.app/docs/reference/math/attach/) for uncertain grammar.
+
+Inline math participates in the paragraph's syntax and reading rhythm. Use
+`$x$` for an inline span; whitespace on both inside edges, as in `$ x $`, selects
+display form. Keep surrounding sentence punctuation in prose unless it belongs
+to the expression. Select a display equation when a derivation, alignment,
+reference or expression size needs independent reading. For crowded inline math,
+clarify or divide the sentence, introduce a reusable definition, or move the
+relevant relation to display form before shrinking type. Judge baseline, script
+size, font coverage, leading and line breaks in their actual paragraph, caption,
+footnote or cell context. Template styles and contextual values determine those
+results; preserve the project notation across inline and display uses.
 
 For relational content, retain prose or inline notation only when the audience
 does not need to trace material direction, branching, rejoining, grouping, or
@@ -86,7 +105,9 @@ against that region; resolve the compatible behavior from the current
 placement separate from internal equation, label, or cell alignment; center an
 object only when the accepted composition or project style requires it.
 
-For overflow or excessive density, wrap labels, rebalance spacing/grouping,
+A containing width or an unbreakable block does not by itself fit its internal
+equation. Break a derivation at meaningful relations and retain the argument
+order. For overflow or excessive density, wrap labels, rebalance spacing/grouping,
 reorient or split the representation, or select an authorized wider region before
 scaling. Do not crop, overlap, or remove accepted meaning. Recheck the exact
 render after each source revision that changes geometry.
@@ -173,13 +194,17 @@ failed or partial result separate from the prior valid artifact.
 
 - Semantic: inspect the accepted text, values, equations, labels/references,
   captions, links, table schema, relation paths, and named inputs in source and
-  output as applicable. Compare math grouping and attachment scope with the
-  accepted expression tree rather than inferring them from compilation.
+  output as applicable. Compare changed mathematical relations, including inline
+  spans and math left in text strings, with the accepted structure. In language
+  companions, check those relations as well as shared display blocks; compilation
+  or equality between two generated copies is not the independent source check.
 - Structural: require a successful compiler result, inspect diagnostics and source
   locations, and compare the observed dependency graph to admitted inputs.
 - Visual: inspect representative rendered pages for page geometry, overflow,
   tables, figures, formulas, references, font substitution, required scripts, and
-  fit/alignment inside the named containing region.
+  fit/alignment inside the named containing region. Inspect changed inline math
+  at reading size with its surrounding lines and affected page transitions;
+  display-only samples cannot establish paragraph fidelity.
 - Accessibility: when required by the target and representation contract, inspect
   the delivered alternatives, reading sequence, link purpose, and structure with
   a suitable target-aware mechanism; do not infer them from the Typst source or

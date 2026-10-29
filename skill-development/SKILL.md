@@ -10,72 +10,58 @@ source authority over facts, and project instructions, conventions, dependencies
 and accepted resources. Tools/providers own their effects; availability grants
 no authority.
 
-A generic skill creator may supply structure or validation; this skill retains
-boundaries, ownership, portable policy and behavioral evaluation independently.
+A generic skill creator may supply scaffolding; this skill owns the method,
+boundaries and evaluation. Establish whether the user requests creation, focused
+revision, consolidation, retirement or review. Review alone grants no edit.
 
-Establish whether the request is creation, focused revision, consolidation,
-retirement, or review only. Inspection and review do not authorize edits. Before
-changing an existing skill, inspect its entry point, linked resources, live
-callers, repository routing, applicable instructions, validation commands, and
-working-tree state. Do not replace direct user changes or unique behavior merely
-to make the skill resemble a preferred template.
-
-Apply an authoritative, bounded correction directly. Treat an agent-inferred
-lesson, or a change that widens activation, ownership, safety, compatibility,
-effects or material cost, as a candidate until behavioral comparison distinguishes
-it from the incumbent. One successful observation does not establish portable
-policy.
-
-Before authoring or revising policy, read
-[portable capability](references/portable-capability.md). Apply its knowledge,
-ownership and portability dimensions where they change placement, execution or
-evidence; they are not a manifest.
+For a revision, locate the behavior being changed in the current entry point and
+relevant resources, callers, project instructions and dirty state. Preserve direct
+user changes and still-valid behavior. Apply an authoritative scoped correction
+directly. Compare a bounded candidate before generalizing an agent-inferred lesson
+or widening ownership, activation, safety, compatibility, effects or material cost.
+One successful observation does not establish portable policy.
 
 ## Develop the capability
 
-1. Admit the intended requests, exclusions, outputs, authority, failure states,
-   and observable quality claims. Reopen a material unresolved choice instead of
-   hiding it in prose.
-2. Preserve the smallest semantic and operational kernel that closes the claimed
-   provider-independent behavior. Separate it from contextual policy, selected
-   adapters and time-scoped evidence. Give each decision or effect one owner.
-3. Choose the smallest complete structure. Keep the entry point focused on
-   activation, governing behavior, and routing; add a resource only for a repeated
-   decision, operation, validation obligation or delivered artifact that consumes
-   it.
-4. Author within the target skill and preserve the current project's authority.
-   Bind paths, tools, versions, credentials, and providers only when the selected
-   operation requires them.
-5. After the final edit, evaluate realistic behavior, actual artifacts/diff and
-   repository-supported structural checks. For changed commands, tools, hooks or
-   durable context, contrast unused tools, command distinctness, adapter
-   replacement, effect refusal and artifact exposure. Report evidence and limits.
+Start from representative work: its objects, intended result, governing domain
+operations and what can make the result wrong. Preserve enough domain knowledge,
+reasoning and operational detail to construct and check that result. Shared
+ownership, effect and portability principles constrain this method; they do not
+determine its file layout, tool interface or sequence of work.
 
-For creation, revision, consolidation, resource placement, or retirement, read
-[authoring workflow](references/authoring-workflow.md). When the skill may install
-dependencies, execute project code, disclose data, call a remote service, incur
-cost, or mutate external state, also read
+Choose the smallest complete structure from actual use. Keep activation and common
+decisions at the entry; place conditional methods and tools where selected work
+consumes them. Derive abstractions from operations and guarantees they preserve,
+and revise their scope when they distort a concrete case. Bind project versions,
+paths, providers and credentials at the operation that needs them.
+
+Validate the changed behavior with evidence that could expose its failure, then
+inspect the final artifacts/diff and relevant structural checks. Extend evaluation
+to callers, effects or portability only when the change reaches those promises;
+ordinary wording changes do not require an adapter experiment.
+
+Use [authoring workflow](references/authoring-workflow.md) for the selected revision
+or creation method. Consult [portable capability](references/portable-capability.md)
+when generality, knowledge placement, ownership or portability is at issue. Use
+[behavioral evaluation](references/behavioral-evaluation.md) to select evidence for
+changed claims, rather than a fixed case set. Read
 [external operations](references/external-operations.md) before specifying or
-performing that operation. Before delivery, use
-[behavioral evaluation](references/behavioral-evaluation.md) to test decisions and
-effects rather than wording or template resemblance.
+performing installation, project-code execution, disclosure, remote calls,
+material cost or external mutation.
 
 ## Hard gates
 
-- A self-contained simple skill stays simple; references, scripts, assets, setup,
-  and compatibility layers require actual consumers.
-- Without network retrieval, the claimed provider-independent core must still
-  activate, decide, preserve its invariants, run its portable protocol, and name
-  the exact unavailable adapter fact. This does not promise offline completion of
-  work that intrinsically requires a remote service or missing tool.
-- Portable behavior must not depend on this conversation, an installed authoring
-  skill, a workstation path, a hidden runtime, or one provider.
-- Examples and successful local observations may illustrate behavior but do not
-  become universal policy without independent justification.
-- Connected or installed does not mean authorized. Keep credentials out of skill
-  files and disclose external effects before they occur.
-- Structural validation does not prove activation, domain meaning, authority,
-  compatibility, resource ownership or behavioral quality.
-- Modify repository routing only when the capability is ready to become its named
-  owner. Publication, installation, and unrelated cleanup require their own
-  authority.
+- Keep a self-contained method complete and small. Resources, setup and
+  compatibility layers need actual consumers, not resemblance to a template.
+- A claimed provider-independent core must preserve its domain construction,
+  decisions and portable protocol offline, naming the exact missing adapter fact.
+  This does not promise completion of remote work without its service.
+- Portable promises have a declared scope. Keep conversation memory, authoring
+  skills and workstation state out of their prerequisites; provider-specific
+  behavior does not acquire provider independence through abstract wording.
+- Availability grants no effect authority. Keep credentials out of skill files
+  and disclose external effects before they occur.
+- Structural validity proves only its inspected rules. Match broader claims to
+  domain and behavioral evidence; a local observation alone is not general policy.
+- Change repository routing only when the capability is ready to own that route.
+  Publication, installation, commits and unrelated cleanup need their own authority.

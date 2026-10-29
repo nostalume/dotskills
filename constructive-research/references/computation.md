@@ -10,68 +10,46 @@ by itself admit execution, a file, directory, notebook, or project.
 
 ## Admit execution
 
-Separate three decisions: whether the research obligation needs execution, which
-smallest substrate can answer it, and whether any executable material must remain.
+Identify what execution must produce: a requested observable or artifact, a
+discriminating result, an independent check, or an error/cost boundary. Select the
+least effectful adequate operation. A derivation, matched theorem contract,
+admitted source or observation may already close the research obligation; code
+availability or a more elaborate artifact adds no evidential force.
 
-```text
-research obligation or requested result
-  -> can derivation, proof, theorem contract, admitted source, or admitted
-     observation close it?
-       yes -> return that evidence and do not execute
-       no -> can bounded execution produce the required result, distinguish a
-             live alternative, or establish a required error/cost boundary?
-               no -> leave the obligation open or classify it unavailable
-               yes -> execute transiently by default
-                      -> retain only for a named replay or reuse consumer
-```
+Before choosing a tool, state the result classes that would change the claim or
+satisfy the request. A successful run establishes its result only under the
+declared semantic, arithmetic, environment and domain conditions; it does not
+establish a general theorem, model meaning or wider applicability.
 
-Name the missing non-executable capability and the result classes that would
-change the claim before selecting a tool. Do not execute merely because code is
-available, the topic mentions computation, or a runnable artifact looks more
-rigorous. A successful run establishes only the result under its semantic,
-arithmetic, environment, and domain boundary; it does not establish the meaning of
-the model, a general theorem, or applicability outside that boundary.
+## Organize execution around its use
 
-## Admit durable execution material
+A bounded one-off calculation can return a compact result, witness and boundary
+to the existing argument, with execution scratch transient. Retain source or
+outputs when a real replay, verification or reuse needs them; use
+[research state](research-state.md) to choose their material boundaries.
 
-A bounded one-off execution may use an available tool without creating a project
-when its typed request, compact result, witness, provenance, and boundary fit an
-existing canonical owner. Keep commands, code snippets, and raw output transient;
-do not create a file solely to preserve an otherwise compact result.
+Reuse compatible projects, environments and execution paths. Describe how the
+needed commands exchange inputs and outputs, including units, schemas and
+revisions that affect the research result. A Julia solver and Python plotter can
+retain their native environments and entry points while sharing one research
+directory; several commands in one package can serve different consumers.
+Reproducibility depends on those paths and bindings, not a unique project, lock
+file or runner.
 
-Admit a computation project only when execution must be maintained or rerun for a
-named consumer and cannot coherently use an existing compatible project. One
-compatible connected workload has one project owner, environment lock, and
-canonical runner. A second project requires one explicit incompatibility:
-
-- runtime or dependency constraints cannot share a reproducible environment;
-- authority, protected data, or security policy requires isolation;
-- hardware or resource execution needs a distinct platform lifecycle; or
-- a tool has an independent distribution lifecycle.
-
-Probe, certificate, tool, notebook, language, and result kinds do not independently
-justify projects. Notebooks and scripts in one substrate share the environment and
-canonical runner; a notebook is an interface, not a second implementation owner.
-Reject a split whose only rationale is convenience, experimentation, or local
-self-containment.
-
-For each admitted project, name its owner/root, compatibility boundary,
-environment lock, one supported run command, resource/refusal policy, generated
-output policy, and consumers. Follow the physical admission and naming rules in
-[research-state.md](research-state.md).
+Extract shared implementation or a common interface when repeated use actually
+needs the same operation. Keep separate environments or projects where runtime,
+protected data, hardware, distribution or independent maintenance warrants them.
+Judge the split by its concrete dependencies and maintenance consequences; a
+logical role, language or desire for self-containment alone supplies no reason.
+Record the relevant owner, environment/configuration, supported commands, resource
+and refusal bounds, and generated-output policy with the retained work.
 
 ## Choose the smallest substrate
 
-Choose tools from the operations and validity properties that must be preserved,
-not from the first probe's language:
-
-```text
-typed request and request-owned semantic contract
-  -> project-owned execution policy
-     (realization, numerical policy, budget, refusal)
-  -> maintained exact/symbolic/numerical substrate
-  -> compact result, certificate, provenance, and boundary
-```
+Choose tools from the required operations and validity properties: coefficient
+domain, symbolic equality, numerical behavior and resource bounds. Apply the
+existing project's execution policy where that project owns the work, rather than
+choosing a substrate from the first probe's language.
 
 Use maintained packages for commodity rational arithmetic, matrix operations,
 elimination, nullspaces, tensor canonicalization, quadrature, eigensolvers, data
@@ -86,56 +64,50 @@ refuse work whose declared boundary cannot be enforced or observed.
 
 ## Canonical run and result
 
-Expose one runtime-neutral interface through the project's canonical command:
+Bind the scientific question and admitted inputs to the operation actually run,
+its observable or expected result, and its validity/refusal conditions. Input
+references carry the revisions or digests needed to distinguish them. The
+execution project owns runtime and dependency behavior, not the research claim.
+Use the existing command, function or notebook interface that exposes this path.
 
-```text
-Run(request_ref, input_refs, resource_bound)
-  -> result_ref
-  -> witness_or_certificate
-  -> error_and_validity_boundary
-  -> environment/provenance/output_digest
-  -> named_consumers
-```
-
-The request owner supplies the semantic question, admitted inputs/presumptions,
-observable, reduction/algorithm, expected result type, and refusal conditions.
-Input references carry revisions or digests. The project owns dependency/runtime
-identity and execution policy, not the scientific claim.
-
-Return a compact result plus the witness/certificate, exact or estimated error,
-validity and instability boundary, environment/tool revisions, seeds/precision,
-output digest, and consumers. Return an explicit failure or refusal when execution
-does not satisfy the request; a partial run cannot silently propagate success.
-Exact runs must replay exactly under the declared environment. Approximate or
-stochastic runs declare tolerances, seed/repetition policy, and accepted variation.
+Return the compact result with the witness/certificate or error evidence its use
+requires. Make relevant tool/environment revisions, precision, seeds/repetitions,
+instability and output identity recoverable. State incomplete, failed or refused
+execution explicitly. Exact results replay under the request's declared mathematical
+equivalence; approximate or stochastic results declare tolerances and accepted
+variation. Byte identity is a separate requirement when exact bytes matter.
 
 ## Probe, certificate, and tool roles
 
-- A **probe** discriminates a candidate and may disappear after its conclusion is
-  promoted.
-- A **certificate** reproducibly checks one result and remains local to that result.
-- A **tool** generates output for an independent consumer and owns an input/output,
-  refusal, provenance, and error contract.
+- A **probe** discriminates a candidate and may disappear after its consequence
+  is retained.
+- A **certificate** reproducibly checks a result and stays bound to that result.
+- A **tool** serves an independent consumer through an input/output, error,
+  provenance and refusal contract.
 
-Compatible roles share the same project and runner. A tool may be checked by a
-certificate but must not depend on the certificate or its test as production
-authority. Share code for demonstrated common semantics, not similar helper names.
+These roles can use existing files and execution paths. Share code for demonstrated
+common semantics; an independent check may need a different implementation.
+A tool may be checked by a certificate but does not derive production authority
+from that certificate or its tests.
 
 ## Retain execution material
 
-Track the minimal source, lock/configuration, canonical runner, and small fixtures
-needed to reproduce retained results. Keep caches, raw traces, logs, intermediate
-tables, plots, and regenerable outputs ignored or transient unless the state
-admission rule gives exact bytes an independent consumer or evidential role.
+Keep the source, dependency/configuration records, commands and small fixtures
+needed for retained results. Caches, raw traces, logs and regenerable intermediates
+remain ignored or transient unless their bytes have an admitted consumer or
+evidential role. A notebook can expose an existing implementation rather than
+duplicate it. Preserve user material when retiring owned scratch.
 
-Do not add a parallel notebook, script, package, environment, or runner without a
-named semantic role and consumer. During migration, characterize the old result,
-port one vertical semantic slice, compare exact output or declared tolerance and
-failure behavior, then remove the replaced adapter when no live consumer remains.
+For a necessary migration, characterize the old result, port one usable semantic
+slice, compare the result under its exact equivalence or declared tolerance and
+failure behavior, then retire the replaced adapter only after its consumers have
+moved. Reorganization is subject to the state reference's authority and recovery
+requirements.
 
 ## Test computational leverage
 
-Compare complete routes on one frozen result and required quality:
+When claiming computational leverage, compare complete routes on the same
+requested result and required quality:
 
 ```text
 (model/dynamics, preparation, observable, required accuracy and semantics)

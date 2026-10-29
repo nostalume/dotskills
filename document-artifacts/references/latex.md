@@ -29,31 +29,32 @@ provides focused lessons rather than a universal document template.
 | --- | --- |
 | Commands and environments | Check mandatory/optional arguments and match environment names. Braces delimit arguments or groups; preserve grouping and local scope when moving declarations. Distinguish a command definition from a call. |
 | Literal text | Characters such as `%`, `&`, `_`, `#`, and braces have syntax roles. Escape accepted literal text for its actual context; do not globally escape source, math, URLs, or verbatim content. Verbatim commands/environments have restrictions inside arguments. See [document structure](https://www.learnlatex.org/en/lesson-03). |
-| Text and math | Preserve inline versus display math and use the selected math package's commands/environments. A text font does not establish a math font or symbol repertoire. Check grouping, alignment, numbering, and rendered symbols against accepted meaning. See [mathematics](https://www.learnlatex.org/en/lesson-10). |
+| Text and math | Compose sentence-level notation and display equations as described below, using the project math interface and actual math fonts. See [mathematics](https://www.learnlatex.org/en/lesson-10). |
 | Labels and references | Place a label after the command that establishes the intended counter, such as a section command or float caption. Resolve duplicate/missing keys and rerun diagnostics; a printed `??` is unresolved output. See [cross-referencing](https://www.learnlatex.org/en/lesson-09). |
 | Citations | Preserve citation keys, database, style, and backend. BibTeX and Biber are not interchangeable commands. Consult the selected package's manual, such as [biblatex](https://ctan.org/pkg/biblatex), and check the final bibliography against the accepted sources. |
 | Tables and figures | Separate tabular content from a table float; placement requests do not promise exact position. Preserve captions, labels, units, graphics paths, and reading order. Use the defining package's interface for multipage tables or unusual graphics. Inspect the rendered placement and overflow. See [tables](https://www.learnlatex.org/en/lesson-08). |
 | Engine and fonts | Preserve the required engine and font setup. For example, [fontspec](https://ctan.org/pkg/fontspec) targets XeLaTeX/LuaLaTeX, not pdfLaTeX. Unicode input support does not guarantee shaping or glyph coverage. Check the required scripts and math with the actual fonts; do not silently remove font requirements or change engines. |
 
-Apply [forward representation fidelity](representation-fidelity.md) before
-emitting LaTeX source for structured content. Build mathematics from the accepted
-expression tree, using groups and the selected math interface to preserve
-precedence, numerator/denominator boundaries, attachment scope, identifiers, and
-inline/display role. A compiling string that prints plausible glyphs is not proof
-of the intended tree.
+Apply [forward representation fidelity](representation-fidelity.md). Compose the
+sentence first: distinguish prose, mathematical expressions and literal code.
+Put variables and complete relations in inline math, including single-symbol
+mentions, while keeping filenames and commands literal. Build grouping and
+attachments from the accepted expression: \(J_B D\) multiplies by \(D\), whereas
+\(J_{BD}\) attaches both letters. Use semantic operators such as \(\sin x\) and the
+project's interface for descriptive subscripts, rather than treating every word
+as multiplied variables.
 
-Keep a table float distinct from its tabular structure, and keep outer placement
-distinct from cell or equation alignment. Size against the effective local region,
-such as the current line or column, rather than assuming the whole page. For an
-accepted relation graph, use a project-compatible native/package construction or
-declared-loss asset only after representation selection; do not substitute ASCII
-arrows because a preferred package is unavailable.
+Choose inline or display by the expression's role in the argument. Keep sentence
+continuity and punctuation across either form; inspect baseline, line spacing,
+glyphs and breaks in context. Diagnose a defect at its responsible layer: sentence
+organization, expression grouping, environment behavior or class/package rule.
+Moving a long derivation to a suitable display environment can repair paragraph
+fit; changing the document font or class may leave the cause intact.
 
-Treat overfull output as a capacity failure to diagnose at its earliest layer.
-Rebalance or reflow the representation, wrap labels, split separable content, or
-use an authorized wider region before scaling or cropping. Preserve the selected
-class, engine, and package authority; resolve their concrete commands and layout
-behavior from compatible documentation.
+Keep floats distinct from their contents and outer placement from internal
+alignment. Size against the actual line, column or nested region. Use the shared
+capacity repairs and project-compatible constructs for tables, equations and
+accepted relation graphs; resolve concrete commands from their defining interface.
 
 ## Admit the build graph and its effects
 

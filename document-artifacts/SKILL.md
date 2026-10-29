@@ -12,7 +12,8 @@ projection or artifact with its limitations.
 
 ## Select the result and its route
 
-Inspect project sources and conventions; preserve source format/layout by default.
+Identify the current editing source, derived outputs and maintained template or
+producer entry before choosing a route; preserve project format/layout by default.
 Select operation and source variant once, before tools: OOXML documents/templates/shows
 and macro-enabled variants, Markdown/Typst/LaTeX sources, analysis projections and
 fixed-layout PDF have distinct preservation needs.
@@ -42,7 +43,7 @@ Read common obligations and only the selected branches:
 | OOXML or legacy `.doc/.ppt/.xls` recognition/conversion | [Office](references/office.md): introduction and shared sections through **Apply format-specific requirements**, selected DOCX/PPTX/XLSX subsection, then **Match validation to the claim**; official references as needed |
 | PPTX composition/revision/render/validation or tool selection | [PPTX selector](references/presentations.md#load-the-selected-pptx-path) |
 | Markdown format work | [Markdown boundary](references/markdown.md) |
-| Typst source/build/output | [Typst](references/typst.md): bind source, project-root, compiler, fonts, inputs, packages and outputs anew |
+| Typst source/build/output | [Typst](references/typst.md): compose paragraphs and inline/display math within the project style; bind source, root, compiler and dependencies |
 | LaTeX source/build/output | [LaTeX](references/latex.md): preserve project engine, class, packages and build graph; admit its compiler binding |
 | Selected/requested MinerU hosted extraction/export | [MinerU](references/mineru.md): remote adapter, not editing/fidelity proof; check the destination format |
 

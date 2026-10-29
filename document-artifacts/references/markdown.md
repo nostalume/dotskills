@@ -1,23 +1,21 @@
 # Markdown boundary
 
-Preserve the repository's existing Markdown dialect and conventions. For new
-standalone text, name CommonMark, GFM, or another required consumer dialect when
-the distinction changes behavior. Tables and task items are GFM extensions;
-footnotes and dollar-delimited math need a separately named extension or consumer
-contract. Apply the shared forward-representation protocol before selecting math,
-diagram, table, raw-HTML, or image syntax. Raw text, ASCII art, pipe tables,
-embedded HTML, and consumer extensions carry different semantic, structural,
-editability, and accessibility guarantees; use one only when it preserves the
-admitted contract or declare the exact loss. Preserve code spans/blocks and apply
-escapes in the context defined by the selected dialect. Treat raw HTML as
-consumer-controlled active content because
-renderers may pass, filter, sanitize, or reject it differently. Validate links and
-rendering only when claimed or required by that consumer. Select a parser/renderer
-configured for that consumer before asserting extension support; a library's
-"Markdown" or "GFM" label does not establish its enabled extensions. Check relative
-links from the document's destination, and preserve literal code rather than
-interpreting embedded math or escapes. A conversion records its
-source and lost layout, comments, formulas, metadata, or embedded media rather than
-presenting Markdown as equivalent to the original. Use the current
-[CommonMark specification](https://spec.commonmark.org/) or
-[GFM specification](https://github.github.com/gfm/) as applicable.
+Preserve the repository's consumer dialect and conventions. For new work, select
+CommonMark, GFM or the required consumer when behavior differs. Compose content
+roles before syntax: prose, literal code, mathematics, tables, references and
+diagrams need their corresponding supported constructs. A dollar-delimited
+expression needs a named math extension; the same characters inside a code span
+remain literal. GFM tables/task items do not establish footnote or math support.
+
+Apply [forward representation fidelity](representation-fidelity.md) to structured
+content. Choose pipe tables, native extensions, HTML or assets by the required
+semantics, editability and accessibility, declaring unsupported properties as
+losses. Escape within the actual context; preserve code spans/blocks. Raw HTML is
+consumer-controlled active content: it may pass through, be sanitized or rejected.
+
+Validate with the destination's configured parser/renderer when support or
+appearance is claimed; a generic Markdown/GFM library label is insufficient.
+Resolve relative links from that destination. Conversion records omitted layout,
+comments, formulas, metadata and media as applicable; it does not establish a
+native round trip. Use the [CommonMark specification](https://spec.commonmark.org/)
+or [GFM specification](https://github.github.com/gfm/) for the selected dialect.

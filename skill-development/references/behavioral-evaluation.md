@@ -7,9 +7,9 @@ chooses suitable structure, bounds effects, or fails honestly.
 
 ## Derive evidence from changed claims
 
-Freeze the intended capability and inspect the actual skill before selecting
-checks. For every new or changed claim, identify the cheapest observation that
-could show it is false.
+Locate the changed claim in the actual skill and identify the cheapest observation
+that could expose its failure. Select from the following evidence by that claim;
+the table is not a suite to complete for every edit.
 
 | Claim | Distinguishing evidence |
 | --- | --- |
@@ -62,24 +62,22 @@ observable, report only the static declared closure; do not claim an effective s
 
 ## Enforce the evidence budget
 
-Use the reach chosen by the authoring workflow:
+Match the evaluation to the change's consequences. A faithful wording, citation
+or local syntax correction may be settled by authoritative comparison, the actual
+diff and a relevant source/artifact check. A changed decision needs a task whose
+possible outcomes distinguish the intended behavior from a plausible failure.
+An inferred general policy or consequential change needs incumbent/candidate
+comparison on its motivating failures and preserved obligations.
 
-| Reach | Required default evidence |
-| --- | --- |
-| **R0** | The changed claim; one discriminating positive and, when exclusion can change, one negative case; final artifact/diff and structural checks |
-| **R1** | R0 plus one discriminating case for every demonstrated one-hop material neighbor |
-| **R2** | R1 plus incumbent/candidate comparison for each motivating failure, previously passing behavior tied to each changed invariant, and every affected effect/refusal boundary |
+Inspect a caller or boundary when the change can reach it. Select additional
+checks only for an unresolved claim or conflict whose outcomes could change
+acceptance, scope, effects or disposition. Missing required evidence blocks the
+dependent claim; it does not expand the test set into unrelated capabilities.
 
-Beyond that minimum, add a check only for a named changed claim or conflict whose
-possible observations change acceptance, scope, owner or failure disposition.
-Reclassify only the affected change when fresh evidence warrants broader reach.
-Missing required evidence is a blocker; stop unjustified expansion as a warning.
-
-Stop when changed claims have distinguishing evidence or named unavailable checks,
-material overlaps/handoffs have one owner, contradictions are resolved or locally
-bounded, and no next check changes a decision. For persistent conflict, run only
-the next discriminating bounded check, then resolve, narrow, defer or block.
-Passing tests alone does not close these obligations.
+Stop when changed claims have adequate evidence or explicit unverified scope,
+affected ownership and boundaries are resolved, and no worthwhile next check can
+change the decision. After a correction, rerun its invalidated checks; unchanged
+evidence retains its scope. Passing a suite alone does not establish the claim.
 
 ## Design forward cases
 
@@ -94,26 +92,21 @@ inspect completely. A case should record:
   and
 - artifacts and state to inspect after the run.
 
-For a skill that adds commands, tools, hooks, or durable context, include these
-contrast cases:
+Choose contrasts from the changed promise:
 
-- the same capability with a simple request that needs no adapter;
-- the same operation with two replaceable adapters, holding the semantic contract
-  fixed;
-- a command synonym or stylistic variation that should route to the existing
-  operation rather than create a new one;
-- a planning or review-only request with every external tool available, confirming
-  that no tool, hook, watcher, or mutation runs;
-- a private-plan request versus an explicitly shared-document request, confirming
-  that only the latter persists accepted content and that project layout or task
-  reasoning is not copied without a reader need; and
-- an unavailable-tool or missing-authority variant, confirming the declared
-  equivalent, bounded partial, unavailable, or refused result.
+| Changed promise | Useful contrast |
+| --- | --- |
+| Tool selection or command meaning | A simpler task without the tool, or a synonymous request that should retain the same operation |
+| Provider independence | Replace the relevant adapter while keeping the result and obligations fixed |
+| Authority or external effects | Withhold the affected authority or request review only; inspect effects rather than a statement of restraint |
+| Artifact exposure | Relocate/relabel private working context while holding the reader's content contract fixed |
+| Availability or failure handling | Remove the required capability and inspect the exact partial, unavailable or refused result |
+| Design or explanation | Change the actual task, audience prerequisite or viewport and inspect the resulting artifact |
 
-For a design or visual skill, add a refinement case that preserves the incumbent
-meaning and source, a redesign case that replaces the visual treatment while
-preserving accepted information and purpose, and a bounded observation case that
-stops after the evidence is closed rather than polishing indefinitely.
+These contrasts are needed where the corresponding promise changes or remains in
+doubt. Editing prose stored in a skill does not by itself change every command,
+provider or effect boundary. Keep justified compact expert routes and required
+contrasts; avoid making every task carry an intake schema.
 
 For each evaluated route, inspect this trace rather than only the final prose:
 
@@ -128,16 +121,10 @@ review-only case leaves no mutation. A route that cannot be observed at runtime
 may be checked statically, but runtime selection and effect restraint remain
 unverified.
 
-Choose cases according to the changed boundary. A broad skill-development
-capability should normally distinguish these families:
-
-- a self-contained knowledge skill that should remain one concise file;
-- a multi-operation skill with one genuinely conditional external provider;
-- a focused revision that must preserve existing resources and unrelated behavior;
-- a consolidation with overlapping triggers and unique rules in both sources;
-- a review-only request that must report without editing;
-- an offline, missing-tool, or missing-credential variant; and
-- an ordinary software or artifact request that must not activate the skill.
+For a broad creation, consolidation or retirement, use cases that exercise the
+affected capability families, unique retained behavior and actual ownership
+neighbors. A fixed local correction need not rescan the whole catalog or retest
+unaffected families.
 
 Add domain-specific boundary cases when the skill makes stronger claims. For a
 package-portability claim, copy the skill and declared included resources to a
@@ -161,25 +148,17 @@ If a non-inheriting context is unavailable, perform static dependency and contra
 checks, mark runtime portability unverified, and retain the runnable bundle only
 while the task consumes it. Primary-agent self-review cannot establish this claim.
 
-When knowledge placement or an evolving adapter changes, include the applicable
-temporal mutations:
+For changing knowledge or adapter claims, mutate the relevant dependency: omit a
+needed grammar/error rule; alter a protocol's safety-critical order or audit
+burden; change a revision, project version or provider target; or remove network
+access. Check which result or scope this actually invalidates. Use a project's
+pinned interface against current provider policy only where their compatibility
+matters; a local wording change needs no invented provider experiment.
 
-- omit one grammar/error/version rule from a self-contained DSL;
-- reorder one safety-critical document or data-handling protocol step;
-- remove a restricted audit's burden of proof, stop or reopen condition;
-- evaluate pull-request feedback against a changed revision or location;
-- hold the semantic core fixed while replacing a provider adapter;
-- compare a project-pinned client with unversioned latest documentation;
-- change provider target or policy after an otherwise reusable observation; and
-- remove network access while distinguishing offline-capable preparation from an
-  operation requiring fresh remote policy.
-
-When changing context-to-artifact rules, relabel only a plan stage or relocate
-only the authoring workspace while holding the target contract fixed; compare
-actual code and document artifacts for unchanged domain meaning and reader use.
-Contrast with genuine domain stages, compatibility names and requested
-environment/layout or diagnostic documentation, which should retain the needed
-details. A review-only variant must still leave the reviewed source unchanged.
+For context-to-artifact changes, vary a private plan label or workspace while
+holding the reader contract fixed. Preserve genuine domain stages, compatibility
+names and requested diagnostic details. A review-only variant, when the changed
+authority boundary needs it, must leave the source untouched.
 
 Change one semantic, temporal or availability input at a time. A useful case makes
 only the corresponding decision, evidence requirement or bounded failure change.
